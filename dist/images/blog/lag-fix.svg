@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Speed meter -->
+  <g transform="translate(400, 200)" filter="url(#s)">
+    <!-- Meter background -->
+    <path d="M-120,0 A120,120 0 0,1 120,0" fill="none" stroke="#2E7D32" stroke-width="20" stroke-linecap="round"/>
+    <!-- Colored segments -->
+    <path d="M-120,0 A120,120 0 0,1 -85,-85" fill="none" stroke="#F44336" stroke-width="20" stroke-linecap="round"/>
+    <path d="M-85,-85 A120,120 0 0,1 0,-120" fill="none" stroke="#FFC107" stroke-width="20" stroke-linecap="round"/>
+    <path d="M0,-120 A120,120 0 0,1 85,-85" fill="none" stroke="#8BC34A" stroke-width="20" stroke-linecap="round"/>
+    <path d="M85,-85 A120,120 0 0,1 120,0" fill="none" stroke="#4CAF50" stroke-width="20" stroke-linecap="round"/>
+    <!-- Needle pointing to green -->
+    <line x1="0" y1="0" x2="75" y2="-75" stroke="#F1F8E9" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="10" fill="#F1F8E9"/>
+    <!-- Labels -->
+    <text x="-110" y="30" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#F44336">Slow</text>
+    <text x="110" y="30" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#4CAF50">Fast</text>
+    <!-- FPS counter -->
+    <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="32" fill="#8BC34A">60</text>
+    <text x="0" y="70" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">FPS</text>
+  </g>
+  <!-- Gear icon -->
+  <g transform="translate(600, 300)" filter="url(#s)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#8BC34A" stroke-width="6"/>
+    <circle cx="0" cy="0" r="10" fill="#33691E" stroke="#8BC34A" stroke-width="3"/>
+    <!-- Gear teeth -->
+    <rect x="-4" y="-30" width="8" height="12" rx="2" fill="#8BC34A"/>
+    <rect x="-4" y="18" width="8" height="12" rx="2" fill="#8BC34A"/>
+    <rect x="-30" y="-4" width="12" height="8" rx="2" fill="#8BC34A"/>
+    <rect x="18" y="-4" width="12" height="8" rx="2" fill="#8BC34A"/>
+    <rect x="-24" y="-24" width="10" height="8" rx="2" fill="#8BC34A" transform="rotate(45, -19, -20)"/>
+    <rect x="14" y="-24" width="10" height="8" rx="2" fill="#8BC34A" transform="rotate(-45, 19, -20)"/>
+    <rect x="-24" y="16" width="10" height="8" rx="2" fill="#8BC34A" transform="rotate(-45, -19, 20)"/>
+    <rect x="14" y="16" width="10" height="8" rx="2" fill="#8BC34A" transform="rotate(45, 19, 20)"/>
+  </g>
+  <!-- Lightning bolt (speed) -->
+  <g transform="translate(200, 290)" filter="url(#s)">
+    <polygon points="10,-30 -5,0 5,0 -10,30 15,-5 5,-5" fill="#FFC107"/>
+  </g>
+  <text x="400" y="380" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Fix Lag &amp; Boost FPS</text>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Performance Optimization Guide</text>
+</svg>

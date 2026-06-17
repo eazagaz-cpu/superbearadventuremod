@@ -3,7 +3,7 @@ title: "Super Bear Adventure Lore - The Complete Story of Baaren & Earthkwak"
 description: "Discover the complete lore of Super Bear Adventure. Learn about Baaren the bear, the Kingdom of Earthkwak, the Turtle King, and every story detail."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/lore-baaren-story.webp"
+image: "/images/blog/lore-story.svg"
 category: "Lore"
 tags: ["lore", "story", "Baaren", "Earthkwak", "characters", "world building", "narrative"]
 ---

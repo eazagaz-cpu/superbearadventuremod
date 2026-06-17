@@ -3,7 +3,7 @@ title: "Super Bear Adventure Unlimited Money Guide - What to Buy & Best Purchase
 description: "Learn how unlimited money works in Super Bear Adventure Mod APK. Discover the best purchases, what to buy first, and how to maximize your free coins."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/super-bear-adventure-unlimited-money.webp"
+image: "/images/blog/unlimited-money.svg"
 category: "Tips"
 tags: ["unlimited money", "unlimited coins", "free coins", "best purchases", "tips", "Super Bear Adventure"]
 ---

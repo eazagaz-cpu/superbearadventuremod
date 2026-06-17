@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#E8F5E9"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <ellipse cx="200" cy="300" rx="280" ry="80" fill="#4CAF50"/>
+  <ellipse cx="100" cy="260" rx="120" ry="50" fill="#66BB6A"/>
+  <ellipse cx="320" cy="270" rx="100" ry="40" fill="#43A047"/>
+  <!-- Sun -->
+  <circle cx="340" cy="40" r="25" fill="#FFD54F" opacity="0.9"/>
+  <!-- Clouds -->
+  <ellipse cx="80" cy="40" rx="35" ry="12" fill="white" opacity="0.7"/>
+  <ellipse cx="100" cy="34" rx="25" ry="10" fill="white" opacity="0.7"/>
+  <ellipse cx="250" cy="30" rx="30" ry="10" fill="white" opacity="0.6"/>
+  <!-- Houses -->
+  <g filter="url(#s)">
+    <rect x="130" y="190" width="40" height="35" rx="3" fill="#8D6E63"/>
+    <polygon points="130,190 150,168 170,190" fill="#D32F2F"/>
+    <rect x="143" y="205" width="12" height="20" fill="#5D4037"/>
+    <rect x="250" y="200" width="35" height="30" rx="3" fill="#A1887F"/>
+    <polygon points="250,200 267,180 285,200" fill="#E53935"/>
+    <rect x="262" y="212" width="10" height="18" fill="#5D4037"/>
+  </g>
+  <!-- Trees -->
+  <rect x="78" y="170" width="6" height="30" fill="#795548"/>
+  <polygon points="81,140 100,185 62,185" fill="#2E7D32"/>
+  <rect x="318" y="180" width="5" height="25" fill="#795548"/>
+  <polygon points="320,155 335,195 306,195" fill="#388E3C"/>
+  <!-- Turtles -->
+  <g transform="translate(180, 250)" filter="url(#s)">
+    <ellipse cx="0" cy="3" rx="18" ry="12" fill="#2E7D32"/>
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="#4CAF50"/>
+    <circle cx="-16" cy="5" r="4" fill="#388E3C"/>
+    <circle cx="-18" cy="3" r="1.5" fill="#1B5E20"/>
+  </g>
+  <g transform="translate(280, 255)" filter="url(#s)">
+    <ellipse cx="0" cy="3" rx="14" ry="10" fill="#2E7D32"/>
+    <ellipse cx="0" cy="0" rx="11" ry="7" fill="#66BB6A"/>
+    <circle cx="12" cy="3" r="3.5" fill="#388E3C"/>
+    <circle cx="13" cy="2" r="1.2" fill="#1B5E20"/>
+  </g>
+  <text x="200" y="290" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#1B5E20">Turtletown</text>
+</svg>

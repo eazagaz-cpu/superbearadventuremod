@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F57F17"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="honey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.2"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Honeycomb pattern -->
+  <g fill="none" stroke="#FFD54F" stroke-width="2" opacity="0.3">
+    <polygon points="200,80 230,65 260,80 260,110 230,125 200,110"/>
+    <polygon points="260,80 290,65 320,80 320,110 290,125 260,110"/>
+    <polygon points="320,80 350,65 380,80 380,110 350,125 320,110"/>
+    <polygon points="380,80 410,65 440,80 440,110 410,125 380,110"/>
+    <polygon points="440,80 470,65 500,80 500,110 470,125 440,110"/>
+    <polygon points="500,80 530,65 560,80 560,110 530,125 500,110"/>
+    <polygon points="560,80 590,65 620,80 620,110 590,125 560,110"/>
+    <polygon points="230,125 260,110 290,125 290,155 260,170 230,155"/>
+    <polygon points="290,125 320,110 350,125 350,155 320,170 290,155"/>
+    <polygon points="350,125 380,110 410,125 410,155 380,170 350,155"/>
+    <polygon points="410,125 440,110 470,125 470,155 440,170 410,155"/>
+    <polygon points="470,125 500,110 530,125 530,155 500,170 470,155"/>
+    <polygon points="530,125 560,110 590,125 590,155 560,170 530,155"/>
+  </g>
+  <!-- Filled honeycomb cells -->
+  <g filter="url(#s)">
+    <polygon points="350,170 380,155 410,170 410,200 380,215 350,200" fill="url(#honey)" opacity="0.8"/>
+    <polygon points="410,170 440,155 470,170 470,200 440,215 410,200" fill="url(#honey)" opacity="0.9"/>
+    <polygon points="380,215 410,200 440,215 440,245 410,260 380,245" fill="url(#honey)" opacity="0.7"/>
+  </g>
+  <!-- Bees -->
+  <g filter="url(#s)">
+    <!-- Bee 1 -->
+    <g transform="translate(300, 200)">
+      <ellipse cx="0" cy="0" rx="16" ry="10" fill="#FFC107"/>
+      <rect x="-8" y="-10" width="4" height="20" rx="2" fill="#333" opacity="0.7"/>
+      <rect x="2" y="-10" width="4" height="20" rx="2" fill="#333" opacity="0.7"/>
+      <ellipse cx="-8" cy="-12" rx="10" ry="6" fill="white" opacity="0.5" transform="rotate(-20)"/>
+      <ellipse cx="8" cy="-12" rx="10" ry="6" fill="white" opacity="0.5" transform="rotate(20)"/>
+      <circle cx="16" cy="-2" r="2" fill="#333"/>
+    </g>
+    <!-- Bee 2 -->
+    <g transform="translate(530, 180)">
+      <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFC107"/>
+      <rect x="-6" y="-8" width="3" height="16" rx="1.5" fill="#333" opacity="0.7"/>
+      <rect x="2" y="-8" width="3" height="16" rx="1.5" fill="#333" opacity="0.7"/>
+      <ellipse cx="-6" cy="-10" rx="8" ry="5" fill="white" opacity="0.5" transform="rotate(-20)"/>
+      <ellipse cx="6" cy="-10" rx="8" ry="5" fill="white" opacity="0.5" transform="rotate(20)"/>
+    </g>
+    <!-- Bee 3 -->
+    <g transform="translate(180, 280)">
+      <ellipse cx="0" cy="0" rx="14" ry="9" fill="#FFC107"/>
+      <rect x="-7" y="-9" width="3.5" height="18" rx="1.5" fill="#333" opacity="0.7"/>
+      <rect x="2" y="-9" width="3.5" height="18" rx="1.5" fill="#333" opacity="0.7"/>
+      <ellipse cx="-7" cy="-11" rx="9" ry="5" fill="white" opacity="0.5" transform="rotate(-20)"/>
+      <ellipse cx="7" cy="-11" rx="9" ry="5" fill="white" opacity="0.5" transform="rotate(20)"/>
+    </g>
+  </g>
+  <!-- Honey drip -->
+  <g fill="#FFA000" opacity="0.6">
+    <ellipse cx="400" cy="330" rx="8" ry="12"/>
+    <ellipse cx="400" cy="315" rx="4" ry="8"/>
+    <ellipse cx="450" cy="340" rx="6" ry="10"/>
+    <ellipse cx="350" cy="345" rx="7" ry="9"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#FFF8E1">The Hive Walkthrough</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#FFE0B2">Navigate the Honeycomb Maze</text>
+</svg>

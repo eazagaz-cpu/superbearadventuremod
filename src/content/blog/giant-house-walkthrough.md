@@ -3,7 +3,7 @@ title: "Giant House Walkthrough - Complete Guide to Every Room & Secret (2026)"
 description: "Complete Giant House walkthrough for Super Bear Adventure. Navigate every room, solve all puzzles, find hidden secrets, and defeat the boss in this oversized world."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/giant-house-walkthrough.webp"
+image: "/images/blog/giant-house.svg"
 category: "Walkthrough"
 tags: ["giant house", "walkthrough", "puzzles", "secrets", "guide"]
 ---

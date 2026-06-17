@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="40%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#90CAF9"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.2"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Northern lights effect -->
+  <ellipse cx="400" cy="80" rx="350" ry="60" fill="#4FC3F7" opacity="0.15"/>
+  <ellipse cx="350" cy="60" rx="250" ry="40" fill="#80DEEA" opacity="0.1"/>
+  <!-- Mountains -->
+  <g filter="url(#s)">
+    <polygon points="100,350 280,100 460,350" fill="url(#mt)"/>
+    <polygon points="300,350 500,80 700,350" fill="url(#mt)"/>
+    <polygon points="500,350 650,150 800,350" fill="#E1F5FE"/>
+    <!-- Snow caps -->
+    <polygon points="280,100 255,155 305,155" fill="white"/>
+    <polygon points="500,80 470,145 530,145" fill="white"/>
+    <polygon points="650,150 630,190 670,190" fill="white"/>
+  </g>
+  <!-- Snow ground -->
+  <ellipse cx="400" cy="450" rx="500" ry="120" fill="#E3F2FD"/>
+  <!-- Pine trees -->
+  <g opacity="0.7">
+    <polygon points="150,280 165,350 135,350" fill="#1B5E20"/>
+    <polygon points="150,300 160,335 140,335" fill="#2E7D32"/>
+    <polygon points="680,300 695,360 665,360" fill="#1B5E20"/>
+    <polygon points="680,315 690,350 670,350" fill="#2E7D32"/>
+  </g>
+  <!-- Snowflakes -->
+  <g fill="white" opacity="0.8">
+    <circle cx="100" cy="100" r="3"/><circle cx="250" cy="150" r="2"/>
+    <circle cx="400" cy="80" r="3"/><circle cx="550" cy="120" r="2.5"/>
+    <circle cx="700" cy="90" r="2"/><circle cx="150" cy="250" r="2"/>
+    <circle cx="350" cy="200" r="2.5"/><circle cx="600" cy="220" r="3"/>
+    <circle cx="50" cy="180" r="2"/><circle cx="750" cy="200" r="2.5"/>
+    <circle cx="300" cy="300" r="2"/><circle cx="500" cy="280" r="2"/>
+  </g>
+  <!-- Snowflake icons -->
+  <g transform="translate(200, 50)" fill="white" opacity="0.4">
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="white" stroke-width="2"/>
+    <line x1="-8.66" y1="-5" x2="8.66" y2="5" stroke="white" stroke-width="2"/>
+    <line x1="-8.66" y1="5" x2="8.66" y2="-5" stroke="white" stroke-width="2"/>
+  </g>
+  <g transform="translate(620, 40)" fill="white" opacity="0.3">
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="white" stroke-width="1.5"/>
+    <line x1="-6.9" y1="-4" x2="6.9" y2="4" stroke="white" stroke-width="1.5"/>
+    <line x1="-6.9" y1="4" x2="6.9" y2="-4" stroke="white" stroke-width="1.5"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Snow Valley Guide</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#B3E5FC">Secrets &amp; Walkthrough</text>
+</svg>

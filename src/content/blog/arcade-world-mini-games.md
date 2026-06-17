@@ -3,7 +3,7 @@ title: "Arcade World Guide: All Mini-Games Explained & High Score Tips for Super
 description: "Master every mini-game in Super Bear Adventure's Arcade World. Complete guide with rules, strategies, high score tips, and secret unlocks."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/arcade-world-mini-games.webp"
+image: "/images/blog/arcade-world.svg"
 category: "Guide"
 tags: ["arcade world", "mini-games", "high scores", "tips", "super bear adventure"]
 ---

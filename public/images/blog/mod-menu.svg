@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Phone frame -->
+  <g transform="translate(400, 210)" filter="url(#s)">
+    <rect x="-100" y="-160" width="200" height="320" rx="20" fill="#1a1a1a"/>
+    <rect x="-88" y="-145" width="176" height="290" rx="4" fill="#263238"/>
+    <!-- Game background on screen -->
+    <rect x="-85" y="-142" width="170" height="200" fill="#2E7D32"/>
+    <!-- Hills -->
+    <ellipse cx="0" cy="30" rx="100" ry="30" fill="#388E3C"/>
+    <!-- Bear -->
+    <circle cx="0" cy="-20" r="12" fill="#8D6E63"/>
+    <!-- Mod menu overlay -->
+    <rect x="-75" y="-130" width="150" height="175" rx="8" fill="#1B5E20" opacity="0.92"/>
+    <rect x="-75" y="-130" width="150" height="175" rx="8" fill="none" stroke="#8BC34A" stroke-width="1.5"/>
+    <!-- Menu title -->
+    <text x="0" y="-108" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="#8BC34A">MOD MENU</text>
+    <line x1="-65" y1="-98" x2="65" y2="-98" stroke="#4CAF50" stroke-width="0.5"/>
+    <!-- Toggle items -->
+    <g transform="translate(-60, -80)">
+      <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#C5E1A5">Unlimited Coins</text>
+      <rect x="100" y="-10" width="28" height="14" rx="7" fill="#8BC34A"/>
+      <circle cx="122" cy="-3" r="5" fill="white"/>
+    </g>
+    <g transform="translate(-60, -55)">
+      <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#C5E1A5">All Skins Unlocked</text>
+      <rect x="100" y="-10" width="28" height="14" rx="7" fill="#8BC34A"/>
+      <circle cx="122" cy="-3" r="5" fill="white"/>
+    </g>
+    <g transform="translate(-60, -30)">
+      <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#C5E1A5">No Ads</text>
+      <rect x="100" y="-10" width="28" height="14" rx="7" fill="#8BC34A"/>
+      <circle cx="122" cy="-3" r="5" fill="white"/>
+    </g>
+    <g transform="translate(-60, -5)">
+      <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#A5D6A7">God Mode</text>
+      <rect x="100" y="-10" width="28" height="14" rx="7" fill="#555"/>
+      <circle cx="106" cy="-3" r="5" fill="#999"/>
+    </g>
+    <g transform="translate(-60, 20)">
+      <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#A5D6A7">Speed Hack</text>
+      <rect x="100" y="-10" width="28" height="14" rx="7" fill="#555"/>
+      <circle cx="106" cy="-3" r="5" fill="#999"/>
+    </g>
+    <!-- Close button -->
+    <circle cx="65" cy="-125" r="8" fill="#F44336" opacity="0.8"/>
+    <text x="65" y="-121" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">X</text>
+  </g>
+  <!-- Gear icon -->
+  <g transform="translate(600, 100)" opacity="0.3">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#8BC34A" stroke-width="4"/>
+    <circle cx="0" cy="0" r="8" fill="#33691E" stroke="#8BC34A" stroke-width="2"/>
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Mod Menu Features</text>
+  <text x="400" y="438" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">All Mod Options Explained</text>
+</svg>

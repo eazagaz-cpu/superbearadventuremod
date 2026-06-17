@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#64B5F6"/>
+    </linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="40%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#90CAF9"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <!-- Mountains -->
+  <polygon points="50,250 150,60 250,250" fill="url(#mt)" filter="url(#s)"/>
+  <polygon points="150,250 270,50 390,250" fill="url(#mt)" filter="url(#s)"/>
+  <polygon points="280,250 360,100 440,250" fill="#E1F5FE" filter="url(#s)"/>
+  <!-- Snow caps -->
+  <polygon points="150,60 135,105 165,105" fill="white"/>
+  <polygon points="270,50 255,100 285,100" fill="white"/>
+  <!-- Snow ground -->
+  <ellipse cx="200" cy="300" rx="260" ry="70" fill="#E3F2FD"/>
+  <!-- Pine trees -->
+  <polygon points="80,200 92,250 68,250" fill="#1B5E20" opacity="0.7"/>
+  <polygon points="340,210 350,250 330,250" fill="#1B5E20" opacity="0.6"/>
+  <!-- Snowflakes -->
+  <g fill="white" opacity="0.8">
+    <circle cx="50" cy="80" r="2"/><circle cx="130" cy="130" r="1.5"/>
+    <circle cx="200" cy="50" r="2"/><circle cx="280" cy="100" r="2"/>
+    <circle cx="350" cy="60" r="1.5"/><circle cx="100" cy="180" r="1.5"/>
+    <circle cx="300" cy="170" r="2"/><circle cx="170" cy="200" r="1.5"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#E3F2FD">Snow Valley</text>
+</svg>

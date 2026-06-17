@@ -3,7 +3,7 @@ title: "All 15 Secret Sticker Locations in Super Bear Adventure: Complete Collec
 description: "Find all 15 secret stickers in Super Bear Adventure with exact locations, step-by-step directions, and screenshots for every world."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/all-secret-stickers-locations.webp"
+image: "/images/blog/stickers-locations.svg"
 category: "Guide"
 tags: ["stickers", "collectibles", "secret locations", "completionist", "super bear adventure"]
 ---

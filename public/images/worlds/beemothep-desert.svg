@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#FFB74D"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA726"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <!-- Sun -->
+  <circle cx="320" cy="50" r="30" fill="#FFEE58" opacity="0.8"/>
+  <!-- Sand dunes -->
+  <ellipse cx="150" cy="290" rx="250" ry="80" fill="url(#sand)"/>
+  <ellipse cx="350" cy="300" rx="180" ry="70" fill="#FFB74D"/>
+  <!-- Pyramid -->
+  <g filter="url(#s)">
+    <polygon points="200,80 130,230 270,230" fill="#FFA726"/>
+    <polygon points="200,80 200,230 270,230" fill="#FF8F00"/>
+    <rect x="190" y="190" width="20" height="40" fill="#5D4037"/>
+    <path d="M190,190 Q200,180 210,190" fill="#795548"/>
+  </g>
+  <!-- Small pyramid -->
+  <polygon points="90,160 60,230 120,230" fill="#FFB74D" filter="url(#s)"/>
+  <!-- Cactus -->
+  <g transform="translate(320, 200)" filter="url(#s)">
+    <rect x="-4" y="-30" width="8" height="50" rx="4" fill="#558B2F"/>
+    <rect x="4" y="-18" width="16" height="5" rx="2.5" fill="#558B2F"/>
+    <rect x="15" y="-28" width="5" height="14" rx="2.5" fill="#558B2F"/>
+    <rect x="-20" y="-10" width="16" height="5" rx="2.5" fill="#558B2F"/>
+    <rect x="-20" y="-22" width="5" height="15" rx="2.5" fill="#558B2F"/>
+  </g>
+  <text x="200" y="275" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#5D4037">Beemothep Desert</text>
+</svg>

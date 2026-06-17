@@ -3,7 +3,7 @@ title: "All Characters in Super Bear Adventure - NPCs, Enemies & Bosses"
 description: "Complete guide to every character in Super Bear Adventure. Meet all NPCs, enemies, bosses, and friendly creatures across every world in Earthkwak."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/all-characters.webp"
+image: "/images/blog/all-characters.svg"
 category: "Guide"
 tags: ["characters", "NPCs", "enemies", "bosses", "guide", "Super Bear Adventure"]
 ---

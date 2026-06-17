@@ -3,7 +3,7 @@ title: "12 Best Games Like Super Bear Adventure on Mobile (2026)"
 description: "Looking for games similar to Super Bear Adventure? Here are 12 best mobile games with open-world exploration, platforming, and charming characters."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/best-games-like-sba.webp"
+image: "/images/blog/games-like-sba.svg"
 category: "Guide"
 tags: ["similar games", "alternatives", "mobile games", "platformer", "open world", "recommendations"]
 ---

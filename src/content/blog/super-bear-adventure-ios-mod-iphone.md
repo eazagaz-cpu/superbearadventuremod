@@ -3,7 +3,7 @@ title: "Super Bear Adventure Mod for iOS & iPhone - What You Need to Know (2026)
 description: "Can you get Super Bear Adventure Mod on iOS? Learn about iPhone limitations, AltStore sideloading, and the best alternatives for iOS players in 2026."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/super-bear-adventure-ios-mod-iphone.webp"
+image: "/images/blog/ios-guide.svg"
 category: "Download"
 tags: ["ios", "iphone", "mod apk", "altstore", "sideloading"]
 ---

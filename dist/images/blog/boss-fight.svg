@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B71C1C"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <linearGradient id="sword" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0E0E0"/>
+      <stop offset="100%" stop-color="#9E9E9E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Energy burst -->
+  <g opacity="0.15">
+    <line x1="400" y1="200" x2="200" y2="50" stroke="#FFC107" stroke-width="3"/>
+    <line x1="400" y1="200" x2="600" y2="50" stroke="#FFC107" stroke-width="3"/>
+    <line x1="400" y1="200" x2="100" y2="200" stroke="#FFC107" stroke-width="3"/>
+    <line x1="400" y1="200" x2="700" y2="200" stroke="#FFC107" stroke-width="3"/>
+    <line x1="400" y1="200" x2="200" y2="350" stroke="#FFC107" stroke-width="3"/>
+    <line x1="400" y1="200" x2="600" y2="350" stroke="#FFC107" stroke-width="3"/>
+  </g>
+  <!-- Crossed swords -->
+  <g transform="translate(400, 190)" filter="url(#s)">
+    <!-- Sword 1 -->
+    <g transform="rotate(-30)">
+      <rect x="-6" y="-100" width="12" height="120" fill="url(#sword)" rx="2"/>
+      <rect x="-20" y="15" width="40" height="10" rx="3" fill="#FFC107"/>
+      <rect x="-4" y="25" width="8" height="30" rx="2" fill="#795548"/>
+      <circle cx="0" cy="55" r="6" fill="#FFC107"/>
+      <polygon points="0,-100 -8,-85 8,-85" fill="#E0E0E0"/>
+    </g>
+    <!-- Sword 2 -->
+    <g transform="rotate(30)">
+      <rect x="-6" y="-100" width="12" height="120" fill="url(#sword)" rx="2"/>
+      <rect x="-20" y="15" width="40" height="10" rx="3" fill="#FFC107"/>
+      <rect x="-4" y="25" width="8" height="30" rx="2" fill="#795548"/>
+      <circle cx="0" cy="55" r="6" fill="#FFC107"/>
+      <polygon points="0,-100 -8,-85 8,-85" fill="#E0E0E0"/>
+    </g>
+  </g>
+  <!-- Shield behind -->
+  <g transform="translate(400, 200)" filter="url(#s)">
+    <path d="M0,-60 L50,-40 L50,20 L0,60 L-50,20 L-50,-40Z" fill="#C62828" stroke="#F44336" stroke-width="2"/>
+    <path d="M0,-45 L35,-30 L35,15 L0,45 L-35,15 L-35,-30Z" fill="#D32F2F"/>
+    <!-- Star on shield -->
+    <polygon points="0,-20 6,-8 18,-8 8,2 12,14 0,7 -12,14 -8,2 -18,-8 -6,-8" fill="#FFC107"/>
+  </g>
+  <!-- VS text -->
+  <text x="400" y="310" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="48" fill="#FFC107" opacity="0.3">VS</text>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Boss Fight Strategies</text>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#FFCDD2">Defeat Every Boss</text>
+</svg>

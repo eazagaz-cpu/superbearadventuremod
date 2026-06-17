@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="100%" stop-color="#311B92"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Grid floor -->
+  <g stroke="#7C4DFF" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="350" x2="0" y2="450"/><line x1="80" y1="350" x2="80" y2="450"/>
+    <line x1="160" y1="350" x2="160" y2="450"/><line x1="240" y1="350" x2="240" y2="450"/>
+    <line x1="320" y1="350" x2="320" y2="450"/><line x1="400" y1="350" x2="400" y2="450"/>
+    <line x1="480" y1="350" x2="480" y2="450"/><line x1="560" y1="350" x2="560" y2="450"/>
+    <line x1="640" y1="350" x2="640" y2="450"/><line x1="720" y1="350" x2="720" y2="450"/>
+    <line x1="0" y1="380" x2="800" y2="380"/><line x1="0" y1="410" x2="800" y2="410"/>
+    <line x1="0" y1="440" x2="800" y2="440"/>
+  </g>
+  <!-- Arcade machine -->
+  <g transform="translate(400, 200)" filter="url(#s)">
+    <!-- Cabinet -->
+    <rect x="-80" y="-140" width="160" height="260" rx="8" fill="#37474F"/>
+    <rect x="-75" y="-135" width="150" height="250" rx="6" fill="#455A64"/>
+    <!-- Marquee -->
+    <rect x="-65" y="-128" width="130" height="30" rx="4" fill="#7C4DFF"/>
+    <text x="0" y="-107" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="white">ARCADE</text>
+    <!-- Screen -->
+    <rect x="-60" y="-90" width="120" height="90" rx="4" fill="#1B5E20"/>
+    <rect x="-55" y="-85" width="110" height="80" rx="2" fill="#0a3010"/>
+    <!-- Pixel art on screen -->
+    <g fill="#8BC34A" opacity="0.8">
+      <rect x="-20" y="-70" width="8" height="8"/><rect x="-12" y="-70" width="8" height="8"/>
+      <rect x="-4" y="-70" width="8" height="8"/><rect x="4" y="-70" width="8" height="8"/>
+      <rect x="-24" y="-62" width="8" height="8"/><rect x="16" y="-62" width="8" height="8"/>
+      <rect x="-24" y="-54" width="8" height="8"/><rect x="16" y="-54" width="8" height="8"/>
+      <rect x="-16" y="-46" width="8" height="8"/><rect x="8" y="-46" width="8" height="8"/>
+      <rect x="-8" y="-38" width="8" height="8"/><rect x="0" y="-38" width="8" height="8"/>
+    </g>
+    <!-- Score -->
+    <text x="40" y="-22" text-anchor="end" font-family="monospace" font-size="10" fill="#4CAF50">99999</text>
+    <!-- Control panel -->
+    <rect x="-60" y="10" width="120" height="50" rx="4" fill="#546E7A" transform="skewX(-2)"/>
+    <!-- Joystick -->
+    <circle cx="-25" cy="35" r="12" fill="#37474F"/>
+    <rect x="-28" y="15" width="6" height="18" rx="3" fill="#F44336"/>
+    <circle cx="-25" cy="15" r="5" fill="#EF5350"/>
+    <!-- Buttons -->
+    <circle cx="15" cy="28" r="8" fill="#F44336"/>
+    <circle cx="35" cy="25" r="8" fill="#4CAF50"/>
+    <circle cx="25" cy="42" r="8" fill="#2196F3"/>
+    <!-- Coin slot -->
+    <rect x="-10" y="70" width="20" height="4" rx="2" fill="#333"/>
+  </g>
+  <!-- Neon effects -->
+  <g filter="url(#glow)" opacity="0.4">
+    <circle cx="200" cy="100" r="3" fill="#FF4081"/>
+    <circle cx="600" cy="80" r="4" fill="#00E5FF"/>
+    <circle cx="150" cy="300" r="3" fill="#FFEA00"/>
+    <circle cx="650" cy="280" r="3" fill="#76FF03"/>
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#E8EAF6">Arcade World Guide</text>
+  <text x="400" y="438" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#B39DDB">Retro Mini-Games Walkthrough</text>
+</svg>

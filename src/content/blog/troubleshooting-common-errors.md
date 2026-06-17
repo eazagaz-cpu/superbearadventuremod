@@ -3,7 +3,7 @@ title: "Troubleshooting Super Bear Adventure: Fix Crashes, Black Screen, Install
 description: "Fix common Super Bear Adventure errors including app not installed, crash on launch, black screen, save data loss, and download issues with proven solutions."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/troubleshooting-common-errors.webp"
+image: "/images/blog/troubleshooting.svg"
 category: "Technical"
 tags: ["troubleshooting", "errors", "fixes", "crash", "black screen", "super bear adventure"]
 ---

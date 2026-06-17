@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0E0E0"/>
+      <stop offset="100%" stop-color="#9E9E9E"/>
+    </linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFAB91"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Gold medal (center, largest) -->
+  <g transform="translate(400, 170)" filter="url(#s)">
+    <!-- Ribbon -->
+    <polygon points="-20,-70 -30,-20 0,0" fill="#F44336"/>
+    <polygon points="20,-70 30,-20 0,0" fill="#D32F2F"/>
+    <!-- Medal -->
+    <circle cx="0" cy="20" r="55" fill="url(#gold)" stroke="#FF8F00" stroke-width="3"/>
+    <circle cx="0" cy="20" r="42" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <!-- Star on medal -->
+    <polygon points="0,-15 8,5 25,5 12,18 16,35 0,25 -16,35 -12,18 -25,5 -8,5" fill="#FFE082"/>
+    <text x="0" y="58" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#FF8F00">1st</text>
+  </g>
+  <!-- Silver medal (left) -->
+  <g transform="translate(220, 200)" filter="url(#s)">
+    <polygon points="-15,-55 -22,-15 0,0" fill="#1565C0"/>
+    <polygon points="15,-55 22,-15 0,0" fill="#0D47A1"/>
+    <circle cx="0" cy="15" r="40" fill="url(#silver)" stroke="#757575" stroke-width="2"/>
+    <circle cx="0" cy="15" r="30" fill="none" stroke="#BDBDBD" stroke-width="1.5"/>
+    <polygon points="0,-5 6,8 18,8 8,17 12,30 0,22 -12,30 -8,17 -18,8 -6,8" fill="#E0E0E0"/>
+    <text x="0" y="45" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="#757575">2nd</text>
+  </g>
+  <!-- Bronze medal (right) -->
+  <g transform="translate(580, 210)" filter="url(#s)">
+    <polygon points="-15,-50 -20,-12 0,0" fill="#4CAF50"/>
+    <polygon points="15,-50 20,-12 0,0" fill="#388E3C"/>
+    <circle cx="0" cy="12" r="35" fill="url(#bronze)" stroke="#BF360C" stroke-width="2"/>
+    <circle cx="0" cy="12" r="26" fill="none" stroke="#E64A19" stroke-width="1.5"/>
+    <polygon points="0,-5 5,6 15,6 7,14 10,24 0,18 -10,24 -7,14 -15,6 -5,6" fill="#FFAB91"/>
+    <text x="0" y="38" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="11" fill="#BF360C">3rd</text>
+  </g>
+  <!-- Trophy -->
+  <g transform="translate(400, 310)" filter="url(#s)" opacity="0.4">
+    <rect x="-15" y="15" width="30" height="8" rx="2" fill="#FFD54F"/>
+    <rect x="-20" y="23" width="40" height="5" rx="2" fill="#FFC107"/>
+    <rect x="-5" y="0" width="10" height="18" fill="#FFD54F"/>
+    <path d="M-25,-30 L-25,0 Q-25,15 0,15 Q25,15 25,0 L25,-30Z" fill="#FFC107"/>
+    <path d="M-25,-10 Q-40,-10 -40,5 Q-40,15 -25,10" fill="none" stroke="#FFB300" stroke-width="4"/>
+    <path d="M25,-10 Q40,-10 40,5 Q40,15 25,10" fill="none" stroke="#FFB300" stroke-width="4"/>
+  </g>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">How to Get All Medals</text>
+  <text x="400" y="418" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Complete Achievement Guide</text>
+</svg>

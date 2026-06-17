@@ -3,7 +3,7 @@ title: "Super Bear Adventure Multiplayer Guide - How to Play With Friends"
 description: "Complete multiplayer guide for Super Bear Adventure. Learn how to join games, invite friends, use co-op features, and get the best multiplayer experience."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/multiplayer-guide.webp"
+image: "/images/blog/multiplayer.svg"
 category: "Guide"
 tags: ["multiplayer", "co-op", "online", "friends", "invite codes", "Super Bear Adventure"]
 ---

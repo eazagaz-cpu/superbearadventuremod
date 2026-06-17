@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA726"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.2"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Sun -->
+  <circle cx="650" cy="80" r="50" fill="#FFEE58" opacity="0.8"/>
+  <circle cx="650" cy="80" r="65" fill="#FFEE58" opacity="0.15"/>
+  <!-- Sand dunes -->
+  <ellipse cx="300" cy="400" rx="400" ry="120" fill="url(#sand)"/>
+  <ellipse cx="650" cy="420" rx="300" ry="100" fill="#FFB74D"/>
+  <!-- Pyramid -->
+  <g filter="url(#s)">
+    <polygon points="400,120 280,330 520,330" fill="#FFA726"/>
+    <polygon points="400,120 400,330 520,330" fill="#FF8F00"/>
+    <!-- Pyramid lines -->
+    <line x1="400" y1="120" x2="340" y2="330" stroke="#FFB74D" stroke-width="1" opacity="0.5"/>
+    <line x1="400" y1="120" x2="460" y2="330" stroke="#E65100" stroke-width="1" opacity="0.3"/>
+    <!-- Door -->
+    <rect x="385" y="270" width="30" height="60" fill="#5D4037"/>
+    <path d="M385,270 Q400,255 415,270" fill="#795548"/>
+  </g>
+  <!-- Small pyramid -->
+  <polygon points="180,230 130,330 230,330" fill="#FFB74D" filter="url(#s)"/>
+  <polygon points="180,230 180,330 230,330" fill="#FFA000"/>
+  <!-- Cactus -->
+  <g transform="translate(620, 280)" filter="url(#s)">
+    <rect x="-6" y="-40" width="12" height="70" rx="6" fill="#558B2F"/>
+    <rect x="6" y="-25" width="25" height="8" rx="4" fill="#558B2F"/>
+    <rect x="23" y="-40" width="8" height="20" rx="4" fill="#558B2F"/>
+    <rect x="-31" y="-15" width="25" height="8" rx="4" fill="#558B2F"/>
+    <rect x="-31" y="-35" width="8" height="25" rx="4" fill="#558B2F"/>
+  </g>
+  <!-- Heat wave lines -->
+  <g opacity="0.15" stroke="#fff" stroke-width="1.5" fill="none">
+    <path d="M100,350 Q200,340 300,350 Q400,360 500,350 Q600,340 700,350"/>
+    <path d="M100,365 Q200,355 300,365 Q400,375 500,365 Q600,355 700,365"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#FFF8E1">Beemothep Desert Guide</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#FFE0B2">Secrets &amp; Walkthrough</text>
+</svg>

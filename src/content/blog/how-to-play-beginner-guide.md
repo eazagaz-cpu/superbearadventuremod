@@ -3,7 +3,7 @@ title: "How to Play Super Bear Adventure - Complete Beginner's Guide (2026)"
 description: "Master Super Bear Adventure with this complete beginner guide. Learn controls, combat mechanics, movement tips, coin farming, and essential strategies for new players."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/how-to-play-beginner-guide.webp"
+image: "/images/blog/beginner-guide.svg"
 category: "Guide"
 tags: ["beginner guide", "how to play", "controls", "tips", "tutorial"]
 ---

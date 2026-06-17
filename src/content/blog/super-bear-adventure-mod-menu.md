@@ -3,7 +3,7 @@ title: "Super Bear Adventure Mod Menu Guide - All Features & How to Use"
 description: "Complete guide to the Super Bear Adventure mod menu. Learn every mod menu feature, how to activate options, best settings, and pro tips for gameplay."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/super-bear-adventure-mod-menu.webp"
+image: "/images/blog/mod-menu.svg"
 category: "Download"
 tags: ["mod menu", "mod features", "god mode", "speed hack", "Super Bear Adventure", "mod apk"]
 ---

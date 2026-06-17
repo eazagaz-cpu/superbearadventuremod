@@ -6,6 +6,7 @@ import AppInfoGrid from '../components/AppInfoGrid.astro';
 import EntityStrip from '../components/EntityStrip.astro';
 import ComparisonTable from '../components/ComparisonTable.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import Sidebar from '../components/Sidebar.astro';
 import { SITE } from '../utils/seo';
 import { softwareAppSchema, websiteSchema, organizationSchema, howToSchema } from '../utils/schema';
 
@@ -79,7 +80,8 @@ const schemas = [
 >
   <Hero />
 
-  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <main id="main-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid lg:grid-cols-[1fr_320px] gap-8">
     <article>
       <!-- Quick Answer Box -->
       <QuickAnswer answer={`The Super Bear Adventure Mod APK is a modified Android build aligned with official <strong>v${SITE.download.version}</strong> (${SITE.download.updated}). It gives unlimited coins, all skins and hats unlocked, no ads, and the same worlds as the Play Store game—including <a href="/blog/the-hive-walkthrough/" class="text-game-green hover:underline">The Hive</a>, Turtletown, and multiplayer.`} />
@@ -175,6 +177,11 @@ const schemas = [
           Comparing the <a href="/blog/super-bear-adventure-mod-apk-old-versions/">older versions archive</a> to the current build shows how far Earthkwak has taken the Kingdom of Earthkwak—from Update 10.0's <strong>The Hive</strong> (2022) to Update 12.0's <strong>multiplayer</strong> (2025) and the 12.1.x polish patches in 2026. The April 2026 v12.1.5 release is small but important for online play; major content drops were 12.1.0 (emotes, Super Bear Fighters) and 12.0.0 (co-op).
         </p>
 
+        <figure class="my-8">
+          <img src="/images/blog/graphics-comparison.svg" alt="Super Bear Adventure version evolution — 2024 vs 2026 graphics and feature comparison" loading="lazy" decoding="async" class="rounded-2xl shadow-md w-full h-auto border border-gray-200" />
+          <figcaption class="mt-2 text-center text-xs text-gray-500 italic">Super Bear Adventure visual evolution — 2024 vs 2026</figcaption>
+        </figure>
+
         <h2 id="why-mod">Why Experienced Players Prefer the Mod Version</h2>
         <p>
           In the normal game, rare skins like the Skeleton Bear or Royal Cape take thousands of Purple Coins and hours of grinding. The Super Bear Adventure Mod APK 2026 skips that. You can focus on secrets and exploring. To earn coins without the mod, see our <a href="/blog/unlimited-coins-farming/">guide on legal strategies to earn coins quickly</a>.
@@ -191,41 +198,33 @@ const schemas = [
 
         <h2 id="exclusive-features">Exclusive Mod Features</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 not-prose">
-          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
-            <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center mb-3">
-              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <img src="/images/features/unlimited-coins.svg" alt="Unlimited coins and gems feature" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-bold text-gray-900 mb-1">Unlimited Coins & Gems</h3>
+              <p class="text-sm text-gray-600">Start with unlimited currency to buy anything instantly. No grinding required — focus on exploration and fun.</p>
             </div>
-            <h3 class="font-bold text-gray-900 mb-1">Unlimited Coins & Gems</h3>
-            <p class="text-sm text-gray-600">Start with unlimited currency to buy anything instantly</p>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
-            <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-3">
-              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-              </svg>
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <img src="/images/features/all-skins.svg" alt="All skins and hats unlocked feature" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-bold text-gray-900 mb-1">All Skins & Hats Unlocked</h3>
+              <p class="text-sm text-gray-600">Access every cosmetic item from day one. Skeleton Bear, Royal Cape, and all rare skins included.</p>
             </div>
-            <h3 class="font-bold text-gray-900 mb-1">All Skins & Hats Unlocked</h3>
-            <p class="text-sm text-gray-600">Access every cosmetic item from day one</p>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
-            <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mb-3">
-              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-              </svg>
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <img src="/images/features/no-ads.svg" alt="No advertisements feature" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-bold text-gray-900 mb-1">No Advertisements</h3>
+              <p class="text-sm text-gray-600">Play without interruptions — zero ads. No pop-ups, no video ads, no banner ads. Pure gameplay.</p>
             </div>
-            <h3 class="font-bold text-gray-900 mb-1">No Advertisements</h3>
-            <p class="text-sm text-gray-600">Play without interruptions — zero ads</p>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
-            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-3">
-              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <img src="/images/features/anti-ban.svg" alt="Anti-ban protection feature" class="w-full h-36 object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-bold text-gray-900 mb-1">Anti-Ban Protection</h3>
+              <p class="text-sm text-gray-600">Play safely with built-in anti-ban protection. Thousands of players use the mod daily without issues.</p>
             </div>
-            <h3 class="font-bold text-gray-900 mb-1">Anti-Ban Protection</h3>
-            <p class="text-sm text-gray-600">Play safely with built-in protection</p>
           </div>
         </div>
 
@@ -233,19 +232,21 @@ const schemas = [
         <p>Super Bear Adventure features six unique open-world environments, each with its own theme, enemies, secrets, and collectibles:</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6 not-prose">
           {[
-            { name: 'Turtletown', desc: 'Your starting hub — a peaceful town with hidden areas and friendly NPCs.', color: 'bg-green-500', href: '/blog/turtletown-walkthrough/' },
-            { name: 'Snow Valley', desc: 'Icy peaks with snowboard sections and frozen puzzles.', color: 'bg-blue-500', href: '/blog/snow-valley-secrets/' },
-            { name: 'Beemothep Desert', desc: 'Ancient ruins, sand traps, and sphinx-inspired puzzles.', color: 'bg-amber-500', href: '/blog/beemothep-desert-puzzle/' },
-            { name: 'Giant House', desc: 'Everything is oversized — navigate a world where you are tiny.', color: 'bg-orange-500', href: '/blog/giant-house-walkthrough/' },
-            { name: 'The Hive', desc: 'A buzzing bee kingdom with honey-themed obstacles.', color: 'bg-yellow-500', href: '/blog/the-hive-walkthrough/' },
-            { name: 'Mole Mines', desc: 'Underground caverns with mining carts and gem puzzles.', color: 'bg-stone-500', href: '/blog/mole-mines-walkthrough/' },
+            { name: 'Turtletown', desc: 'Your starting hub — a peaceful town with hidden areas and friendly NPCs.', img: '/images/worlds/turtletown.svg', href: '/blog/turtletown-walkthrough/' },
+            { name: 'Snow Valley', desc: 'Icy peaks with snowboard sections and frozen puzzles.', img: '/images/worlds/snow-valley.svg', href: '/blog/snow-valley-secrets/' },
+            { name: 'Beemothep Desert', desc: 'Ancient ruins, sand traps, and sphinx-inspired puzzles.', img: '/images/worlds/beemothep-desert.svg', href: '/blog/beemothep-desert-puzzle/' },
+            { name: 'Giant House', desc: 'Everything is oversized — navigate a world where you are tiny.', img: '/images/worlds/giant-house.svg', href: '/blog/giant-house-walkthrough/' },
+            { name: 'The Hive', desc: 'A buzzing bee kingdom with honey-themed obstacles.', img: '/images/worlds/the-hive.svg', href: '/blog/the-hive-walkthrough/' },
+            { name: 'Mole Mines', desc: 'Underground caverns with mining carts and gem puzzles.', img: '/images/worlds/mole-mines.svg', href: '/blog/mole-mines-walkthrough/' },
           ].map((world) => (
-            <a href={world.href} class="block bg-white rounded-xl border border-gray-100 p-4 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
-              <div class:list={['w-full h-24 rounded-lg mb-3 flex items-center justify-center', world.color]}>
-                <span class="text-white font-bold text-lg">{world.name}</span>
+            <a href={world.href} class="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all overflow-hidden">
+              <div class="w-full aspect-[4/3] overflow-hidden">
+                <img src={world.img} alt={`${world.name} world in Super Bear Adventure`} class="w-full h-full object-cover" loading="lazy" decoding="async" />
               </div>
-              <h3 class="font-bold text-gray-900 text-sm mb-1">{world.name}</h3>
-              <p class="text-xs text-gray-600">{world.desc}</p>
+              <div class="p-4">
+                <h3 class="font-bold text-gray-900 text-sm mb-1">{world.name}</h3>
+                <p class="text-xs text-gray-600">{world.desc}</p>
+              </div>
             </a>
           ))}
         </div>
@@ -301,5 +302,13 @@ const schemas = [
       <!-- FAQ Section -->
       <FAQAccordion items={faqItems} />
     </article>
+
+    <!-- Right Sidebar -->
+    <div class="hidden lg:block">
+      <div class="sticky top-24">
+        <Sidebar />
+      </div>
+    </div>
+    </div>
   </main>
 </BaseLayout>

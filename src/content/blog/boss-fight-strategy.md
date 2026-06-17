@@ -3,7 +3,7 @@ title: "Boss Fight Strategy Guide: How to Beat Every Boss in Super Bear Adventur
 description: "Defeat every boss in Super Bear Adventure with our complete strategy guide covering attack patterns, weak points, and proven tactics for all worlds."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/boss-fight-strategy.webp"
+image: "/images/blog/boss-fight.svg"
 category: "Guide"
 tags: ["boss fights", "strategy", "guide", "tips", "super bear adventure"]
 ---

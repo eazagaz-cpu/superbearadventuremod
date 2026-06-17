@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <filter id="s" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect x="50" y="50" width="700" height="350" rx="16" fill="#33691E" opacity="0.3"/>
+  <!-- iPhone -->
+  <g transform="translate(400, 210)" filter="url(#s)">
+    <rect x="-70" y="-130" width="140" height="260" rx="20" fill="#1a1a1a"/>
+    <rect x="-60" y="-115" width="120" height="230" rx="4" fill="#558B2F"/>
+    <!-- Game scene on screen -->
+    <rect x="-55" y="-110" width="110" height="180" fill="#33691E"/>
+    <!-- Hills -->
+    <ellipse cx="-20" cy="50" rx="60" ry="30" fill="#4CAF50"/>
+    <ellipse cx="30" cy="55" rx="50" ry="25" fill="#43A047"/>
+    <!-- Sun -->
+    <circle cx="30" cy="-80" r="18" fill="#FFD54F"/>
+    <!-- Bear on screen -->
+    <circle cx="0" cy="10" r="15" fill="#8D6E63"/>
+    <circle cx="0" cy="0" r="10" fill="#795548"/>
+    <circle cx="-3" cy="-2" r="2.5" fill="#fff"/>
+    <circle cx="3" cy="-2" r="2.5" fill="#fff"/>
+    <!-- Notch -->
+    <rect x="-25" y="-128" width="50" height="14" rx="7" fill="#1a1a1a"/>
+    <!-- Home indicator -->
+    <rect x="-20" y="108" width="40" height="4" rx="2" fill="#555"/>
+    <!-- Touch controls -->
+    <circle cx="-30" cy="90" r="14" fill="#fff" opacity="0.15" stroke="#fff" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="30" cy="80" r="10" fill="#8BC34A" opacity="0.3"/>
+  </g>
+  <!-- Apple-style icon -->
+  <g transform="translate(160, 150)">
+    <circle cx="0" cy="0" r="35" fill="#F1F8E9" opacity="0.1"/>
+    <path d="M-8,-20 C-8,-28 0,-30 0,-30 C0,-30 8,-28 8,-20 C14,-22 20,-18 18,-12 C22,-8 20,0 14,2 C14,10 8,16 0,16 C-8,16 -14,10 -14,2 C-20,0 -22,-8 -18,-12 C-20,-18 -14,-22 -8,-20Z" fill="#F1F8E9" opacity="0.6"/>
+  </g>
+  <!-- Text -->
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">iOS Installation Guide</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">iPhone &amp; iPad Setup</text>
+</svg>

@@ -3,7 +3,7 @@ title: "Turtletown Walkthrough - All Secrets, Missions & Collectibles Guide"
 description: "Complete Turtletown walkthrough for Super Bear Adventure. Find every secret area, complete all missions, locate hidden stickers, and collect every coin in this detailed guide."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/turtletown-walkthrough.webp"
+image: "/images/blog/turtletown.svg"
 category: "Walkthrough"
 tags: ["turtletown", "walkthrough", "secrets", "collectibles", "missions"]
 ---

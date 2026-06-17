@@ -3,7 +3,7 @@ title: "Mole Mines Walkthrough: Mining Carts, Gem Puzzles & All Secrets in Super
 description: "Complete Mole Mines walkthrough for Super Bear Adventure with mining cart sections, gem puzzle solutions, secret areas, and boss fight tips."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/mole-mines-walkthrough.webp"
+image: "/images/blog/mole-mines.svg"
 category: "Walkthrough"
 tags: ["mole mines", "walkthrough", "mining carts", "gem puzzles", "super bear adventure"]
 ---

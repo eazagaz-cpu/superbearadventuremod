@@ -3,7 +3,7 @@ title: "Unlimited Coins Farming Guide for Super Bear Adventure: Best Methods & M
 description: "Farm coins fast in Super Bear Adventure with the best legitimate routes and mod APK methods. Earn 1000+ coins per session with our proven strategies."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/unlimited-coins-farming.webp"
+image: "/images/blog/coins-farming.svg"
 category: "Tips"
 tags: ["coins", "farming", "tips", "mod apk", "unlimited coins", "super bear adventure"]
 ---

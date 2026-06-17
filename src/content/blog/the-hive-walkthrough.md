@@ -3,7 +3,7 @@ title: "The Hive Walkthrough: Complete Guide to All Secrets & Honey Mechanics in
 description: "Master The Hive world in Super Bear Adventure with our complete walkthrough covering honey mechanics, secret areas, sticker locations, and boss strategies."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/the-hive-walkthrough.webp"
+image: "/images/blog/the-hive.svg"
 category: "Walkthrough"
 tags: ["the hive", "walkthrough", "honey mechanics", "secrets", "super bear adventure"]
 ---

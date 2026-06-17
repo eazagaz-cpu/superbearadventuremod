@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="gift" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Gift box -->
+  <g transform="translate(400, 180)" filter="url(#s)">
+    <!-- Box body -->
+    <rect x="-70" y="0" width="140" height="90" rx="4" fill="url(#gift)"/>
+    <!-- Box lid -->
+    <rect x="-80" y="-15" width="160" height="20" rx="4" fill="#EF5350"/>
+    <!-- Ribbon vertical -->
+    <rect x="-8" y="-15" width="16" height="105" fill="#FFC107"/>
+    <!-- Ribbon horizontal -->
+    <rect x="-80" y="30" width="160" height="12" fill="#FFC107"/>
+    <!-- Bow -->
+    <ellipse cx="-15" cy="-20" rx="18" ry="12" fill="#FFD54F" transform="rotate(-20, -15, -20)"/>
+    <ellipse cx="15" cy="-20" rx="18" ry="12" fill="#FFD54F" transform="rotate(20, 15, -20)"/>
+    <circle cx="0" cy="-18" r="8" fill="#FFC107"/>
+  </g>
+  <!-- Code ticket -->
+  <g transform="translate(400, 320)" filter="url(#s)">
+    <rect x="-130" y="-20" width="260" height="40" rx="6" fill="#F1F8E9"/>
+    <!-- Perforated edge -->
+    <circle cx="-95" cy="0" r="5" fill="url(#bg)"/>
+    <circle cx="95" cy="0" r="5" fill="url(#bg)"/>
+    <!-- Code text -->
+    <text x="0" y="6" text-anchor="middle" font-family="monospace" font-weight="700" font-size="18" fill="#33691E">BEAR-2024-FREE</text>
+    <!-- Dashed border -->
+    <rect x="-125" y="-16" width="250" height="32" rx="4" fill="none" stroke="#8BC34A" stroke-width="1.5" stroke-dasharray="4,3"/>
+  </g>
+  <!-- Sparkles -->
+  <g fill="#FFC107" opacity="0.5">
+    <polygon points="250,120 253,128 261,128 255,133 257,141 250,136 243,141 245,133 239,128 247,128"/>
+    <polygon points="550,100 553,108 561,108 555,113 557,121 550,116 543,121 545,113 539,108 547,108"/>
+    <polygon points="300,280 302,285 307,285 303,288 304,293 300,290 296,293 297,288 293,285 298,285"/>
+    <polygon points="500,260 502,265 507,265 503,268 504,273 500,270 496,273 497,268 493,265 498,265"/>
+  </g>
+  <!-- Stars floating -->
+  <g fill="#FFD54F" opacity="0.3">
+    <polygon points="150,80 155,95 170,95 158,105 162,120 150,110 138,120 142,105 130,95 145,95"/>
+    <polygon points="650,70 655,85 670,85 658,95 662,110 650,100 638,110 642,95 630,85 645,85"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Redeem Codes</text>
+  <text x="400" y="428" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Latest Working Codes &amp; Rewards</text>
+</svg>

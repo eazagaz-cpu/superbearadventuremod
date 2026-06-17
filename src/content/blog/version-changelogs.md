@@ -3,7 +3,7 @@ title: "Super Bear Adventure Version History & Changelogs (All Updates)"
 description: "Complete version history for Super Bear Adventure from early releases to v12.1.5. Every update, new feature, bug fix, and content addition documented."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/version-changelogs.webp"
+image: "/images/blog/changelogs.svg"
 category: "Archive"
 tags: ["version history", "changelogs", "updates", "patch notes", "new features", "Super Bear Adventure"]
 ---

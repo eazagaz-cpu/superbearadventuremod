@@ -3,7 +3,7 @@ title: "Fix Lag & Improve FPS in Super Bear Adventure: Complete Optimization Gui
 description: "Fix lag, stuttering, and low FPS in Super Bear Adventure. Optimization guide for Android, low-end devices, and mod APK with step-by-step solutions."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/lag-fix-optimization.webp"
+image: "/images/blog/lag-fix.svg"
 category: "Technical"
 tags: ["lag fix", "optimization", "FPS", "performance", "low-end devices", "super bear adventure"]
 ---

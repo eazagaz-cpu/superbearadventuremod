@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4A148C"/>
+      <stop offset="100%" stop-color="#6A1B9A"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Sparkle background -->
+  <g fill="#CE93D8" opacity="0.2">
+    <circle cx="100" cy="80" r="2"/><circle cx="250" cy="120" r="3"/>
+    <circle cx="500" cy="60" r="2"/><circle cx="700" cy="100" r="3"/>
+    <circle cx="150" cy="350" r="2"/><circle cx="650" cy="320" r="2"/>
+  </g>
+  <!-- Wardrobe -->
+  <g transform="translate(400, 180)" filter="url(#s)">
+    <rect x="-140" y="-100" width="280" height="220" rx="8" fill="#7B1FA2"/>
+    <rect x="-140" y="-100" width="140" height="220" rx="0" fill="#8E24AA"/>
+    <!-- Wardrobe doors -->
+    <rect x="-130" y="-90" width="120" height="200" rx="4" fill="#9C27B0" stroke="#BA68C8" stroke-width="1"/>
+    <rect x="10" y="-90" width="120" height="200" rx="4" fill="#9C27B0" stroke="#BA68C8" stroke-width="1"/>
+    <!-- Door handles -->
+    <circle cx="-20" cy="10" r="5" fill="#FFD54F"/>
+    <circle cx="20" cy="10" r="5" fill="#FFD54F"/>
+  </g>
+  <!-- Hats floating around -->
+  <g filter="url(#s)">
+    <!-- Crown -->
+    <g transform="translate(180, 130)">
+      <polygon points="0,-25 -20,0 -12,-8 0,0 12,-8 20,0" fill="#FFC107"/>
+      <rect x="-20" y="0" width="40" height="12" rx="2" fill="#FFB300"/>
+      <circle cx="-10" cy="-15" r="3" fill="#F44336"/>
+      <circle cx="0" cy="-20" r="3" fill="#4CAF50"/>
+      <circle cx="10" cy="-15" r="3" fill="#2196F3"/>
+    </g>
+    <!-- Top hat -->
+    <g transform="translate(620, 120)">
+      <rect x="-18" y="-30" width="36" height="35" rx="3" fill="#212121"/>
+      <rect x="-25" y="5" width="50" height="8" rx="4" fill="#333"/>
+      <rect x="-16" y="-8" width="32" height="5" fill="#F44336"/>
+    </g>
+    <!-- Pirate hat -->
+    <g transform="translate(150, 280)">
+      <path d="M-30,5 Q0,-25 30,5" fill="#333"/>
+      <rect x="-30" y="5" width="60" height="8" rx="3" fill="#424242"/>
+      <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white">&#9760;</text>
+    </g>
+    <!-- Wizard hat -->
+    <g transform="translate(650, 280)">
+      <polygon points="0,-40 -25,10 25,10" fill="#1565C0"/>
+      <rect x="-30" y="10" width="60" height="6" rx="3" fill="#0D47A1"/>
+      <polygon points="0,-30 -3,-20 3,-20" fill="#FFD54F"/>
+    </g>
+  </g>
+  <!-- Color swatches -->
+  <g transform="translate(320, 330)" filter="url(#s)">
+    <circle cx="0" cy="0" r="15" fill="#F44336"/>
+    <circle cx="40" cy="0" r="15" fill="#2196F3"/>
+    <circle cx="80" cy="0" r="15" fill="#4CAF50"/>
+    <circle cx="120" cy="0" r="15" fill="#FFC107"/>
+    <circle cx="160" cy="0" r="15" fill="#9C27B0"/>
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F3E5F5">All Skins &amp; Hats Guide</text>
+  <text x="400" y="438" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#CE93D8">Unlock Every Costume</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Connection lines -->
+  <g stroke="#8BC34A" stroke-width="2" opacity="0.3">
+    <line x1="300" y1="180" x2="400" y2="200"/>
+    <line x1="500" y1="180" x2="400" y2="200"/>
+    <line x1="250" y1="280" x2="400" y2="200"/>
+    <line x1="550" y1="280" x2="400" y2="200"/>
+  </g>
+  <!-- Center hub -->
+  <circle cx="400" cy="200" r="35" fill="#558B2F" stroke="#8BC34A" stroke-width="2" filter="url(#s)"/>
+  <g transform="translate(400, 200)">
+    <circle cx="-8" cy="-8" r="5" fill="#C5E1A5"/>
+    <circle cx="8" cy="-8" r="5" fill="#C5E1A5"/>
+    <circle cx="0" cy="8" r="5" fill="#C5E1A5"/>
+    <line x1="-8" y1="-8" x2="8" y2="-8" stroke="#C5E1A5" stroke-width="1.5"/>
+    <line x1="-8" y1="-8" x2="0" y2="8" stroke="#C5E1A5" stroke-width="1.5"/>
+    <line x1="8" y1="-8" x2="0" y2="8" stroke="#C5E1A5" stroke-width="1.5"/>
+  </g>
+  <!-- Player icons -->
+  <g filter="url(#s)">
+    <!-- Player 1 -->
+    <g transform="translate(300, 140)">
+      <circle cx="0" cy="0" r="30" fill="#558B2F"/>
+      <circle cx="0" cy="-5" r="12" fill="#8D6E63"/>
+      <circle cx="-7" cy="-10" r="4" fill="#795548"/>
+      <circle cx="7" cy="-10" r="4" fill="#795548"/>
+      <ellipse cx="0" cy="18" rx="16" ry="10" fill="#8D6E63" opacity="0.5"/>
+      <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#C5E1A5">Player 1</text>
+    </g>
+    <!-- Player 2 -->
+    <g transform="translate(500, 140)">
+      <circle cx="0" cy="0" r="30" fill="#558B2F"/>
+      <circle cx="0" cy="-5" r="12" fill="#A1887F"/>
+      <circle cx="-7" cy="-10" r="4" fill="#8D6E63"/>
+      <circle cx="7" cy="-10" r="4" fill="#8D6E63"/>
+      <ellipse cx="0" cy="18" rx="16" ry="10" fill="#A1887F" opacity="0.5"/>
+      <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#C5E1A5">Player 2</text>
+    </g>
+    <!-- Player 3 -->
+    <g transform="translate(250, 270)">
+      <circle cx="0" cy="0" r="30" fill="#558B2F"/>
+      <circle cx="0" cy="-5" r="12" fill="#6D4C41"/>
+      <circle cx="-7" cy="-10" r="4" fill="#5D4037"/>
+      <circle cx="7" cy="-10" r="4" fill="#5D4037"/>
+      <ellipse cx="0" cy="18" rx="16" ry="10" fill="#6D4C41" opacity="0.5"/>
+      <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#C5E1A5">Player 3</text>
+    </g>
+    <!-- Player 4 -->
+    <g transform="translate(550, 270)">
+      <circle cx="0" cy="0" r="30" fill="#558B2F"/>
+      <circle cx="0" cy="-5" r="12" fill="#BCAAA4"/>
+      <circle cx="-7" cy="-10" r="4" fill="#A1887F"/>
+      <circle cx="7" cy="-10" r="4" fill="#A1887F"/>
+      <ellipse cx="0" cy="18" rx="16" ry="10" fill="#BCAAA4" opacity="0.5"/>
+      <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="12" fill="#C5E1A5">Player 4</text>
+    </g>
+  </g>
+  <!-- WiFi symbol -->
+  <g transform="translate(400, 120)" opacity="0.3">
+    <path d="M-25,-5 Q0,-20 25,-5" fill="none" stroke="#C5E1A5" stroke-width="2"/>
+    <path d="M-18,2 Q0,-8 18,2" fill="none" stroke="#C5E1A5" stroke-width="2"/>
+    <path d="M-10,9 Q0,2 10,9" fill="none" stroke="#C5E1A5" stroke-width="2"/>
+  </g>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Multiplayer Guide</text>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Play With Friends Online</text>
+</svg>

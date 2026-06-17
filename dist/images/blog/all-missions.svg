@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Mission board -->
+  <g transform="translate(400, 195)" filter="url(#s)">
+    <rect x="-160" y="-140" width="320" height="280" rx="8" fill="#3E2723"/>
+    <rect x="-150" y="-130" width="300" height="260" rx="4" fill="#4E342E"/>
+    <!-- Board title -->
+    <rect x="-120" y="-120" width="240" height="30" rx="4" fill="#558B2F"/>
+    <text x="0" y="-100" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#F1F8E9">MISSION BOARD</text>
+    <!-- Mission items -->
+    <g transform="translate(-110, -70)">
+      <rect x="0" y="0" width="220" height="28" rx="4" fill="#5D4037"/>
+      <rect x="8" y="6" width="16" height="16" rx="2" fill="#8BC34A"/>
+      <path d="M12,14 L16,18 L22,10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="19" font-family="sans-serif" font-size="13" fill="#C5E1A5">Rescue the villagers</text>
+    </g>
+    <g transform="translate(-110, -35)">
+      <rect x="0" y="0" width="220" height="28" rx="4" fill="#5D4037"/>
+      <rect x="8" y="6" width="16" height="16" rx="2" fill="#8BC34A"/>
+      <path d="M12,14 L16,18 L22,10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="19" font-family="sans-serif" font-size="13" fill="#C5E1A5">Collect 50 coins</text>
+    </g>
+    <g transform="translate(-110, 0)">
+      <rect x="0" y="0" width="220" height="28" rx="4" fill="#5D4037"/>
+      <rect x="8" y="6" width="16" height="16" rx="2" fill="#8BC34A"/>
+      <path d="M12,14 L16,18 L22,10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <text x="32" y="19" font-family="sans-serif" font-size="13" fill="#C5E1A5">Defeat the boss</text>
+    </g>
+    <g transform="translate(-110, 35)">
+      <rect x="0" y="0" width="220" height="28" rx="4" fill="#5D4037"/>
+      <rect x="8" y="6" width="16" height="16" rx="2" fill="#FFC107" opacity="0.3"/>
+      <text x="32" y="19" font-family="sans-serif" font-size="13" fill="#A5D6A7">Find hidden stickers</text>
+    </g>
+    <g transform="translate(-110, 70)">
+      <rect x="0" y="0" width="220" height="28" rx="4" fill="#5D4037"/>
+      <rect x="8" y="6" width="16" height="16" rx="2" fill="#FFC107" opacity="0.3"/>
+      <text x="32" y="19" font-family="sans-serif" font-size="13" fill="#A5D6A7">Complete time trial</text>
+    </g>
+    <!-- Progress bar -->
+    <rect x="-120" y="108" width="240" height="10" rx="5" fill="#3E2723"/>
+    <rect x="-120" y="108" width="144" height="10" rx="5" fill="#8BC34A"/>
+    <text x="0" y="135" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#A5D6A7">60% Complete</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">All Missions Guide</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Complete Walkthrough</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33691E"/>
+      <stop offset="50%" stop-color="#558B2F"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8BC34A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#33691E" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8BC34A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#33691E" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1B5E20" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#shine)"/>
+  <!-- Decorative circles -->
+  <circle cx="200" cy="500" r="180" fill="url(#glow)"/>
+  <circle cx="1000" cy="130" r="220" fill="url(#glow)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="1200" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="1200" y2="420" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="1200" y2="210" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="210" x2="800" y2="630" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="420" x2="400" y2="630" stroke="#fff" stroke-width="1"/>
+  </g>
+  <!-- Bear silhouette -->
+  <g transform="translate(600, 220)" filter="url(#shadow)">
+    <!-- Bear head -->
+    <circle cx="0" cy="0" r="80" fill="#4E342E" opacity="0.9"/>
+    <!-- Ears -->
+    <circle cx="-55" cy="-60" r="30" fill="#4E342E" opacity="0.9"/>
+    <circle cx="55" cy="-60" r="30" fill="#4E342E" opacity="0.9"/>
+    <circle cx="-55" cy="-60" r="18" fill="#6D4C41" opacity="0.7"/>
+    <circle cx="55" cy="-60" r="18" fill="#6D4C41" opacity="0.7"/>
+    <!-- Eyes -->
+    <circle cx="-25" cy="-10" r="12" fill="#F1F8E9"/>
+    <circle cx="25" cy="-10" r="12" fill="#F1F8E9"/>
+    <circle cx="-22" cy="-8" r="6" fill="#1B5E20"/>
+    <circle cx="28" cy="-8" r="6" fill="#1B5E20"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="20" rx="20" ry="14" fill="#6D4C41"/>
+    <ellipse cx="0" cy="16" rx="10" ry="7" fill="#3E2723"/>
+    <!-- Mouth -->
+    <path d="M-10 30 Q0 42 10 30" fill="none" stroke="#3E2723" stroke-width="2.5"/>
+  </g>
+  <!-- Title text -->
+  <text x="600" y="380" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="56" fill="#F1F8E9" filter="url(#shadow)">Super Bear Adventure</text>
+  <text x="600" y="440" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="42" fill="#8BC34A">Mod APK</text>
+  <!-- Version badge -->
+  <rect x="470" y="460" width="260" height="40" rx="20" fill="#8BC34A" opacity="0.2" stroke="#8BC34A" stroke-width="1.5"/>
+  <text x="600" y="487" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="18" fill="#C5E1A5">Unlimited Money &amp; All Unlocked</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#1B5E20" opacity="0.6"/>
+  <text x="600" y="617" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="18" fill="#C5E1A5">superbearadventuremod.io</text>
+</svg>

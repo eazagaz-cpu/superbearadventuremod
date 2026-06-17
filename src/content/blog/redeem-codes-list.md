@@ -3,7 +3,7 @@ title: "All Super Bear Adventure Redeem Codes (June 2026) - Free Rewards"
 description: "Complete list of all working Super Bear Adventure redeem codes for June 2026. Get free coins, skins, hats, and exclusive rewards with these active codes."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/redeem-codes-list.webp"
+image: "/images/blog/redeem-codes.svg"
 category: "Tips"
 tags: ["redeem codes", "free rewards", "coins", "skins", "promo codes", "Super Bear Adventure"]
 ---

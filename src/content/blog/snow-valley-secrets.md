@@ -3,7 +3,7 @@ title: "Snow Valley Secrets Guide - All Hidden Areas & Collectibles (2026)"
 description: "Discover every secret in Snow Valley. Complete guide to hidden areas, puzzle solutions, secret stickers, rare collectibles, and tips for Super Bear Adventure's icy world."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/snow-valley-secrets.webp"
+image: "/images/blog/snow-valley.svg"
 category: "Walkthrough"
 tags: ["snow valley", "secrets", "collectibles", "puzzles", "walkthrough"]
 ---

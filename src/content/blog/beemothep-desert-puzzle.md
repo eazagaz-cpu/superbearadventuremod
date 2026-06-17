@@ -3,7 +3,7 @@ title: "Beemothep Desert Puzzle Guide - Sphinx Solutions & All Secrets (2026)"
 description: "Solve every puzzle in Beemothep Desert with this complete guide. Sphinx riddle answers, pyramid secrets, hidden treasure locations, and boss strategy for Super Bear Adventure."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/beemothep-desert-puzzle.webp"
+image: "/images/blog/beemothep-desert.svg"
 category: "Walkthrough"
 tags: ["beemothep desert", "puzzles", "sphinx", "secrets", "walkthrough"]
 ---

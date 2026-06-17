@@ -3,7 +3,7 @@ title: "How to Get All Medals in Super Bear Adventure - 100% Completion Guide"
 description: "Complete guide to earning every medal in Super Bear Adventure. Step-by-step walkthroughs for Bronze, Silver, and Gold medals in all worlds."
 date: "2026-06-13"
 updated: "2026-06-17"
-image: "/images/blog/get-all-medals.webp"
+image: "/images/blog/get-medals.svg"
 category: "Guide"
 tags: ["medals", "100% completion", "achievements", "guide", "walkthrough", "Super Bear Adventure"]
 ---

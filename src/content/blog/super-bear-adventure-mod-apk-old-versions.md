@@ -3,7 +3,7 @@ title: "Super Bear Adventure Mod APK Old Versions - Download Archive (All Versio
 description: "Download older versions of Super Bear Adventure Mod APK. Complete archive with version history, changelogs, and compatibility notes for every release."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/super-bear-adventure-mod-apk-old-versions.webp"
+image: "/images/blog/old-versions.svg"
 category: "Download"
 tags: ["old versions", "archive", "download", "version history", "mod apk"]
 ---

@@ -3,7 +3,7 @@ title: "All Secret Areas & Easter Eggs in Super Bear Adventure: Developer Secret
 description: "Discover every hidden area, easter egg, and developer secret across all worlds in Super Bear Adventure. Complete guide with locations and unlock methods."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/secret-areas-easter-eggs.webp"
+image: "/images/blog/easter-eggs.svg"
 category: "Guide"
 tags: ["secret areas", "easter eggs", "hidden locations", "developer secrets", "super bear adventure"]
 ---

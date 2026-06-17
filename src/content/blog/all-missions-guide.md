@@ -3,7 +3,7 @@ title: "All Missions in Super Bear Adventure - Complete Mission Guide (2026)"
 description: "Complete guide to every mission in Super Bear Adventure. Find all missions across Turtletown, Snow Valley, Beemothep Desert, Giant House, and more with rewards listed."
 date: "2026-06-15"
 updated: "2026-06-17"
-image: "/images/blog/all-missions-guide.webp"
+image: "/images/blog/all-missions.svg"
 category: "Guide"
 tags: ["missions", "guide", "rewards", "walkthrough", "all worlds"]
 ---

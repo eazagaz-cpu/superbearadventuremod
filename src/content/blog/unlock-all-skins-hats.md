@@ -3,7 +3,7 @@ title: "How to Unlock All Skins & Hats in Super Bear Adventure: Complete Cosmeti
 description: "Complete guide to every skin and hat in Super Bear Adventure. Learn how to unlock all cosmetics including rare skins, hidden hats, and mod APK exclusives."
 date: "2026-06-14"
 updated: "2026-06-17"
-image: "/images/blog/unlock-all-skins-hats.webp"
+image: "/images/blog/skins-hats.svg"
 category: "Guide"
 tags: ["skins", "hats", "cosmetics", "unlock guide", "super bear adventure"]
 ---
