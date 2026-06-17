@@ -1,0 +1,45 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../utils/seo';
+---
+
+<Page title="Contact Us" description="Get in touch with superbearadventuremod.io. Report issues, suggest features, or ask questions about Super Bear Adventure Mod APK.">
+  <p>
+    Have questions about Super Bear Adventure Mod APK? Found a bug? Want to suggest a guide topic? We're here to help! Use any of the methods below to reach out to us.
+  </p>
+
+  <h2>Email Us</h2>
+  <p>
+    For general inquiries, bug reports, or feedback, email us at:
+  </p>
+  <p>
+    <a href={`mailto:${SITE.email}`} class="inline-flex items-center gap-2 px-6 py-3 bg-game-green text-white font-semibold rounded-xl hover:bg-game-green-dark transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+      {SITE.email}
+    </a>
+  </p>
+  <p class="text-sm text-gray-500">We typically respond within 24-48 hours.</p>
+
+  <h2>Follow Us</h2>
+  <p>
+    Stay updated with the latest Super Bear Adventure news, guides, and mod releases by following us on social media:
+  </p>
+  <ul>
+    <li><a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer">YouTube</a> — Video guides and walkthroughs</li>
+    <li><a href={SITE.social.twitter} target="_blank" rel="noopener noreferrer">X (Twitter)</a> — Quick updates and tips</li>
+    <li><a href={SITE.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a> — Community discussions</li>
+    <li><a href={SITE.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a> — Screenshots and highlights</li>
+    <li><a href={SITE.social.tiktok} target="_blank" rel="noopener noreferrer">TikTok</a> — Short gameplay clips</li>
+    <li><a href={SITE.social.pinterest} target="_blank" rel="noopener noreferrer">Pinterest</a> — Game art and infographics</li>
+    <li><a href={SITE.social.reddit} target="_blank" rel="noopener noreferrer">Reddit</a> — Community Q&A</li>
+    <li><a href={SITE.social.threads} target="_blank" rel="noopener noreferrer">Threads</a> — Quick updates</li>
+    <li><a href={SITE.social.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp Channel</a> — Instant notifications</li>
+  </ul>
+
+  <h2>DMCA / Copyright</h2>
+  <p>
+    If you believe any content on this site infringes on your copyright, please visit our <a href="/dmca/">DMCA page</a> for removal instructions.
+  </p>
+</Page>

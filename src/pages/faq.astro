@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+
+const generalFaqs = [
+  { question: 'What is Super Bear Adventure Mod APK?', answer: 'The Super Bear Adventure Mod APK is a modified version of the official game that includes unlimited coins, all skins and hats unlocked, no ads, and other premium features — all for free.' },
+  { question: 'Is it free to download?', answer: 'Yes, the Mod APK is completely free to download and install. There are no hidden charges or subscriptions.' },
+  { question: 'Is the mod safe?', answer: 'Yes, our mod APK has been scanned with multiple antivirus engines and is completely safe. It contains no malware, spyware, or harmful code.' },
+  { question: 'Do I need to root my phone?', answer: 'No, the mod works on all standard Android devices without root access.' },
+  { question: 'Will it work on my Android version?', answer: 'The mod supports Android 5.1 and above, including the latest Android 14 and 15.' },
+];
+
+const installFaqs = [
+  { question: 'How do I install the APK?', answer: '1. Download the APK from our homepage. 2. Go to Settings > Security > Enable "Unknown Sources". 3. Open the downloaded file and tap Install. 4. Launch the game and enjoy!' },
+  { question: 'I get "App not installed" error. What should I do?', answer: 'This usually happens when you have the official version installed. Uninstall the official game first, then install the mod APK. Check our <a href="/blog/troubleshooting-common-errors/" class="text-game-green hover:underline">troubleshooting guide</a> for more solutions.' },
+  { question: 'Can I keep my progress when updating?', answer: 'Yes! Simply install the new APK over the old one without uninstalling. Your progress will be preserved. See our <a href="/blog/update-super-bear-adventure-mod/" class="text-game-green hover:underline">update guide</a> for details.' },
+  { question: 'Can I install this on PC?', answer: 'Yes, using an Android emulator like BlueStacks or LDPlayer. Read our <a href="/blog/super-bear-adventure-for-pc-guide/" class="text-game-green hover:underline">PC installation guide</a>.' },
+  { question: 'Does it work on iOS/iPhone?', answer: 'APK files are Android-only. For iOS alternatives, check our <a href="/blog/super-bear-adventure-ios-mod-iphone/" class="text-game-green hover:underline">iOS guide</a>.' },
+];
+
+const gameplayFaqs = [
+  { question: 'Can I play multiplayer with the mod?', answer: 'Yes, multiplayer works perfectly. You can play co-op, use invite codes, and join online sessions.' },
+  { question: 'Does it work offline?', answer: 'Single-player mode works completely offline. Multiplayer requires an internet connection.' },
+  { question: 'Will I get banned?', answer: 'The mod includes anti-ban protection. We recommend using a secondary account for online play to be extra safe.' },
+  { question: 'What features are unlocked?', answer: 'Everything: unlimited coins/gems, all skins & hats, no ads, all 6 worlds, full multiplayer, daily challenges, and Arcade World.' },
+  { question: 'How many worlds are there?', answer: 'There are 6 worlds: Turtletown, Snow Valley, Beemothep Desert, Giant House, The Hive, and Mole Mines. Each has unique environments, enemies, and secrets.' },
+  { question: 'What is the latest version?', answer: 'The latest version is v12.1.5, released on April 29, 2026. It includes multiplayer invite code fixes and performance improvements.' },
+];
+---
+
+<BaseLayout
+  title="Frequently Asked Questions"
+  description="Find answers to common questions about Super Bear Adventure Mod APK — installation, safety, features, multiplayer, and more."
+  showDownloadBar={false}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumbs items={[{ name: 'FAQ' }]} />
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">Frequently Asked Questions</h1>
+    <p class="text-lg text-gray-600 mb-10">Everything you need to know about Super Bear Adventure Mod APK.</p>
+
+    <FAQAccordion items={generalFaqs} heading="General Questions" id="general" />
+    <FAQAccordion items={installFaqs} heading="Installation & Updates" id="install" />
+    <FAQAccordion items={gameplayFaqs} heading="Gameplay & Features" id="gameplay" />
+  </main>
+</BaseLayout>

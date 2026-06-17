@@ -1,0 +1,61 @@
+---
+interface Props {
+  headings: { depth: number; slug: string; text: string }[];
+}
+
+const { headings } = Astro.props;
+const filteredHeadings = headings.filter((h) => h.depth <= 3);
+---
+
+{filteredHeadings.length > 0 && (
+  <nav class="my-10 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" aria-label="On this page">
+    <div class="px-5 py-4 bg-gray-50 border-b border-gray-100">
+      <h2 class="text-sm font-bold uppercase tracking-wider text-gray-600 flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+        </svg>
+        On This Page
+      </h2>
+    </div>
+    <div class="divide-y divide-gray-50">
+      {filteredHeadings.map((heading) => (
+        <a
+          href={`#${heading.slug}`}
+          class:list={[
+            'toc-link block py-3.5 px-5 text-gray-600 text-sm leading-snug transition-colors hover:bg-game-green-50 hover:text-game-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-game-green',
+            heading.depth === 3 && 'pl-10 text-xs',
+          ]}
+          data-id={heading.slug}
+        >
+          {heading.text}
+        </a>
+      ))}
+    </div>
+  </nav>
+)}
+
+<script>
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const headings = document.querySelectorAll('h2[id], h3[id]');
+
+  function updateActiveLink() {
+    let current = '';
+    headings.forEach((heading) => {
+      const el = heading as HTMLElement;
+      if (el.getBoundingClientRect().top <= 100) {
+        current = el.id;
+      }
+    });
+    tocLinks.forEach((link) => {
+      const el = link as HTMLElement;
+      if (el.dataset.id === current) {
+        el.classList.add('bg-game-green-50', 'text-game-green', 'font-medium');
+      } else {
+        el.classList.remove('bg-game-green-50', 'text-game-green', 'font-medium');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  updateActiveLink();
+</script>

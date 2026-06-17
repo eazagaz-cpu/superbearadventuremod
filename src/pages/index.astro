@@ -1,0 +1,305 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import QuickAnswer from '../components/QuickAnswer.astro';
+import AppInfoGrid from '../components/AppInfoGrid.astro';
+import EntityStrip from '../components/EntityStrip.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { softwareAppSchema, websiteSchema, organizationSchema, howToSchema } from '../utils/schema';
+
+const installSteps = [
+  { name: 'Download the APK', text: 'Tap the Download button on this page to get the Super Bear Adventure Mod APK file.' },
+  { name: 'Allow Unknown Sources', text: 'Go to Settings > Security > Enable "Install from Unknown Sources" or allow your browser to install APKs.' },
+  { name: 'Install the APK', text: 'Open your file manager, find the downloaded APK, and tap to install.' },
+  { name: 'Launch & Play', text: 'Open Super Bear Adventure and enjoy unlimited coins, all skins, and no ads!' },
+];
+
+const faqItems = [
+  {
+    question: 'Is Super Bear Adventure Mod APK safe to install?',
+    answer: 'Yes, the mod APK has been scanned and verified. It does not contain malware, viruses, or any harmful code. We provide the cleanest possible build based on the official v12.1.5 release from Earthkwak Games.',
+  },
+  {
+    question: 'Will I get banned for using the mod?',
+    answer: 'The mod includes anti-ban protection. Thousands of players use it daily without issues. However, we recommend using a secondary account for online multiplayer to be extra cautious.',
+  },
+  {
+    question: 'Does the mod work on the latest Android versions?',
+    answer: 'Yes, the mod APK v12.1.5 is compatible with Android 5.1 and above, including Android 14 and 15. It works on all major phone brands including Samsung, Xiaomi, OnePlus, Pixel, and more.',
+  },
+  {
+    question: 'Can I play multiplayer with the mod?',
+    answer: 'Yes! The mod retains full multiplayer functionality from the official game. You can play co-op with friends, use invite codes, and join online sessions just like the regular version.',
+  },
+  {
+    question: 'What is included in the mod?',
+    answer: 'The mod gives you unlimited coins and gems, all skins and hats unlocked, no advertisements, all 6 game worlds accessible, full multiplayer support, and the same gameplay experience as the official v12.1.5 release.',
+  },
+  {
+    question: 'How do I update the mod APK?',
+    answer: 'When a new version is available, download the latest APK from this page and install it over the existing one. Your progress will be saved. Read our <a href="/blog/update-super-bear-adventure-mod/" class="text-game-green hover:underline">update guide</a> for step-by-step instructions.',
+  },
+  {
+    question: 'Does it work offline?',
+    answer: 'Yes, you can play single-player mode completely offline. Multiplayer mode requires an internet connection, just like the official game.',
+  },
+  {
+    question: 'Is root access required?',
+    answer: 'No, the mod APK does not require root access. It works on all standard Android devices without any special modifications.',
+  },
+  {
+    question: 'What is the difference between the official APK and the Mod APK?',
+    answer: 'The official APK is the standard game from Google Play with ads and in-app purchases. The Mod APK removes ads, gives unlimited coins, unlocks all skins/hats, and keeps the same gameplay. See our <a href="#official-apk-vs-mod" class="text-game-green hover:underline">detailed comparison table</a>.',
+  },
+  {
+    question: 'Can I install this on iPhone/iOS?',
+    answer: 'This APK is for Android only. For iOS devices, check our <a href="/blog/super-bear-adventure-ios-mod-iphone/" class="text-game-green hover:underline">iOS mod guide</a> for alternative methods.',
+  },
+];
+
+const schemas = [
+  softwareAppSchema(),
+  websiteSchema(),
+  organizationSchema(),
+  howToSchema({
+    name: 'How to Download and Install Super Bear Adventure Mod APK',
+    description: 'Step-by-step guide to download and install the Super Bear Adventure Mod APK on your Android device.',
+    steps: installSteps,
+    totalTime: 'PT3M',
+  }),
+];
+---
+
+<BaseLayout
+  title="Super Bear Adventure Mod APK v12.1.5 (Unlocked) 2026"
+  description="Download Super Bear Adventure Mod APK v12.1.5 (2026) with unlimited money, all skins unlocked, no ads, and the latest multiplayer fixes from the official game."
+  schema={schemas}
+>
+  <Hero />
+
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article>
+      <!-- Quick Answer Box -->
+      <QuickAnswer answer={`The Super Bear Adventure Mod APK is a modified Android build aligned with official <strong>v${SITE.download.version}</strong> (${SITE.download.updated}). It gives unlimited coins, all skins and hats unlocked, no ads, and the same worlds as the Play Store game—including <a href="/blog/the-hive-walkthrough/" class="text-game-green hover:underline">The Hive</a>, Turtletown, and multiplayer.`} />
+
+      <!-- Intro Content -->
+      <div class="prose-game">
+        <p class="text-lg font-medium text-game-green-dark">
+          Super Bear Adventure Mod APK is a tweaked Android version of the game that gives you unlimited coins, all skins unlocked, and no ads while keeping the same 3D worlds and story as the official release. The latest official build is <strong>v{SITE.download.version}</strong> ({SITE.download.updated})—a multiplayer stability patch. Worlds like <a href="/blog/the-hive-walkthrough/">The Hive</a> have been in the game since Update 10.0 (2022).
+        </p>
+        <p>
+          With our verified 2026 mod build you can skip weeks of grinding and jump straight into exploring with every shop item unlocked. This version gives you instant Unlimited Money and Gems. If you prefer playing on a bigger screen, follow our <a href="/blog/super-bear-adventure-for-pc-guide/">Super Bear Adventure for PC guide</a>, or check the <a href="/blog/super-bear-adventure-ios-mod-iphone/">iOS mod guide</a> if you're on iPhone or iPad. For older or low-end devices, see our <a href="/blog/super-bear-adventure-mod-apk-old-versions/">old versions archive</a>; to upgrade safely, read how to <a href="/blog/update-super-bear-adventure-mod/">update without losing progress</a>.
+        </p>
+        <p class="text-sm text-gray-500 bg-gray-50 rounded-xl p-4 border border-gray-100">
+          This page covers the modded version of Super Bear Adventure. For the official game maintained by Earthkwak Games, see the <a href="https://play.google.com/store/apps/details?id=com.Earthkwak.Platformer&hl=en" target="_blank" rel="noopener noreferrer">Google Play release</a>.
+        </p>
+
+        <!-- Definition Card -->
+        <div class="bg-game-green-50 border-l-4 border-game-green rounded-r-xl p-5 my-8">
+          <strong class="text-game-green-dark">Definition — Super Bear Adventure Mod APK</strong>
+          <p class="mt-2 mb-0">The Super Bear Adventure Mod APK is a modified Android version of the game. You get unlimited coins, all skins, and no ads from the start. The 3D platforming and exploration stay the same as the official v{SITE.download.version} game on Google Play.</p>
+        </div>
+      </div>
+
+      <!-- Entity Strip -->
+      <EntityStrip />
+
+      <!-- Key Takeaways -->
+      <div class="my-8 bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-game-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+          Key Takeaways
+        </h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-game-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-gray-700"><strong>Latest official patches</strong>: v12.1.5 fixes multiplayer invite codes; v12.1.4 fixed save corruption (see <a href="/blog/version-changelogs/" class="text-game-green hover:underline">changelog</a>).</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-game-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-gray-700"><strong>Mod vs official</strong>: This page is for the mod. Use the Google Play link for the official game.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-game-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-gray-700"><strong>All 6 worlds included</strong>: Turtletown, Snow Valley, Beemothep Desert, Giant House, The Hive, and Mole Mines.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-game-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-gray-700"><strong>Full multiplayer support</strong>: Co-op play, invite codes, and online sessions work perfectly.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- App Info Grid -->
+      <AppInfoGrid />
+
+      <!-- Main Content Sections -->
+      <div class="prose-game">
+        <h2 id="what-is">What is Super Bear Adventure? (A 90s Inspired Masterpiece)</h2>
+        <p>
+          Super Bear Adventure is a 3D platformer that feels like late 90s classics such as Banjo-Kazooie and Super Mario 64. You play as Baaren, a brave bear exploring the Kingdom of Earthkwak to save his friends from a toxic purple honey. The official game includes daily challenges, speedy vehicles, and fun mini-games in the Arcade World—our mod keeps all of that and removes ads and grind. For the full story, read our <a href="/blog/lore-baaren-story/">complete breakdown of the Kingdom of Earthkwak lore</a>.
+        </p>
+
+        <h3>A True 3D Platforming Experience</h3>
+        <p>
+          Unlike most mobile platformers that rely on 2D side-scrolling, Super Bear Adventure gives you full 3D freedom. You can run, jump, climb, swim, and even drive vehicles across massive open-world environments. The game's physics engine allows for creative movement techniques like wall jumps, speed boosts, and hidden shortcuts that speedrunners love. Learn all the advanced techniques in our <a href="/blog/how-to-play-beginner-guide/">beginner guide</a>.
+        </p>
+
+        <h2 id="official-apk-vs-mod">Official Super Bear Adventure APK vs Mod APK</h2>
+        <p>
+          Understanding the difference helps you choose the right version. The official game on Google Play has over 100M+ downloads and a 4.4-star rating with 883K+ reviews. It's free but includes ads and requires grinding for coins to unlock cosmetics.
+        </p>
+        <p class="text-sm text-gray-600">
+          <strong>Official app on Play Store:</strong> 100M+ downloads, 4.4★ (883K+ reviews), PEGI 3. Store listing updated {SITE.download.updated}. Developer: <a href="https://earthkwak.games/" target="_blank" rel="noopener noreferrer">Earthkwak Games</a>.
+        </p>
+      </div>
+
+      <!-- Comparison Table -->
+      <ComparisonTable />
+
+      <div class="prose-game">
+        <h2 id="evolution">The Evolution of the Kingdom: 2024 vs 2026 Comparison</h2>
+        <p>
+          Comparing the <a href="/blog/super-bear-adventure-mod-apk-old-versions/">older versions archive</a> to the current build shows how far Earthkwak has taken the Kingdom of Earthkwak—from Update 10.0's <strong>The Hive</strong> (2022) to Update 12.0's <strong>multiplayer</strong> (2025) and the 12.1.x polish patches in 2026. The April 2026 v12.1.5 release is small but important for online play; major content drops were 12.1.0 (emotes, Super Bear Fighters) and 12.0.0 (co-op).
+        </p>
+
+        <h2 id="why-mod">Why Experienced Players Prefer the Mod Version</h2>
+        <p>
+          In the normal game, rare skins like the Skeleton Bear or Royal Cape take thousands of Purple Coins and hours of grinding. The Super Bear Adventure Mod APK 2026 skips that. You can focus on secrets and exploring. To earn coins without the mod, see our <a href="/blog/unlimited-coins-farming/">guide on legal strategies to earn coins quickly</a>.
+        </p>
+
+        <h2 id="whats-new">What's New in v{SITE.download.version} (Official 2026)</h2>
+        <ul>
+          <li><strong>Multiplayer invite code fix</strong> — Invite codes now work reliably across all regions</li>
+          <li><strong>Performance improvements</strong> — Smoother framerate on mid-range devices</li>
+          <li><strong>Bug fixes</strong> — Several crash fixes in The Hive and Mole Mines</li>
+          <li><strong>UI polish</strong> — Updated menus and loading screens</li>
+        </ul>
+        <p>For the complete history, see our <a href="/blog/version-changelogs/">version changelog archive</a>.</p>
+
+        <h2 id="exclusive-features">Exclusive Mod Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 not-prose">
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center mb-3">
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">Unlimited Coins & Gems</h3>
+            <p class="text-sm text-gray-600">Start with unlimited currency to buy anything instantly</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mb-3">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">All Skins & Hats Unlocked</h3>
+            <p class="text-sm text-gray-600">Access every cosmetic item from day one</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center mb-3">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">No Advertisements</h3>
+            <p class="text-sm text-gray-600">Play without interruptions — zero ads</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-3">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-1">Anti-Ban Protection</h3>
+            <p class="text-sm text-gray-600">Play safely with built-in protection</p>
+          </div>
+        </div>
+
+        <h2 id="six-worlds">The 6 Massive Worlds</h2>
+        <p>Super Bear Adventure features six unique open-world environments, each with its own theme, enemies, secrets, and collectibles:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6 not-prose">
+          {[
+            { name: 'Turtletown', desc: 'Your starting hub — a peaceful town with hidden areas and friendly NPCs.', color: 'bg-green-500', href: '/blog/turtletown-walkthrough/' },
+            { name: 'Snow Valley', desc: 'Icy peaks with snowboard sections and frozen puzzles.', color: 'bg-blue-500', href: '/blog/snow-valley-secrets/' },
+            { name: 'Beemothep Desert', desc: 'Ancient ruins, sand traps, and sphinx-inspired puzzles.', color: 'bg-amber-500', href: '/blog/beemothep-desert-puzzle/' },
+            { name: 'Giant House', desc: 'Everything is oversized — navigate a world where you are tiny.', color: 'bg-orange-500', href: '/blog/giant-house-walkthrough/' },
+            { name: 'The Hive', desc: 'A buzzing bee kingdom with honey-themed obstacles.', color: 'bg-yellow-500', href: '/blog/the-hive-walkthrough/' },
+            { name: 'Mole Mines', desc: 'Underground caverns with mining carts and gem puzzles.', color: 'bg-stone-500', href: '/blog/mole-mines-walkthrough/' },
+          ].map((world) => (
+            <a href={world.href} class="block bg-white rounded-xl border border-gray-100 p-4 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+              <div class:list={['w-full h-24 rounded-lg mb-3 flex items-center justify-center', world.color]}>
+                <span class="text-white font-bold text-lg">{world.name}</span>
+              </div>
+              <h3 class="font-bold text-gray-900 text-sm mb-1">{world.name}</h3>
+              <p class="text-xs text-gray-600">{world.desc}</p>
+            </a>
+          ))}
+        </div>
+
+        <h2 id="install">How to Download and Install</h2>
+        <div class="my-6 space-y-4 not-prose">
+          {installSteps.map((step, i) => (
+            <div class="flex items-start gap-4 bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-game-green text-white font-bold flex items-center justify-center flex-shrink-0 text-lg">
+                {i + 1}
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-1">{step.name}</h3>
+                <p class="text-sm text-gray-600">{step.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="text-center my-8">
+          <a href={SITE.download.url} class="btn-download">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Download Super Bear Adventure Mod APK v{SITE.download.version}
+          </a>
+        </div>
+
+        <h2 id="mod-safe">Is the Mod Safe?</h2>
+        <p>
+          Yes. Our mod APK is built from the official v{SITE.download.version} base. It has been scanned with multiple antivirus engines and contains no malware, spyware, or trojans. No root access is required, and it does not access any personal data beyond what the official game normally uses.
+        </p>
+
+        <h2 id="optimization">Optimization for Low-End Devices</h2>
+        <p>
+          If you experience lag or frame drops, check our <a href="/blog/lag-fix-optimization/">optimization guide</a>. The mod includes all the same graphics settings as the official game, so you can lower quality for smoother performance on older devices. Key tips:
+        </p>
+        <ul>
+          <li>Lower graphics quality in Settings</li>
+          <li>Close background apps before playing</li>
+          <li>Enable battery saver mode for consistent performance</li>
+          <li>Clear app cache periodically</li>
+        </ul>
+
+        <h2 id="final-verdict">Final Verdict & Conclusion</h2>
+        <p>
+          Super Bear Adventure Mod APK v{SITE.download.version} is the definitive way to experience one of the best 3D platformers on mobile. With unlimited coins, all cosmetics unlocked, no ads, and full multiplayer support, you get the complete experience without the grind. Whether you're a returning player or discovering the Kingdom of Earthkwak for the first time, the mod gives you everything you need to dive right in and explore.
+        </p>
+        <p>
+          <strong>Ready to start?</strong> Download the mod from the button above and begin your adventure. For questions, visit our <a href="/faq/">FAQ page</a> or <a href="/contact/">contact us</a>.
+        </p>
+      </div>
+
+      <!-- FAQ Section -->
+      <FAQAccordion items={faqItems} />
+    </article>
+  </main>
+</BaseLayout>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const categories = [...new Set(allPosts.map((post) => post.data.category))].sort();
+---
+
+<BaseLayout
+  title="Blog - All Guides & Articles"
+  description="Browse all Super Bear Adventure guides, walkthroughs, tips, and mod APK articles. Find everything you need to master the game."
+>
+  <main id="main-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumbs items={[{ name: 'Blog' }]} />
+
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">All Guides & Articles</h1>
+      <p class="text-lg text-gray-600">Everything you need to master Super Bear Adventure — walkthroughs, tips, mod guides, and more.</p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      <button class="category-filter px-4 py-2 text-sm font-medium rounded-full bg-game-green text-white transition-all" data-category="all">
+        All ({allPosts.length})
+      </button>
+      {categories.map((cat) => (
+        <button class="category-filter px-4 py-2 text-sm font-medium rounded-full bg-white text-gray-600 border border-gray-200 hover:border-game-green hover:text-game-green transition-all" data-category={cat}>
+          {cat} ({allPosts.filter((p) => p.data.category === cat).length})
+        </button>
+      ))}
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="posts-grid">
+      {allPosts.map((post) => (
+        <div class="post-item" data-category={post.data.category}>
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.slug}
+            image={post.data.image}
+            category={post.data.category}
+            date={post.data.date}
+          />
+        </div>
+      ))}
+    </div>
+
+    {allPosts.length === 0 && (
+      <div class="text-center py-20">
+        <p class="text-gray-500 text-lg">No articles found. Check back soon!</p>
+      </div>
+    )}
+  </main>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.category-filter').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const category = (btn as HTMLElement).dataset.category;
+
+      document.querySelectorAll('.category-filter').forEach((b) => {
+        b.classList.remove('bg-game-green', 'text-white');
+        b.classList.add('bg-white', 'text-gray-600');
+      });
+      btn.classList.remove('bg-white', 'text-gray-600');
+      btn.classList.add('bg-game-green', 'text-white');
+
+      document.querySelectorAll('.post-item').forEach((post) => {
+        const el = post as HTMLElement;
+        if (category === 'all' || el.dataset.category === category) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

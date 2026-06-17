@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply font-body text-gray-700 bg-game-green-50;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-gray-900;
+  }
+  ::selection {
+    @apply bg-game-green-light/40 text-game-green-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-game-green text-white font-bold text-lg rounded-2xl shadow-lg shadow-game-green/30 hover:bg-game-green-dark hover:shadow-xl hover:shadow-game-green-dark/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-game-green font-semibold rounded-xl border-2 border-game-green/20 hover:border-game-green hover:bg-game-green-50 transition-all duration-300;
+  }
+  .btn-download {
+    @apply inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-game-green to-game-green-dark text-white font-extrabold text-xl rounded-2xl shadow-2xl shadow-game-green/40 hover:shadow-game-green/60 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 relative overflow-hidden;
+  }
+  .btn-download::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full;
+    animation: shimmer 3s infinite;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+  .card-hover {
+    @apply bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+  }
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/50 shadow-xl;
+  }
+  .section-heading {
+    @apply text-3xl md:text-4xl font-extrabold text-gray-900 mb-4;
+  }
+  .section-subheading {
+    @apply text-lg text-gray-600 max-w-2xl;
+  }
+  .prose-game a {
+    @apply text-game-green font-medium underline decoration-game-green/30 underline-offset-2 hover:decoration-game-green transition-colors;
+  }
+  .prose-game h2 {
+    @apply text-2xl md:text-3xl font-extrabold text-gray-900 mt-12 mb-4 scroll-mt-24;
+  }
+  .prose-game h3 {
+    @apply text-xl md:text-2xl font-bold text-gray-800 mt-8 mb-3 scroll-mt-24;
+  }
+  .prose-game p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+  .prose-game ul, .prose-game ol {
+    @apply mb-4 pl-6 space-y-2;
+  }
+  .prose-game li {
+    @apply text-gray-700 leading-relaxed;
+  }
+  .prose-game ul li {
+    @apply list-disc;
+  }
+  .prose-game ol li {
+    @apply list-decimal;
+  }
+  .prose-game img {
+    @apply rounded-2xl shadow-md w-full h-auto my-6;
+  }
+  .prose-game blockquote {
+    @apply border-l-4 border-game-green bg-game-green-50 rounded-r-xl p-4 my-6 italic text-gray-700;
+  }
+  .prose-game table {
+    @apply w-full border-collapse my-6 text-sm;
+  }
+  .prose-game thead th {
+    @apply bg-game-green text-white font-semibold px-4 py-3 text-left;
+  }
+  .prose-game tbody td {
+    @apply px-4 py-3 border-b border-gray-100;
+  }
+  .prose-game tbody tr:hover {
+    @apply bg-game-green-50/50;
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.has-quick-download-bar {
+  padding-bottom: 72px;
+}
+
+@media (max-width: 767px) {
+  .has-quick-download-bar {
+    padding-bottom: 64px;
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://superbearadventuremod.io/sitemap-index.xml

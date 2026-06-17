@@ -1,0 +1,45 @@
+---
+interface EntityItem {
+  label: string;
+  value: string;
+  href?: string;
+  external?: boolean;
+}
+
+interface Props {
+  items?: EntityItem[];
+}
+
+const { items = [
+  { label: 'Game', value: 'Super Bear Adventure', href: 'https://play.google.com/store/apps/details?id=com.Earthkwak.Platformer&hl=en', external: true },
+  { label: 'Developer', value: 'Earthkwak Games', href: 'https://earthkwak.games/', external: true },
+  { label: 'Latest Version', value: 'v12.1.5 (official)', href: '/blog/version-changelogs/' },
+  { label: 'Protagonist', value: 'Baaren', href: '/blog/lore-baaren-story/' },
+  { label: 'Setting', value: 'Kingdom of Earthkwak', href: '/blog/how-to-play-beginner-guide/' },
+  { label: 'Mod Build', value: 'v12.1.5 APK', href: '/' },
+] } = Astro.props;
+---
+
+<section class="my-8 bg-white rounded-2xl border border-gray-100 shadow-sm p-6" aria-label="Key entities for Super Bear Adventure">
+  <h2 class="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4">Key Entities at a Glance</h2>
+  <dl class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+    {items.map((item) => (
+      <div class="flex flex-col gap-1">
+        <dt class="text-xs font-semibold text-gray-400 uppercase tracking-wider">{item.label}</dt>
+        <dd class="text-sm font-semibold">
+          {item.href ? (
+            <a
+              href={item.href}
+              class="text-game-green hover:text-game-green-dark transition-colors underline decoration-game-green/30 underline-offset-2 hover:decoration-game-green"
+              {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
+              {item.value}
+            </a>
+          ) : (
+            <span class="text-gray-800">{item.value}</span>
+          )}
+        </dd>
+      </div>
+    ))}
+  </dl>
+</section>

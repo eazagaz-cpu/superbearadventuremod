@@ -1,0 +1,39 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../utils/seo';
+---
+
+<Page title="DMCA Policy" description="DMCA takedown policy for superbearadventuremod.io. Learn how to submit a copyright infringement notice.">
+  <p>
+    superbearadventuremod.io respects the intellectual property rights of others. If you believe that any content on this website infringes upon your copyright, please follow the procedures outlined below.
+  </p>
+
+  <h2>Filing a DMCA Takedown Notice</h2>
+  <p>If you are a copyright owner or authorized agent and believe that content on this site infringes your copyright, please send a written notice including:</p>
+  <ol>
+    <li>Your physical or electronic signature</li>
+    <li>Identification of the copyrighted work(s) you believe has been infringed</li>
+    <li>The URL(s) of the infringing content on our site</li>
+    <li>Your contact information (name, address, phone number, email)</li>
+    <li>A statement that you have a good faith belief that the use is not authorized</li>
+    <li>A statement, under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorized to act on their behalf</li>
+  </ol>
+
+  <h2>Where to Send</h2>
+  <p>
+    Send your DMCA takedown notice to: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+  </p>
+  <p>
+    We will respond to valid DMCA notices within 48 hours and will remove or disable access to the allegedly infringing content.
+  </p>
+
+  <h2>Counter-Notification</h2>
+  <p>
+    If you believe your content was removed in error, you may submit a counter-notification including similar identifying information and a statement explaining why you believe the removal was a mistake.
+  </p>
+
+  <h2>Disclaimer</h2>
+  <p>
+    superbearadventuremod.io is an independent fan site. All game content, trademarks, and assets belong to their respective owners, including Earthkwak Games. We always encourage users to support the official developers.
+  </p>
+</Page>

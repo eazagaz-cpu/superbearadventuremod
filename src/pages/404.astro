@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found" description="The page you're looking for doesn't exist." showDownloadBar={false} noindex={true}>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <div class="mb-8">
+      <!-- Bear looking confused -->
+      <svg class="w-40 h-40 mx-auto text-gray-300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="#F1F8E9" stroke="#558B2F" stroke-width="3"/>
+        <ellipse cx="100" cy="95" rx="30" ry="35" fill="#795548"/>
+        <ellipse cx="75" cy="70" rx="15" ry="15" fill="#795548"/>
+        <ellipse cx="125" cy="70" rx="15" ry="15" fill="#795548"/>
+        <ellipse cx="75" cy="70" rx="10" ry="10" fill="#a1887f"/>
+        <ellipse cx="125" cy="70" rx="10" ry="10" fill="#a1887f"/>
+        <ellipse cx="100" cy="100" rx="20" ry="18" fill="#a1887f"/>
+        <ellipse cx="100" cy="92" rx="8" ry="5" fill="#4e342e"/>
+        <circle cx="88" cy="82" r="4" fill="#4e342e"/>
+        <circle cx="112" cy="82" r="4" fill="#4e342e"/>
+        <text x="100" y="155" text-anchor="middle" font-size="40" font-weight="bold" fill="#558B2F">404</text>
+      </svg>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Page Not Found</h1>
+    <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto">
+      Oops! Baaren couldn't find this page in the Kingdom of Earthkwak. It might have been moved or doesn't exist.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="btn-primary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        Go Home
+      </a>
+      <a href="/blog/" class="btn-secondary">
+        Browse Guides
+      </a>
+    </div>
+  </main>
+</BaseLayout>

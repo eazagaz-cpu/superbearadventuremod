@@ -1,0 +1,60 @@
+---
+const features = [
+  { feature: 'Price', official: 'Free (with in-app purchases)', mod: 'Free (everything unlocked)' },
+  { feature: 'Coins', official: 'Earn by playing', mod: 'Unlimited from start' },
+  { feature: 'Skins & Hats', official: 'Unlock by purchase', mod: 'All unlocked' },
+  { feature: 'Advertisements', official: 'Contains ads', mod: 'No ads' },
+  { feature: 'All 6 Worlds', official: '✓', mod: '✓' },
+  { feature: 'Multiplayer', official: '✓', mod: '✓' },
+  { feature: 'Story Mode', official: '✓', mod: '✓' },
+  { feature: 'Daily Challenges', official: '✓', mod: '✓' },
+  { feature: 'Arcade World', official: '✓', mod: '✓' },
+  { feature: 'Play Store Updates', official: 'Automatic', mod: 'Manual (from this site)' },
+  { feature: 'Anti-Ban', official: 'N/A', mod: '✓ (Safe)' },
+  { feature: 'Root Required', official: 'No', mod: 'No' },
+];
+---
+
+<section class="my-10" aria-labelledby="mod-comparison-heading">
+  <h2 id="mod-comparison-heading" class="flex items-center gap-2 text-2xl font-extrabold text-gray-900 mb-6">
+    <svg class="w-7 h-7 text-game-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+    </svg>
+    Official APK vs Mod APK
+  </h2>
+
+  <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+    <table class="w-full text-sm">
+      <thead>
+        <tr>
+          <th class="bg-gray-900 text-white font-semibold px-5 py-4 text-left">Feature</th>
+          <th class="bg-gray-700 text-white font-semibold px-5 py-4 text-center">
+            <div class="flex flex-col items-center">
+              <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              Official APK
+            </div>
+          </th>
+          <th class="bg-game-green text-white font-semibold px-5 py-4 text-center">
+            <div class="flex flex-col items-center">
+              <svg class="w-5 h-5 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Mod APK
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {features.map((row, i) => (
+          <tr class:list={[i % 2 === 0 ? 'bg-white' : 'bg-gray-50', 'hover:bg-game-green-50/50 transition-colors']}>
+            <td class="px-5 py-3.5 font-medium text-gray-800 border-b border-gray-100">{row.feature}</td>
+            <td class="px-5 py-3.5 text-center text-gray-600 border-b border-gray-100">{row.official}</td>
+            <td class="px-5 py-3.5 text-center font-semibold text-game-green border-b border-gray-100">{row.mod}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
