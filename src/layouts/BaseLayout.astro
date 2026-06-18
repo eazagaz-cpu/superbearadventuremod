@@ -2,17 +2,16 @@
 import SEOHead from '../components/SEOHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import DownloadBar from '../components/DownloadBar.astro';
+import DownloadTimer from '../components/DownloadTimer.astro';
 import type { SEOProps } from '../utils/seo';
 import { SITE } from '../utils/seo';
 import '../styles/global.css';
 
 interface Props extends SEOProps {
   schema?: object | object[];
-  showDownloadBar?: boolean;
 }
 
-const { schema, showDownloadBar = true, ...seoProps } = Astro.props;
+const { schema, ...seoProps } = Astro.props;
 const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 ---
 
@@ -24,13 +23,13 @@ const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
       <script type="application/ld+json" set:html={JSON.stringify(s)} />
     ))}
   </head>
-  <body class:list={[{ 'has-quick-download-bar': showDownloadBar }]}>
+  <body>
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-game-green focus:text-white focus:rounded-lg">
       Skip to main content
     </a>
     <Header />
     <slot />
     <Footer />
-    {showDownloadBar && <DownloadBar />}
+    <DownloadTimer />
   </body>
 </html>

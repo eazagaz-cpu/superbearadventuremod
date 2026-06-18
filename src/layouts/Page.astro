@@ -16,7 +16,7 @@ const { title, description, breadcrumb, headerImage, headerIcon, headerGradient 
 const gradientClass = headerGradient || 'from-game-green to-game-green-dark';
 ---
 
-<BaseLayout title={title} description={description} showDownloadBar={false}>
+<BaseLayout title={title} description={description}>
   <main id="main-content">
     {/* Visual Header Banner */}
     {(headerImage || headerIcon) && (

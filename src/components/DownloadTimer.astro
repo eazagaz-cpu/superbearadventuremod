@@ -1,0 +1,113 @@
+---
+import { SITE } from '../utils/seo';
+---
+
+<!-- Download Timer Modal -->
+<div id="dl-timer-overlay" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.7); backdrop-filter:blur(4px); align-items:center; justify-content:center;">
+  <div style="background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius:20px; padding:40px 48px; text-align:center; max-width:440px; width:90%; border:1px solid rgba(255,255,255,0.1); box-shadow:0 25px 60px rgba(0,0,0,0.5);">
+    <!-- Close button -->
+    <button id="dl-timer-close" style="position:absolute; top:12px; right:16px; background:none; border:none; color:#9ca3af; font-size:24px; cursor:pointer; padding:4px 8px;" aria-label="Close">&times;</button>
+
+    <!-- Icon -->
+    <div style="width:64px; height:64px; border-radius:16px; background:rgba(134,201,67,0.15); display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#86c943" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+    </div>
+
+    <!-- Countdown text -->
+    <div id="dl-timer-text" style="color:#ffffff; font-size:22px; font-weight:800; margin-bottom:8px;">Preparing download in 5s...</div>
+    <p style="color:#9ca3af; font-size:14px; margin-bottom:24px;">Super Bear Adventure Mod APK v{SITE.download.version}</p>
+
+    <!-- Progress bar -->
+    <div style="width:100%; height:8px; background:#2d2d4a; border-radius:4px; overflow:hidden; margin-bottom:24px;">
+      <div id="dl-timer-bar" style="width:0%; height:100%; background:#86c943; border-radius:4px; transition:width 1s linear;"></div>
+    </div>
+
+    <!-- Button (hidden during countdown, shown after) -->
+    <a id="dl-timer-btn" href={SITE.download.url} style="display:none; background:#86c943; color:#ffffff; padding:16px 32px; font-size:20px; font-weight:800; border-radius:14px; text-decoration:none; box-shadow:0 7px 0 #4f8f2f, 0 10px 20px rgba(79,143,47,0.3); text-shadow:0 1px 2px rgba(0,0,0,0.15); transition:all 0.15s ease; cursor:pointer;">
+      <span style="display:inline-flex; align-items:center; gap:10px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+        Download Now ({SITE.download.size})
+      </span>
+    </a>
+
+    <!-- Trust badges -->
+    <div style="display:flex; justify-content:center; gap:16px; margin-top:20px; font-size:12px; color:#9ca3af;">
+      <span style="display:flex; align-items:center; gap:4px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+        Virus Free
+      </span>
+      <span style="display:flex; align-items:center; gap:4px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+        No Root
+      </span>
+      <span style="display:flex; align-items:center; gap:4px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+        Free
+      </span>
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ downloadUrl: SITE.download.url }}>
+(function() {
+  var overlay = document.getElementById('dl-timer-overlay');
+  var timerText = document.getElementById('dl-timer-text');
+  var timerBar = document.getElementById('dl-timer-bar');
+  var timerBtn = document.getElementById('dl-timer-btn');
+  var closeBtn = document.getElementById('dl-timer-close');
+  var countdownInterval = null;
+
+  function startCountdown() {
+    var seconds = 5;
+    timerText.textContent = 'Preparing download in ' + seconds + 's...';
+    timerText.style.display = 'block';
+    timerBtn.style.display = 'none';
+    timerBar.style.transition = 'none';
+    timerBar.style.width = '0%';
+
+    overlay.style.display = 'flex';
+
+    setTimeout(function() {
+      timerBar.style.transition = 'width 1s linear';
+      timerBar.style.width = '20%';
+    }, 50);
+
+    countdownInterval = setInterval(function() {
+      seconds--;
+      if (seconds > 0) {
+        timerText.textContent = 'Preparing download in ' + seconds + 's...';
+        timerBar.style.width = ((5 - seconds) * 20) + '%';
+      } else {
+        clearInterval(countdownInterval);
+        countdownInterval = null;
+        timerBar.style.width = '100%';
+        timerText.textContent = 'Your download is ready!';
+        timerBtn.style.display = 'inline-block';
+      }
+    }, 1000);
+  }
+
+  function closeOverlay() {
+    overlay.style.display = 'none';
+    if (countdownInterval) {
+      clearInterval(countdownInterval);
+      countdownInterval = null;
+    }
+  }
+
+  closeBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeOverlay();
+  });
+
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href="' + downloadUrl + '"]');
+    if (link) {
+      e.preventDefault();
+      startCountdown();
+    }
+  });
+})();
+</script>
