@@ -29,12 +29,7 @@ import { SITE } from '../utils/seo';
 
         btn.innerHTML = 'Download Started...';
 
-        var a = document.createElement('a');
-        a.href = downloadUrl;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        window.location.href = downloadUrl;
 
         setTimeout(function() {
           btn.innerHTML = 'Download Complete';

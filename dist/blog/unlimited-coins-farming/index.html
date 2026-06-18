@@ -207,12 +207,7 @@ Download Super Bear Adventure Mod APK with unlimited coins, all skins unlocked, 
 
         btn.innerHTML = 'Download Started...';
 
-        var a = document.createElement('a');
-        a.href = downloadUrl;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        window.location.href = downloadUrl;
 
         setTimeout(function() {
           btn.innerHTML = 'Download Complete';
