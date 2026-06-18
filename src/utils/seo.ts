@@ -42,6 +42,6 @@ export const SITE = {
 };
 
 export function getPageTitle(title?: string): string {
-  if (!title) return `Super Bear Adventure Mod APK v${SITE.download.version} Download (2026)`;
+  if (!title) return `Super Bear Adventure Mod APK v${SITE.download.version} (Unlocked) 2026`;
   return `${title} | ${SITE.brandShort}`;
 }
