@@ -89,9 +89,12 @@ const schema = articleSchema({
             <img
               src={image}
               alt={title}
+              width="800"
+              height="450"
               class="w-full h-auto"
               loading="eager"
               decoding="async"
+              fetchpriority="high"
             />
           </div>
         )}

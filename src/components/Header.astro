@@ -148,7 +148,7 @@ const currentPath = Astro.url.pathname;
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden fixed inset-0 top-16 bg-game-green-dark/98 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 overflow-y-auto">
+  <div id="mobile-menu" class="lg:hidden fixed inset-0 top-16 bg-game-green-dark z-40 transform translate-x-full transition-transform duration-300 overflow-y-auto">
     <div class="px-4 py-6 space-y-1">
       {navLinks.map((link) => (
         link.children ? (
@@ -223,10 +223,10 @@ const currentPath = Astro.url.pathname;
   function updateHeader() {
     if (!header) return;
     if (window.scrollY > 10) {
-      header.classList.add('bg-game-green-dark/95', 'backdrop-blur-xl', 'shadow-lg');
+      header.classList.add('bg-game-green-dark', 'shadow-lg');
       header.classList.remove('bg-game-green');
     } else {
-      header.classList.remove('bg-game-green-dark/95', 'backdrop-blur-xl', 'shadow-lg');
+      header.classList.remove('bg-game-green-dark', 'shadow-lg');
       header.classList.add('bg-game-green');
     }
   }

@@ -17,6 +17,8 @@ const { title, description, slug, image, category, date, readingTime } = Astro.p
     <img
       src={image || '/images/og-default.svg'}
       alt={title}
+      width="800"
+      height="450"
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       loading="lazy"
       decoding="async"

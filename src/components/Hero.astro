@@ -3,23 +3,17 @@ import { SITE } from '../utils/seo';
 ---
 
 <section class="relative overflow-hidden bg-gradient-to-br from-game-green via-game-green-dark to-emerald-900 py-16 md:py-24" aria-label="Hero">
-  <!-- Animated background shapes -->
+  <!-- Background decoration (static, no animations for performance) -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-    <div class="absolute -top-24 -right-24 w-96 h-96 bg-game-green-light/10 rounded-full blur-3xl animate-pulse-soft"></div>
-    <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-emerald-400/10 rounded-full blur-3xl animate-pulse-soft" style="animation-delay: 2s;"></div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-game-green-light/5 rounded-full blur-3xl"></div>
-    <!-- Floating particles -->
-    <div class="absolute top-20 left-[10%] w-3 h-3 bg-yellow-400/30 rounded-full animate-float" style="animation-delay: 0s;"></div>
-    <div class="absolute top-40 right-[20%] w-2 h-2 bg-green-300/40 rounded-full animate-float" style="animation-delay: 1s;"></div>
-    <div class="absolute bottom-32 left-[30%] w-4 h-4 bg-amber-300/20 rounded-full animate-float" style="animation-delay: 2s;"></div>
-    <div class="absolute top-32 right-[40%] w-2.5 h-2.5 bg-lime-300/30 rounded-full animate-float" style="animation-delay: 3s;"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-game-green-light/10 rounded-full" style="filter:blur(60px);"></div>
+    <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-emerald-400/8 rounded-full" style="filter:blur(60px);"></div>
   </div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Content Column -->
       <div class="text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white/90 mb-6 border border-white/10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 rounded-full text-sm text-white/90 mb-6 border border-white/10">
           <span class="w-2 h-2 bg-game-green-light rounded-full animate-pulse"></span>
           Updated {SITE.download.updated}
         </div>
@@ -41,7 +35,7 @@ import { SITE } from '../utils/seo';
             </svg>
             <span>Download APK v{SITE.download.version}<span class="block text-sm font-semibold opacity-70">({SITE.download.size}) Free &middot; No Root</span></span>
           </a>
-          <a href="#install" class="inline-flex items-center gap-2 px-6 py-4 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-2xl border-2 border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
+          <a href="#install" class="inline-flex items-center gap-2 px-6 py-4 bg-white/10 text-white font-bold text-lg rounded-2xl border-2 border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -51,15 +45,15 @@ import { SITE } from '../utils/seo';
 
         <!-- Trust Signals -->
         <div class="flex flex-wrap items-center gap-3 justify-center lg:justify-start mb-8">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white/90 border border-white/10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm text-white/90 border border-white/10">
             <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
             Virus Free
           </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white/90 border border-white/10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm text-white/90 border border-white/10">
             <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
             Fully Unlocked
           </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white/90 border border-white/10">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm text-white/90 border border-white/10">
             <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
             Anti-Ban
           </span>
@@ -83,7 +77,7 @@ import { SITE } from '../utils/seo';
 
         <!-- v12.1.5 Update Badge -->
         <div class="mt-6 flex justify-center lg:justify-start">
-          <a href="/blog/version-changelogs/" class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white/90 border border-white/10 hover:bg-white/20 transition-all">
+          <a href="/blog/version-changelogs/" class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-white/90 border border-white/10 hover:bg-white/20 transition-all">
             <span class="w-2 h-2 bg-game-green-light rounded-full animate-pulse"></span>
             v{SITE.download.version} Update
           </a>
@@ -98,13 +92,16 @@ import { SITE } from '../utils/seo';
             <img
               src="/images/hero-bear.svg"
               alt="Super Bear Adventure gameplay screenshot"
+              width="640"
+              height="840"
               class="w-full h-full object-cover"
               loading="eager"
               decoding="async"
+              fetchpriority="high"
             />
           </div>
           <!-- Floating badges -->
-          <div class="absolute -top-4 -right-4 px-4 py-2 bg-yellow-400 text-yellow-900 font-bold text-sm rounded-xl shadow-lg animate-bounce-slow">
+          <div class="absolute -top-4 -right-4 px-4 py-2 bg-yellow-400 text-yellow-900 font-bold text-sm rounded-xl shadow-lg">
             FREE
           </div>
           <div class="absolute -bottom-4 -left-4 px-5 py-2.5 bg-white text-gray-900 font-bold text-sm rounded-xl shadow-lg flex items-center gap-2">
