@@ -29,19 +29,25 @@
     @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-game-green font-semibold rounded-xl border-2 border-game-green/20 hover:border-game-green hover:bg-game-green-50 transition-all duration-300;
   }
   .btn-download {
-    @apply inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-gray-900 font-extrabold text-xl rounded-2xl shadow-2xl hover:-translate-y-1 active:translate-y-0 transition-all duration-300 relative overflow-hidden border-2 border-yellow-400;
-    box-shadow: 0 0 20px rgba(234, 179, 8, 0.3), 0 10px 40px rgba(0,0,0,0.15);
+    @apply inline-flex items-center justify-center gap-3 px-10 py-5 text-white font-extrabold text-xl rounded-2xl hover:-translate-y-1 active:translate-y-0.5 transition-all duration-200 relative overflow-hidden border-0;
+    background: linear-gradient(to bottom, #8BC34A, #558B2F);
+    box-shadow: 0 6px 0 #33691E, 0 8px 20px rgba(51, 105, 30, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
   }
   .btn-download:hover {
-    @apply bg-yellow-50 border-yellow-500;
-    box-shadow: 0 0 30px rgba(234, 179, 8, 0.5), 0 15px 50px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #9CCC65, #689F38);
+    box-shadow: 0 4px 0 #33691E, 0 6px 16px rgba(51, 105, 30, 0.5), inset 0 1px 0 rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+  }
+  .btn-download:active {
+    box-shadow: 0 2px 0 #33691E, 0 3px 8px rgba(51, 105, 30, 0.3), inset 0 2px 4px rgba(0,0,0,0.1);
+    transform: translateY(2px);
   }
   .btn-download .dl-icon {
-    @apply text-yellow-600;
+    @apply text-white;
   }
   .btn-download::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-yellow-200/40 to-white/0 -translate-x-full;
+    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full;
     animation: shimmer 3s infinite;
   }
   .card {
