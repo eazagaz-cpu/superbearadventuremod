@@ -18,6 +18,8 @@ If you have never played Super Bear Adventure before, we strongly recommend read
 
 ## What Is the Super Bear Adventure Mod APK?
 
+![Play Store vs Mod APK comparison](/images/guides/play-store-vs-mod.svg)
+
 A Mod APK (Modified Android Package Kit) is a version of an Android application that has been modified to include additional features not available in the original version. The Super Bear Adventure Mod APK takes the base game and adds enhancements that improve the overall experience.
 
 ### Key Differences from the Original Version
@@ -62,6 +64,8 @@ The [mod menu](/blog/super-bear-adventure-mod-menu/) is a powerful in-game overl
 
 The mod menu can be toggled on and off at any time during gameplay, so you maintain full control over which features are active.
 
+![Mod menu interface overview](/images/guides/mod-menu-interface.svg)
+
 ### Ad-Free Experience
 
 The mod APK completely removes all advertisements from the game. No banner ads, no video ads, no interstitial ads. This creates a seamless, uninterrupted gaming experience.
@@ -103,6 +107,8 @@ Before installing, make sure you have:
 
 ### Step-by-Step Installation Guide
 
+![Installation step 1 - enable unknown sources](/images/guides/install-step1.svg)
+
 #### Step 1: Enable Installation from Unknown Sources
 
 Since the mod APK is not downloaded from the Google Play Store, you need to allow your device to install apps from other sources:
@@ -129,6 +135,8 @@ Download the Super Bear Adventure Mod APK file from our secure download link. Th
 - If your browser warns about the download, this is normal for APK files and can be safely proceeded
 
 #### Step 3: Locate the Downloaded File
+
+![File manager showing downloaded APK](/images/guides/file-manager.svg)
 
 Open your device's File Manager and navigate to the Downloads folder. Find the Super Bear Adventure Mod APK file, which will typically be named something like "SuperBearAdventure_Mod_v12.1.5.apk".
 

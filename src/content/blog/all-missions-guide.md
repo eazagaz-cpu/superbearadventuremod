@@ -10,6 +10,8 @@ tags: ["missions", "guide", "rewards", "walkthrough", "all worlds"]
 
 ## How Missions Work in Super Bear Adventure
 
+![Game map overview showing all worlds](/images/gameplay/map-overview.svg)
+
 Missions are the backbone of Super Bear Adventure. They drive your progression through each world, unlock new areas, and provide the coins and rewards you need to access everything the game offers. Understanding how the mission system works before diving into individual objectives saves time and prevents backtracking.
 
 Every world in the game contains a set of main missions and optional side objectives. Main missions must be completed to advance the story and unlock access to the next world. Side missions are optional but reward you with coins, cosmetics, stickers, and other valuable items.
@@ -33,6 +35,8 @@ Super Bear Adventure uses several mission archetypes that repeat across worlds w
 
 
 ## Turtletown Missions
+
+![Turtletown village overview](/images/worlds/detail/turtletown-village.svg)
 
 Turtletown is the first world and serves as your introduction to the game's mission structure. Difficulty is low, and the missions teach core mechanics. For a complete area walkthrough, see our [Turtletown walkthrough](/blog/turtletown-walkthrough/).
 
@@ -96,6 +100,8 @@ Beemothep Desert shifts the focus toward puzzles and environmental navigation. S
 
 ## Giant House Missions
 
+![Giant House kitchen area](/images/worlds/detail/giant-kitchen.svg)
+
 Giant House miniaturizes the bear inside a human-scale house, turning furniture into platforming terrain. The [Giant House walkthrough](/blog/giant-house-walkthrough/) provides step-by-step guidance for every room.
 
 ### Main Missions
@@ -137,6 +143,8 @@ The Hive emphasizes vertical platforming and aerial combat. Flying enemies and h
 
 
 ## Mole Mines Missions
+
+![Mole Mines entrance and tunnels](/images/worlds/detail/mines-entrance.svg)
 
 Mole Mines is the most recent world addition and features underground tunnels, mine cart rides, and dark exploration. The [Mole Mines walkthrough](/blog/mole-mines-walkthrough/) is the definitive resource for this area.
 

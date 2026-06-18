@@ -18,6 +18,8 @@ This guide covers every feature available in the mod menu, explains how to use e
 
 ## How to Access the Mod Menu
 
+![Mod menu interface layout](/images/guides/mod-menu-interface.svg)
+
 ### Opening the Menu
 
 The mod menu is accessed through a floating button that appears on your screen during gameplay. Here is how to find and use it:
@@ -50,6 +52,8 @@ The mod menu is organized into categories for easy navigation:
 - **Utility Features**: Convenience tools and shortcuts
 
 ## Player Modification Features
+
+![Mod features list overview](/images/guides/mod-features-list.svg)
 
 ### God Mode (Invincibility)
 
@@ -140,6 +144,8 @@ The mod menu is organized into categories for easy navigation:
 - Combined with [unlimited money](/blog/super-bear-adventure-unlimited-money/), teleportation to shops lets you quickly purchase and try new cosmetics
 
 ## Combat Modification Features
+
+![Combat basics in Super Bear Adventure](/images/gameplay/combat-basics.svg)
 
 ### One-Hit Kill
 
@@ -265,6 +271,8 @@ The mod menu is organized into categories for easy navigation:
 - Network latency display is helpful for diagnosing [multiplayer](/blog/multiplayer-guide/) lag
 
 ## Best Mod Menu Configurations
+
+![Settings menu for configuration](/images/gameplay/settings-menu.svg)
 
 ### For First-Time Players
 

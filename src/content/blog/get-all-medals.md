@@ -10,6 +10,8 @@ tags: ["medals", "100% completion", "achievements", "guide", "walkthrough", "Sup
 
 ## Understanding the Medal System in Super Bear Adventure
 
+![Bronze medal reward](/images/items/medal-bronze.svg)
+
 Medals are one of the core progression systems in Super Bear Adventure, rewarding players for accomplishing specific challenges in each world. Whether you are a casual player looking to earn a few extra rewards or a completionist aiming for 100% game completion, understanding how medals work is essential.
 
 The medal system was introduced in version 6.0.0 and has been expanded with each subsequent [game update](/blog/version-changelogs/). Today, there are dozens of medals to earn across all worlds, each testing a different skill or encouraging thorough exploration.
@@ -32,12 +34,16 @@ Each challenge in Super Bear Adventure awards medals in three tiers:
 
 #### Silver Medal
 
+![Silver medal reward](/images/items/medal-silver.svg)
+
 - Moderate difficulty
 - Requires better performance than bronze
 - Tighter time limits or higher completion thresholds
 - Rewards: Medium coin bonus, silver badge, and sometimes cosmetic items
 
 #### Gold Medal
+
+![Gold medal reward](/images/items/medal-gold.svg)
 
 - The highest tier and most difficult to achieve
 - Requires near-perfect performance
@@ -280,6 +286,8 @@ The newest world's medals focus on mining and underground exploration. See our [
 - **Tips**: Mine cart sequences are fast-paced. Memorize the track layout including jump points, lean directions, and track switches. The gold medal has zero tolerance for missed coins or track collisions.
 
 ## General Tips for Medal Hunting
+
+![Map overview for exploration planning](/images/gameplay/map-overview.svg)
 
 ### Prioritize Exploration First
 

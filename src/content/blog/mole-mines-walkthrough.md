@@ -26,6 +26,8 @@ Before descending, stock up on supplies. The Mole Mines has fewer health pickups
 
 ## Mining Cart Mechanics Explained
 
+![Mining cart ride through the tunnels](/images/worlds/detail/mines-cart-ride.svg)
+
 Mining cart sections are the signature feature of the Mole Mines. These are on-rails segments where your bear rides in a mine cart through twisting tunnels at high speed. Understanding how these sections work is essential for survival and for finding secrets.
 
 ### Basic Controls
@@ -45,6 +47,8 @@ Some track sections have golden rail segments that boost your speed. These are f
 Coins and gems are scattered along the tracks during cart rides. They usually appear in lines that indicate the safe track to follow. If you see a line of coins on the left track, it is generally safe to stay on that track until the coins end. However, some advanced sections deliberately place coins on dangerous tracks to tempt greedy players. Trust obstacle cues over coin placement when they conflict.
 
 ## Gem Puzzle System
+
+![Gem puzzle mechanics in the Mole Mines](/images/worlds/detail/mines-gem-puzzle.svg)
 
 The Mole Mines features a color-coded gem puzzle system that gates progression through the world. There are four gem colors: red, blue, green, and yellow. Each gem type is found in specific areas of the mines, and you need to collect gems and place them in matching pedestals to unlock doors and activate mechanisms.
 
@@ -111,6 +115,8 @@ Area 5 is the pre-boss area containing the Master Gem Gate. Before the gate, the
 The Master Gem Gate requires all four gems placed in the correct sequence (green, red, yellow, blue, as described above). Once the gate opens, you enter the boss arena.
 
 ### Area 6: The Mole King Boss Fight
+
+![Mole King boss arena](/images/worlds/detail/mines-boss.svg)
 
 The Mole King is the boss of the Mole Mines. He is a massive mole wearing a crown of crystals and wielding a giant pickaxe. For strategies on every boss in the game, check our [boss fight strategy guide](/blog/boss-fight-strategy/).
 

@@ -10,6 +10,8 @@ tags: ["unlimited money", "unlimited coins", "free coins", "best purchases", "ti
 
 ## How Unlimited Money Works in Super Bear Adventure Mod APK
 
+![Unlimited coins feature](/images/features/unlimited-coins.svg)
+
 One of the most popular features of the [Super Bear Adventure Mod APK](/blog/super-bear-adventure-mod-apk-download/) is the unlimited money system. In the standard game, coins are earned through gameplay activities like completing missions, defeating enemies, finding hidden stashes, and exploring the world. The mod version removes this grind entirely by providing an infinite supply of coins, allowing you to purchase anything in the game without restriction.
 
 This guide explains exactly how the unlimited money feature works, what you can spend your infinite coins on, the best purchases to make, and how to get the most out of this powerful mod feature. Whether you are a new player who just installed the mod or a veteran looking to optimize your spending, this guide covers everything.
@@ -44,6 +46,8 @@ This fundamentally changes the game experience by:
 ## What You Can Buy With Unlimited Money
 
 ### Skins
+
+![Royal skin cosmetic option](/images/items/skin-royal.svg)
 
 Skins are full-body appearance changes for Baaren. The game features an extensive collection of skins across several categories:
 
@@ -82,6 +86,8 @@ The most elaborate and expensive skins in the game:
 For a complete guide to every cosmetic in the game, visit our [skins and hats unlock guide](/blog/unlock-all-skins-hats/).
 
 ### Hats and Accessories
+
+![Hat collection in the shop](/images/items/hat-collection.svg)
 
 Hats are equipped separately from skins and add headwear to Baaren's appearance. The hat system is deep and varied:
 
@@ -139,6 +145,8 @@ Beyond cosmetics, coins can be spent on gameplay-affecting purchases:
 - **Recommendation**: Stock up on everything. Having a full inventory of consumables makes every encounter manageable.
 
 ## Best Purchases to Make First
+
+![Coin collecting gameplay](/images/gameplay/coin-collecting.svg)
 
 Even with unlimited money, there is an optimal order for purchases that maximizes your enjoyment. Here are our recommended priorities:
 

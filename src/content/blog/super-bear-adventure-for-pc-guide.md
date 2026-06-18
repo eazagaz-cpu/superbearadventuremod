@@ -14,6 +14,8 @@ Whether you want to explore every corner of [Turtletown](/blog/turtletown-walkth
 
 ## Why Play Super Bear Adventure on PC?
 
+![BlueStacks emulator setup](/images/guides/bluestacks-setup.svg)
+
 Before diving into installation steps, it is worth understanding why so many players make the switch to PC. The benefits go beyond just having a bigger screen.
 
 - **Larger display**: A monitor or laptop screen lets you spot hidden collectibles, distant platforms, and environmental details that are easy to miss on a phone.
@@ -99,6 +101,8 @@ To get the smoothest experience:
 
 ## Method 2: Install Using LDPlayer
 
+![LDPlayer emulator setup](/images/guides/ldplayer-setup.svg)
+
 LDPlayer is a strong alternative to BlueStacks, particularly popular among gamers who want low resource usage and high frame rates. It is based on Android 9.0 and offers excellent compatibility.
 
 ### Step-by-Step Installation
@@ -154,6 +158,8 @@ MEmu is particularly good at handling 3D games and provides stable frame rates e
 
 ## Setting Up Keyboard Controls and Mapping
 
+![Keyboard control mapping for Super Bear Adventure](/images/guides/keyboard-mapping.svg)
+
 One of the biggest advantages of playing on PC is having full keyboard and mouse control. All of the emulators mentioned above include keymapping tools, but here is a recommended layout for Super Bear Adventure.
 
 ### Recommended Key Bindings
@@ -188,6 +194,8 @@ The process is similar in LDPlayer, NoxPlayer, and MEmu. Each has a visual keyma
 If you prefer a controller, all four emulators support gamepad input. Simply connect your Xbox, PlayStation, or third-party controller via USB or Bluetooth, and the emulator should detect it automatically. You may need to configure the button mapping within the emulator's settings.
 
 ## Performance Optimization Tips
+
+![Performance settings optimization](/images/guides/performance-settings.svg)
 
 Super Bear Adventure is not a demanding game, but emulators can sometimes introduce overhead. Here are ways to ensure the smoothest experience.
 

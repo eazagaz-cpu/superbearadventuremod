@@ -16,6 +16,8 @@ This guide covers every boss in the game, organized by world. For each boss, we 
 
 ## General Boss Fight Tips
 
+![Combat basics in Super Bear Adventure](/images/gameplay/combat-basics.svg)
+
 Before diving into individual bosses, here are some universal tips that apply to every encounter.
 
 ### Preparation
@@ -84,6 +86,8 @@ For secrets and collectibles in the world leading up to this fight, check our [S
 
 ## Beemothep Desert Boss: The Sand Pharaoh
 
+![The Sand Pharaoh boss character](/images/characters/sand-pharaoh.svg)
+
 The Sand Pharaoh is an ancient bear mummy that rises from a sarcophagus in the heart of a desert pyramid. The arena is a multi-level chamber with sand that slowly fills the lower level as the fight progresses.
 
 ### Attack Patterns
@@ -109,6 +113,8 @@ Phase three is a DPS race. The sand rises to the upper platforms, giving you ver
 The [Beemothep Desert puzzle guide](/blog/beemothep-desert-puzzle/) covers the world and its puzzles leading up to this encounter.
 
 ## The Hive Boss: The Queen Bee
+
+![The Queen Bee boss character](/images/characters/queen-bee.svg)
 
 The Queen Bee is a fast, aerial boss that fights in a circular arena with honey walls and a central honey pool. Full details on this fight and The Hive world are available in our [Hive walkthrough](/blog/the-hive-walkthrough/), but here is the strategic summary.
 
@@ -151,6 +157,8 @@ Phase three adds breakable furniture. The cat's pounces start destroying the ele
 See the [Giant House walkthrough](/blog/giant-house-walkthrough/) for the full world guide.
 
 ## Mole Mines Boss: The Mole King
+
+![The Mole King boss character](/images/characters/mole-king.svg)
 
 The Mole King fights in an underground arena with raised rock platforms. He wields a giant crystal pickaxe and can burrow underground.
 
