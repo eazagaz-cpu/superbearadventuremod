@@ -29,25 +29,43 @@
     @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-game-green font-semibold rounded-xl border-2 border-game-green/20 hover:border-game-green hover:bg-game-green-50 transition-all duration-300;
   }
   .btn-download {
-    @apply inline-flex items-center justify-center gap-3 px-10 py-5 text-white font-extrabold text-xl rounded-2xl hover:-translate-y-1 active:translate-y-0.5 transition-all duration-200 relative overflow-hidden border-0;
-    background: linear-gradient(to bottom, #8BC34A, #558B2F);
-    box-shadow: 0 6px 0 #33691E, 0 8px 20px rgba(51, 105, 30, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: #86c943;
+    color: #ffffff !important;
+    padding: 18px 34px;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 7px 0 #4f8f2f, 0 10px 20px rgba(79, 143, 47, 0.3);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none !important;
   }
   .btn-download:hover {
-    background: linear-gradient(to bottom, #9CCC65, #689F38);
-    box-shadow: 0 4px 0 #33691E, 0 6px 16px rgba(51, 105, 30, 0.5), inset 0 1px 0 rgba(255,255,255,0.3);
-    transform: translateY(-2px);
+    background: #7abb3d;
+    color: #ffffff !important;
+    box-shadow: 0 5px 0 #4f8f2f, 0 8px 16px rgba(79, 143, 47, 0.35);
+    transform: translateY(2px);
+    text-decoration: none !important;
   }
   .btn-download:active {
-    box-shadow: 0 2px 0 #33691E, 0 3px 8px rgba(51, 105, 30, 0.3), inset 0 2px 4px rgba(0,0,0,0.1);
-    transform: translateY(2px);
-  }
-  .btn-download .dl-icon {
-    @apply text-white;
+    background: #6faa35;
+    box-shadow: 0 2px 0 #4f8f2f, 0 4px 8px rgba(79, 143, 47, 0.2);
+    transform: translateY(5px);
   }
   .btn-download::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    transform: translateX(-100%);
     animation: shimmer 3s infinite;
   }
   .card {
@@ -67,6 +85,13 @@
   }
   .prose-game a {
     @apply text-game-green font-medium underline decoration-game-green/30 underline-offset-2 hover:decoration-game-green transition-colors;
+  }
+  .prose-game a.btn-download,
+  .prose-game a.btn-primary,
+  a.btn-download {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background: #86c943;
   }
   .prose-game h2 {
     @apply text-2xl md:text-3xl font-extrabold text-gray-900 mt-12 mb-4 scroll-mt-24;

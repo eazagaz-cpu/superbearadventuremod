@@ -313,77 +313,79 @@ const schemas = [
             </div>
           ))}
         </div>
-        <!-- Download CTA -->
-        <div class="my-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 md:p-10 text-center not-prose shadow-xl border border-gray-700">
-          <div class="w-16 h-16 rounded-2xl bg-game-green/20 flex items-center justify-center mx-auto mb-5">
-            <svg class="w-8 h-8 text-game-green-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </div>
-          <h3 class="text-3xl font-extrabold text-white mb-3">Ready to Download?</h3>
-          <p class="text-lg text-gray-300 mb-1">Super Bear Adventure Mod APK v{SITE.download.version}</p>
-          <p class="text-sm text-gray-400 mb-8">{SITE.download.size} &middot; Free &middot; No root required &middot; Anti-ban</p>
-          <a href={SITE.download.url} class="btn-download text-xl">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Download APK v{SITE.download.version} ({SITE.download.size})
-          </a>
-          <div class="flex items-center justify-center gap-6 mt-5 text-sm text-gray-400">
-            <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Virus Free</span>
-            <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Verified</span>
-            <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Fast Download</span>
-          </div>
+      </div>
+      <!-- Download CTA - outside prose-game to prevent color overrides -->
+      <div class="my-8 rounded-2xl p-8 md:p-10 text-center shadow-xl border border-gray-700" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(134,201,67,0.15);">
+          <svg class="w-8 h-8" style="color: #86c943;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
         </div>
+        <h3 style="color: #ffffff; font-size: 1.875rem; font-weight: 800; margin-bottom: 0.75rem;">Ready to Download?</h3>
+        <p style="color: #d1d5db; font-size: 1.125rem; margin-bottom: 0.25rem;">Super Bear Adventure Mod APK v{SITE.download.version}</p>
+        <p style="color: #9ca3af; font-size: 0.875rem; margin-bottom: 2rem;">{SITE.download.size} &middot; Free &middot; No root required &middot; Anti-ban</p>
+        <a href={SITE.download.url} class="btn-download">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Download APK v{SITE.download.version} ({SITE.download.size})
+        </a>
+        <div class="flex items-center justify-center gap-6 mt-5" style="font-size: 0.875rem; color: #9ca3af;">
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Virus Free</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Verified</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Fast Download</span>
+        </div>
+      </div>
+      <div class="prose-game">
 
-        <h2 id="mod-safe">Is the Mod Safe? (The Trust Factor)</h2>
-        <p>
-          We care about safety. Every file on this site is checked by us. We don't use unverified links.
-        </p>
+      </div>
+      <!-- Safety section - outside prose-game -->
+      <div class="my-8">
+        <h2 id="mod-safe" class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">Is the Mod Safe? (The Trust Factor)</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">We care about safety. Every file on this site is checked by us. We don't use unverified links.</p>
 
-        <!-- Safety & Trust Visual Section -->
-        <div class="my-8 not-prose">
-          <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6 md:p-10">
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-center">
-              <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
-                    <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-extrabold text-xl">VERIFIED SAFE</h3>
-                    <p class="text-emerald-400 text-sm font-medium">For Super Bear Adventure</p>
-                  </div>
+        <div class="rounded-2xl border border-gray-700 p-6 md:p-10" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+          <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-center">
+            <div>
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background: rgba(16, 185, 129, 0.15);">
+                  <svg class="w-8 h-8" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 </div>
-                <ul class="space-y-4">
-                  <li class="flex items-start gap-3">
-                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <div><span class="text-white font-bold text-sm">Anti-Ban Protection:</span> <span class="text-gray-400 text-sm">This build is set up to reduce the chance of in-game bans.</span></div>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <div><span class="text-white font-bold text-sm">Security Scanning:</span> <span class="text-gray-400 text-sm">Files are scanned with VirusTotal so they're clean.</span></div>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <div><span class="text-white font-bold text-sm">No Root Required:</span> <span class="text-gray-400 text-sm">Works on all standard Android devices.</span></div>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <div><span class="text-white font-bold text-sm">No Personal Data:</span> <span class="text-gray-400 text-sm">Does not access contacts, photos, or accounts.</span></div>
-                  </li>
-                  <li class="flex items-start gap-3">
-                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                    <div><span class="text-white font-bold text-sm">Regular Updates:</span> <span class="text-gray-400 text-sm">Always synced with official Earthkwak patches.</span></div>
-                  </li>
-                </ul>
+                <div>
+                  <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0;">VERIFIED SAFE</h3>
+                  <p style="color: #34d399; font-size: 0.875rem; font-weight: 500; margin: 0;">For Super Bear Adventure</p>
+                </div>
               </div>
-              <div class="flex justify-center">
-                <img src="/images/features/anti-ban.svg" alt="Verified safe — anti-ban protection and security scanning" class="w-full h-auto rounded-2xl" loading="lazy" />
-              </div>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  <div><span style="color: #ffffff; font-weight: 700; font-size: 0.9rem;">Anti-Ban Protection:</span> <span style="color: #d1d5db; font-size: 0.9rem;">This build is set up to reduce the chance of in-game bans.</span></div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  <div><span style="color: #ffffff; font-weight: 700; font-size: 0.9rem;">Security Scanning:</span> <span style="color: #d1d5db; font-size: 0.9rem;">Files are scanned with VirusTotal so they're clean.</span></div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  <div><span style="color: #ffffff; font-weight: 700; font-size: 0.9rem;">No Root Required:</span> <span style="color: #d1d5db; font-size: 0.9rem;">Works on all standard Android devices.</span></div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  <div><span style="color: #ffffff; font-weight: 700; font-size: 0.9rem;">No Personal Data:</span> <span style="color: #d1d5db; font-size: 0.9rem;">Does not access contacts, photos, or accounts.</span></div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                  <div><span style="color: #ffffff; font-weight: 700; font-size: 0.9rem;">Regular Updates:</span> <span style="color: #d1d5db; font-size: 0.9rem;">Always synced with official Earthkwak patches.</span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <img src="/images/features/anti-ban.svg" alt="Verified safe — anti-ban protection and security scanning" class="w-full h-auto rounded-2xl" loading="lazy" style="max-width: 380px;" />
             </div>
           </div>
         </div>
+      </div>
+      <div class="prose-game">
 
         <h2 id="optimization">Optimization for Low-End Devices</h2>
         <p>
