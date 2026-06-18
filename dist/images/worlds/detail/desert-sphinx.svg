@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="spsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1500"/>
+      <stop offset="30%" stop-color="#c47a20"/>
+      <stop offset="70%" stop-color="#e8a840"/>
+      <stop offset="100%" stop-color="#f0c060"/>
+    </linearGradient>
+    <linearGradient id="spsand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#daa850"/>
+      <stop offset="100%" stop-color="#b88030"/>
+    </linearGradient>
+    <linearGradient id="spbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c89038"/>
+      <stop offset="60%" stop-color="#a06820"/>
+      <stop offset="100%" stop-color="#785018"/>
+    </linearGradient>
+    <linearGradient id="spcol" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b88838"/>
+      <stop offset="50%" stop-color="#d4a850"/>
+      <stop offset="100%" stop-color="#a07828"/>
+    </linearGradient>
+    <radialGradient id="speye" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffcc"/>
+      <stop offset="60%" stop-color="#00cc99"/>
+      <stop offset="100%" stop-color="#00886640"/>
+    </radialGradient>
+    <radialGradient id="spqglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffee8860"/>
+      <stop offset="100%" stop-color="#ffee8800"/>
+    </radialGradient>
+    <linearGradient id="sppz1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c060"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="sppz2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60c0e0"/>
+      <stop offset="100%" stop-color="#3090b0"/>
+    </linearGradient>
+    <linearGradient id="sppz3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e07040"/>
+      <stop offset="100%" stop-color="#b04820"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#spsky)"/>
+  <g fill="#ffffff" opacity="0.3">
+    <circle cx="80" cy="30" r="1.5"/>
+    <circle cx="200" cy="50" r="1"/>
+    <circle cx="320" cy="25" r="1.2"/>
+    <circle cx="500" cy="40" r="1"/>
+    <circle cx="720" cy="35" r="1.5"/>
+    <circle cx="150" cy="65" r="0.8"/>
+    <circle cx="600" cy="55" r="1"/>
+    <circle cx="400" cy="15" r="1.3"/>
+  </g>
+  <rect x="0" y="0" width="800" height="18" fill="#3a2000" opacity="0.6"/>
+  <g stroke="#d4a040" stroke-width="1" fill="none" opacity="0.6">
+    <circle cx="20" cy="9" r="4"/><line x1="40" y1="4" x2="40" y2="14"/>
+    <path d="M55 4 L60 14 L65 4"/><rect x="78" y="4" width="8" height="10"/>
+    <circle cx="105" cy="9" r="4"/><path d="M120 4 Q125 14 130 4"/>
+    <line x1="145" y1="4" x2="145" y2="14"/><circle cx="165" cy="9" r="4"/>
+    <rect x="180" y="4" width="8" height="10"/><path d="M205 4 L210 14 L215 4"/>
+    <circle cx="235" cy="9" r="4"/><line x1="255" y1="4" x2="255" y2="14"/>
+    <path d="M270 4 Q275 14 280 4"/><rect x="295" y="4" width="8" height="10"/>
+    <circle cx="325" cy="9" r="4"/><path d="M340 4 L345 14 L350 4"/>
+    <line x1="365" y1="4" x2="365" y2="14"/><circle cx="385" cy="9" r="4"/>
+    <rect x="400" y="4" width="8" height="10"/><path d="M425 4 Q430 14 435 4"/>
+    <circle cx="455" cy="9" r="4"/><line x1="475" y1="4" x2="475" y2="14"/>
+    <path d="M490 4 L495 14 L500 4"/><rect x="515" y="4" width="8" height="10"/>
+    <circle cx="545" cy="9" r="4"/><path d="M560 4 Q565 14 570 4"/>
+    <line x1="585" y1="4" x2="585" y2="14"/><rect x="600" y="4" width="8" height="10"/>
+    <circle cx="630" cy="9" r="4"/><path d="M645 4 L650 14 L655 4"/>
+    <line x1="670" y1="4" x2="670" y2="14"/><circle cx="690" cy="9" r="4"/>
+    <rect x="705" y="4" width="8" height="10"/><path d="M730 4 Q735 14 740 4"/>
+    <circle cx="760" cy="9" r="4"/><line x1="780" y1="4" x2="780" y2="14"/>
+  </g>
+  <rect x="0" y="432" width="800" height="18" fill="#3a2000" opacity="0.6"/>
+  <g stroke="#d4a040" stroke-width="1" fill="none" opacity="0.6" transform="translate(0,432)">
+    <circle cx="20" cy="9" r="4"/><line x1="40" y1="4" x2="40" y2="14"/>
+    <path d="M55 4 L60 14 L65 4"/><rect x="78" y="4" width="8" height="10"/>
+    <circle cx="105" cy="9" r="4"/><path d="M120 4 Q125 14 130 4"/>
+    <line x1="145" y1="4" x2="145" y2="14"/><circle cx="165" cy="9" r="4"/>
+    <rect x="180" y="4" width="8" height="10"/><path d="M205 4 L210 14 L215 4"/>
+    <circle cx="235" cy="9" r="4"/><line x1="255" y1="4" x2="255" y2="14"/>
+    <path d="M270 4 Q275 14 280 4"/><rect x="295" y="4" width="8" height="10"/>
+    <circle cx="325" cy="9" r="4"/><path d="M340 4 L345 14 L350 4"/>
+    <line x1="365" y1="4" x2="365" y2="14"/><circle cx="385" cy="9" r="4"/>
+    <rect x="400" y="4" width="8" height="10"/><path d="M425 4 Q430 14 435 4"/>
+    <circle cx="455" cy="9" r="4"/><line x1="475" y1="4" x2="475" y2="14"/>
+    <path d="M490 4 L495 14 L500 4"/><rect x="515" y="4" width="8" height="10"/>
+    <circle cx="545" cy="9" r="4"/><path d="M560 4 Q565 14 570 4"/>
+    <line x1="585" y1="4" x2="585" y2="14"/><rect x="600" y="4" width="8" height="10"/>
+    <circle cx="630" cy="9" r="4"/><path d="M645 4 L650 14 L655 4"/>
+    <line x1="670" y1="4" x2="670" y2="14"/><circle cx="690" cy="9" r="4"/>
+    <rect x="705" y="4" width="8" height="10"/><path d="M730 4 Q735 14 740 4"/>
+    <circle cx="760" cy="9" r="4"/><line x1="780" y1="4" x2="780" y2="14"/>
+  </g>
+  <path d="M0 340 Q200 330 400 335 Q600 340 800 330 L800 450 L0 450 Z" fill="url(#spsand)"/>
+  <rect x="60" y="140" width="35" height="200" fill="url(#spcol)" rx="3"/>
+  <rect x="55" y="135" width="45" height="15" fill="#c89838" rx="2"/>
+  <rect x="55" y="335" width="45" height="12" fill="#c89838" rx="2"/>
+  <g stroke="#8a6020" stroke-width="0.7" opacity="0.4">
+    <line x1="70" y1="150" x2="70" y2="335"/>
+    <line x1="78" y1="150" x2="78" y2="335"/>
+    <line x1="86" y1="150" x2="86" y2="335"/>
+  </g>
+  <path d="M55 140 Q60 130 77 128 Q94 130 99 140" fill="none" stroke="#a07828" stroke-width="1.5"/>
+  <rect x="705" y="140" width="35" height="200" fill="url(#spcol)" rx="3"/>
+  <rect x="700" y="135" width="45" height="15" fill="#c89838" rx="2"/>
+  <rect x="700" y="335" width="45" height="12" fill="#c89838" rx="2"/>
+  <g stroke="#8a6020" stroke-width="0.7" opacity="0.4">
+    <line x1="715" y1="150" x2="715" y2="335"/>
+    <line x1="723" y1="150" x2="723" y2="335"/>
+    <line x1="731" y1="150" x2="731" y2="335"/>
+  </g>
+  <path d="M700 140 Q705 130 722 128 Q739 130 744 140" fill="none" stroke="#a07828" stroke-width="1.5"/>
+  <path d="M200 280 Q200 240 250 230 L520 225 Q560 225 570 240 L580 260 Q590 280 580 300 L570 320 Q560 340 540 340 L220 340 Q200 340 200 320 Z" fill="url(#spbody)" stroke="#785018" stroke-width="1"/>
+  <path d="M520 300 L560 300 Q570 300 570 310 L570 340 L510 340 L510 310 Q510 300 520 300 Z" fill="#a06820" stroke="#785018" stroke-width="0.8"/>
+  <path d="M530 300 L550 300 Q555 300 555 308 L555 340 L525 340 L525 308 Q525 300 530 300 Z" fill="#b07828"/>
+  <line x1="535" y1="320" x2="535" y2="340" stroke="#785018" stroke-width="0.5" opacity="0.5"/>
+  <line x1="545" y1="320" x2="545" y2="340" stroke="#785018" stroke-width="0.5" opacity="0.5"/>
+  <path d="M200 260 Q190 270 195 300 Q198 330 210 340" fill="#906018" stroke="#785018" stroke-width="0.8"/>
+  <path d="M195 280 Q170 260 165 240 Q162 230 170 228" fill="none" stroke="#906018" stroke-width="6" stroke-linecap="round"/>
+  <path d="M530 225 Q530 170 510 150 Q500 140 490 135 L460 130 Q440 128 430 130 L420 132 Q410 135 405 145 Q398 160 398 180 L398 220 Q398 230 410 230 L530 225 Z" fill="#c89838" stroke="#a07828" stroke-width="1"/>
+  <path d="M520 170 Q530 175 532 185 Q533 195 528 200 L520 205 Q515 210 510 215 L505 220" fill="none" stroke="#906020" stroke-width="1.5"/>
+  <path d="M525 185 Q530 188 528 195" fill="none" stroke="#906020" stroke-width="1.2"/>
+  <g stroke="#a07020" stroke-width="1" opacity="0.5">
+    <path d="M420 140 Q415 170 410 200"/>
+    <path d="M440 135 Q435 165 430 195"/>
+    <path d="M460 133 Q455 163 450 193"/>
+    <path d="M480 135 Q478 165 475 195"/>
+    <path d="M500 140 Q498 170 496 200"/>
+  </g>
+  <path d="M405 180 Q395 200 388 230 Q385 245 390 250" fill="#b08030" stroke="#906020" stroke-width="1"/>
+  <path d="M530 180 Q540 200 545 230 Q548 245 543 250" fill="#b08030" stroke="#906020" stroke-width="1"/>
+  <circle cx="512" cy="178" r="6" fill="url(#speye)"/>
+  <circle cx="512" cy="178" r="3" fill="#00ffee"/>
+  <circle cx="512" cy="178" r="1.5" fill="#ffffff"/>
+  <circle cx="470" cy="80" r="40" fill="url(#spqglow)"/>
+  <text x="470" y="105" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="bold" fill="#f5d870" opacity="0.9">?</text>
+  <text x="470" y="105" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="bold" fill="none" stroke="#ffee88" stroke-width="1" opacity="0.4">?</text>
+  <circle cx="180" cy="180" r="20" fill="url(#sppz2)" opacity="0.7" stroke="#40a0c0" stroke-width="1.5"/>
+  <circle cx="180" cy="180" r="10" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  <polygon points="650,120 670,160 630,160" fill="url(#sppz3)" opacity="0.7" stroke="#c04020" stroke-width="1.5"/>
+  <polygon points="650,135 660,152 640,152" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  <rect x="145" y="280" width="30" height="30" fill="url(#sppz1)" opacity="0.7" stroke="#c09030" stroke-width="1.5" rx="2"/>
+  <rect x="152" y="287" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5" rx="1"/>
+  <polygon points="670,250 690,270 670,290 650,270" fill="url(#sppz2)" opacity="0.6" stroke="#40a0c0" stroke-width="1.5"/>
+  <circle cx="300" cy="120" r="12" fill="url(#sppz3)" opacity="0.5" stroke="#c04020" stroke-width="1"/>
+  <polygon points="590,200 605,225 575,225" fill="url(#sppz1)" opacity="0.5" stroke="#c09030" stroke-width="1"/>
+  <g fill="#f5d870" opacity="0.3">
+    <circle cx="250" cy="160" r="2"/>
+    <circle cx="280" cy="140" r="1.5"/>
+    <circle cx="340" cy="130" r="2"/>
+    <circle cx="600" cy="170" r="1.5"/>
+    <circle cx="630" cy="190" r="2"/>
+    <circle cx="200" cy="250" r="1.5"/>
+  </g>
+  <g stroke="#785018" stroke-width="0.6" opacity="0.3">
+    <line x1="250" y1="240" x2="250" y2="330"/>
+    <line x1="300" y1="235" x2="300" y2="335"/>
+    <line x1="350" y1="232" x2="350" y2="335"/>
+    <line x1="400" y1="230" x2="400" y2="335"/>
+    <line x1="450" y1="228" x2="450" y2="335"/>
+  </g>
+  <rect x="250" y="380" width="300" height="36" rx="6" fill="#2a1500" opacity="0.75"/>
+  <rect x="252" y="382" width="296" height="32" rx="5" fill="none" stroke="#d4a040" stroke-width="1" opacity="0.5"/>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#f5d870" letter-spacing="2">The Sphinx Puzzle</text>
+</svg>

@@ -1,71 +1,203 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1B5E20"/>
-      <stop offset="100%" stop-color="#33691E"/>
+    <linearGradient id="bg-ac" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#F1F8E9"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <filter id="s-ac"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.12"/></filter>
+    <linearGradient id="stage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8E6C9"/>
+      <stop offset="100%" stop-color="#A5D6A7"/>
+    </linearGradient>
   </defs>
-  <rect width="800" height="450" fill="url(#bg)"/>
-  <!-- Spotlight -->
-  <ellipse cx="400" cy="350" rx="350" ry="30" fill="#4CAF50" opacity="0.15"/>
-  <!-- Character silhouettes -->
-  <g filter="url(#s)">
-    <!-- Character 1 - Bear (center, largest) -->
-    <g transform="translate(400, 210)">
-      <circle cx="0" cy="-30" r="45" fill="#8D6E63"/>
-      <circle cx="-30" cy="-60" r="16" fill="#795548"/>
-      <circle cx="30" cy="-60" r="16" fill="#795548"/>
-      <circle cx="-30" cy="-60" r="9" fill="#BCAAA4"/>
-      <circle cx="30" cy="-60" r="9" fill="#BCAAA4"/>
-      <circle cx="-12" cy="-35" r="7" fill="white"/>
-      <circle cx="12" cy="-35" r="7" fill="white"/>
-      <circle cx="-10" cy="-33" r="4" fill="#333"/>
-      <circle cx="14" cy="-33" r="4" fill="#333"/>
-      <ellipse cx="0" cy="-15" rx="10" ry="7" fill="#5D4037"/>
-      <path d="M-10,-5 Q0,5 10,-5" fill="none" stroke="#5D4037" stroke-width="2"/>
-      <ellipse cx="0" cy="50" rx="40" ry="55" fill="#795548"/>
-      <ellipse cx="0" cy="55" rx="25" ry="35" fill="#BCAAA4"/>
-    </g>
-    <!-- Character 2 - Turtle (left) -->
-    <g transform="translate(200, 260)">
-      <ellipse cx="0" cy="10" rx="35" ry="22" fill="#2E7D32"/>
-      <ellipse cx="0" cy="5" rx="28" ry="18" fill="#4CAF50"/>
-      <path d="M-14,-8 L0,12 L14,-8" fill="none" stroke="#2E7D32" stroke-width="2"/>
-      <circle cx="-30" cy="8" r="8" fill="#388E3C"/>
-      <circle cx="30" cy="8" r="8" fill="#388E3C"/>
-      <circle cx="-35" cy="5" r="6" fill="#4CAF50"/>
-      <circle cx="-33" cy="3" r="2" fill="#1B5E20"/>
-      <text x="0" y="50" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#A5D6A7">Turtle</text>
-    </g>
-    <!-- Character 3 - Bee (right) -->
-    <g transform="translate(600, 240)">
-      <ellipse cx="0" cy="0" rx="25" ry="16" fill="#FFC107"/>
-      <rect x="-12" y="-16" width="5" height="32" rx="2" fill="#333" opacity="0.6"/>
-      <rect x="5" y="-16" width="5" height="32" rx="2" fill="#333" opacity="0.6"/>
-      <ellipse cx="-12" cy="-18" rx="14" ry="8" fill="white" opacity="0.4" transform="rotate(-15)"/>
-      <ellipse cx="12" cy="-18" rx="14" ry="8" fill="white" opacity="0.4" transform="rotate(15)"/>
-      <circle cx="25" cy="-3" r="3" fill="#333"/>
-      <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#A5D6A7">Bee</text>
-    </g>
-    <!-- Character 4 - Mole (far left) -->
-    <g transform="translate(100, 280)">
-      <ellipse cx="0" cy="0" rx="22" ry="18" fill="#5D4037"/>
-      <circle cx="0" cy="-8" r="14" fill="#6D4C41"/>
-      <circle cx="-6" cy="-10" r="3" fill="#333"/>
-      <circle cx="6" cy="-10" r="3" fill="#333"/>
-      <ellipse cx="0" cy="-3" rx="6" ry="4" fill="#8D6E63"/>
-      <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#A5D6A7">Mole</text>
-    </g>
-    <!-- Character 5 - Snake (far right) -->
-    <g transform="translate(700, 280)">
-      <path d="M-20,10 Q-10,-10 0,0 Q10,10 20,-5 Q25,-10 20,-15" fill="none" stroke="#4CAF50" stroke-width="8" stroke-linecap="round"/>
-      <circle cx="20" cy="-15" r="6" fill="#66BB6A"/>
-      <circle cx="18" cy="-17" r="2" fill="#333"/>
-      <circle cx="22" cy="-17" r="2" fill="#333"/>
-      <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#A5D6A7">Snake</text>
-    </g>
+
+  <!-- Light green background -->
+  <rect width="800" height="450" fill="url(#bg-ac)"/>
+
+  <!-- Decorative dots pattern -->
+  <g fill="#C8E6C9" opacity="0.4">
+    <circle cx="50" cy="50" r="4"/><circle cx="100" cy="50" r="4"/><circle cx="150" cy="50" r="4"/>
+    <circle cx="650" cy="50" r="4"/><circle cx="700" cy="50" r="4"/><circle cx="750" cy="50" r="4"/>
+    <circle cx="50" cy="90" r="4"/><circle cx="100" cy="90" r="4"/><circle cx="150" cy="90" r="4"/>
+    <circle cx="650" cy="90" r="4"/><circle cx="700" cy="90" r="4"/><circle cx="750" cy="90" r="4"/>
   </g>
-  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">All Characters Guide</text>
-  <text x="400" y="418" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Every NPC &amp; Creature</text>
+
+  <!-- Spotlight arcs -->
+  <g opacity="0.08" fill="none" stroke="#4CAF50" stroke-width="40">
+    <path d="M100,450 Q100,100 400,50"/>
+    <path d="M700,450 Q700,100 400,50"/>
+  </g>
+
+  <!-- Stage platform -->
+  <rect x="60" y="310" width="680" height="25" rx="12" fill="url(#stage)" filter="url(#s-ac)"/>
+  <rect x="80" y="330" width="640" height="10" rx="5" fill="#81C784" opacity="0.5"/>
+
+  <!-- Character 1: Classic Brown Bear (left) -->
+  <g transform="translate(170, 225)" filter="url(#s-ac)">
+    <!-- Platform circle -->
+    <ellipse cx="0" cy="80" rx="55" ry="10" fill="#A5D6A7" opacity="0.5"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="40" rx="32" ry="42" fill="#8D6E63"/>
+    <ellipse cx="0" cy="44" rx="20" ry="26" fill="#BCAAA4"/>
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="30" fill="#8D6E63"/>
+    <!-- Ears -->
+    <circle cx="-20" cy="-38" r="11" fill="#795548"/>
+    <circle cx="20" cy="-38" r="11" fill="#795548"/>
+    <circle cx="-20" cy="-38" r="6" fill="#BCAAA4"/>
+    <circle cx="20" cy="-38" r="6" fill="#BCAAA4"/>
+    <!-- Happy eyes -->
+    <circle cx="-9" cy="-18" r="5" fill="white"/>
+    <circle cx="9" cy="-18" r="5" fill="white"/>
+    <circle cx="-8" cy="-17" r="3" fill="#333"/>
+    <circle cx="10" cy="-17" r="3" fill="#333"/>
+    <circle cx="-7" cy="-18" r="1.2" fill="white"/>
+    <circle cx="11" cy="-18" r="1.2" fill="white"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-7" rx="6" ry="4" fill="#5D4037"/>
+    <!-- Smile -->
+    <path d="M-8,-1 Q0,7 8,-1" fill="none" stroke="#5D4037" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Waving arm -->
+    <path d="M28,30 Q45,10 40,-10" stroke="#8D6E63" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Feet -->
+    <ellipse cx="-14" cy="80" rx="12" ry="6" fill="#795548"/>
+    <ellipse cx="14" cy="80" rx="12" ry="6" fill="#795548"/>
+    <!-- Label -->
+    <rect x="-30" y="92" width="60" height="20" rx="10" fill="#4CAF50"/>
+    <text x="0" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">Classic</text>
+  </g>
+
+  <!-- Character 2: Golden Bear -->
+  <g transform="translate(340, 210)" filter="url(#s-ac)">
+    <ellipse cx="0" cy="95" rx="55" ry="10" fill="#A5D6A7" opacity="0.5"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="48" rx="35" ry="48" fill="#FFB300"/>
+    <ellipse cx="0" cy="52" rx="22" ry="30" fill="#FFE082"/>
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="34" fill="#FFB300"/>
+    <!-- Crown -->
+    <g transform="translate(0, -42)">
+      <polygon points="-18,5 -18,-10 -10,-2 0,-14 10,-2 18,-10 18,5" fill="#FDD835"/>
+      <circle cx="-12" cy="-6" r="3" fill="#E53935"/>
+      <circle cx="0" cy="-10" r="3" fill="#1E88E5"/>
+      <circle cx="12" cy="-6" r="3" fill="#43A047"/>
+    </g>
+    <!-- Ears -->
+    <circle cx="-24" cy="-36" r="12" fill="#FF8F00"/>
+    <circle cx="24" cy="-36" r="12" fill="#FF8F00"/>
+    <circle cx="-24" cy="-36" r="7" fill="#FFE082"/>
+    <circle cx="24" cy="-36" r="7" fill="#FFE082"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-14" r="6" fill="white"/>
+    <circle cx="10" cy="-14" r="6" fill="white"/>
+    <circle cx="-9" cy="-13" r="3.5" fill="#333"/>
+    <circle cx="11" cy="-13" r="3.5" fill="#333"/>
+    <circle cx="-8" cy="-14" r="1.3" fill="white"/>
+    <circle cx="12" cy="-14" r="1.3" fill="white"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-3" rx="7" ry="4.5" fill="#E65100"/>
+    <!-- Smile -->
+    <path d="M-9,5 Q0,13 9,5" fill="none" stroke="#E65100" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Sparkles around -->
+    <g fill="#FDD835" opacity="0.7">
+      <polygon points="50,-20 52,-16 56,-16 53,-13 54,-9 50,-12 46,-9 47,-13 44,-16 48,-16"/>
+      <polygon points="-48,-10 -46,-6 -42,-6 -45,-3 -44,1 -48,-2 -52,1 -51,-3 -54,-6 -50,-6"/>
+    </g>
+    <!-- Feet -->
+    <ellipse cx="-16" cy="94" rx="14" ry="7" fill="#FF8F00"/>
+    <ellipse cx="16" cy="94" rx="14" ry="7" fill="#FF8F00"/>
+    <!-- Label -->
+    <rect x="-30" y="107" width="60" height="20" rx="10" fill="#FF8F00"/>
+    <text x="0" y="121" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">Golden</text>
+  </g>
+
+  <!-- Character 3: Ninja Bear -->
+  <g transform="translate(510, 225)" filter="url(#s-ac)">
+    <ellipse cx="0" cy="80" rx="55" ry="10" fill="#A5D6A7" opacity="0.5"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="40" rx="32" ry="42" fill="#37474F"/>
+    <ellipse cx="0" cy="44" rx="20" ry="26" fill="#546E7A"/>
+    <!-- Belt -->
+    <rect x="-32" y="35" width="64" height="6" rx="3" fill="#F44336"/>
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="30" fill="#37474F"/>
+    <!-- Ninja mask -->
+    <rect x="-30" y="-28" width="60" height="14" rx="4" fill="#263238"/>
+    <!-- Eyes (only visible part) -->
+    <circle cx="-10" cy="-20" r="5" fill="white"/>
+    <circle cx="10" cy="-20" r="5" fill="white"/>
+    <circle cx="-9" cy="-19" r="3" fill="#333"/>
+    <circle cx="11" cy="-19" r="3" fill="#333"/>
+    <!-- Mask tail flowing -->
+    <path d="M28,-22 Q45,-30 55,-20 Q60,-15 58,-10" stroke="#263238" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <!-- Ears peeking through -->
+    <circle cx="-20" cy="-38" r="10" fill="#455A64"/>
+    <circle cx="20" cy="-38" r="10" fill="#455A64"/>
+    <!-- Shuriken in hand -->
+    <g transform="translate(-35, 15)">
+      <polygon points="0,-10 3,-3 10,0 3,3 0,10 -3,3 -10,0 -3,-3" fill="#90A4AE"/>
+      <circle cx="0" cy="0" r="3" fill="#607D8B"/>
+    </g>
+    <!-- Feet -->
+    <ellipse cx="-14" cy="80" rx="12" ry="6" fill="#263238"/>
+    <ellipse cx="14" cy="80" rx="12" ry="6" fill="#263238"/>
+    <!-- Label -->
+    <rect x="-30" y="92" width="60" height="20" rx="10" fill="#455A64"/>
+    <text x="0" y="106" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">Ninja</text>
+  </g>
+
+  <!-- Character 4: Pink Bear -->
+  <g transform="translate(660, 230)" filter="url(#s-ac)">
+    <ellipse cx="0" cy="75" rx="50" ry="10" fill="#A5D6A7" opacity="0.5"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="38" rx="30" ry="38" fill="#F48FB1"/>
+    <ellipse cx="0" cy="42" rx="18" ry="24" fill="#F8BBD0"/>
+    <!-- Head -->
+    <circle cx="0" cy="-12" r="28" fill="#F48FB1"/>
+    <!-- Ears -->
+    <circle cx="-18" cy="-34" r="10" fill="#EC407A"/>
+    <circle cx="18" cy="-34" r="10" fill="#EC407A"/>
+    <circle cx="-18" cy="-34" r="6" fill="#F8BBD0"/>
+    <circle cx="18" cy="-34" r="6" fill="#F8BBD0"/>
+    <!-- Bow -->
+    <g transform="translate(20, -34)">
+      <ellipse cx="-8" cy="-2" rx="8" ry="5" fill="#E91E63" transform="rotate(-20)"/>
+      <ellipse cx="8" cy="-2" rx="8" ry="5" fill="#E91E63" transform="rotate(20)"/>
+      <circle cx="0" cy="0" r="3" fill="#AD1457"/>
+    </g>
+    <!-- Eyes with lashes -->
+    <circle cx="-8" cy="-16" r="5" fill="white"/>
+    <circle cx="8" cy="-16" r="5" fill="white"/>
+    <circle cx="-7" cy="-15" r="3" fill="#333"/>
+    <circle cx="9" cy="-15" r="3" fill="#333"/>
+    <circle cx="-6" cy="-16" r="1.2" fill="white"/>
+    <circle cx="10" cy="-16" r="1.2" fill="white"/>
+    <!-- Lashes -->
+    <line x1="-13" y1="-20" x2="-11" y2="-18" stroke="#333" stroke-width="1"/>
+    <line x1="-14" y1="-17" x2="-12" y2="-16" stroke="#333" stroke-width="1"/>
+    <line x1="13" y1="-20" x2="11" y2="-18" stroke="#333" stroke-width="1"/>
+    <line x1="14" y1="-17" x2="12" y2="-16" stroke="#333" stroke-width="1"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-6" rx="5" ry="3.5" fill="#EC407A"/>
+    <!-- Cute smile -->
+    <path d="M-6,1 Q0,7 6,1" fill="none" stroke="#EC407A" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="-15" cy="-5" rx="5" ry="3" fill="#F48FB1" opacity="0.6"/>
+    <ellipse cx="15" cy="-5" rx="5" ry="3" fill="#F48FB1" opacity="0.6"/>
+    <!-- Hearts floating -->
+    <g fill="#E91E63" opacity="0.5">
+      <path d="M-35,-20 C-35,-25 -28,-25 -28,-20 C-28,-25 -21,-25 -21,-20 C-21,-12 -28,-8 -28,-5 C-28,-8 -35,-12 -35,-20" transform="scale(0.5)"/>
+    </g>
+    <!-- Feet -->
+    <ellipse cx="-12" cy="74" rx="11" ry="6" fill="#EC407A"/>
+    <ellipse cx="12" cy="74" rx="11" ry="6" fill="#EC407A"/>
+    <!-- Label -->
+    <rect x="-28" y="87" width="56" height="20" rx="10" fill="#EC407A"/>
+    <text x="0" y="101" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="10" fill="white">Pink</text>
+  </g>
+
+  <!-- Title area -->
+  <rect x="150" y="365" width="500" height="68" rx="12" fill="white" opacity="0.75"/>
+  <text x="400" y="396" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#2E7D32">All Characters Guide</text>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#558B2F">Every Bear Skin &amp; NPC in the Game</text>
 </svg>

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a6a"/>
+      <stop offset="60%" stop-color="#4a8ac0"/>
+      <stop offset="100%" stop-color="#a0d4f0"/>
+    </linearGradient>
+    <linearGradient id="slopeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f0fa"/>
+      <stop offset="50%" stop-color="#d0e0f0"/>
+      <stop offset="100%" stop-color="#c0d5e8"/>
+    </linearGradient>
+    <radialGradient id="bearBody" cx="0.4" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#6B4E12"/>
+    </radialGradient>
+    <linearGradient id="boardGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2255aa"/>
+      <stop offset="50%" stop-color="#3377cc"/>
+      <stop offset="100%" stop-color="#2255aa"/>
+    </linearGradient>
+    <filter id="motionBlur"><feGaussianBlur stdDeviation="3 0"/></filter>
+    <filter id="sprayBlur"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#sbSky)"/>
+  <polygon points="0,200 80,120 160,180 240,100 340,160 420,90 520,170 600,110 700,160 800,130 800,300 0,300" fill="#8ab0d0" opacity="0.5"/>
+  <polygon points="0,230 100,160 200,210 300,140 400,190 500,130 600,200 700,150 800,180 800,300 0,300" fill="#9ac0dd" opacity="0.4"/>
+  <polygon points="0,180 800,320 800,450 0,450" fill="url(#slopeGrad)"/>
+  <line x1="0" y1="220" x2="800" y2="360" stroke="#b4c8dc" stroke-opacity="0.4" stroke-width="0.5"/>
+  <line x1="0" y1="260" x2="800" y2="400" stroke="#b4c8dc" stroke-opacity="0.3" stroke-width="0.5"/>
+  <line x1="0" y1="300" x2="800" y2="440" stroke="#b4c8dc" stroke-opacity="0.3" stroke-width="0.5"/>
+  <g filter="url(#motionBlur)" opacity="0.6">
+    <g transform="translate(80,180)">
+      <polygon points="0,-40 15,0 -15,0" fill="#1a4a2a"/>
+      <polygon points="0,-55 12,-20 -12,-20" fill="#1f5530"/>
+      <rect x="-3" y="0" width="6" height="12" fill="#3a2510"/>
+    </g>
+    <g transform="translate(160,210)">
+      <polygon points="0,-35 12,0 -12,0" fill="#1a4a2a"/>
+      <polygon points="0,-48 10,-18 -10,-18" fill="#1f5530"/>
+      <rect x="-2.5" y="0" width="5" height="10" fill="#3a2510"/>
+    </g>
+  </g>
+  <g filter="url(#motionBlur)" opacity="0.7">
+    <g transform="translate(50,240)">
+      <polygon points="0,-60 22,0 -22,0" fill="#15402a"/>
+      <polygon points="0,-80 18,-28 -18,-28" fill="#1a4d30"/>
+      <rect x="-4" y="0" width="8" height="15" fill="#3a2510"/>
+    </g>
+    <g transform="translate(700,290)">
+      <polygon points="0,-50 18,0 -18,0" fill="#15402a"/>
+      <polygon points="0,-68 15,-22 -15,-22" fill="#1a4d30"/>
+      <rect x="-3.5" y="0" width="7" height="12" fill="#3a2510"/>
+    </g>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5">
+    <line x1="280" y1="200" x2="180" y2="240"/>
+    <line x1="320" y1="230" x2="200" y2="280"/>
+    <line x1="340" y1="180" x2="220" y2="230"/>
+    <line x1="380" y1="260" x2="260" y2="310"/>
+    <line x1="400" y1="210" x2="300" y2="255"/>
+    <line x1="500" y1="280" x2="380" y2="335"/>
+    <line x1="520" y1="240" x2="420" y2="285"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.2" stroke-width="1">
+    <line x1="350" y1="170" x2="150" y2="250"/>
+    <line x1="450" y1="190" x2="280" y2="260"/>
+    <line x1="550" y1="250" x2="350" y2="335"/>
+    <line x1="600" y1="220" x2="450" y2="285"/>
+  </g>
+  <g transform="translate(420,270) rotate(-15)">
+    <ellipse cx="0" cy="35" rx="35" ry="8" fill="#000000" opacity="0.15"/>
+    <ellipse cx="0" cy="28" rx="55" ry="8" fill="url(#boardGrad)" stroke="#1a3a6a" stroke-width="1.5"/>
+    <ellipse cx="0" cy="28" rx="45" ry="4" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1"/>
+    <ellipse cx="-40" cy="28" rx="8" ry="5" fill="#ffffff" opacity="0.15"/>
+    <ellipse cx="40" cy="28" rx="8" ry="5" fill="#ffffff" opacity="0.15"/>
+    <ellipse cx="0" cy="0" rx="24" ry="28" fill="url(#bearBody)"/>
+    <circle cx="0" cy="-28" r="18" fill="#8B6914"/>
+    <circle cx="-14" cy="-42" r="8" fill="#8B6914"/>
+    <circle cx="-14" cy="-42" r="5" fill="#6B4E12"/>
+    <circle cx="14" cy="-42" r="8" fill="#8B6914"/>
+    <circle cx="14" cy="-42" r="5" fill="#6B4E12"/>
+    <ellipse cx="0" cy="-24" rx="10" ry="8" fill="#a07820"/>
+    <circle cx="-6" cy="-32" r="3" fill="#1a1a1a"/>
+    <circle cx="-5" cy="-33" r="1" fill="#ffffff"/>
+    <circle cx="6" cy="-32" r="3" fill="#1a1a1a"/>
+    <circle cx="7" cy="-33" r="1" fill="#ffffff"/>
+    <ellipse cx="0" cy="-26" rx="3.5" ry="2.5" fill="#3a2a10"/>
+    <path d="M-3,-23 Q0,-20 3,-23" stroke="#3a2a10" stroke-width="1" fill="none"/>
+    <ellipse cx="-28" cy="-8" rx="8" ry="14" fill="#7a5a12" transform="rotate(30,-28,-8)"/>
+    <ellipse cx="28" cy="-14" rx="8" ry="14" fill="#7a5a12" transform="rotate(-20,28,-14)"/>
+    <ellipse cx="-10" cy="22" rx="8" ry="10" fill="#7a5a12"/>
+    <ellipse cx="10" cy="22" rx="8" ry="10" fill="#7a5a12"/>
+    <path d="M-12,-16 Q0,-12 12,-16" stroke="#cc2222" stroke-width="4" fill="none"/>
+    <path d="M12,-16 Q18,-10 15,-4" stroke="#cc2222" stroke-width="3.5" fill="none"/>
+    <path d="M-16,-34 Q0,-38 16,-34" stroke="#333333" stroke-width="2" fill="none"/>
+    <ellipse cx="-6" cy="-32" rx="5" ry="4" fill="none" stroke="#ff8800" stroke-width="1.5"/>
+    <ellipse cx="6" cy="-32" rx="5" ry="4" fill="none" stroke="#ff8800" stroke-width="1.5"/>
+  </g>
+  <g filter="url(#sprayBlur)">
+    <circle cx="340" cy="285" r="6" fill="#ffffff" opacity="0.7"/>
+    <circle cx="350" cy="295" r="8" fill="#ffffff" opacity="0.5"/>
+    <circle cx="330" cy="300" r="5" fill="#ffffff" opacity="0.6"/>
+    <circle cx="355" cy="310" r="7" fill="#ffffff" opacity="0.4"/>
+    <circle cx="325" cy="310" r="4" fill="#ffffff" opacity="0.5"/>
+    <circle cx="360" cy="280" r="5" fill="#ffffff" opacity="0.6"/>
+    <circle cx="315" cy="290" r="3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="345" cy="275" r="4" fill="#ffffff" opacity="0.4"/>
+  </g>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="335" cy="270" r="2"/>
+    <circle cx="320" cy="280" r="2.5"/>
+    <circle cx="310" cy="295" r="1.5"/>
+    <circle cx="345" cy="260" r="1.5"/>
+    <circle cx="305" cy="305" r="2"/>
+    <circle cx="355" cy="265" r="1"/>
+    <circle cx="300" cy="280" r="1.5"/>
+    <circle cx="330" cy="315" r="2"/>
+    <circle cx="315" cy="320" r="1.5"/>
+  </g>
+  <g opacity="0.25">
+    <rect x="280" y="258" width="80" height="3" rx="1.5" fill="#ffffff" filter="url(#motionBlur)"/>
+    <rect x="300" y="275" width="60" height="2.5" rx="1.25" fill="#ffffff" filter="url(#motionBlur)"/>
+    <rect x="260" y="290" width="90" height="2" rx="1" fill="#ffffff" filter="url(#motionBlur)"/>
+    <rect x="290" y="305" width="50" height="2" rx="1" fill="#ffffff" filter="url(#motionBlur)"/>
+  </g>
+  <rect x="280" y="395" width="240" height="40" rx="8" fill="#14325a" opacity="0.65"/>
+  <text x="400" y="422" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" letter-spacing="1">Snowboard Run</text>
+</svg>

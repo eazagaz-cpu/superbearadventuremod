@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="caveBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0d1a2e"/>
+      <stop offset="100%" stop-color="#102040"/>
+    </linearGradient>
+    <linearGradient id="iceFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5a"/>
+      <stop offset="40%" stop-color="#2a5580"/>
+      <stop offset="100%" stop-color="#4a8ab8"/>
+    </linearGradient>
+    <radialGradient id="backLight" cx="0.5" cy="0.35" r="0.35">
+      <stop offset="0%" stop-color="#64c8ff" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#3c8cc8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3c8cc8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crystalGlow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#00b4dc" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00b4dc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crystalGlow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#50a0ff" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#2864c8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2864c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="icicleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ac8e8"/>
+      <stop offset="100%" stop-color="#4a90b8"/>
+    </linearGradient>
+    <linearGradient id="wallLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="100%" stop-color="#0d1a2e"/>
+    </linearGradient>
+    <linearGradient id="wallRight" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="100%" stop-color="#0d1a2e"/>
+    </linearGradient>
+    <filter id="sparkleGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="crystalFilter"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#caveBg)"/>
+  <ellipse cx="400" cy="160" rx="250" ry="180" fill="url(#backLight)"/>
+  <path d="M0,0 L0,80 Q50,120 100,90 Q150,50 200,100 Q250,130 300,70 Q350,40 400,60 Q450,90 500,50 Q550,30 600,80 Q650,110 700,60 Q750,40 800,90 L800,0 Z" fill="#050810"/>
+  <path d="M0,0 L0,450 L80,450 Q60,380 70,320 Q90,260 50,200 Q30,140 80,80 Q100,40 60,0 Z" fill="url(#wallLeft)"/>
+  <path d="M0,120 Q40,150 30,200 Q20,250 50,280 Q60,310 40,350 L0,350 Z" fill="#0a1220" opacity="0.6"/>
+  <path d="M800,0 L800,450 L720,450 Q740,380 730,320 Q710,260 750,200 Q770,140 720,80 Q700,40 740,0 Z" fill="url(#wallRight)"/>
+  <path d="M800,100 Q760,140 770,190 Q780,240 750,280 Q740,320 760,370 L800,370 Z" fill="#0a1220" opacity="0.6"/>
+  <g fill="url(#icicleGrad)" opacity="0.8">
+    <polygon points="140,90 148,170 132,170"/>
+    <polygon points="220,70 230,160 210,160"/>
+    <polygon points="310,60 318,130 302,130"/>
+    <polygon points="380,55 386,120 374,120"/>
+    <polygon points="460,50 468,135 452,135"/>
+    <polygon points="530,65 540,145 520,145"/>
+    <polygon points="610,75 618,150 602,150"/>
+    <polygon points="680,85 686,140 674,140"/>
+    <polygon points="170,95 174,140 166,140"/>
+    <polygon points="270,80 274,130 266,130"/>
+    <polygon points="420,60 423,110 417,110"/>
+    <polygon points="570,70 573,115 567,115"/>
+    <polygon points="650,80 653,120 647,120"/>
+  </g>
+  <g fill="#1a3a55" opacity="0.8">
+    <polygon points="100,450 115,370 130,450"/>
+    <polygon points="200,450 218,380 236,450"/>
+    <polygon points="350,450 362,395 374,450"/>
+    <polygon points="500,450 510,400 520,450"/>
+    <polygon points="600,450 615,385 630,450"/>
+    <polygon points="700,450 710,410 720,450"/>
+    <polygon points="150,450 158,415 166,450"/>
+    <polygon points="440,450 448,420 456,450"/>
+    <polygon points="660,450 666,425 672,450"/>
+  </g>
+  <rect x="0" y="380" width="800" height="70" fill="url(#iceFloor)" opacity="0.6"/>
+  <rect x="100" y="385" width="200" height="2" fill="#64c8ff" opacity="0.2" rx="1"/>
+  <rect x="400" y="390" width="150" height="2" fill="#64c8ff" opacity="0.15" rx="1"/>
+  <rect x="300" y="400" width="180" height="1.5" fill="#64c8ff" opacity="0.1" rx="1"/>
+  <rect x="550" y="395" width="120" height="1.5" fill="#50b4f0" opacity="0.12" rx="1"/>
+  <g transform="translate(180,300)">
+    <ellipse cx="0" cy="0" rx="40" ry="40" fill="url(#crystalGlow1)" filter="url(#crystalFilter)"/>
+    <polygon points="0,-45 15,-15 0,25 -15,-15" fill="#00dcff" fill-opacity="0.6" stroke="#64f0ff" stroke-opacity="0.8" stroke-width="1"/>
+    <polygon points="20,-30 30,-10 20,15 10,-10" fill="#3cc8f0" fill-opacity="0.5" stroke="#78e6ff" stroke-opacity="0.6" stroke-width="0.8"/>
+    <polygon points="-25,-25 -18,-5 -25,20 -32,-5" fill="#28b4dc" fill-opacity="0.5" stroke="#64dcff" stroke-opacity="0.6" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(620,310)">
+    <ellipse cx="0" cy="0" rx="45" ry="45" fill="url(#crystalGlow2)" filter="url(#crystalFilter)"/>
+    <polygon points="0,-40 20,-25 20,5 0,20 -20,5 -20,-25" fill="#3c8cff" fill-opacity="0.5" stroke="#78b4ff" stroke-opacity="0.7" stroke-width="1"/>
+    <polygon points="25,-20 35,0 25,25 15,0" fill="#50a0ff" fill-opacity="0.4" stroke="#8cc8ff" stroke-opacity="0.6" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(400,240)">
+    <ellipse cx="0" cy="0" rx="30" ry="30" fill="url(#crystalGlow1)" filter="url(#crystalFilter)"/>
+    <polygon points="0,-35 12,-12 0,18 -12,-12" fill="#00f0ff" fill-opacity="0.5" stroke="#64ffff" stroke-opacity="0.7" stroke-width="0.8"/>
+    <polygon points="15,-20 22,-5 15,15 8,-5" fill="#14c8f0" fill-opacity="0.4" stroke="#50f0ff" stroke-opacity="0.5" stroke-width="0.6"/>
+  </g>
+  <g transform="translate(300,370)">
+    <polygon points="0,-12 8,-4 0,8 -8,-4" fill="#00c8ff" fill-opacity="0.6" stroke="#64f0ff" stroke-opacity="0.8" stroke-width="0.8"/>
+    <ellipse cx="0" cy="0" rx="15" ry="12" fill="url(#crystalGlow1)" filter="url(#crystalFilter)" opacity="0.5"/>
+  </g>
+  <g transform="translate(520,365)">
+    <polygon points="0,-10 6,-3 0,7 -6,-3" fill="#3cb4ff" fill-opacity="0.6" stroke="#78dcff" stroke-opacity="0.7" stroke-width="0.8"/>
+    <ellipse cx="0" cy="0" rx="12" ry="10" fill="url(#crystalGlow2)" filter="url(#crystalFilter)" opacity="0.5"/>
+  </g>
+  <g filter="url(#sparkleGlow)">
+    <g transform="translate(250,200)" fill="#a0e8ff">
+      <polygon points="0,-6 1.5,-1.5 6,0 1.5,1.5 0,6 -1.5,1.5 -6,0 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(500,180)" fill="#80d0ff">
+      <polygon points="0,-5 1.2,-1.2 5,0 1.2,1.2 0,5 -1.2,1.2 -5,0 -1.2,-1.2"/>
+    </g>
+    <g transform="translate(350,280)" fill="#60e0ff">
+      <polygon points="0,-4 1,-1 4,0 1,1 0,4 -1,1 -4,0 -1,-1"/>
+    </g>
+    <g transform="translate(580,250)" fill="#90d8ff">
+      <polygon points="0,-5 1.2,-1.2 5,0 1.2,1.2 0,5 -1.2,1.2 -5,0 -1.2,-1.2"/>
+    </g>
+    <g transform="translate(160,240)" fill="#70e0ff">
+      <polygon points="0,-3.5 0.8,-0.8 3.5,0 0.8,0.8 0,3.5 -0.8,0.8 -3.5,0 -0.8,-0.8"/>
+    </g>
+    <g transform="translate(650,200)" fill="#a0d8ff">
+      <polygon points="0,-4 1,-1 4,0 1,1 0,4 -1,1 -4,0 -1,-1"/>
+    </g>
+    <circle cx="300" cy="150" r="2" fill="#80e0ff"/>
+    <circle cx="480" cy="220" r="1.5" fill="#60d0ff"/>
+    <circle cx="200" cy="330" r="1.5" fill="#90e8ff"/>
+    <circle cx="550" cy="330" r="2" fill="#70d8ff"/>
+    <circle cx="420" cy="160" r="1.5" fill="#a0f0ff"/>
+  </g>
+  <rect x="260" y="395" width="280" height="40" rx="8" fill="#0a1428" opacity="0.7"/>
+  <text x="400" y="422" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600" fill="#a0e8ff" letter-spacing="1">Crystal Ice Cave</text>
+</svg>

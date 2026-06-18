@@ -1,53 +1,208 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F57F17"/>
-      <stop offset="100%" stop-color="#E65100"/>
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="40%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFE082"/>
     </linearGradient>
-    <linearGradient id="honey" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="honeyFill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="50%" stop-color="#FFC107"/>
       <stop offset="100%" stop-color="#FFA000"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/></filter>
+    <linearGradient id="honeyDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="honeyPool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E040FB" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#9C27B0" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="honeyDrip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="waxWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#E65100" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="honeyGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#bg)"/>
-  <!-- Honeycomb -->
-  <g fill="none" stroke="#FFD54F" stroke-width="1.5" opacity="0.3">
-    <polygon points="100,40 120,28 140,40 140,64 120,76 100,64"/>
-    <polygon points="140,40 160,28 180,40 180,64 160,76 140,64"/>
-    <polygon points="180,40 200,28 220,40 220,64 200,76 180,64"/>
-    <polygon points="220,40 240,28 260,40 260,64 240,76 220,64"/>
-    <polygon points="260,40 280,28 300,40 300,64 280,76 260,64"/>
-    <polygon points="120,76 140,64 160,76 160,100 140,112 120,100"/>
-    <polygon points="160,76 180,64 200,76 200,100 180,112 160,100"/>
-    <polygon points="200,76 220,64 240,76 240,100 220,112 200,100"/>
-    <polygon points="240,76 260,64 280,76 280,100 260,112 240,100"/>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Large honeycomb pattern (background layer) -->
+  <g fill="none" stroke="#FFD54F" stroke-width="2" opacity="0.25">
+    <!-- Row 1 -->
+    <polygon points="60,20 100,0 140,20 140,60 100,80 60,60"/>
+    <polygon points="140,20 180,0 220,20 220,60 180,80 140,60"/>
+    <polygon points="220,20 260,0 300,20 300,60 260,80 220,60"/>
+    <polygon points="300,20 340,0 380,20 380,60 340,80 300,60"/>
+    <polygon points="380,20 420,0 460,20 460,60 420,80 380,60"/>
+    <polygon points="460,20 500,0 540,20 540,60 500,80 460,60"/>
+    <polygon points="540,20 580,0 620,20 620,60 580,80 540,60"/>
+    <polygon points="620,20 660,0 700,20 700,60 660,80 620,60"/>
+    <polygon points="700,20 740,0 780,20 780,60 740,80 700,60"/>
+    <!-- Row 2 -->
+    <polygon points="100,80 140,60 180,80 180,120 140,140 100,120"/>
+    <polygon points="180,80 220,60 260,80 260,120 220,140 180,120"/>
+    <polygon points="260,80 300,60 340,80 340,120 300,140 260,120"/>
+    <polygon points="340,80 380,60 420,80 420,120 380,140 340,120"/>
+    <polygon points="420,80 460,60 500,80 500,120 460,140 420,120"/>
+    <polygon points="500,80 540,60 580,80 580,120 540,140 500,120"/>
+    <polygon points="580,80 620,60 660,80 660,120 620,140 580,120"/>
+    <polygon points="660,80 700,60 740,80 740,120 700,140 660,120"/>
+    <!-- Row 3 -->
+    <polygon points="60,140 100,120 140,140 140,180 100,200 60,180"/>
+    <polygon points="140,140 180,120 220,140 220,180 180,200 140,180"/>
+    <polygon points="220,140 260,120 300,140 300,180 260,200 220,180"/>
+    <polygon points="300,140 340,120 380,140 380,180 340,200 300,180"/>
+    <polygon points="380,140 420,120 460,140 460,180 420,200 380,180"/>
+    <polygon points="460,140 500,120 540,140 540,180 500,200 460,180"/>
+    <polygon points="540,140 580,120 620,140 620,180 580,200 540,180"/>
+    <polygon points="620,140 660,120 700,140 700,180 660,200 620,180"/>
+    <polygon points="700,140 740,120 780,140 780,180 740,200 700,180"/>
+    <!-- Row 4 -->
+    <polygon points="100,200 140,180 180,200 180,240 140,260 100,240"/>
+    <polygon points="180,200 220,180 260,200 260,240 220,260 180,240"/>
+    <polygon points="260,200 300,180 340,200 340,240 300,260 260,240"/>
+    <polygon points="340,200 380,180 420,200 420,240 380,260 340,240"/>
+    <polygon points="420,200 460,180 500,200 500,240 460,260 420,240"/>
+    <polygon points="500,200 540,180 580,200 580,240 540,260 500,240"/>
+    <polygon points="580,200 620,180 660,200 660,240 620,260 580,240"/>
+    <polygon points="660,200 700,180 740,200 740,240 700,260 660,240"/>
   </g>
-  <!-- Filled cells -->
-  <polygon points="180,112 200,100 220,112 220,136 200,148 180,136" fill="url(#honey)" opacity="0.7" filter="url(#s)"/>
-  <polygon points="200,148 220,136 240,148 240,172 220,184 200,172" fill="url(#honey)" opacity="0.6" filter="url(#s)"/>
-  <!-- Bees -->
-  <g filter="url(#s)">
-    <g transform="translate(150, 160)">
-      <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFC107"/>
-      <rect x="-6" y="-8" width="3" height="16" rx="1.5" fill="#333" opacity="0.6"/>
-      <rect x="2" y="-8" width="3" height="16" rx="1.5" fill="#333" opacity="0.6"/>
-      <ellipse cx="-6" cy="-10" rx="8" ry="4" fill="white" opacity="0.4"/>
-      <ellipse cx="6" cy="-10" rx="8" ry="4" fill="white" opacity="0.4"/>
-    </g>
-    <g transform="translate(280, 180)">
-      <ellipse cx="0" cy="0" rx="10" ry="6" fill="#FFC107"/>
-      <rect x="-5" y="-6" width="2.5" height="12" rx="1" fill="#333" opacity="0.6"/>
-      <rect x="2" y="-6" width="2.5" height="12" rx="1" fill="#333" opacity="0.6"/>
-      <ellipse cx="-5" cy="-8" rx="6" ry="3" fill="white" opacity="0.4"/>
-      <ellipse cx="5" cy="-8" rx="6" ry="3" fill="white" opacity="0.4"/>
-    </g>
+
+  <!-- Filled honey cells (golden, scattered) -->
+  <g filter="url(#shadow)">
+    <polygon points="260,80 300,60 340,80 340,120 300,140 260,120" fill="url(#honeyFill)" opacity="0.7"/>
+    <polygon points="500,80 540,60 580,80 580,120 540,140 500,120" fill="url(#honeyFill)" opacity="0.6"/>
+    <polygon points="140,140 180,120 220,140 220,180 180,200 140,180" fill="url(#honeyFill)" opacity="0.65"/>
+    <polygon points="460,140 500,120 540,140 540,180 500,200 460,180" fill="url(#honeyFill)" opacity="0.55"/>
+    <polygon points="620,140 660,120 700,140 700,180 660,200 620,180" fill="url(#honeyFill)" opacity="0.6"/>
+    <polygon points="300,200 340,180 380,200 380,240 340,260 300,240" fill="url(#honeyFill)" opacity="0.7"/>
+    <polygon points="580,200 620,180 660,200 660,240 620,260 580,240" fill="url(#honeyFill)" opacity="0.5"/>
+    <polygon points="180,200 220,180 260,200 260,240 220,260 180,240" fill="url(#honeyFill)" opacity="0.6"/>
   </g>
-  <!-- Honey drips -->
-  <g fill="#FFA000" opacity="0.5">
-    <ellipse cx="200" cy="230" rx="5" ry="8"/>
-    <ellipse cx="230" cy="240" rx="4" ry="7"/>
-    <ellipse cx="170" cy="245" rx="4.5" ry="6"/>
+
+  <!-- Honey drips from cells -->
+  <g fill="url(#honeyDrip)">
+    <!-- Drip 1 -->
+    <path d="M300,140 Q298,160 300,180 Q303,195 300,200 Q297,208 300,210" stroke="none" fill="url(#honeyDrip)" opacity="0.7">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M300,140 Q298,160 300,180 Q303,195 300,200 Q297,208 300,210;M300,140 Q298,165 300,185 Q303,200 300,210 Q297,218 300,220;M300,140 Q298,160 300,180 Q303,195 300,200 Q297,208 300,210"/>
+    </path>
+    <ellipse cx="300" cy="212" rx="5" ry="8" fill="url(#honeyDrip)" opacity="0.6"/>
+
+    <!-- Drip 2 -->
+    <rect x="537" y="140" width="6" height="50" rx="3" fill="url(#honeyDrip)" opacity="0.5"/>
+    <ellipse cx="540" cy="195" rx="6" ry="9" fill="url(#honeyDrip)" opacity="0.5"/>
+
+    <!-- Drip 3 -->
+    <rect x="177" y="200" width="5" height="40" rx="2.5" fill="url(#honeyDrip)" opacity="0.6"/>
+    <ellipse cx="180" cy="245" rx="5" ry="7" fill="url(#honeyDrip)" opacity="0.5"/>
+
+    <!-- Drip 4 -->
+    <rect x="657" y="200" width="6" height="55" rx="3" fill="url(#honeyDrip)" opacity="0.45"/>
+    <ellipse cx="660" cy="260" rx="6" ry="8" fill="url(#honeyDrip)" opacity="0.4"/>
   </g>
-  <text x="200" y="285" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#FFF8E1">The Hive</text>
+
+  <!-- Waxy floor/ground area -->
+  <path d="M0,350 Q200,330 400,345 Q600,360 800,340 L800,600 L0,600Z" fill="url(#waxWall)"/>
+  <path d="M0,370 Q200,355 400,365 Q600,375 800,360 L800,600 L0,600Z" fill="#FFB300" opacity="0.4"/>
+
+  <!-- Purple honey pools on the ground -->
+  <ellipse cx="200" cy="450" rx="80" ry="25" fill="url(#honeyPool)" filter="url(#honeyGlow)"/>
+  <ellipse cx="200" cy="448" rx="55" ry="15" fill="#CE93D8" opacity="0.3"/>
+  <ellipse cx="600" cy="480" rx="70" ry="20" fill="url(#honeyPool)" filter="url(#honeyGlow)"/>
+  <ellipse cx="600" cy="478" rx="45" ry="12" fill="#CE93D8" opacity="0.25"/>
+  <ellipse cx="400" cy="500" rx="50" ry="15" fill="url(#honeyPool)" opacity="0.3"/>
+
+  <!-- Bee 1 (large, foreground) -->
+  <g transform="translate(350, 280)" filter="url(#shadow)">
+    <!-- Wings -->
+    <ellipse cx="-18" cy="-20" rx="22" ry="12" fill="white" opacity="0.5" transform="rotate(-20, -18, -20)"/>
+    <ellipse cx="18" cy="-20" rx="22" ry="12" fill="white" opacity="0.5" transform="rotate(20, 18, -20)"/>
+    <ellipse cx="-14" cy="-18" rx="16" ry="8" fill="#E1F5FE" opacity="0.4" transform="rotate(-20, -14, -18)"/>
+    <ellipse cx="14" cy="-18" rx="16" ry="8" fill="#E1F5FE" opacity="0.4" transform="rotate(20, 14, -18)"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="20" ry="14" fill="#FFC107"/>
+    <!-- Stripes -->
+    <rect x="-8" y="-14" width="5" height="28" rx="2.5" fill="#333" opacity="0.5"/>
+    <rect x="3" y="-14" width="5" height="28" rx="2.5" fill="#333" opacity="0.5"/>
+    <!-- Head -->
+    <circle cx="-22" cy="-2" r="8" fill="#FFC107"/>
+    <circle cx="-27" cy="-5" r="2.5" fill="#333"/>
+    <circle cx="-27" cy="-5" r="1" fill="white"/>
+    <!-- Antennae -->
+    <path d="M-26,-8 Q-30,-18 -25,-22" stroke="#333" stroke-width="1.5" fill="none"/>
+    <circle cx="-25" cy="-22" r="2" fill="#333"/>
+    <path d="M-22,-10 Q-22,-20 -18,-24" stroke="#333" stroke-width="1.5" fill="none"/>
+    <circle cx="-18" cy="-24" r="2" fill="#333"/>
+    <!-- Stinger -->
+    <polygon points="20,0 28,-2 28,2" fill="#5D4037"/>
+  </g>
+
+  <!-- Bee 2 (medium, upper right) -->
+  <g transform="translate(620, 160) scale(0.7)" filter="url(#shadow)">
+    <ellipse cx="-14" cy="-16" rx="18" ry="10" fill="white" opacity="0.45" transform="rotate(-15, -14, -16)"/>
+    <ellipse cx="14" cy="-16" rx="18" ry="10" fill="white" opacity="0.45" transform="rotate(15, 14, -16)"/>
+    <ellipse cx="0" cy="0" rx="16" ry="11" fill="#FFB300"/>
+    <rect x="-6" y="-11" width="4" height="22" rx="2" fill="#333" opacity="0.5"/>
+    <rect x="2" y="-11" width="4" height="22" rx="2" fill="#333" opacity="0.5"/>
+    <circle cx="-18" cy="-1" r="6.5" fill="#FFB300"/>
+    <circle cx="-22" cy="-4" r="2" fill="#333"/>
+    <path d="M-21,-6 Q-25,-14 -20,-18" stroke="#333" stroke-width="1.2" fill="none"/>
+    <circle cx="-20" cy="-18" r="1.5" fill="#333"/>
+    <polygon points="16,0 23,-1.5 23,1.5" fill="#5D4037"/>
+  </g>
+
+  <!-- Bee 3 (small, distant left) -->
+  <g transform="translate(120, 280) scale(0.5)" filter="url(#shadow)">
+    <ellipse cx="-12" cy="-14" rx="15" ry="8" fill="white" opacity="0.4" transform="rotate(-10, -12, -14)"/>
+    <ellipse cx="12" cy="-14" rx="15" ry="8" fill="white" opacity="0.4" transform="rotate(10, 12, -14)"/>
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#FFC107"/>
+    <rect x="-5" y="-10" width="3.5" height="20" rx="1.5" fill="#333" opacity="0.5"/>
+    <rect x="2" y="-10" width="3.5" height="20" rx="1.5" fill="#333" opacity="0.5"/>
+    <circle cx="-16" cy="0" r="5.5" fill="#FFC107"/>
+    <circle cx="-19" cy="-2" r="1.8" fill="#333"/>
+  </g>
+
+  <!-- Bee 4 (tiny, background) -->
+  <g transform="translate(480, 100) scale(0.35)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFB300"/>
+    <rect x="-4" y="-8" width="3" height="16" rx="1.5" fill="#333" opacity="0.5"/>
+    <ellipse cx="-10" cy="-12" rx="10" ry="5" fill="white" opacity="0.3"/>
+    <ellipse cx="10" cy="-12" rx="10" ry="5" fill="white" opacity="0.3"/>
+  </g>
+
+  <!-- Pollen particles -->
+  <g fill="#FFF9C4" opacity="0.5">
+    <circle cx="100" cy="150" r="2"/><circle cx="250" cy="100" r="1.5"/>
+    <circle cx="400" cy="180" r="2"/><circle cx="550" cy="120" r="1.5"/>
+    <circle cx="700" cy="200" r="2"/><circle cx="150" cy="320" r="1.5"/>
+    <circle cx="350" cy="350" r="2"/><circle cx="500" cy="310" r="1.5"/>
+    <circle cx="680" cy="340" r="1.5"/><circle cx="50" cy="250" r="2"/>
+    <circle cx="450" cy="250" r="1.5"/><circle cx="300" cy="300" r="2"/>
+  </g>
+
+  <!-- Wax texture on ground -->
+  <g stroke="#FFB300" stroke-width="0.5" opacity="0.15" fill="none">
+    <path d="M50,420 Q150,410 250,420 Q350,430 450,418 Q550,406 650,420 Q700,425 800,415"/>
+    <path d="M0,460 Q100,450 200,462 Q300,474 400,458 Q500,442 600,456 Q700,470 800,458"/>
+  </g>
+
+  <!-- World name banner -->
+  <rect x="275" y="548" width="250" height="42" rx="21" fill="#E65100" opacity="0.85"/>
+  <text x="400" y="576" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="26" fill="#FFF8E1" letter-spacing="2">THE HIVE</text>
 </svg>

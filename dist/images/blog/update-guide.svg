@@ -1,33 +1,150 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1B5E20"/>
-      <stop offset="100%" stop-color="#33691E"/>
+    <linearGradient id="bg-ug" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#E3F2FD"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
+    <linearGradient id="phone-ug" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="5%" stop-color="#455A64"/>
+      <stop offset="95%" stop-color="#455A64"/>
+      <stop offset="100%" stop-color="#37474F"/>
+    </linearGradient>
+    <linearGradient id="progress-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#8BC34A"/>
+    </linearGradient>
+    <linearGradient id="update-arrow-grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#81C784"/>
+    </linearGradient>
+    <filter id="s-ug"><feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.15"/></filter>
+    <filter id="s-ug-sm"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/></filter>
   </defs>
-  <rect width="800" height="450" fill="url(#bg)"/>
-  <!-- Circular arrows -->
-  <g transform="translate(400, 190)" filter="url(#s)">
-    <path d="M0,-80 A80,80 0 1,1 -69,-40" fill="none" stroke="#8BC34A" stroke-width="12" stroke-linecap="round"/>
-    <polygon points="-69,-40 -85,-55 -55,-55" fill="#8BC34A"/>
-    <path d="M0,80 A80,80 0 1,1 69,40" fill="none" stroke="#C5E1A5" stroke-width="12" stroke-linecap="round"/>
-    <polygon points="69,40 85,55 55,55" fill="#C5E1A5"/>
-    <!-- Version text in center -->
-    <text x="0" y="-5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#F1F8E9">v11.0</text>
-    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Latest</text>
+
+  <!-- Light green-blue background -->
+  <rect width="800" height="450" fill="url(#bg-ug)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="100" r="180" fill="none" stroke="#A5D6A7" stroke-width="1" opacity="0.15"/>
+  <circle cx="150" cy="100" r="140" fill="none" stroke="#A5D6A7" stroke-width="1" opacity="0.1"/>
+  <circle cx="650" cy="350" r="160" fill="none" stroke="#90CAF9" stroke-width="1" opacity="0.15"/>
+  <circle cx="650" cy="350" r="120" fill="none" stroke="#90CAF9" stroke-width="1" opacity="0.1"/>
+
+  <!-- Phone device -->
+  <g transform="translate(320, 200)" filter="url(#s-ug)">
+    <!-- Phone body -->
+    <rect x="-80" y="-155" width="160" height="310" rx="22" fill="url(#phone-ug)"/>
+    <rect x="-80" y="-155" width="160" height="310" rx="22" fill="none" stroke="#546E7A" stroke-width="1"/>
+
+    <!-- Screen -->
+    <rect x="-68" y="-140" width="136" height="280" rx="14" fill="white"/>
+
+    <!-- Status bar -->
+    <rect x="-68" y="-140" width="136" height="25" rx="14" fill="#FAFAFA"/>
+    <text x="-50" y="-122" font-family="sans-serif" font-weight="600" font-size="9" fill="#333">9:41</text>
+    <!-- Battery -->
+    <rect x="38" y="-134" width="16" height="8" rx="2" fill="none" stroke="#333" stroke-width="1"/>
+    <rect x="39" y="-133" width="10" height="6" rx="1" fill="#4CAF50"/>
+    <rect x="54" y="-132" width="2" height="4" rx="1" fill="#333"/>
+
+    <!-- Update screen content -->
+    <!-- App icon -->
+    <rect x="-30" y="-95" width="60" height="60" rx="14" fill="#E8F5E9"/>
+    <circle cx="0" cy="-65" r="18" fill="#8D6E63"/>
+    <circle cx="-6" cy="-70" r="3" fill="white"/>
+    <circle cx="6" cy="-70" r="3" fill="white"/>
+    <circle cx="-6" cy="-70" r="1.5" fill="#333"/>
+    <circle cx="6" cy="-70" r="1.5" fill="#333"/>
+    <ellipse cx="0" cy="-60" rx="4" ry="2.5" fill="#5D4037"/>
+
+    <!-- Update text -->
+    <text x="0" y="-20" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="11" fill="#333">Super Bear Adventure</text>
+    <text x="0" y="-5" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="9" fill="#4CAF50">New version available!</text>
+
+    <!-- Version info -->
+    <rect x="-55" y="8" width="110" height="28" rx="6" fill="#F5F5F5"/>
+    <text x="-40" y="26" font-family="sans-serif" font-weight="500" font-size="9" fill="#999">v11.0</text>
+    <text x="0" y="26" font-family="sans-serif" font-weight="700" font-size="12" fill="#333">→</text>
+    <text x="30" y="26" font-family="sans-serif" font-weight="700" font-size="9" fill="#4CAF50">v12.0</text>
+
+    <!-- Progress bar -->
+    <rect x="-55" y="48" width="110" height="12" rx="6" fill="#E0E0E0"/>
+    <rect x="-55" y="48" width="77" height="12" rx="6" fill="url(#progress-bar)"/>
+    <text x="0" y="57" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="8" fill="white">70%</text>
+
+    <!-- Download info -->
+    <text x="0" y="78" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="8" fill="#999">52 MB / 75 MB</text>
+
+    <!-- Update button -->
+    <rect x="-45" y="92" width="90" height="30" rx="15" fill="#4CAF50"/>
+    <text x="0" y="112" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="11" fill="white">UPDATING...</text>
+
+    <!-- Home bar -->
+    <rect x="-22" y="132" width="44" height="4" rx="2" fill="#CCC"/>
   </g>
-  <!-- Version badges -->
-  <g filter="url(#s)">
-    <rect x="120" y="130" width="100" height="35" rx="17" fill="#558B2F" opacity="0.6"/>
-    <text x="170" y="153" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#C5E1A5">v10.5</text>
-    <rect x="580" y="130" width="100" height="35" rx="17" fill="#558B2F" opacity="0.6"/>
-    <text x="630" y="153" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#C5E1A5">v10.0</text>
-    <rect x="120" y="250" width="100" height="35" rx="17" fill="#558B2F" opacity="0.4"/>
-    <text x="170" y="273" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#A5D6A7">v9.5</text>
-    <rect x="580" y="250" width="100" height="35" rx="17" fill="#558B2F" opacity="0.4"/>
-    <text x="630" y="273" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#A5D6A7">v9.0</text>
+
+  <!-- Circular update arrow (right side) -->
+  <g transform="translate(570, 165)" filter="url(#s-ug-sm)">
+    <circle cx="0" cy="0" r="60" fill="white" opacity="0.7"/>
+    <!-- Circular arrow -->
+    <path d="M0,-45 A45,45 0 1,1 -39,-22" fill="none" stroke="url(#update-arrow-grad)" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="-39,-22 -50,-35 -28,-32" fill="#4CAF50"/>
+    <!-- Inner text -->
+    <text x="0" y="-2" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="16" fill="#4CAF50">v12</text>
+    <text x="0" y="14" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="10" fill="#66BB6A">Latest</text>
   </g>
-  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">How to Update</text>
-  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Step-by-Step Update Guide</text>
+
+  <!-- What's new panel (right side) -->
+  <g transform="translate(560, 280)" filter="url(#s-ug-sm)">
+    <rect x="-70" y="-35" width="140" height="100" rx="10" fill="white" opacity="0.9"/>
+    <text x="0" y="-18" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="11" fill="#333">What's New</text>
+    <line x1="-55" y1="-10" x2="55" y2="-10" stroke="#E0E0E0" stroke-width="1"/>
+    <!-- Bullet points -->
+    <circle cx="-48" cy="2" r="2.5" fill="#4CAF50"/>
+    <text x="-40" y="6" font-family="sans-serif" font-size="8" fill="#666">New snow world</text>
+    <circle cx="-48" cy="18" r="2.5" fill="#4CAF50"/>
+    <text x="-40" y="22" font-family="sans-serif" font-size="8" fill="#666">Bug fixes</text>
+    <circle cx="-48" cy="34" r="2.5" fill="#4CAF50"/>
+    <text x="-40" y="38" font-family="sans-serif" font-size="8" fill="#666">5 new skins</text>
+    <circle cx="-48" cy="50" r="2.5" fill="#4CAF50"/>
+    <text x="-40" y="54" font-family="sans-serif" font-size="8" fill="#666">Performance boost</text>
+  </g>
+
+  <!-- Step badges (left side) -->
+  <g transform="translate(120, 130)">
+    <g filter="url(#s-ug-sm)">
+      <rect x="-40" y="-18" width="120" height="36" rx="18" fill="white"/>
+      <circle cx="-22" cy="0" r="14" fill="#4CAF50"/>
+      <text x="-22" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="white">1</text>
+      <text x="25" y="4" font-family="sans-serif" font-weight="600" font-size="11" fill="#333">Backup</text>
+    </g>
+    <!-- Connector -->
+    <line x1="-22" y1="18" x2="-22" y2="38" stroke="#C8E6C9" stroke-width="2" stroke-dasharray="4,3"/>
+    <g transform="translate(0, 56)" filter="url(#s-ug-sm)">
+      <rect x="-40" y="-18" width="120" height="36" rx="18" fill="white"/>
+      <circle cx="-22" cy="0" r="14" fill="#2196F3"/>
+      <text x="-22" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="white">2</text>
+      <text x="30" y="4" font-family="sans-serif" font-weight="600" font-size="11" fill="#333">Download</text>
+    </g>
+    <line x1="-22" y1="74" x2="-22" y2="94" stroke="#BBDEFB" stroke-width="2" stroke-dasharray="4,3"/>
+    <g transform="translate(0, 112)" filter="url(#s-ug-sm)">
+      <rect x="-40" y="-18" width="120" height="36" rx="18" fill="white"/>
+      <circle cx="-22" cy="0" r="14" fill="#FF9800"/>
+      <text x="-22" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="white">3</text>
+      <text x="20" y="4" font-family="sans-serif" font-weight="600" font-size="11" fill="#333">Install</text>
+    </g>
+    <line x1="-22" y1="130" x2="-22" y2="150" stroke="#FFE0B2" stroke-width="2" stroke-dasharray="4,3"/>
+    <g transform="translate(0, 168)" filter="url(#s-ug-sm)">
+      <rect x="-40" y="-18" width="120" height="36" rx="18" fill="white"/>
+      <circle cx="-22" cy="0" r="14" fill="#E91E63"/>
+      <text x="-22" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="white">4</text>
+      <text x="18" y="4" font-family="sans-serif" font-weight="600" font-size="11" fill="#333">Enjoy!</text>
+    </g>
+  </g>
+
+  <!-- Title area -->
+  <rect x="150" y="378" width="500" height="60" rx="12" fill="white" opacity="0.85" filter="url(#s-ug-sm)"/>
+  <text x="400" y="406" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#2E7D32">How to Update</text>
+  <text x="400" y="428" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#4CAF50">Step-by-Step Update Guide</text>
 </svg>

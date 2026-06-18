@@ -1,32 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1B5E20"/>
-      <stop offset="100%" stop-color="#33691E"/>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+    <linearGradient id="shield-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E676"/>
+      <stop offset="100%" stop-color="#00C853"/>
+    </linearGradient>
+    <filter id="glow4"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sh4"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/></filter>
   </defs>
-  <rect width="400" height="300" fill="url(#bg)"/>
-  <!-- Security shield -->
-  <g transform="translate(200, 130)" filter="url(#s)">
-    <path d="M0,-75 L70,-48 L70,22 L0,75 L-70,22 L-70,-48Z" fill="#558B2F" stroke="#8BC34A" stroke-width="3"/>
-    <path d="M0,-60 L55,-38 L55,17 L0,60 L-55,17 L-55,-38Z" fill="#4CAF50"/>
-    <!-- Lock icon -->
-    <g transform="translate(0, -10)">
-      <rect x="-18" y="0" width="36" height="28" rx="4" fill="#1B5E20"/>
-      <path d="M-10,0 L-10,-12 Q-10,-25 0,-25 Q10,-25 10,-12 L10,0" fill="none" stroke="#1B5E20" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="0" cy="12" r="5" fill="#8BC34A"/>
-      <rect x="-2" y="15" width="4" height="8" rx="1" fill="#8BC34A"/>
-    </g>
-    <!-- Checkmark badge -->
-    <g transform="translate(35, -35)">
-      <circle cx="0" cy="0" r="18" fill="#8BC34A"/>
-      <path d="M-8,0 L-3,5 L8,-5" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </g>
+  <rect width="800" height="600" fill="url(#bg4)"/>
+  <g stroke="#00E676" stroke-width="0.5" opacity="0.06">
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
   </g>
-  <!-- Protection rings -->
-  <circle cx="200" cy="130" r="90" fill="none" stroke="#8BC34A" stroke-width="1" opacity="0.2"/>
-  <circle cx="200" cy="130" r="100" fill="none" stroke="#8BC34A" stroke-width="0.5" opacity="0.15"/>
-  <text x="200" y="245" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#F1F8E9">Anti-Ban Protection</text>
-  <text x="200" y="265" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="12" fill="#A5D6A7">Safe &amp; Secure Modding</text>
+  <g transform="translate(400, 260)" filter="url(#glow4)">
+    <path d="M0,-100 L75,-65 L75,20 Q75,80 0,110 Q-75,80 -75,20 L-75,-65 Z" fill="url(#shield-g)" opacity="0.15" stroke="#00E676" stroke-width="2"/>
+    <path d="M0,-80 L55,-52 L55,12 Q55,60 0,85 Q-55,60 -55,12 L-55,-52 Z" fill="url(#shield-g)" opacity="0.2"/>
+    <path d="M0,-60 L38,-40 L38,5 Q38,40 0,60 Q-38,40 -38,5 L-38,-40 Z" fill="#00E676" opacity="0.9"/>
+    <polyline points="-18,0 -5,15 22,-18" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="400" y="70" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="28" fill="white">VERIFIED SAFE</text>
+  <text x="400" y="100" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="15" fill="#00E676">For Super Bear Adventure</text>
+  <g transform="translate(150, 440)">
+    <rect x="-60" y="-18" width="120" height="36" rx="18" fill="#00E676" opacity="0.15"/>
+    <circle cx="-35" cy="0" r="8" fill="#00E676" opacity="0.3"/>
+    <text x="-35" y="5" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="12" fill="#00E676">&#x2713;</text>
+    <text x="15" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="#A5D6A7">Anti-Ban</text>
+  </g>
+  <g transform="translate(400, 440)">
+    <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#00E676" opacity="0.15"/>
+    <circle cx="-45" cy="0" r="8" fill="#00E676" opacity="0.3"/>
+    <text x="-45" y="5" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="12" fill="#00E676">&#x2713;</text>
+    <text x="10" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="#A5D6A7">VirusTotal Clean</text>
+  </g>
+  <g transform="translate(650, 440)">
+    <rect x="-60" y="-18" width="120" height="36" rx="18" fill="#00E676" opacity="0.15"/>
+    <circle cx="-35" cy="0" r="8" fill="#00E676" opacity="0.3"/>
+    <text x="-35" y="5" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="12" fill="#00E676">&#x2713;</text>
+    <text x="15" y="5" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="12" fill="#A5D6A7">No Root</text>
+  </g>
+  <text x="400" y="530" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="16" fill="#E8F5E9" opacity="0.5">ANTI-BAN PROTECTION</text>
 </svg>

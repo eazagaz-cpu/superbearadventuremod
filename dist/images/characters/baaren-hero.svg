@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5C842"/>
+      <stop offset="100%" stop-color="#7DB87A"/>
+    </linearGradient>
+    <radialGradient id="furGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#C8894F"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </radialGradient>
+    <radialGradient id="earInner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8A66A"/>
+      <stop offset="100%" stop-color="#C8894F"/>
+    </radialGradient>
+    <linearGradient id="bowGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </linearGradient>
+    <radialGradient id="noseGrad" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#4A3728"/>
+      <stop offset="100%" stop-color="#2C1E12"/>
+    </radialGradient>
+    <radialGradient id="pawGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D4A06A"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="200" r="220" fill="#FFFDE7" opacity="0.15"/>
+  <g transform="translate(120,60)" fill="#FFFDE7" opacity="0.8"><polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3"/></g>
+  <g transform="translate(670,80)" fill="#FFFDE7" opacity="0.7"><polygon points="0,-16 4,-4 16,0 4,4 0,16 -4,4 -16,0 -4,-4"/></g>
+  <g transform="translate(160,200)" fill="#FFFDE7" opacity="0.5"><polygon points="0,-10 2.5,-2.5 10,0 2.5,2.5 0,10 -2.5,2.5 -10,0 -2.5,-2.5"/></g>
+  <g transform="translate(640,180)" fill="#FFFDE7" opacity="0.6"><polygon points="0,-14 3.5,-3.5 14,0 3.5,3.5 0,14 -3.5,3.5 -14,0 -3.5,-3.5"/></g>
+  <g transform="translate(200,340)" fill="#FFFDE7" opacity="0.4"><polygon points="0,-8 2,-2 8,0 2,2 0,8 -2,2 -8,0 -2,-2"/></g>
+  <g transform="translate(600,320)" fill="#FFFDE7" opacity="0.5"><polygon points="0,-11 2.75,-2.75 11,0 2.75,2.75 0,11 -2.75,2.75 -11,0 -2.75,-2.75"/></g>
+  <circle cx="250" cy="120" r="3" fill="#FFFDE7" opacity="0.6"/>
+  <circle cx="550" cy="140" r="2.5" fill="#FFFDE7" opacity="0.5"/>
+  <circle cx="300" cy="280" r="2" fill="#FFFDE7" opacity="0.4"/>
+  <circle cx="500" cy="300" r="3" fill="#FFFDE7" opacity="0.5"/>
+  <g transform="translate(255,300)">
+    <ellipse cx="0" cy="0" rx="35" ry="28" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="2"/>
+    <circle cx="-15" cy="-18" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <circle cx="0" cy="-22" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <circle cx="15" cy="-18" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <ellipse cx="0" cy="5" rx="12" ry="10" fill="#D4A06A" opacity="0.6"/>
+  </g>
+  <g transform="translate(545,300)">
+    <ellipse cx="0" cy="0" rx="35" ry="28" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="2"/>
+    <circle cx="-15" cy="-18" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <circle cx="0" cy="-22" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <circle cx="15" cy="-18" r="10" fill="url(#pawGrad)" stroke="#6B4226" stroke-width="1.5"/>
+    <ellipse cx="0" cy="5" rx="12" ry="10" fill="#D4A06A" opacity="0.6"/>
+  </g>
+  <circle cx="310" cy="95" r="40" fill="#8B5E3C" stroke="#6B4226" stroke-width="3"/>
+  <circle cx="310" cy="95" r="25" fill="url(#earInner)"/>
+  <circle cx="490" cy="95" r="40" fill="#8B5E3C" stroke="#6B4226" stroke-width="3"/>
+  <circle cx="490" cy="95" r="25" fill="url(#earInner)"/>
+  <circle cx="400" cy="200" r="120" fill="url(#furGrad)" stroke="#6B4226" stroke-width="3"/>
+  <ellipse cx="400" cy="235" rx="65" ry="50" fill="#D4A06A" opacity="0.7"/>
+  <ellipse cx="360" cy="180" rx="20" ry="24" fill="#2C1E12"/>
+  <ellipse cx="355" cy="174" rx="8" ry="10" fill="white" opacity="0.9"/>
+  <ellipse cx="365" cy="185" rx="4" ry="5" fill="white" opacity="0.4"/>
+  <ellipse cx="440" cy="180" rx="20" ry="24" fill="#2C1E12"/>
+  <ellipse cx="435" cy="174" rx="8" ry="10" fill="white" opacity="0.9"/>
+  <ellipse cx="445" cy="185" rx="4" ry="5" fill="white" opacity="0.4"/>
+  <path d="M335,158 Q360,148 380,155" stroke="#5A3A1E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M420,155 Q440,148 465,158" stroke="#5A3A1E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="400" cy="220" rx="18" ry="13" fill="url(#noseGrad)"/>
+  <ellipse cx="395" cy="216" rx="5" ry="4" fill="white" opacity="0.3"/>
+  <path d="M375,240 Q400,265 425,240" stroke="#5A3A1E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="340" cy="230" r="15" fill="#E88B8B" opacity="0.3"/>
+  <circle cx="460" cy="230" r="15" fill="#E88B8B" opacity="0.3"/>
+  <g transform="translate(400,340)">
+    <polygon points="-45,-22 -5,0 -45,22" fill="url(#bowGrad)" stroke="#8B1A1A" stroke-width="1.5"/>
+    <polygon points="45,-22 5,0 45,22" fill="url(#bowGrad)" stroke="#8B1A1A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="10" fill="#C62828" stroke="#8B1A1A" stroke-width="1.5"/>
+    <ellipse cx="-25" cy="-6" rx="8" ry="4" fill="white" opacity="0.2" transform="rotate(-15,-25,-6)"/>
+    <ellipse cx="25" cy="-6" rx="8" ry="4" fill="white" opacity="0.2" transform="rotate(15,25,-6)"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="bold" fill="#3E2723" letter-spacing="2">Baaren - The Hero</text>
+</svg>

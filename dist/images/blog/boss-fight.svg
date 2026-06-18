@@ -1,53 +1,141 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#B71C1C"/>
-      <stop offset="100%" stop-color="#1B5E20"/>
+    <linearGradient id="bg-bf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFCCBC"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
-    <linearGradient id="sword" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#E0E0E0"/>
-      <stop offset="100%" stop-color="#9E9E9E"/>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="50%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#FFC107"/>
     </linearGradient>
+    <linearGradient id="boss-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+    <filter id="glow-bf">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="s-bf"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/></filter>
+    <radialGradient id="impact" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFC107" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="450" fill="url(#bg)"/>
-  <!-- Energy burst -->
-  <g opacity="0.15">
-    <line x1="400" y1="200" x2="200" y2="50" stroke="#FFC107" stroke-width="3"/>
-    <line x1="400" y1="200" x2="600" y2="50" stroke="#FFC107" stroke-width="3"/>
-    <line x1="400" y1="200" x2="100" y2="200" stroke="#FFC107" stroke-width="3"/>
-    <line x1="400" y1="200" x2="700" y2="200" stroke="#FFC107" stroke-width="3"/>
-    <line x1="400" y1="200" x2="200" y2="350" stroke="#FFC107" stroke-width="3"/>
-    <line x1="400" y1="200" x2="600" y2="350" stroke="#FFC107" stroke-width="3"/>
+
+  <!-- Light warm background -->
+  <rect width="800" height="450" fill="url(#bg-bf)"/>
+
+  <!-- Subtle radial pattern -->
+  <circle cx="400" cy="200" r="300" fill="none" stroke="#FFAB91" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="200" r="220" fill="none" stroke="#FFAB91" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="200" r="140" fill="none" stroke="#FFAB91" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Ground -->
+  <ellipse cx="400" cy="340" rx="380" ry="20" fill="#FFAB91" opacity="0.3"/>
+
+  <!-- Impact burst in center -->
+  <circle cx="400" cy="210" r="80" fill="url(#impact)"/>
+
+  <!-- Lightning crack effects -->
+  <g opacity="0.2" stroke="#FF5722" stroke-width="2" fill="none">
+    <polyline points="400,100 410,150 395,170 405,210"/>
+    <polyline points="350,130 370,170 355,190"/>
+    <polyline points="450,120 435,165 448,195"/>
   </g>
-  <!-- Crossed swords -->
-  <g transform="translate(400, 190)" filter="url(#s)">
-    <!-- Sword 1 -->
-    <g transform="rotate(-30)">
-      <rect x="-6" y="-100" width="12" height="120" fill="url(#sword)" rx="2"/>
-      <rect x="-20" y="15" width="40" height="10" rx="3" fill="#FFC107"/>
-      <rect x="-4" y="25" width="8" height="30" rx="2" fill="#795548"/>
-      <circle cx="0" cy="55" r="6" fill="#FFC107"/>
-      <polygon points="0,-100 -8,-85 8,-85" fill="#E0E0E0"/>
+
+  <!-- Boss enemy silhouette (right side) -->
+  <g transform="translate(560, 195)" filter="url(#s-bf)">
+    <!-- Large menacing body -->
+    <ellipse cx="0" cy="40" rx="75" ry="90" fill="url(#boss-body)"/>
+    <!-- Boss head -->
+    <circle cx="0" cy="-55" r="50" fill="#4E342E"/>
+    <!-- Horns -->
+    <path d="M-35,-85 L-50,-130 L-25,-95" fill="#6D4C41"/>
+    <path d="M35,-85 L50,-130 L25,-95" fill="#6D4C41"/>
+    <!-- Angry eyes -->
+    <g>
+      <path d="M-25,-65 L-10,-58" stroke="#F44336" stroke-width="3" stroke-linecap="round"/>
+      <path d="M25,-65 L10,-58" stroke="#F44336" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-18" cy="-52" r="8" fill="#F44336"/>
+      <circle cx="18" cy="-52" r="8" fill="#F44336"/>
+      <circle cx="-18" cy="-52" r="4" fill="#FFD54F"/>
+      <circle cx="18" cy="-52" r="4" fill="#FFD54F"/>
     </g>
-    <!-- Sword 2 -->
-    <g transform="rotate(30)">
-      <rect x="-6" y="-100" width="12" height="120" fill="url(#sword)" rx="2"/>
-      <rect x="-20" y="15" width="40" height="10" rx="3" fill="#FFC107"/>
-      <rect x="-4" y="25" width="8" height="30" rx="2" fill="#795548"/>
-      <circle cx="0" cy="55" r="6" fill="#FFC107"/>
-      <polygon points="0,-100 -8,-85 8,-85" fill="#E0E0E0"/>
+    <!-- Jagged mouth -->
+    <path d="M-25,-30 L-18,-22 L-10,-30 L-2,-22 L6,-30 L14,-22 L22,-30" fill="none" stroke="#F44336" stroke-width="2.5"/>
+    <!-- Arms reaching -->
+    <path d="M-70,10 L-110,-20 L-120,-15" stroke="#4E342E" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M70,10 L100,40 L95,50" stroke="#4E342E" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <!-- Claws -->
+    <g fill="#6D4C41">
+      <circle cx="-122" cy="-18" r="6"/>
+      <circle cx="-128" cy="-10" r="5"/>
+      <circle cx="-126" cy="-25" r="5"/>
+    </g>
+    <!-- Boss HP bar -->
+    <rect x="-50" y="-110" width="100" height="10" rx="5" fill="#fff" opacity="0.3"/>
+    <rect x="-50" y="-110" width="70" height="10" rx="5" fill="#F44336"/>
+    <text x="0" y="-115" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="9" fill="#D32F2F">BOSS</text>
+  </g>
+
+  <!-- Bear hero (left side, attacking) -->
+  <g transform="translate(240, 220)" filter="url(#s-bf)">
+    <!-- Bear body -->
+    <ellipse cx="0" cy="35" rx="35" ry="45" fill="#8D6E63"/>
+    <ellipse cx="0" cy="40" rx="22" ry="28" fill="#BCAAA4"/>
+    <!-- Bear head -->
+    <circle cx="0" cy="-20" r="32" fill="#8D6E63"/>
+    <!-- Ears -->
+    <circle cx="-22" cy="-42" r="12" fill="#795548"/>
+    <circle cx="22" cy="-42" r="12" fill="#795548"/>
+    <circle cx="-22" cy="-42" r="7" fill="#BCAAA4"/>
+    <circle cx="22" cy="-42" r="7" fill="#BCAAA4"/>
+    <!-- Determined eyes -->
+    <path d="M-16,-28 L-6,-24" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M16,-28 L6,-24" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-10" cy="-20" r="5" fill="white"/>
+    <circle cx="10" cy="-20" r="5" fill="white"/>
+    <circle cx="-8" cy="-19" r="3" fill="#333"/>
+    <circle cx="12" cy="-19" r="3" fill="#333"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-10" rx="6" ry="4" fill="#5D4037"/>
+    <!-- Determined mouth -->
+    <path d="M-6,-4 L0,-1 L6,-4" fill="none" stroke="#5D4037" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Attack arm with sword -->
+    <g transform="rotate(-30, 30, 0)">
+      <line x1="25" y1="10" x2="80" y2="-40" stroke="#8D6E63" stroke-width="10" stroke-linecap="round"/>
+      <!-- Sword -->
+      <rect x="72" y="-85" width="8" height="50" rx="2" fill="#B0BEC5"/>
+      <rect x="66" y="-38" width="20" height="6" rx="2" fill="#FFC107"/>
+      <polygon points="76,-85 72,-75 80,-75" fill="#CFD8DC"/>
     </g>
   </g>
-  <!-- Shield behind -->
-  <g transform="translate(400, 200)" filter="url(#s)">
-    <path d="M0,-60 L50,-40 L50,20 L0,60 L-50,20 L-50,-40Z" fill="#C62828" stroke="#F44336" stroke-width="2"/>
-    <path d="M0,-45 L35,-30 L35,15 L0,45 L-35,15 L-35,-30Z" fill="#D32F2F"/>
-    <!-- Star on shield -->
-    <polygon points="0,-20 6,-8 18,-8 8,2 12,14 0,7 -12,14 -8,2 -18,-8 -6,-8" fill="#FFC107"/>
+
+  <!-- Action lines between them -->
+  <g stroke="#FF8A65" stroke-width="2" opacity="0.4">
+    <line x1="320" y1="170" x2="450" y2="180"/>
+    <line x1="315" y1="200" x2="455" y2="200"/>
+    <line x1="320" y1="230" x2="450" y2="220"/>
   </g>
-  <!-- VS text -->
-  <text x="400" y="310" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="48" fill="#FFC107" opacity="0.3">VS</text>
-  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Boss Fight Strategies</text>
-  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#FFCDD2">Defeat Every Boss</text>
+
+  <!-- Small star/spark effects at impact point -->
+  <g fill="#FFC107" filter="url(#glow-bf)">
+    <polygon points="390,195 393,202 400,202 394,207 396,214 390,209 384,214 386,207 380,202 387,202" opacity="0.8"/>
+    <polygon points="415,180 417,185 422,185 418,188 419,193 415,190 411,193 412,188 408,185 413,185" opacity="0.6"/>
+    <polygon points="385,220 387,224 391,224 388,226 389,230 385,228 381,230 382,226 379,224 383,224" opacity="0.6"/>
+  </g>
+
+  <!-- VS badge -->
+  <g transform="translate(400, 210)" filter="url(#s-bf)">
+    <circle cx="0" cy="0" r="26" fill="#FF5722"/>
+    <circle cx="0" cy="0" r="22" fill="#FF7043"/>
+    <text x="0" y="8" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="20" fill="#FFF3E0">VS</text>
+  </g>
+
+  <!-- Title area -->
+  <rect x="150" y="360" width="500" height="70" rx="12" fill="white" opacity="0.7"/>
+  <text x="400" y="392" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#BF360C">Boss Fight Strategies</text>
+  <text x="400" y="416" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#E64A19">Defeat Every Boss in Super Bear Adventure</text>
 </svg>

@@ -85,7 +85,7 @@ const troubleshooting = [
         <h3 class="text-sm font-bold text-gray-900">Download & Setup</h3>
       </div>
       <div class="p-4">
-        <a href={SITE.download.url} class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-game-green to-game-green-dark text-white font-bold text-sm rounded-xl hover:shadow-lg hover:shadow-game-green/30 transition-all mb-3">
+        <a href={SITE.download.url} class="w-full flex items-center justify-center gap-2 px-4 py-3.5 bg-yellow-400 text-gray-900 font-extrabold text-sm rounded-xl hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-400/30 transition-all mb-3 border border-yellow-300">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
@@ -197,6 +197,27 @@ const troubleshooting = [
       </div>
     </div>
   )}
+
+  <!-- Latest Version Widget -->
+  <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl border border-gray-700 p-5 text-white">
+    <div class="flex items-center gap-3 mb-3">
+      <div class="w-10 h-10 rounded-xl bg-game-green/20 flex items-center justify-center">
+        <svg class="w-5 h-5 text-game-green-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold text-white">Latest Version</h3>
+        <p class="text-xs text-gray-400">v{SITE.download.version}</p>
+      </div>
+    </div>
+    <div class="space-y-2 text-xs text-gray-300">
+      <div class="flex justify-between"><span>File Size</span><span class="text-white font-medium">{SITE.download.size}</span></div>
+      <div class="flex justify-between"><span>Requires</span><span class="text-white font-medium">{SITE.download.requires}</span></div>
+      <div class="flex justify-between"><span>Updated</span><span class="text-white font-medium">{SITE.download.updated}</span></div>
+      <div class="flex justify-between"><span>Price</span><span class="text-green-400 font-medium">Free</span></div>
+    </div>
+  </div>
 
   <!-- Safety Notice -->
   <div class="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl border border-emerald-200 p-5">

@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a30"/>
+      <stop offset="50%" style="stop-color:#2a1050"/>
+      <stop offset="100%" style="stop-color:#120828"/>
+    </linearGradient>
+    <linearGradient id="royalPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9c27b0"/>
+      <stop offset="50%" style="stop-color:#7b1fa2"/>
+      <stop offset="100%" style="stop-color:#4a148c"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd54f"/>
+      <stop offset="50%" style="stop-color:#ffb300"/>
+      <stop offset="100%" style="stop-color:#ff8f00"/>
+    </linearGradient>
+    <linearGradient id="capeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9c27b0"/>
+      <stop offset="40%" style="stop-color:#7b1fa2"/>
+      <stop offset="100%" style="stop-color:#4a148c"/>
+    </linearGradient>
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8D6E63"/>
+      <stop offset="50%" style="stop-color:#6D4C41"/>
+      <stop offset="100%" style="stop-color:#5D4037"/>
+    </linearGradient>
+    <linearGradient id="ermineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa"/>
+      <stop offset="100%" style="stop-color:#e0e0e0"/>
+    </linearGradient>
+    <radialGradient id="royalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#9c27b0;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#9c27b0;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="gemRed" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ff5252"/>
+      <stop offset="100%" style="stop-color:#b71c1c"/>
+    </radialGradient>
+    <radialGradient id="gemBlue" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#42a5f5"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </radialGradient>
+    <radialGradient id="gemGreen" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#81c784"/>
+      <stop offset="100%" style="stop-color:#2e7d32"/>
+    </radialGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="gemGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Ornate background pattern -->
+  <g opacity="0.04" fill="#ffd54f">
+    <circle cx="100" cy="100" r="80"/>
+    <circle cx="300" cy="50" r="60"/>
+    <circle cx="500" cy="80" r="70"/>
+    <circle cx="700" cy="100" r="80"/>
+    <circle cx="200" cy="350" r="70"/>
+    <circle cx="600" cy="370" r="60"/>
+  </g>
+
+  <!-- Royal ambient glow -->
+  <circle cx="400" cy="200" r="200" fill="url(#royalGlow)" opacity="0.6"/>
+
+  <!-- Ornate border -->
+  <rect x="12" y="12" width="776" height="426" rx="8" fill="none" stroke="#FFB300" stroke-width="1" opacity="0.3"/>
+  <rect x="18" y="18" width="764" height="414" rx="5" fill="none" stroke="#FFB300" stroke-width="0.5" opacity="0.2"/>
+  <!-- Corner ornaments -->
+  <g fill="#FFB300" opacity="0.25">
+    <path d="M12,12 L45,12 L45,18 L18,18 L18,45 L12,45 Z"/>
+    <path d="M788,12 L755,12 L755,18 L782,18 L782,45 L788,45 Z"/>
+    <path d="M12,438 L45,438 L45,432 L18,432 L18,405 L12,405 Z"/>
+    <path d="M788,438 L755,438 L755,432 L782,432 L782,405 L788,405 Z"/>
+  </g>
+
+  <!-- Fleur-de-lis decorations -->
+  <g opacity="0.12" fill="#FFB300">
+    <!-- Left fleur-de-lis -->
+    <g transform="translate(80, 225) scale(0.6)">
+      <ellipse cx="0" cy="-20" rx="6" ry="25"/>
+      <ellipse cx="-15" cy="-5" rx="6" ry="20" transform="rotate(-30, -15, -5)"/>
+      <ellipse cx="15" cy="-5" rx="6" ry="20" transform="rotate(30, 15, -5)"/>
+      <rect x="-4" y="5" width="8" height="15" rx="2"/>
+    </g>
+    <!-- Right fleur-de-lis -->
+    <g transform="translate(720, 225) scale(0.6)">
+      <ellipse cx="0" cy="-20" rx="6" ry="25"/>
+      <ellipse cx="-15" cy="-5" rx="6" ry="20" transform="rotate(-30, -15, -5)"/>
+      <ellipse cx="15" cy="-5" rx="6" ry="20" transform="rotate(30, 15, -5)"/>
+      <rect x="-4" y="5" width="8" height="15" rx="2"/>
+    </g>
+  </g>
+
+  <!-- Cape (behind bear) -->
+  <g transform="translate(400, 180)">
+    <path d="M-55,-40 Q-100,40 -90,150 Q-60,160 0,165 Q60,160 90,150 Q100,40 55,-40 Z" fill="url(#capeGrad)" opacity="0.85"/>
+    <!-- Cape ermine trim at top -->
+    <path d="M-55,-40 Q0,-50 55,-40 Q0,-30 -55,-40" fill="url(#ermineGrad)" opacity="0.7"/>
+    <!-- Ermine spots on trim -->
+    <circle cx="-30" cy="-40" r="2.5" fill="#1a1a1a" opacity="0.4"/>
+    <circle cx="-10" cy="-42" r="2.5" fill="#1a1a1a" opacity="0.4"/>
+    <circle cx="10" cy="-42" r="2.5" fill="#1a1a1a" opacity="0.4"/>
+    <circle cx="30" cy="-40" r="2.5" fill="#1a1a1a" opacity="0.4"/>
+    <!-- Cape pattern -->
+    <g opacity="0.15" fill="#ffd54f">
+      <circle cx="-25" cy="30" r="4"/>
+      <circle cx="25" cy="30" r="4"/>
+      <circle cx="0" cy="70" r="4"/>
+      <circle cx="-30" cy="100" r="4"/>
+      <circle cx="30" cy="100" r="4"/>
+    </g>
+  </g>
+
+  <!-- Bear body -->
+  <g transform="translate(400, 210)">
+    <!-- Body -->
+    <ellipse cx="0" cy="30" rx="65" ry="75" fill="url(#furGrad)"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="40" rx="40" ry="50" fill="#8D6E63" opacity="0.5"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="50" fill="url(#furGrad)"/>
+    <!-- Ears -->
+    <circle cx="-35" cy="-92" r="16" fill="url(#furGrad)"/>
+    <circle cx="35" cy="-92" r="16" fill="url(#furGrad)"/>
+    <circle cx="-35" cy="-92" r="10" fill="#8D6E63" opacity="0.5"/>
+    <circle cx="35" cy="-92" r="10" fill="#8D6E63" opacity="0.5"/>
+
+    <!-- Face -->
+    <!-- Eyes -->
+    <ellipse cx="-16" cy="-62" rx="8" ry="9" fill="#263238"/>
+    <ellipse cx="16" cy="-62" rx="8" ry="9" fill="#263238"/>
+    <circle cx="-13" cy="-64" r="3" fill="white" opacity="0.7"/>
+    <circle cx="19" cy="-64" r="3" fill="white" opacity="0.7"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-48" rx="8" ry="6" fill="#37474F"/>
+    <ellipse cx="-2" cy="-50" rx="3" ry="2" fill="white" opacity="0.3"/>
+    <!-- Mouth -->
+    <path d="M-8,-42 Q0,-36 8,-42" fill="none" stroke="#37474F" stroke-width="1.5"/>
+
+    <!-- Arms -->
+    <ellipse cx="-72" cy="10" rx="20" ry="42" fill="url(#furGrad)" transform="rotate(12, -72, 10)"/>
+    <ellipse cx="72" cy="10" rx="20" ry="42" fill="url(#furGrad)" transform="rotate(-12, 72, 10)"/>
+
+    <!-- Legs -->
+    <ellipse cx="-30" cy="95" rx="22" ry="28" fill="url(#furGrad)"/>
+    <ellipse cx="30" cy="95" rx="22" ry="28" fill="url(#furGrad)"/>
+
+    <!-- CROWN on head -->
+    <g filter="url(#goldGlow)" transform="translate(0, -105)">
+      <!-- Crown base -->
+      <rect x="-35" y="5" width="70" height="20" rx="3" fill="url(#goldGrad)"/>
+      <!-- Crown points -->
+      <polygon points="-35,5 -28,-12 -18,5" fill="url(#goldGrad)"/>
+      <polygon points="-12,5 -4,-18 5,5" fill="url(#goldGrad)"/>
+      <polygon points="0,5 8,-18 15,5" fill="url(#goldGrad)"/>
+      <polygon points="20,5 28,-12 35,5" fill="url(#goldGrad)"/>
+      <!-- Crown gems -->
+      <circle cx="-28" cy="-6" r="4" fill="url(#gemRed)" filter="url(#gemGlow)"/>
+      <circle cx="-4" cy="-11" r="4.5" fill="url(#gemBlue)" filter="url(#gemGlow)"/>
+      <circle cx="8" cy="-11" r="4.5" fill="url(#gemGreen)" filter="url(#gemGlow)"/>
+      <circle cx="28" cy="-6" r="4" fill="url(#gemRed)" filter="url(#gemGlow)"/>
+      <!-- Crown band detail -->
+      <line x1="-35" y1="15" x2="35" y2="15" stroke="#fff9c4" stroke-width="1" opacity="0.5"/>
+      <!-- Crown base gems -->
+      <circle cx="-20" cy="15" r="3" fill="url(#gemRed)" filter="url(#gemGlow)"/>
+      <circle cx="0" cy="15" r="3.5" fill="url(#gemBlue)" filter="url(#gemGlow)"/>
+      <circle cx="20" cy="15" r="3" fill="url(#gemGreen)" filter="url(#gemGlow)"/>
+    </g>
+
+    <!-- Royal scepter in right hand -->
+    <g transform="translate(90, -15) rotate(-20)">
+      <rect x="-3" y="-30" width="6" height="60" rx="3" fill="url(#goldGrad)"/>
+      <circle cx="0" cy="-35" r="8" fill="url(#goldGrad)" filter="url(#goldGlow)"/>
+      <circle cx="0" cy="-35" r="5" fill="url(#gemBlue)" filter="url(#gemGlow)"/>
+    </g>
+
+    <!-- Royal medallion on chest -->
+    <g filter="url(#goldGlow)" transform="translate(0, 20)">
+      <circle cx="0" cy="0" r="14" fill="url(#goldGrad)"/>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#fff9c4" stroke-width="1" opacity="0.5"/>
+      <circle cx="0" cy="0" r="6" fill="url(#gemRed)" filter="url(#gemGlow)"/>
+    </g>
+  </g>
+
+  <!-- Floating gem decorations -->
+  <g filter="url(#gemGlow)">
+    <polygon points="130,130 138,142 130,154 122,142" fill="url(#gemRed)" opacity="0.5"/>
+    <polygon points="660,140 668,152 660,164 652,152" fill="url(#gemBlue)" opacity="0.5"/>
+    <polygon points="150,320 156,328 150,336 144,328" fill="url(#gemGreen)" opacity="0.4"/>
+    <polygon points="640,310 646,318 640,326 634,318" fill="url(#gemRed)" opacity="0.4"/>
+  </g>
+
+  <!-- Sparkle dots -->
+  <circle cx="200" cy="100" r="2" fill="#ffd54f" opacity="0.4"/>
+  <circle cx="600" cy="90" r="2" fill="#ffd54f" opacity="0.4"/>
+  <circle cx="100" cy="250" r="1.5" fill="#ffd54f" opacity="0.3"/>
+  <circle cx="700" cy="260" r="1.5" fill="#ffd54f" opacity="0.3"/>
+  <circle cx="300" cy="380" r="2" fill="#e1bee7" opacity="0.3"/>
+  <circle cx="500" cy="370" r="2" fill="#e1bee7" opacity="0.3"/>
+
+  <!-- Green accent line -->
+  <rect x="0" y="440" width="800" height="10" fill="#558B2F" opacity="0.7"/>
+
+  <!-- Title label -->
+  <g transform="translate(400, 410)">
+    <rect x="-95" y="-22" width="190" height="40" rx="20" fill="#2a1050" opacity="0.9"/>
+    <rect x="-95" y="-22" width="190" height="40" rx="20" fill="none" stroke="#FFB300" stroke-width="1.5" opacity="0.6"/>
+    <text x="0" y="6" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#ffd54f" letter-spacing="3">ROYAL SKIN</text>
+  </g>
+</svg>

@@ -88,7 +88,7 @@ const schemas = [
 
       <!-- Intro Content -->
       <div class="prose-game">
-        <p class="text-lg font-medium text-game-green-dark">
+        <p class="text-lg font-medium text-gray-800">
           Super Bear Adventure Mod APK is a tweaked Android version of the game that gives you unlimited coins, all skins unlocked, and no ads while keeping the same 3D worlds and story as the official release. The latest official build is <strong>v{SITE.download.version}</strong> ({SITE.download.updated})—a multiplayer stability patch. Worlds like <a href="/blog/the-hive-walkthrough/">The Hive</a> have been in the game since Update 10.0 (2022).
         </p>
         <p>
@@ -100,7 +100,7 @@ const schemas = [
 
         <!-- Definition Card -->
         <div class="bg-game-green-50 border-l-4 border-game-green rounded-r-xl p-5 my-8">
-          <strong class="text-game-green-dark">Definition — Super Bear Adventure Mod APK</strong>
+          <strong class="text-gray-900">Definition — Super Bear Adventure Mod APK</strong>
           <p class="mt-2 mb-0">The Super Bear Adventure Mod APK is a modified Android version of the game. You get unlimited coins, all skins, and no ads from the start. The 3D platforming and exploration stay the same as the official v{SITE.download.version} game on Google Play.</p>
         </div>
       </div>
@@ -233,34 +233,45 @@ const schemas = [
         </ul>
         <p>For the complete history, see our <a href="/blog/version-changelogs/">version changelog archive</a>.</p>
 
-        <h2 id="exclusive-features">Exclusive Mod Features</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6 not-prose">
-          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-            <img src="/images/features/unlimited-coins.svg" alt="Unlimited coins and gems feature" class="w-full h-36 object-cover" loading="lazy" />
+        <h2 id="exclusive-features">Exclusive Features of the Modded Version</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 my-8 not-prose">
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all">
+            <div class="relative w-full h-44 overflow-hidden bg-gradient-to-br from-yellow-50 to-amber-50">
+              <img src="/images/features/unlimited-coins.svg" alt="Unlimited coins and gems — buy everything in the shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
             <div class="p-5">
-              <h3 class="font-bold text-gray-900 mb-1">Unlimited Coins & Gems</h3>
-              <p class="text-sm text-gray-600">Start with unlimited currency to buy anything instantly. No grinding required — focus on exploration and fun.</p>
+              <h3 class="font-extrabold text-gray-900 mb-2 text-lg">Unlimited Money and Purple Gems</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">You get unlimited coins and gems. Buy every hat, skin, and accessory whenever you want. Great if you want to enjoy the story without the coin grind.</p>
+              <a href="/blog/super-bear-adventure-unlimited-money/" class="inline-flex items-center gap-1 text-sm font-semibold text-game-green mt-3 hover:underline">Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></a>
             </div>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-            <img src="/images/features/all-skins.svg" alt="All skins and hats unlocked feature" class="w-full h-36 object-cover" loading="lazy" />
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all">
+            <div class="relative w-full h-44 overflow-hidden bg-gradient-to-br from-purple-50 to-indigo-50">
+              <img src="/images/features/all-skins.svg" alt="All skins and hats unlocked from the start" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
             <div class="p-5">
-              <h3 class="font-bold text-gray-900 mb-1">All Skins & Hats Unlocked</h3>
-              <p class="text-sm text-gray-600">Access every cosmetic item from day one. Skeleton Bear, Royal Cape, and all rare skins included.</p>
+              <h3 class="font-extrabold text-gray-900 mb-2 text-lg">All Skins & Hats Unlocked</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">Access every cosmetic item from day one. Skeleton Bear, Royal Cape, and all rare skins included. No need to grind or pay.</p>
+              <a href="/blog/unlock-all-skins-hats/" class="inline-flex items-center gap-1 text-sm font-semibold text-game-green mt-3 hover:underline">See all skins <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg></a>
             </div>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-            <img src="/images/features/no-ads.svg" alt="No advertisements feature" class="w-full h-36 object-cover" loading="lazy" />
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all">
+            <div class="relative w-full h-44 overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50">
+              <img src="/images/features/no-ads.svg" alt="No advertisements — completely ad-free gameplay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
             <div class="p-5">
-              <h3 class="font-bold text-gray-900 mb-1">No Advertisements</h3>
-              <p class="text-sm text-gray-600">Play without interruptions — zero ads. No pop-ups, no video ads, no banner ads. Pure gameplay.</p>
+              <h3 class="font-extrabold text-gray-900 mb-2 text-lg">No Advertisements</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">Play without interruptions. Zero pop-ups, zero video ads, zero banner ads. Pure gameplay experience from start to finish.</p>
             </div>
           </div>
-          <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-            <img src="/images/features/anti-ban.svg" alt="Anti-ban protection feature" class="w-full h-36 object-cover" loading="lazy" />
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all">
+            <div class="relative w-full h-44 overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50">
+              <img src="/images/features/anti-ban.svg" alt="Anti-ban protection and security scanning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
             <div class="p-5">
-              <h3 class="font-bold text-gray-900 mb-1">Anti-Ban Protection</h3>
-              <p class="text-sm text-gray-600">Play safely with built-in anti-ban protection. Thousands of players use the mod daily without issues.</p>
+              <h3 class="font-extrabold text-gray-900 mb-2 text-lg">Anti-Ban Protection</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">This build is set up to reduce the chance of in-game bans. Files are scanned with VirusTotal so they're clean. Only download from trusted sites.</p>
             </div>
           </div>
         </div>
@@ -302,23 +313,77 @@ const schemas = [
             </div>
           ))}
         </div>
-        <!-- Download CTA with visual -->
-        <div class="my-8 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-center text-white not-prose shadow-xl">
-          <img src="/images/blog/mod-download.svg" alt="Download Super Bear Adventure Mod APK" class="w-full max-w-md mx-auto h-auto rounded-xl mb-6 border border-white/20" loading="lazy" />
+        <!-- Download CTA -->
+        <div class="my-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 text-center text-white not-prose shadow-xl border border-gray-700">
+          <div class="w-16 h-16 rounded-2xl bg-yellow-400/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </div>
           <h3 class="text-2xl font-extrabold mb-2">Ready to Download?</h3>
-          <p class="text-white/80 mb-6">Super Bear Adventure Mod APK v{SITE.download.version} — Free, safe, no root required</p>
-          <a href={SITE.download.url} class="inline-flex items-center justify-center gap-3 px-10 py-4 bg-white text-green-700 font-extrabold text-lg rounded-xl hover:bg-green-50 transition-all shadow-lg border border-white/50">
+          <p class="text-gray-400 mb-2">Super Bear Adventure Mod APK v{SITE.download.version}</p>
+          <p class="text-sm text-gray-500 mb-6">{SITE.download.size} &middot; Free &middot; No root required &middot; Anti-ban</p>
+          <a href={SITE.download.url} class="inline-flex items-center justify-center gap-3 px-10 py-4 bg-yellow-400 text-gray-900 font-extrabold text-lg rounded-xl hover:bg-yellow-300 transition-all shadow-lg shadow-yellow-400/20 border border-yellow-300">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
             Download APK v{SITE.download.version} ({SITE.download.size})
           </a>
+          <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500">
+            <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Virus Free</span>
+            <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Verified</span>
+            <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Fast Download</span>
+          </div>
         </div>
 
-        <h2 id="mod-safe">Is the Mod Safe?</h2>
+        <h2 id="mod-safe">Is the Mod Safe? (The Trust Factor)</h2>
         <p>
-          Yes. Our mod APK is built from the official v{SITE.download.version} base. It has been scanned with multiple antivirus engines and contains no malware, spyware, or trojans. No root access is required, and it does not access any personal data beyond what the official game normally uses.
+          We care about safety. Every file on this site is checked by us. We don't use unverified links.
         </p>
+
+        <!-- Safety & Trust Visual Section -->
+        <div class="my-8 not-prose">
+          <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl border border-gray-700 p-6 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center">
+                    <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-extrabold text-lg">VERIFIED SAFE</h3>
+                    <p class="text-emerald-400 text-sm font-medium">For Super Bear Adventure</p>
+                  </div>
+                </div>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3 text-gray-300 text-sm">
+                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <strong>Anti-Ban Protection:</strong> Built to reduce the chance of in-game bans
+                  </li>
+                  <li class="flex items-center gap-3 text-gray-300 text-sm">
+                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <strong>Security Scanning:</strong> Files scanned with VirusTotal — verified clean
+                  </li>
+                  <li class="flex items-center gap-3 text-gray-300 text-sm">
+                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <strong>No Root Required:</strong> Works on all standard Android devices
+                  </li>
+                  <li class="flex items-center gap-3 text-gray-300 text-sm">
+                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <strong>No Personal Data:</strong> Does not access contacts, photos, or accounts
+                  </li>
+                  <li class="flex items-center gap-3 text-gray-300 text-sm">
+                    <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <strong>Regular Updates:</strong> Always synced with official Earthkwak patches
+                  </li>
+                </ul>
+              </div>
+              <div class="flex justify-center">
+                <img src="/images/features/anti-ban.svg" alt="Verified safe — anti-ban protection and security scanning" class="w-full max-w-xs h-auto rounded-xl" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <h2 id="optimization">Optimization for Low-End Devices</h2>
         <p>
@@ -330,33 +395,6 @@ const schemas = [
           <li>Enable battery saver mode for consistent performance</li>
           <li>Clear app cache periodically</li>
         </ul>
-
-        <!-- Safety & Trust Visual Section -->
-        <div class="my-10 not-prose">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div class="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl border border-emerald-200 p-5 text-center">
-              <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mx-auto mb-3">
-                <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-              </div>
-              <h4 class="font-bold text-emerald-800 text-sm mb-1">Virus Scanned</h4>
-              <p class="text-xs text-emerald-700">Verified clean by multiple antivirus engines</p>
-            </div>
-            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-5 text-center">
-              <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-              </div>
-              <h4 class="font-bold text-blue-800 text-sm mb-1">No Root Required</h4>
-              <p class="text-xs text-blue-700">Works on all standard Android devices</p>
-            </div>
-            <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl border border-amber-200 p-5 text-center">
-              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mx-auto mb-3">
-                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-              </div>
-              <h4 class="font-bold text-amber-800 text-sm mb-1">Regular Updates</h4>
-              <p class="text-xs text-amber-700">Always synced with official game patches</p>
-            </div>
-          </div>
-        </div>
 
         <h2 id="final-verdict">Final Verdict & Conclusion</h2>
         <p>

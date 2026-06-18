@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1B5E20"/>
-      <stop offset="100%" stop-color="#33691E"/>
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#BBDEFB"/>
     </linearGradient>
     <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
   </defs>
@@ -69,6 +69,6 @@
     <path d="M-18,2 Q0,-8 18,2" fill="none" stroke="#C5E1A5" stroke-width="2"/>
     <path d="M-10,9 Q0,2 10,9" fill="none" stroke="#C5E1A5" stroke-width="2"/>
   </g>
-  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Multiplayer Guide</text>
-  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Play With Friends Online</text>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#0D47A1">Multiplayer Guide</text>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#1565C0">Play With Friends Online</text>
 </svg>

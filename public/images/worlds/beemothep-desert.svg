@@ -1,37 +1,200 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FF8F00"/>
-      <stop offset="100%" stop-color="#FFB74D"/>
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="30%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
     </linearGradient>
-    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="sandFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="100%" stop-color="#FFC107"/>
+    </linearGradient>
+    <linearGradient id="sandNear" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FFD54F"/>
       <stop offset="100%" stop-color="#FFA726"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/></filter>
+    <linearGradient id="pyramid1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="50%" stop-color="#FFA726"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="pyramid1shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="pyramid2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFCC80"/>
+      <stop offset="100%" stop-color="#FFB74D"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#FFF9C4" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#FFD54F" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFD54F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="oasis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="4" stdDeviation="5" flood-color="#BF360C" flood-opacity="0.2"/>
+    </filter>
+    <filter id="heatHaze">
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="turbulence"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="2"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#BF360C" flood-opacity="0.15"/>
+    </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#sky)"/>
-  <!-- Sun -->
-  <circle cx="320" cy="50" r="30" fill="#FFEE58" opacity="0.8"/>
-  <!-- Sand dunes -->
-  <ellipse cx="150" cy="290" rx="250" ry="80" fill="url(#sand)"/>
-  <ellipse cx="350" cy="300" rx="180" ry="70" fill="#FFB74D"/>
-  <!-- Pyramid -->
-  <g filter="url(#s)">
-    <polygon points="200,80 130,230 270,230" fill="#FFA726"/>
-    <polygon points="200,80 200,230 270,230" fill="#FF8F00"/>
-    <rect x="190" y="190" width="20" height="40" fill="#5D4037"/>
-    <path d="M190,190 Q200,180 210,190" fill="#795548"/>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Sun with glow -->
+  <circle cx="650" cy="90" r="80" fill="url(#sunGlow)"/>
+  <circle cx="650" cy="90" r="45" fill="#FFF9C4" opacity="0.9"/>
+  <circle cx="650" cy="90" r="35" fill="#FFEE58"/>
+
+  <!-- Heat shimmer lines -->
+  <g opacity="0.1" stroke="#FF8F00" stroke-width="1" fill="none">
+    <path d="M0,320 Q100,315 200,320 Q300,325 400,320 Q500,315 600,320 Q700,325 800,320"/>
+    <path d="M0,330 Q100,325 200,330 Q300,335 400,330 Q500,325 600,330 Q700,335 800,330"/>
   </g>
-  <!-- Small pyramid -->
-  <polygon points="90,160 60,230 120,230" fill="#FFB74D" filter="url(#s)"/>
-  <!-- Cactus -->
-  <g transform="translate(320, 200)" filter="url(#s)">
-    <rect x="-4" y="-30" width="8" height="50" rx="4" fill="#558B2F"/>
-    <rect x="4" y="-18" width="16" height="5" rx="2.5" fill="#558B2F"/>
-    <rect x="15" y="-28" width="5" height="14" rx="2.5" fill="#558B2F"/>
-    <rect x="-20" y="-10" width="16" height="5" rx="2.5" fill="#558B2F"/>
-    <rect x="-20" y="-22" width="5" height="15" rx="2.5" fill="#558B2F"/>
+
+  <!-- Far sand dunes (horizon) -->
+  <path d="M0,340 Q100,310 200,330 Q300,300 400,320 Q500,300 600,310 Q700,295 800,320 L800,400 L0,400Z" fill="url(#sandFar)" opacity="0.6"/>
+
+  <!-- Main pyramid (large, center) -->
+  <g filter="url(#shadow)">
+    <!-- Lit side -->
+    <polygon points="370,120 220,380 370,380" fill="url(#pyramid1)"/>
+    <!-- Shadow side -->
+    <polygon points="370,120 370,380 520,380" fill="url(#pyramid1shadow)"/>
+    <!-- Edge highlight -->
+    <line x1="370" y1="120" x2="370" y2="380" stroke="#FFCC80" stroke-width="1" opacity="0.5"/>
+    <!-- Stone block lines -->
+    <g stroke="#E65100" stroke-width="0.5" opacity="0.2">
+      <line x1="245" y1="200" x2="495" y2="200"/>
+      <line x1="260" y1="240" x2="480" y2="240"/>
+      <line x1="275" y1="280" x2="465" y2="280"/>
+      <line x1="290" y1="320" x2="450" y2="320"/>
+      <line x1="305" y1="360" x2="435" y2="360"/>
+    </g>
+    <!-- Entrance -->
+    <path d="M350,340 Q370,310 390,340 L390,380 L350,380Z" fill="#5D4037"/>
+    <path d="M355,345 Q370,320 385,345 L385,380 L355,380Z" fill="#3E2723"/>
   </g>
-  <text x="200" y="275" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#5D4037">Beemothep Desert</text>
+
+  <!-- Second pyramid (smaller, left) -->
+  <g filter="url(#softShadow)">
+    <polygon points="130,220 50,380 130,380" fill="#FFCC80"/>
+    <polygon points="130,220 130,380 210,380" fill="#FFB74D"/>
+    <line x1="130" y1="220" x2="130" y2="380" stroke="#FFE0B2" stroke-width="0.8" opacity="0.4"/>
+    <g stroke="#E65100" stroke-width="0.3" opacity="0.15">
+      <line x1="70" y1="280" x2="190" y2="280"/>
+      <line x1="80" y1="320" x2="180" y2="320"/>
+      <line x1="55" y1="360" x2="205" y2="360"/>
+    </g>
+  </g>
+
+  <!-- Third pyramid (distant, right) -->
+  <g opacity="0.6">
+    <polygon points="620,260 570,380 620,380" fill="#FFE0B2"/>
+    <polygon points="620,260 620,380 670,380" fill="#FFCC80"/>
+  </g>
+
+  <!-- Sphinx silhouette (right side) -->
+  <g transform="translate(580, 340)" filter="url(#softShadow)">
+    <path d="M0,0 L-30,0 L-30,-20 L-25,-25 L-20,-35 Q-15,-42 -10,-35 L-5,-25 L0,-25 L10,-20 L40,-20 L60,-15 L70,0 L70,40 L-30,40Z" fill="#D4A050" opacity="0.7"/>
+    <path d="M0,0 L-30,0 L-30,-20 L-25,-25 L-20,-35 Q-15,-42 -10,-35 L-5,-25 L0,-25 L10,-20 L40,-20 L60,-15 L70,0 L70,40 L-30,40Z" fill="#BF8C3A" opacity="0.3"/>
+  </g>
+
+  <!-- Near sand dunes -->
+  <path d="M0,380 Q150,355 300,375 Q450,350 600,370 Q700,355 800,365 L800,600 L0,600Z" fill="url(#sandNear)"/>
+
+  <!-- Sand dune ridges -->
+  <path d="M0,420 Q200,400 400,415 Q600,430 800,410" fill="none" stroke="#FFB74D" stroke-width="1" opacity="0.3"/>
+  <path d="M0,460 Q250,445 500,455 Q700,465 800,450" fill="none" stroke="#FFB74D" stroke-width="1" opacity="0.2"/>
+
+  <!-- Sand texture dots -->
+  <g fill="#FFA726" opacity="0.3">
+    <circle cx="100" cy="420" r="1.5"/><circle cx="200" cy="440" r="1"/><circle cx="300" cy="430" r="1.5"/>
+    <circle cx="450" cy="450" r="1"/><circle cx="550" cy="425" r="1.5"/><circle cx="650" cy="440" r="1"/>
+    <circle cx="150" cy="470" r="1"/><circle cx="350" cy="480" r="1.5"/><circle cx="500" cy="475" r="1"/>
+    <circle cx="700" cy="460" r="1.5"/><circle cx="250" cy="510" r="1"/><circle cx="600" cy="500" r="1"/>
+  </g>
+
+  <!-- Cactus 1 (left foreground) -->
+  <g transform="translate(100, 430)" filter="url(#softShadow)">
+    <rect x="-6" y="-60" width="12" height="80" rx="6" fill="#558B2F"/>
+    <rect x="-6" y="-60" width="6" height="80" rx="3" fill="#689F38" opacity="0.5"/>
+    <!-- Right arm -->
+    <rect x="6" y="-35" width="25" height="8" rx="4" fill="#558B2F"/>
+    <rect x="23" y="-55" width="8" height="25" rx="4" fill="#558B2F"/>
+    <rect x="23" y="-55" width="4" height="25" rx="2" fill="#689F38" opacity="0.4"/>
+    <!-- Left arm -->
+    <rect x="-31" y="-20" width="25" height="8" rx="4" fill="#558B2F"/>
+    <rect x="-31" y="-42" width="8" height="26" rx="4" fill="#558B2F"/>
+    <rect x="-31" y="-42" width="4" height="26" rx="2" fill="#689F38" opacity="0.4"/>
+    <!-- Spines -->
+    <g stroke="#8BC34A" stroke-width="0.5" opacity="0.5">
+      <line x1="-8" y1="-50" x2="-12" y2="-52"/><line x1="8" y1="-45" x2="12" y2="-47"/>
+      <line x1="-8" y1="-30" x2="-12" y2="-32"/><line x1="8" y1="-25" x2="12" y2="-27"/>
+      <line x1="-8" y1="-10" x2="-12" y2="-12"/><line x1="8" y1="-5" x2="12" y2="-7"/>
+    </g>
+  </g>
+
+  <!-- Cactus 2 (right) -->
+  <g transform="translate(720, 410)" filter="url(#softShadow)">
+    <rect x="-5" y="-45" width="10" height="60" rx="5" fill="#558B2F"/>
+    <rect x="-5" y="-45" width="5" height="60" rx="2.5" fill="#689F38" opacity="0.4"/>
+    <rect x="5" y="-25" width="18" height="7" rx="3.5" fill="#558B2F"/>
+    <rect x="16" y="-40" width="7" height="20" rx="3.5" fill="#558B2F"/>
+  </g>
+
+  <!-- Small cactus 3 -->
+  <g transform="translate(450, 450)" filter="url(#softShadow)">
+    <rect x="-4" y="-30" width="8" height="40" rx="4" fill="#689F38"/>
+    <rect x="4" y="-18" width="14" height="6" rx="3" fill="#689F38"/>
+    <rect x="12" y="-28" width="6" height="14" rx="3" fill="#689F38"/>
+  </g>
+
+  <!-- Oasis (small, in distance) -->
+  <g transform="translate(300, 380)" opacity="0.5">
+    <ellipse cx="0" cy="0" rx="35" ry="10" fill="url(#oasis)" opacity="0.5"/>
+    <!-- Palm trees at oasis -->
+    <path d="M-15,-5 Q-18,-30 -12,-45" stroke="#795548" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-8" cy="-48" rx="10" ry="4" fill="#2E7D32" opacity="0.6"/>
+    <path d="M15,-5 Q18,-25 14,-40" stroke="#795548" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="18" cy="-42" rx="9" ry="4" fill="#2E7D32" opacity="0.6"/>
+  </g>
+
+  <!-- Flying birds (distant) -->
+  <g stroke="#795548" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M200,150 Q205,145 210,148 Q215,145 220,150"/>
+    <path d="M240,130 Q244,126 248,129 Q252,126 256,130"/>
+    <path d="M180,170 Q184,166 188,169 Q192,166 196,170"/>
+  </g>
+
+  <!-- Tumbleweed -->
+  <g transform="translate(550, 480)" opacity="0.4">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#8D6E63" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#A1887F" stroke-width="1"/>
+    <line x1="-10" y1="-5" x2="10" y2="5" stroke="#8D6E63" stroke-width="0.8"/>
+    <line x1="-5" y1="-10" x2="5" y2="10" stroke="#8D6E63" stroke-width="0.8"/>
+    <line x1="-8" y1="6" x2="8" y2="-6" stroke="#A1887F" stroke-width="0.8"/>
+  </g>
+
+  <!-- Ancient hieroglyph-style decorative marks on near sand -->
+  <g opacity="0.08" fill="#BF360C">
+    <circle cx="320" cy="520" r="8"/>
+    <rect x="340" y="515" width="3" height="15" rx="1"/>
+    <polygon points="360,512 365,530 355,530"/>
+    <rect x="375" y="517" width="12" height="3" rx="1"/>
+  </g>
+
+  <!-- World name banner -->
+  <rect x="220" y="548" width="360" height="42" rx="21" fill="#5D4037" opacity="0.85"/>
+  <text x="400" y="576" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="24" fill="#FFE082" letter-spacing="2">BEEMOTHEP DESERT</text>
 </svg>

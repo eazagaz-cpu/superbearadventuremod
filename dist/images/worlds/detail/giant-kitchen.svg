@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="kBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF3D4"/>
+      <stop offset="100%" stop-color="#D4A76A"/>
+    </linearGradient>
+    <linearGradient id="kLight" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFF9E6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFF3D4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="kCounter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4944A"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <linearGradient id="kCabinet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0784C"/>
+      <stop offset="100%" stop-color="#7A5A30"/>
+    </linearGradient>
+    <linearGradient id="kMug" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D5B7"/>
+      <stop offset="100%" stop-color="#C9A96E"/>
+    </linearGradient>
+    <linearGradient id="kFruit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="100%" stop-color="#A0784C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#kBg)"/>
+
+  <!-- Wall -->
+  <rect x="0" y="0" width="800" height="280" fill="#F5E6CC" opacity="0.6"/>
+
+  <!-- Warm lighting from above -->
+  <polygon points="300,0 500,0 600,200 200,200" fill="url(#kLight)"/>
+
+  <!-- Tiled floor (checkered) -->
+  <g opacity="0.5">
+    <rect x="0" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="50" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="100" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="150" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="200" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="250" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="300" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="350" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="400" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="450" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="500" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="550" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="600" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="650" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="700" y="320" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="750" y="320" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="0" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="50" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="100" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="150" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="200" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="250" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="300" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="350" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="400" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="450" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="500" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="550" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="600" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="650" y="370" width="50" height="50" fill="#E8D5B7"/>
+    <rect x="700" y="370" width="50" height="50" fill="#F5EEE0"/>
+    <rect x="750" y="370" width="50" height="50" fill="#E8D5B7"/>
+  </g>
+
+  <!-- Cabinets above -->
+  <rect x="60" y="30" width="160" height="120" rx="4" fill="url(#kCabinet)" stroke="#5C3D1E" stroke-width="2"/>
+  <rect x="65" y="35" width="70" height="110" rx="3" fill="#8B6C42" stroke="#5C3D1E" stroke-width="1"/>
+  <rect x="145" y="35" width="70" height="110" rx="3" fill="#8B6C42" stroke="#5C3D1E" stroke-width="1"/>
+  <!-- Cabinet handles -->
+  <rect x="128" y="75" width="6" height="25" rx="3" fill="#D4A76A"/>
+  <rect x="208" y="75" width="6" height="25" rx="3" fill="#D4A76A"/>
+
+  <rect x="260" y="30" width="160" height="120" rx="4" fill="url(#kCabinet)" stroke="#5C3D1E" stroke-width="2"/>
+  <rect x="265" y="35" width="70" height="110" rx="3" fill="#8B6C42" stroke="#5C3D1E" stroke-width="1"/>
+  <rect x="345" y="35" width="70" height="110" rx="3" fill="#8B6C42" stroke="#5C3D1E" stroke-width="1"/>
+  <rect x="328" y="75" width="6" height="25" rx="3" fill="#D4A76A"/>
+  <rect x="408" y="75" width="6" height="25" rx="3" fill="#D4A76A"/>
+
+  <!-- Massive kitchen counter -->
+  <rect x="30" y="220" width="520" height="20" rx="2" fill="#A0784C" stroke="#6B4E2E" stroke-width="2"/>
+  <rect x="30" y="240" width="520" height="100" fill="url(#kCounter)" stroke="#6B4E2E" stroke-width="2"/>
+  <!-- Counter drawers -->
+  <rect x="50" y="260" width="100" height="30" rx="2" fill="#B8923E" stroke="#8B6914" stroke-width="1"/>
+  <rect x="90" y="272" width="20" height="6" rx="3" fill="#D4A76A"/>
+  <rect x="170" y="260" width="100" height="30" rx="2" fill="#B8923E" stroke="#8B6914" stroke-width="1"/>
+  <rect x="210" y="272" width="20" height="6" rx="3" fill="#D4A76A"/>
+  <rect x="290" y="260" width="100" height="30" rx="2" fill="#B8923E" stroke="#8B6914" stroke-width="1"/>
+  <rect x="330" y="272" width="20" height="6" rx="3" fill="#D4A76A"/>
+
+  <!-- Giant mug on counter -->
+  <rect x="120" y="165" width="70" height="55" rx="6" fill="url(#kMug)" stroke="#A0784C" stroke-width="2"/>
+  <ellipse cx="155" cy="165" rx="35" ry="6" fill="#D4BA8A" stroke="#A0784C" stroke-width="1.5"/>
+  <!-- Mug handle -->
+  <path d="M190,180 Q215,180 215,195 Q215,210 190,210" fill="none" stroke="#A0784C" stroke-width="4"/>
+  <!-- Steam from mug -->
+  <path d="M140,158 Q137,145 142,135" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  <path d="M155,155 Q152,140 157,130" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.4"/>
+  <path d="M168,158 Q165,145 170,135" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Giant fruit bowl -->
+  <ellipse cx="420" cy="210" rx="60" ry="20" fill="url(#kFruit)" stroke="#7A5A30" stroke-width="2"/>
+  <path d="M360,210 Q360,240 420,240 Q480,240 480,210" fill="url(#kFruit)" stroke="#7A5A30" stroke-width="2"/>
+  <!-- Fruits -->
+  <circle cx="400" cy="195" r="14" fill="#E74C3C"/>
+  <circle cx="430" cy="192" r="12" fill="#F39C12"/>
+  <circle cx="415" cy="185" r="10" fill="#27AE60"/>
+  <ellipse cx="445" cy="198" rx="11" ry="9" fill="#E67E22"/>
+
+  <!-- Oversized fork -->
+  <g transform="translate(580,100) rotate(15)">
+    <rect x="-3" y="0" width="6" height="140" rx="3" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+    <rect x="-12" y="-50" width="4" height="55" rx="2" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+    <rect x="-4" y="-50" width="4" height="55" rx="2" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+    <rect x="4" y="-50" width="4" height="55" rx="2" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+    <rect x="12" y="-50" width="4" height="55" rx="2" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+  </g>
+
+  <!-- Oversized spoon -->
+  <g transform="translate(650,110) rotate(-10)">
+    <rect x="-3" y="0" width="6" height="140" rx="3" fill="#C0C0C0" stroke="#999" stroke-width="1"/>
+    <ellipse cx="0" cy="-20" rx="18" ry="25" fill="#D0D0D0" stroke="#999" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-15" rx="12" ry="16" fill="#B8B8B8" opacity="0.5"/>
+  </g>
+
+  <!-- Tiny bear on counter (for scale) -->
+  <g transform="translate(310,195)">
+    <!-- Bear body -->
+    <ellipse cx="0" cy="12" rx="8" ry="10" fill="#8B5E3C"/>
+    <!-- Bear head -->
+    <circle cx="0" cy="0" r="7" fill="#A0724E"/>
+    <!-- Ears -->
+    <circle cx="-6" cy="-5" r="3" fill="#8B5E3C"/>
+    <circle cx="6" cy="-5" r="3" fill="#8B5E3C"/>
+    <circle cx="-6" cy="-5" r="1.5" fill="#D4A76A"/>
+    <circle cx="6" cy="-5" r="1.5" fill="#D4A76A"/>
+    <!-- Eyes -->
+    <circle cx="-2.5" cy="-1" r="1.2" fill="#2C1810"/>
+    <circle cx="2.5" cy="-1" r="1.2" fill="#2C1810"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="2" rx="1.5" ry="1" fill="#2C1810"/>
+    <!-- Arms -->
+    <line x1="-7" y1="10" x2="-12" y2="6" stroke="#8B5E3C" stroke-width="3" stroke-linecap="round"/>
+    <line x1="7" y1="10" x2="12" y2="6" stroke="#8B5E3C" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <ellipse cx="-4" cy="22" rx="3.5" ry="2.5" fill="#8B5E3C"/>
+    <ellipse cx="4" cy="22" rx="3.5" ry="2.5" fill="#8B5E3C"/>
+  </g>
+
+  <!-- Counter legs -->
+  <rect x="40" y="340" width="15" height="80" fill="#8B6914"/>
+  <rect x="525" y="340" width="15" height="80" fill="#8B6914"/>
+
+  <!-- Label -->
+  <rect x="250" y="410" width="300" height="35" rx="6" fill="#5C3D1E" opacity="0.85"/>
+  <text x="400" y="434" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFF3D4" letter-spacing="2">Giant Kitchen</text>
+</svg>

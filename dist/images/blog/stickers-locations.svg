@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1B5E20"/>
-      <stop offset="100%" stop-color="#33691E"/>
+      <stop offset="0%" stop-color="#F3E5F5"/>
+      <stop offset="100%" stop-color="#E1BEE7"/>
     </linearGradient>
     <filter id="s"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/></filter>
   </defs>
@@ -55,6 +55,6 @@
   <!-- Counter badge -->
   <circle cx="660" cy="90" r="22" fill="#F44336" filter="url(#s)"/>
   <text x="660" y="97" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="white">30</text>
-  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">All Sticker Locations</text>
-  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">Complete Collectibles Map</text>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#4A148C">All Sticker Locations</text>
+  <text x="400" y="430" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#7B1FA2">Complete Collectibles Map</text>
 </svg>

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#33691E"/>
-      <stop offset="100%" stop-color="#1B5E20"/>
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="100%" stop-color="#F3E5F5"/>
     </linearGradient>
     <linearGradient id="parch" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#F5F5DC"/>
@@ -48,6 +48,6 @@
     <path d="M50,400 L100,400 L100,395 L55,395 L55,350 L50,350Z"/>
     <path d="M750,400 L700,400 L700,395 L745,395 L745,350 L750,350Z"/>
   </g>
-  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#F1F8E9">Lore &amp; Story Guide</text>
-  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#A5D6A7">The Complete Bear Adventure Story</text>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#4A148C">Lore &amp; Story Guide</text>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="14" fill="#7B1FA2">The Complete Bear Adventure Story</text>
 </svg>

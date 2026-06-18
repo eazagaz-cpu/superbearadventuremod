@@ -1,35 +1,205 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1565C0"/>
-      <stop offset="100%" stop-color="#64B5F6"/>
-    </linearGradient>
-    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="40%" stop-color="#E3F2FD"/>
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="40%" stop-color="#BBDEFB"/>
       <stop offset="100%" stop-color="#90CAF9"/>
     </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/></filter>
+    <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#E3F2FD"/>
+      <stop offset="70%" stop-color="#90CAF9"/>
+      <stop offset="100%" stop-color="#64B5F6"/>
+    </linearGradient>
+    <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#E8EAF6"/>
+      <stop offset="80%" stop-color="#9FA8DA"/>
+      <stop offset="100%" stop-color="#7986CB"/>
+    </linearGradient>
+    <linearGradient id="mountain3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="40%" stop-color="#CFD8DC"/>
+      <stop offset="100%" stop-color="#90A4AE"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E3F2FD"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B3E5FC"/>
+      <stop offset="50%" stop-color="#81D4FA"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#69F0AE" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#69F0AE" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#B2FF59" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#69F0AE" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#69F0AE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="aurora2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B388FF" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#B388FF" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#EA80FC" stop-opacity="0.15"/>
+      <stop offset="75%" stop-color="#B388FF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#B388FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#455A64" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="iceShine">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#sky)"/>
-  <!-- Mountains -->
-  <polygon points="50,250 150,60 250,250" fill="url(#mt)" filter="url(#s)"/>
-  <polygon points="150,250 270,50 390,250" fill="url(#mt)" filter="url(#s)"/>
-  <polygon points="280,250 360,100 440,250" fill="#E1F5FE" filter="url(#s)"/>
-  <!-- Snow caps -->
-  <polygon points="150,60 135,105 165,105" fill="white"/>
-  <polygon points="270,50 255,100 285,100" fill="white"/>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Aurora Borealis -->
+  <path d="M0,30 Q200,10 400,50 Q600,90 800,20 L800,100 Q600,140 400,100 Q200,60 0,80Z" fill="url(#aurora1)"/>
+  <path d="M0,60 Q150,40 350,80 Q550,120 800,50 L800,120 Q550,160 350,120 Q150,80 0,110Z" fill="url(#aurora2)"/>
+  <path d="M100,20 Q300,0 500,40 Q700,80 800,30 L800,70 Q700,110 500,70 Q300,30 100,60Z" fill="url(#aurora1)" opacity="0.5"/>
+
+  <!-- Distant mountain range (background) -->
+  <polygon points="0,350 80,180 160,300 240,160 340,320 400,200 500,340 580,220 680,310 760,190 800,350" fill="url(#mountain3)" opacity="0.5"/>
+
+  <!-- Main mountain left -->
+  <polygon points="50,420 250,80 450,420" fill="url(#mountain1)" filter="url(#shadow)"/>
+  <!-- Snow cap detail left -->
+  <polygon points="250,80 215,155 285,155" fill="white"/>
+  <polygon points="250,80 230,130 250,120 270,130" fill="#F5F5F5"/>
+  <!-- Mountain ridgeline left -->
+  <path d="M215,155 L200,180 L230,170 L250,190 L270,175 L285,155" fill="white" opacity="0.6"/>
+
+  <!-- Main mountain center-right -->
+  <polygon points="300,420 520,60 740,420" fill="url(#mountain2)" filter="url(#shadow)"/>
+  <!-- Snow cap detail center -->
+  <polygon points="520,60 485,150 555,150" fill="white"/>
+  <polygon points="520,60 500,120 520,110 540,120" fill="#F5F5F5"/>
+  <path d="M485,150 L475,175 L505,165 L520,185 L540,170 L555,150" fill="white" opacity="0.6"/>
+
+  <!-- Right mountain -->
+  <polygon points="580,420 720,120 860,420" fill="url(#mountain3)" filter="url(#shadow)"/>
+  <polygon points="720,120 700,180 740,180" fill="white"/>
+
   <!-- Snow ground -->
-  <ellipse cx="200" cy="300" rx="260" ry="70" fill="#E3F2FD"/>
-  <!-- Pine trees -->
-  <polygon points="80,200 92,250 68,250" fill="#1B5E20" opacity="0.7"/>
-  <polygon points="340,210 350,250 330,250" fill="#1B5E20" opacity="0.6"/>
+  <path d="M0,420 Q200,400 400,415 Q600,430 800,410 L800,600 L0,600Z" fill="url(#snow)"/>
+
+  <!-- Snow hills -->
+  <ellipse cx="150" cy="450" rx="180" ry="40" fill="white" opacity="0.7"/>
+  <ellipse cx="500" cy="460" rx="200" ry="35" fill="white" opacity="0.6"/>
+  <ellipse cx="700" cy="445" rx="140" ry="30" fill="white" opacity="0.7"/>
+
+  <!-- Frozen lake -->
+  <ellipse cx="400" cy="490" rx="150" ry="40" fill="url(#lake)" opacity="0.6"/>
+  <!-- Ice reflections -->
+  <ellipse cx="370" cy="485" rx="40" ry="5" fill="white" opacity="0.4"/>
+  <ellipse cx="430" cy="495" rx="30" ry="4" fill="white" opacity="0.3"/>
+  <ellipse cx="390" cy="500" rx="20" ry="3" fill="white" opacity="0.25"/>
+
+  <!-- Pine trees with snow -->
+  <!-- Tree cluster left -->
+  <g filter="url(#shadow)">
+    <rect x="97" y="370" width="6" height="50" fill="#5D4037"/>
+    <polygon points="100,320 130,395 70,395" fill="#1B5E20"/>
+    <polygon points="100,340 125,385 75,385" fill="#2E7D32"/>
+    <polygon points="100,355 118,380 82,380" fill="#388E3C"/>
+    <!-- Snow on tree -->
+    <ellipse cx="100" cy="325" rx="12" ry="4" fill="white"/>
+    <ellipse cx="100" cy="345" rx="10" ry="3" fill="white" opacity="0.8"/>
+    <ellipse cx="100" cy="360" rx="8" ry="3" fill="white" opacity="0.7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="57" y="385" width="5" height="35" fill="#5D4037"/>
+    <polygon points="60,345 82,400 38,400" fill="#1B5E20" opacity="0.8"/>
+    <polygon points="60,360 78,395 42,395" fill="#2E7D32" opacity="0.8"/>
+    <ellipse cx="60" cy="350" rx="9" ry="3" fill="white"/>
+    <ellipse cx="60" cy="365" rx="7" ry="2.5" fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- Tree cluster right -->
+  <g filter="url(#shadow)">
+    <rect x="647" y="365" width="6" height="55" fill="#5D4037"/>
+    <polygon points="650,310 685,390 615,390" fill="#1B5E20"/>
+    <polygon points="650,332 678,380 622,380" fill="#2E7D32"/>
+    <polygon points="650,350 670,378 630,378" fill="#388E3C"/>
+    <ellipse cx="650" cy="315" rx="13" ry="4" fill="white"/>
+    <ellipse cx="650" cy="337" rx="11" ry="3.5" fill="white" opacity="0.8"/>
+    <ellipse cx="650" cy="355" rx="9" ry="3" fill="white" opacity="0.7"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="707" y="375" width="5" height="40" fill="#5D4037"/>
+    <polygon points="710,340 735,400 685,400" fill="#1B5E20" opacity="0.8"/>
+    <polygon points="710,355 730,395 690,395" fill="#2E7D32" opacity="0.8"/>
+    <ellipse cx="710" cy="345" rx="10" ry="3" fill="white"/>
+    <ellipse cx="710" cy="360" rx="8" ry="2.5" fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- Small distant trees -->
+  <polygon points="200,380 212,410 188,410" fill="#1B5E20" opacity="0.5"/>
+  <ellipse cx="200" cy="383" rx="5" ry="2" fill="white" opacity="0.5"/>
+  <polygon points="250,385 260,410 240,410" fill="#2E7D32" opacity="0.4"/>
+
   <!-- Snowflakes -->
   <g fill="white" opacity="0.8">
-    <circle cx="50" cy="80" r="2"/><circle cx="130" cy="130" r="1.5"/>
-    <circle cx="200" cy="50" r="2"/><circle cx="280" cy="100" r="2"/>
-    <circle cx="350" cy="60" r="1.5"/><circle cx="100" cy="180" r="1.5"/>
-    <circle cx="300" cy="170" r="2"/><circle cx="170" cy="200" r="1.5"/>
+    <circle cx="80" cy="100" r="3"/><circle cx="180" cy="180" r="2.5"/>
+    <circle cx="300" cy="70" r="3"/><circle cx="420" cy="150" r="2"/>
+    <circle cx="550" cy="90" r="3"/><circle cx="680" cy="130" r="2.5"/>
+    <circle cx="130" cy="250" r="2"/><circle cx="350" cy="230" r="2.5"/>
+    <circle cx="500" cy="200" r="2"/><circle cx="720" cy="250" r="2"/>
+    <circle cx="50" cy="320" r="2.5"/><circle cx="250" cy="300" r="2"/>
+    <circle cx="450" cy="330" r="2.5"/><circle cx="600" cy="290" r="2"/>
+    <circle cx="750" cy="340" r="2.5"/><circle cx="400" cy="260" r="1.5"/>
+    <circle cx="160" cy="140" r="1.5"/><circle cx="620" cy="180" r="2"/>
+    <circle cx="320" cy="160" r="1.5"/><circle cx="480" cy="280" r="2"/>
   </g>
-  <text x="200" y="285" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#E3F2FD">Snow Valley</text>
+
+  <!-- Snowman -->
+  <g transform="translate(580, 440)" filter="url(#shadow)">
+    <circle cx="0" cy="15" r="18" fill="white"/>
+    <circle cx="0" cy="-8" r="13" fill="white"/>
+    <circle cx="0" cy="-28" r="10" fill="white"/>
+    <!-- Eyes -->
+    <circle cx="-4" cy="-30" r="2" fill="#333"/>
+    <circle cx="4" cy="-30" r="2" fill="#333"/>
+    <!-- Nose -->
+    <polygon points="0,-26 8,-24 0,-22" fill="#FF8F00"/>
+    <!-- Buttons -->
+    <circle cx="0" cy="-5" r="1.5" fill="#333"/>
+    <circle cx="0" cy="5" r="1.5" fill="#333"/>
+    <circle cx="0" cy="15" r="1.5" fill="#333"/>
+    <!-- Scarf -->
+    <rect x="-14" y="-18" width="28" height="5" rx="2" fill="#E53935"/>
+    <rect x="10" y="-18" width="5" height="18" rx="2" fill="#E53935"/>
+  </g>
+
+  <!-- Cabin -->
+  <g transform="translate(260, 420)" filter="url(#shadow)">
+    <rect x="-35" y="-30" width="70" height="40" rx="3" fill="#8D6E63"/>
+    <polygon points="-42,-27 0,-55 42,-27" fill="#5D4037"/>
+    <!-- Snow on roof -->
+    <path d="M-42,-27 Q-20,-32 0,-28 Q20,-32 42,-27 L42,-25 Q20,-30 0,-26 Q-20,-30 -42,-25Z" fill="white"/>
+    <ellipse cx="0" cy="-55" rx="8" ry="4" fill="white"/>
+    <rect x="-10" y="-15" width="20" height="25" rx="2" fill="#4E342E"/>
+    <rect x="-25" y="-20" width="12" height="10" rx="1" fill="#FFF9C4" opacity="0.7"/>
+    <line x1="-19" y1="-20" x2="-19" y2="-10" stroke="#FFE082" stroke-width="0.5"/>
+    <line x1="-25" y1="-15" x2="-13" y2="-15" stroke="#FFE082" stroke-width="0.5"/>
+    <!-- Chimney -->
+    <rect x="18" y="-48" width="10" height="20" fill="#795548"/>
+    <!-- Smoke -->
+    <circle cx="23" cy="-55" r="4" fill="white" opacity="0.3"/>
+    <circle cx="27" cy="-62" r="5" fill="white" opacity="0.2"/>
+    <circle cx="24" cy="-70" r="6" fill="white" opacity="0.1"/>
+  </g>
+
+  <!-- World name banner -->
+  <rect x="250" y="550" width="300" height="42" rx="21" fill="#1565C0" opacity="0.85"/>
+  <text x="400" y="578" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="26" fill="white" letter-spacing="2">SNOW VALLEY</text>
 </svg>

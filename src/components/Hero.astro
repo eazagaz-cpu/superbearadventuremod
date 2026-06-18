@@ -36,12 +36,12 @@ import { SITE } from '../utils/seo';
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
           <a href={SITE.download.url} class="btn-download group">
-            <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 dl-icon group-hover:animate-bounce" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
-            Download APK ({SITE.download.size})
+            <span>Download APK v{SITE.download.version}<span class="block text-sm font-semibold opacity-70">({SITE.download.size}) Free &middot; No Root</span></span>
           </a>
-          <a href="#install" class="btn-secondary !bg-white/10 !text-white !border-white/20 hover:!bg-white/20">
+          <a href="#install" class="inline-flex items-center gap-2 px-6 py-4 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-2xl border-2 border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -90,41 +90,29 @@ import { SITE } from '../utils/seo';
         </div>
       </div>
 
-      <!-- Mascot Column -->
+      <!-- Screenshot / Visual Column -->
       <div class="hidden lg:flex justify-center items-center">
         <div class="relative">
-          <div class="w-80 h-96 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-sm flex items-center justify-center animate-float">
-            <!-- Placeholder for mascot image - replace with actual image -->
-            <svg class="w-48 h-48 text-white/20" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="100" cy="80" rx="35" ry="30" fill="#795548"/>
-              <ellipse cx="70" cy="55" rx="18" ry="18" fill="#795548"/>
-              <ellipse cx="130" cy="55" rx="18" ry="18" fill="#795548"/>
-              <ellipse cx="70" cy="55" rx="12" ry="12" fill="#a1887f"/>
-              <ellipse cx="130" cy="55" rx="12" ry="12" fill="#a1887f"/>
-              <ellipse cx="100" cy="85" rx="20" ry="18" fill="#a1887f"/>
-              <ellipse cx="100" cy="78" rx="10" ry="7" fill="#4e342e"/>
-              <circle cx="87" cy="68" r="5" fill="#4e342e"/>
-              <circle cx="113" cy="68" r="5" fill="#4e342e"/>
-              <circle cx="89" cy="66" r="2" fill="white"/>
-              <circle cx="115" cy="66" r="2" fill="white"/>
-              <path d="M92 95 Q100 105 108 95" stroke="#4e342e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-              <ellipse cx="100" cy="160" rx="45" ry="60" fill="#795548"/>
-              <ellipse cx="100" cy="165" rx="35" ry="40" fill="#a1887f"/>
-              <ellipse cx="65" cy="160" rx="12" ry="30" fill="#795548" transform="rotate(-10 65 160)"/>
-              <ellipse cx="135" cy="160" rx="12" ry="30" fill="#795548" transform="rotate(10 135 160)"/>
-              <ellipse cx="80" cy="215" rx="15" ry="10" fill="#795548"/>
-              <ellipse cx="120" cy="215" rx="15" ry="10" fill="#795548"/>
-              <!-- Red bow tie -->
-              <path d="M85 115 L100 125 L115 115 L115 130 L100 120 L85 130 Z" fill="#e53935"/>
-              <circle cx="100" cy="122" r="4" fill="#c62828"/>
-            </svg>
+          <!-- Game screenshot placeholder - replace src with real gameplay screenshot -->
+          <div class="w-80 h-[420px] rounded-3xl border-2 border-white/15 overflow-hidden shadow-2xl shadow-black/30 bg-gradient-to-b from-white/10 to-white/5">
+            <img
+              src="/images/hero-bear.svg"
+              alt="Super Bear Adventure gameplay screenshot"
+              class="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+            />
           </div>
           <!-- Floating badges -->
           <div class="absolute -top-4 -right-4 px-4 py-2 bg-yellow-400 text-yellow-900 font-bold text-sm rounded-xl shadow-lg animate-bounce-slow">
             FREE
           </div>
-          <div class="absolute -bottom-4 -left-4 px-4 py-2 bg-white text-game-green-dark font-bold text-sm rounded-xl shadow-lg">
-            No Ads ✓
+          <div class="absolute -bottom-4 -left-4 px-5 py-2.5 bg-white text-gray-900 font-bold text-sm rounded-xl shadow-lg flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            No Ads &middot; No Root
+          </div>
+          <div class="absolute top-4 -left-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-xs rounded-xl shadow-lg">
+            v{SITE.download.version} Latest
           </div>
         </div>
       </div>

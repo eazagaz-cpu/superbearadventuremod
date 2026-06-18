@@ -1,46 +1,244 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFE0B2"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D7CCC8"/>
+      <stop offset="50%" stop-color="#BCAAA4"/>
+      <stop offset="100%" stop-color="#A1887F"/>
+    </linearGradient>
+    <linearGradient id="tableLeg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6D4C41"/>
+      <stop offset="30%" stop-color="#8D6E63"/>
+      <stop offset="70%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="mugBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E53935"/>
+      <stop offset="50%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="bookSpine1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <linearGradient id="bookSpine2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="bookSpine3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#AD1457"/>
+      <stop offset="100%" stop-color="#880E4F"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#B3E5FC"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#5D4037"/>
       <stop offset="100%" stop-color="#3E2723"/>
     </linearGradient>
-    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8D6E63"/>
-      <stop offset="100%" stop-color="#6D4C41"/>
-    </linearGradient>
-    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/></filter>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="longShadow">
+      <feDropShadow dx="8" dy="5" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
   </defs>
-  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- Wall background -->
+  <rect width="800" height="600" fill="url(#wall)"/>
+
+  <!-- Wallpaper subtle pattern -->
+  <g opacity="0.05" fill="#BF360C">
+    <circle cx="50" cy="50" r="15"/><circle cx="150" cy="50" r="15"/>
+    <circle cx="250" cy="50" r="15"/><circle cx="350" cy="50" r="15"/>
+    <circle cx="450" cy="50" r="15"/><circle cx="550" cy="50" r="15"/>
+    <circle cx="650" cy="50" r="15"/><circle cx="750" cy="50" r="15"/>
+    <circle cx="100" cy="120" r="15"/><circle cx="200" cy="120" r="15"/>
+    <circle cx="300" cy="120" r="15"/><circle cx="400" cy="120" r="15"/>
+    <circle cx="500" cy="120" r="15"/><circle cx="600" cy="120" r="15"/>
+    <circle cx="700" cy="120" r="15"/>
+  </g>
+
+  <!-- Baseboard -->
+  <rect x="0" y="340" width="800" height="12" fill="#8D6E63"/>
+  <rect x="0" y="340" width="800" height="3" fill="#A1887F"/>
+
   <!-- Floor -->
-  <rect x="0" y="230" width="400" height="70" fill="url(#wood)"/>
-  <!-- Giant table legs -->
-  <rect x="30" y="30" width="35" height="210" fill="#6D4C41" filter="url(#s)"/>
-  <rect x="330" y="30" width="35" height="210" fill="#6D4C41" filter="url(#s)"/>
-  <!-- Table top -->
-  <rect x="0" y="15" width="400" height="25" fill="#8D6E63" filter="url(#s)"/>
-  <!-- Giant cup -->
-  <g transform="translate(120, 5)" filter="url(#s)">
-    <rect x="-22" y="-12" width="44" height="35" rx="3" fill="#E0E0E0"/>
-    <rect x="22" y="-2" width="12" height="20" rx="6" fill="none" stroke="#BDBDBD" stroke-width="3"/>
-    <ellipse cx="0" cy="-12" rx="22" ry="5" fill="#EEE"/>
-    <ellipse cx="0" cy="-8" rx="16" ry="4" fill="#795548"/>
+  <rect x="0" y="352" width="800" height="248" fill="url(#floor)"/>
+  <!-- Floor board lines -->
+  <g stroke="#A1887F" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="550" x2="800" y2="550"/>
+    <line x1="100" y1="352" x2="100" y2="600"/><line x1="250" y1="352" x2="250" y2="600"/>
+    <line x1="400" y1="352" x2="400" y2="600"/><line x1="550" y1="352" x2="550" y2="600"/>
+    <line x1="700" y1="352" x2="700" y2="600"/>
   </g>
-  <!-- Tiny bear -->
-  <g transform="translate(200, 215)" filter="url(#s)">
-    <circle cx="0" cy="-8" r="7" fill="#8D6E63"/>
-    <circle cx="-5" cy="-12" r="2.5" fill="#795548"/>
-    <circle cx="5" cy="-12" r="2.5" fill="#795548"/>
-    <circle cx="-2" cy="-9" r="1.5" fill="white"/>
-    <circle cx="2" cy="-9" r="1.5" fill="white"/>
-    <ellipse cx="0" cy="3" rx="5" ry="8" fill="#795548"/>
-    <text x="0" y="-22" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="12" fill="#FFC107">!</text>
+
+  <!-- Window (giant, on wall) -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="30" width="200" height="200" rx="5" fill="#8D6E63" stroke="#6D4C41" stroke-width="4"/>
+    <rect x="510" y="40" width="85" height="85" fill="url(#windowLight)"/>
+    <rect x="605" y="40" width="85" height="85" fill="url(#windowLight)"/>
+    <rect x="510" y="135" width="85" height="85" fill="url(#windowLight)"/>
+    <rect x="605" y="135" width="85" height="85" fill="url(#windowLight)"/>
+    <!-- Window frame cross -->
+    <rect x="500" y="125" width="200" height="6" fill="#8D6E63"/>
+    <rect x="595" y="30" width="6" height="200" fill="#8D6E63"/>
+    <!-- Light beam from window -->
+    <polygon points="510,230 605,230 700,600 400,600" fill="#FFF9C4" opacity="0.08"/>
   </g>
-  <!-- Giant pencil -->
-  <g transform="translate(310, 240) rotate(-10)" filter="url(#s)">
-    <rect x="-50" y="-5" width="100" height="10" rx="2" fill="#FFC107"/>
-    <polygon points="50,-5 62,0 50,5" fill="#FFE082"/>
-    <polygon points="58,-2 62,0 58,2" fill="#333"/>
-    <rect x="-50" y="-5" width="12" height="10" rx="2" fill="#E0E0E0"/>
+
+  <!-- Giant table top (extends off screen top) -->
+  <rect x="-20" y="0" width="840" height="30" fill="#8D6E63" filter="url(#shadow)"/>
+  <rect x="-20" y="25" width="840" height="8" fill="#6D4C41"/>
+
+  <!-- Giant table leg (left) -->
+  <g filter="url(#longShadow)">
+    <rect x="40" y="33" width="60" height="320" fill="url(#tableLeg)"/>
+    <!-- Wood grain -->
+    <g stroke="#5D4037" stroke-width="0.5" opacity="0.2">
+      <line x1="55" y1="33" x2="55" y2="353"/><line x1="70" y1="33" x2="70" y2="353"/>
+      <line x1="85" y1="33" x2="85" y2="353"/>
+    </g>
+    <!-- Decorative band at bottom -->
+    <rect x="35" y="310" width="70" height="15" rx="3" fill="#6D4C41"/>
+    <rect x="32" y="325" width="76" height="28" rx="5" fill="#5D4037"/>
   </g>
-  <text x="200" y="280" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#EFEBE9">Giant House</text>
+
+  <!-- Giant table leg (right, partially visible) -->
+  <g filter="url(#longShadow)">
+    <rect x="700" y="33" width="60" height="320" fill="url(#tableLeg)"/>
+    <g stroke="#5D4037" stroke-width="0.5" opacity="0.2">
+      <line x1="715" y1="33" x2="715" y2="353"/><line x1="730" y1="33" x2="730" y2="353"/>
+      <line x1="745" y1="33" x2="745" y2="353"/>
+    </g>
+    <rect x="695" y="310" width="70" height="15" rx="3" fill="#6D4C41"/>
+    <rect x="692" y="325" width="76" height="28" rx="5" fill="#5D4037"/>
+  </g>
+
+  <!-- Giant coffee mug (on floor, fallen or placed) -->
+  <g transform="translate(550, 390)" filter="url(#shadow)">
+    <ellipse cx="0" cy="55" rx="55" ry="10" fill="#000" opacity="0.08"/>
+    <rect x="-45" y="-20" width="90" height="75" rx="8" fill="url(#mugBody)"/>
+    <!-- Mug highlight -->
+    <rect x="-35" y="-15" width="15" height="65" rx="4" fill="#EF5350" opacity="0.4"/>
+    <!-- Handle -->
+    <path d="M45,-5 Q75,-5 75,25 Q75,50 45,50" stroke="#C62828" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M45,-5 Q70,-5 70,25 Q70,45 45,50" stroke="#EF5350" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+    <!-- Rim -->
+    <ellipse cx="0" cy="-20" rx="45" ry="12" fill="#EF5350"/>
+    <ellipse cx="0" cy="-20" rx="38" ry="9" fill="url(#coffee)"/>
+    <!-- Steam -->
+    <g opacity="0.15" fill="none" stroke="#8D6E63" stroke-width="2">
+      <path d="M-15,-35 Q-10,-50 -15,-65 Q-20,-80 -15,-95"/>
+      <path d="M5,-35 Q10,-50 5,-65 Q0,-80 5,-95"/>
+      <path d="M-5,-38 Q0,-55 -5,-70 Q-10,-85 -5,-100"/>
+    </g>
+  </g>
+
+  <!-- Giant books (stacked, on floor) -->
+  <g transform="translate(200, 370)" filter="url(#shadow)">
+    <!-- Bottom book (blue) -->
+    <rect x="-70" y="30" width="140" height="30" rx="3" fill="url(#bookSpine1)"/>
+    <rect x="-70" y="30" width="8" height="30" rx="2" fill="#0D47A1"/>
+    <rect x="-60" y="37" width="60" height="3" rx="1" fill="#64B5F6" opacity="0.4"/>
+    <rect x="-60" y="45" width="40" height="2" rx="1" fill="#64B5F6" opacity="0.3"/>
+    <!-- Middle book (green) -->
+    <rect x="-60" y="5" width="120" height="25" rx="3" fill="url(#bookSpine2)"/>
+    <rect x="-60" y="5" width="7" height="25" rx="2" fill="#1B5E20"/>
+    <rect x="-50" y="11" width="50" height="3" rx="1" fill="#81C784" opacity="0.4"/>
+    <rect x="-50" y="18" width="35" height="2" rx="1" fill="#81C784" opacity="0.3"/>
+    <!-- Top book (red/pink, slightly askew) -->
+    <g transform="rotate(-5, 0, 0)">
+      <rect x="-55" y="-20" width="110" height="22" rx="3" fill="url(#bookSpine3)"/>
+      <rect x="-55" y="-20" width="6" height="22" rx="2" fill="#880E4F"/>
+      <rect x="-46" y="-15" width="45" height="2.5" rx="1" fill="#F48FB1" opacity="0.4"/>
+    </g>
+    <!-- Page edges visible -->
+    <rect x="62" y="32" width="6" height="26" fill="#FAFAFA"/>
+    <rect x="52" y="7" width="6" height="21" fill="#FAFAFA"/>
+  </g>
+
+  <!-- Giant pencil (on floor) -->
+  <g transform="translate(380, 520) rotate(-8)" filter="url(#softShadow)">
+    <rect x="-100" y="-8" width="200" height="16" rx="2" fill="#FFC107"/>
+    <rect x="-100" y="-8" width="200" height="5" fill="#FFD54F" opacity="0.5"/>
+    <!-- Metal band -->
+    <rect x="-100" y="-9" width="22" height="18" rx="2" fill="#BDBDBD"/>
+    <rect x="-100" y="-9" width="4" height="18" fill="#9E9E9E"/>
+    <rect x="-82" y="-9" width="4" height="18" fill="#9E9E9E"/>
+    <!-- Eraser -->
+    <rect x="-122" y="-7" width="24" height="14" rx="3" fill="#E91E63"/>
+    <!-- Tip -->
+    <polygon points="100,-8 120,0 100,8" fill="#FFE082"/>
+    <polygon points="114,-3 120,0 114,3" fill="#333"/>
+    <!-- Text on pencil -->
+    <text x="0" y="5" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#F57F17" opacity="0.5">No. 2</text>
+  </g>
+
+  <!-- Crumb near bear -->
+  <circle cx="370" cy="485" r="4" fill="#D7CCC8" filter="url(#softShadow)"/>
+  <circle cx="385" cy="492" r="3" fill="#BCAAA4"/>
+  <circle cx="355" cy="490" r="2.5" fill="#D7CCC8"/>
+
+  <!-- Tiny bear (main character, for scale) -->
+  <g transform="translate(340, 460)" filter="url(#shadow)">
+    <!-- Shadow on ground -->
+    <ellipse cx="0" cy="22" rx="14" ry="4" fill="#000" opacity="0.1"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="8" rx="10" ry="14" fill="#8D6E63"/>
+    <!-- Head -->
+    <circle cx="0" cy="-12" r="11" fill="#A1887F"/>
+    <!-- Ears -->
+    <circle cx="-9" cy="-20" r="5" fill="#8D6E63"/>
+    <circle cx="9" cy="-20" r="5" fill="#8D6E63"/>
+    <circle cx="-9" cy="-20" r="3" fill="#BCAAA4"/>
+    <circle cx="9" cy="-20" r="3" fill="#BCAAA4"/>
+    <!-- Eyes -->
+    <circle cx="-4" cy="-14" r="2.5" fill="#3E2723"/>
+    <circle cx="4" cy="-14" r="2.5" fill="#3E2723"/>
+    <circle cx="-3" cy="-15" r="1" fill="white"/>
+    <circle cx="5" cy="-15" r="1" fill="white"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-10" rx="3" ry="2" fill="#5D4037"/>
+    <!-- Mouth -->
+    <path d="M-3,-8 Q0,-5 3,-8" stroke="#5D4037" stroke-width="1" fill="none"/>
+    <!-- Arms -->
+    <ellipse cx="-12" cy="4" rx="5" ry="8" fill="#8D6E63" transform="rotate(15, -12, 4)"/>
+    <ellipse cx="12" cy="4" rx="5" ry="8" fill="#8D6E63" transform="rotate(-15, 12, 4)"/>
+    <!-- Legs -->
+    <ellipse cx="-5" cy="20" rx="5" ry="4" fill="#795548"/>
+    <ellipse cx="5" cy="20" rx="5" ry="4" fill="#795548"/>
+    <!-- Exclamation mark (looking up in awe) -->
+    <text x="18" y="-25" font-family="sans-serif" font-weight="900" font-size="18" fill="#FFC107">!</text>
+  </g>
+
+  <!-- Dust motes in light beam -->
+  <g fill="#FFF9C4" opacity="0.4">
+    <circle cx="480" cy="280" r="2"/><circle cx="520" cy="350" r="1.5"/>
+    <circle cx="560" cy="300" r="1"/><circle cx="500" cy="420" r="1.5"/>
+    <circle cx="540" cy="380" r="1"/><circle cx="470" cy="340" r="1.5"/>
+    <circle cx="510" cy="450" r="1"/><circle cx="550" cy="260" r="1"/>
+  </g>
+
+  <!-- Giant button on floor -->
+  <g transform="translate(150, 530)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="18" fill="#7B1FA2"/>
+    <circle cx="0" cy="0" r="14" fill="#9C27B0"/>
+    <circle cx="-4" cy="-4" r="2.5" fill="#6A1B9A"/><circle cx="4" cy="-4" r="2.5" fill="#6A1B9A"/>
+    <circle cx="-4" cy="4" r="2.5" fill="#6A1B9A"/><circle cx="4" cy="4" r="2.5" fill="#6A1B9A"/>
+  </g>
+
+  <!-- World name banner -->
+  <rect x="250" y="552" width="300" height="42" rx="21" fill="#5D4037" opacity="0.85"/>
+  <text x="400" y="580" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="26" fill="#FFECB3" letter-spacing="2">GIANT HOUSE</text>
 </svg>
