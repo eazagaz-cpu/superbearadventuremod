@@ -5,7 +5,7 @@ import TableOfContents from '../components/TableOfContents.astro';
 import SocialShare from '../components/SocialShare.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { SITE } from '../utils/seo';
-import { articleSchema } from '../utils/schema';
+import { articleSchema, breadcrumbSchema } from '../utils/schema';
 
 interface Props {
   title: string;
@@ -23,14 +23,21 @@ const { title, description, date, updated, image, category, headings, slug } = A
 const pageUrl = `${SITE.url}/blog/${slug}/`;
 const readingTime = Math.max(1, Math.ceil(Astro.slots.has('default') ? 8 : 5));
 
-const schema = articleSchema({
-  title,
-  description,
-  url: pageUrl,
-  image: image ? `${SITE.url}${image}` : undefined,
-  datePublished: date,
-  dateModified: updated || date,
-});
+const schemas = [
+  articleSchema({
+    title,
+    description,
+    url: pageUrl,
+    image: image ? `${SITE.url}${image}` : undefined,
+    datePublished: date,
+    dateModified: updated || date,
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'Blog', url: `${SITE.url}/blog/` },
+    { name: title, url: pageUrl },
+  ]),
+];
 ---
 
 <BaseLayout
@@ -40,7 +47,7 @@ const schema = articleSchema({
   ogImage={image}
   publishedTime={date}
   modifiedTime={updated || date}
-  schema={schema}
+  schema={schemas}
 >
   <main id="main-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <Breadcrumbs items={[{ name: 'Blog', href: '/blog/' }, { name: title }]} />

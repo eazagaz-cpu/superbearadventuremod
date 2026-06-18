@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_astro/
+Disallow: /404
 
 Sitemap: https://superbearadventuremod.io/sitemap-index.xml
+
+Host: https://superbearadventuremod.io

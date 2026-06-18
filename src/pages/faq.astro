@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
+import { faqSchema, breadcrumbSchema } from '../utils/schema';
+import { SITE } from '../utils/seo';
 
 const generalFaqs = [
   { question: 'What is Super Bear Adventure Mod APK?', answer: 'The Super Bear Adventure Mod APK is a modified version of the official game that includes unlimited coins, all skins and hats unlocked, no ads, and other premium features — all for free.' },
@@ -32,6 +34,7 @@ const gameplayFaqs = [
 <BaseLayout
   title="Frequently Asked Questions"
   description="Find answers to common questions about Super Bear Adventure Mod APK — installation, safety, features, multiplayer, and more."
+  schema={[faqSchema([...generalFaqs, ...installFaqs, ...gameplayFaqs]), breadcrumbSchema([{ name: 'Home', url: SITE.url }, { name: 'FAQ', url: `${SITE.url}/faq/` }])]}
 >
   <main id="main-content">
     <!-- Visual Header -->

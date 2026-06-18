@@ -8,7 +8,7 @@ import ComparisonTable from '../components/ComparisonTable.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { SITE } from '../utils/seo';
-import { softwareAppSchema, websiteSchema, organizationSchema, howToSchema } from '../utils/schema';
+import { softwareAppSchema, websiteSchema, organizationSchema, howToSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 
 const installSteps = [
   { name: 'Download the APK', text: 'Tap the Download button on this page to get the Super Bear Adventure Mod APK file.' },
@@ -70,6 +70,10 @@ const schemas = [
     steps: installSteps,
     totalTime: 'PT3M',
   }),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+  ]),
+  faqSchema(faqItems),
 ];
 ---
 
