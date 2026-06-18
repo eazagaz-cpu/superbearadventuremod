@@ -32,6 +32,8 @@ Each player in the session retains their own customized character appearance, in
 
 ## How to Set Up a Multiplayer Game
 
+![Multiplayer lobby screen](/images/gameplay/multiplayer-lobby.svg)
+
 ### Creating a Room (Hosting)
 
 To host a multiplayer game, follow these steps:
@@ -68,6 +70,8 @@ If you want to play with random players instead of friends, you can use the Quic
 Quick Match is a great way to meet other Super Bear Adventure fans and experience worlds you might not have explored yet.
 
 ## Multiplayer Tips and Strategies
+
+![Co-op gameplay together](/images/gameplay/multiplayer-coop.svg)
 
 ### Communication Is Key
 
@@ -118,6 +122,8 @@ The [Giant House](/blog/giant-house-walkthrough/) world is a fan favorite for mu
 For experienced groups looking for a real challenge, [The Hive](/blog/the-hive-walkthrough/) delivers intense gameplay that benefits greatly from teamwork. The complex level design and tougher enemies make cooperation essential.
 
 ## Troubleshooting Multiplayer Issues
+
+![Settings for online play](/images/gameplay/settings-menu.svg)
 
 ### Connection Problems
 

@@ -70,7 +70,7 @@ export function articleSchema(props: {
     headline: props.title,
     description: props.description,
     url: props.url,
-    image: props.image || `${SITE.url}/images/og-default.webp`,
+    image: props.image || `${SITE.url}/images/og-default.svg`,
     datePublished: props.datePublished,
     dateModified: props.dateModified,
     author: {

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B3A2A"/>
+      <stop offset="100%" stop-color="#0D1F15"/>
+    </linearGradient>
+    <radialGradient id="auraGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2E7D32" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#1B5E20" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0D1F15" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shellGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#4A7C59"/>
+      <stop offset="100%" stop-color="#2E4A35"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#6DA67A"/>
+      <stop offset="100%" stop-color="#4A7C59"/>
+    </radialGradient>
+    <linearGradient id="crownGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="jewelRed" cx="40%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FF4444"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </radialGradient>
+    <radialGradient id="jewelBlue" cx="40%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF6F00"/>
+      <stop offset="70%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <linearGradient id="capeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6A1B9A"/>
+      <stop offset="100%" stop-color="#38006B"/>
+    </linearGradient>
+    <linearGradient id="scepterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <radialGradient id="darkAura" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#0D1F15" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#0D1F15" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0A0F0C" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="220" r="250" fill="url(#auraGrad)"/>
+  <rect width="800" height="450" fill="url(#darkAura)"/>
+  <path d="M280,180 Q260,280 230,380 L400,350 L570,380 Q540,280 520,180 Z" fill="url(#capeGrad)" opacity="0.8"/>
+  <path d="M280,180 Q260,280 230,380 L400,350 L570,380 Q540,280 520,180 Z" fill="none" stroke="#9C27B0" stroke-width="1.5" opacity="0.5"/>
+  <path d="M230,375 Q250,365 270,378 Q290,365 310,378 Q330,365 350,378 Q370,365 390,378 Q410,365 430,378 Q450,365 470,378 Q490,365 510,378 Q530,365 550,378 Q560,370 570,380" stroke="#E0E0E0" stroke-width="3" fill="none" opacity="0.5"/>
+  <g transform="translate(580,120)">
+    <rect x="-5" y="0" width="10" height="250" rx="3" fill="url(#scepterGrad)"/>
+    <rect x="-8" y="40" width="16" height="6" rx="2" fill="#FFD700"/>
+    <rect x="-8" y="120" width="16" height="6" rx="2" fill="#FFD700"/>
+    <circle cx="0" cy="-5" r="20" fill="#FFD700" stroke="#B8860B" stroke-width="2"/>
+    <circle cx="0" cy="-5" r="12" fill="url(#jewelRed)"/>
+    <ellipse cx="-4" cy="-9" rx="4" ry="3" fill="white" opacity="0.5"/>
+    <path d="M-20,-5 L-12,-25 L0,-15 L12,-25 L20,-5" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <ellipse cx="400" cy="260" rx="160" ry="120" fill="url(#shellGrad)" stroke="#2E4A35" stroke-width="3"/>
+  <g stroke="#3A6B48" stroke-width="1.5" fill="none" opacity="0.6">
+    <polygon points="400,160 440,185 440,225 400,250 360,225 360,185"/>
+    <polygon points="340,185 360,185 360,225 340,240 310,225 310,195"/>
+    <polygon points="460,185 440,185 440,225 460,240 490,225 490,195"/>
+    <polygon points="400,250 440,225 470,250 460,290 400,310 340,290 330,250 360,225"/>
+    <polygon points="330,250 310,225 280,240 280,280 310,300 340,290"/>
+    <polygon points="470,250 490,225 520,240 520,280 490,300 460,290"/>
+  </g>
+  <g stroke="#1B3A2A" stroke-width="2" opacity="0.5" stroke-linecap="round">
+    <line x1="350" y1="200" x2="380" y2="220"/>
+    <line x1="345" y1="205" x2="355" y2="215"/>
+    <line x1="430" y1="250" x2="460" y2="235"/>
+    <line x1="380" y1="270" x2="400" y2="285"/>
+  </g>
+  <ellipse cx="400" cy="155" rx="65" ry="55" fill="url(#headGrad)" stroke="#3A6B48" stroke-width="2"/>
+  <path d="M355,140 Q370,125 390,138" stroke="#2E4A35" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M410,138 Q430,125 445,140" stroke="#2E4A35" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <ellipse cx="375" cy="152" rx="16" ry="12" fill="url(#eyeGlow)" transform="rotate(-10,375,152)"/>
+  <ellipse cx="375" cy="152" rx="8" ry="10" fill="#1A0A00"/>
+  <ellipse cx="372" cy="148" rx="3" ry="4" fill="#FF8F00" opacity="0.7"/>
+  <ellipse cx="425" cy="152" rx="16" ry="12" fill="url(#eyeGlow)" transform="rotate(10,425,152)"/>
+  <ellipse cx="425" cy="152" rx="8" ry="10" fill="#1A0A00"/>
+  <ellipse cx="422" cy="148" rx="3" ry="4" fill="#FF8F00" opacity="0.7"/>
+  <circle cx="393" cy="170" r="4" fill="#2E4A35"/>
+  <circle cx="407" cy="170" r="4" fill="#2E4A35"/>
+  <path d="M370,182 Q385,175 400,182 Q415,175 430,182" stroke="#1B3A2A" stroke-width="2.5" fill="none"/>
+  <polygon points="385,180 388,188 391,180" fill="#E8E8D0"/>
+  <polygon points="409,180 412,188 415,180" fill="#E8E8D0"/>
+  <g transform="translate(400,95)">
+    <rect x="-55" y="5" width="110" height="25" rx="3" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1.5"/>
+    <polygon points="-55,5 -55,-20 -40,0" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1"/>
+    <polygon points="-30,5 -25,-30 -10,5" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1"/>
+    <polygon points="0,5 0,-35 15,5" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1"/>
+    <polygon points="30,5 25,-30 40,5" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1"/>
+    <polygon points="55,5 55,-20 45,0" fill="url(#crownGrad)" stroke="#8B6914" stroke-width="1"/>
+    <circle cx="-25" cy="-15" r="6" fill="url(#jewelRed)" stroke="#8B6914" stroke-width="1"/>
+    <circle cx="0" cy="-20" r="7" fill="url(#jewelBlue)" stroke="#8B6914" stroke-width="1"/>
+    <circle cx="25" cy="-15" r="6" fill="url(#jewelRed)" stroke="#8B6914" stroke-width="1"/>
+    <rect x="-50" y="8" width="100" height="4" rx="2" fill="white" opacity="0.2"/>
+  </g>
+  <circle cx="300" cy="140" r="3" fill="#66BB6A" opacity="0.4"/>
+  <circle cx="500" cy="130" r="2" fill="#66BB6A" opacity="0.5"/>
+  <circle cx="280" cy="250" r="2.5" fill="#66BB6A" opacity="0.3"/>
+  <circle cx="520" cy="260" r="3" fill="#66BB6A" opacity="0.4"/>
+  <circle cx="350" cy="100" r="2" fill="#A5D6A7" opacity="0.3"/>
+  <circle cx="450" cy="90" r="2.5" fill="#A5D6A7" opacity="0.3"/>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="bold" fill="#A5D6A7" letter-spacing="3">Turtle King</text>
+</svg>

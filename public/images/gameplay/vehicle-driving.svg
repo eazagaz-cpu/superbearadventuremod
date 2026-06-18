@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81D4FA"/>
+      <stop offset="100%" stop-color="#B3E5FC"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#616161"/>
+      <stop offset="100%" stop-color="#424242"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="windshield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B3E5FC"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#66BB6A"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#558B2F"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="speedGauge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#43A047"/>
+      <stop offset="50%" stop-color="#FFD600"/>
+      <stop offset="100%" stop-color="#EF5350"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="motionBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6,0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12"/>
+  <rect x="30" y="55" width="740" height="250" rx="8" fill="url(#sky)"/>
+  <g opacity="0.7">
+    <ellipse cx="150" cy="100" rx="50" ry="18" fill="#fff" opacity="0.8"/>
+    <ellipse cx="130" cy="95" rx="30" ry="14" fill="#fff" opacity="0.6"/>
+    <ellipse cx="175" cy="97" rx="25" ry="12" fill="#fff" opacity="0.5"/>
+    <ellipse cx="500" cy="85" rx="60" ry="20" fill="#fff" opacity="0.7"/>
+    <ellipse cx="480" cy="80" rx="35" ry="15" fill="#fff" opacity="0.5"/>
+    <ellipse cx="530" cy="82" rx="28" ry="13" fill="#fff" opacity="0.4"/>
+    <ellipse cx="680" cy="110" rx="40" ry="14" fill="#fff" opacity="0.5"/>
+  </g>
+  <circle cx="700" cy="90" r="25" fill="#FFEB3B" opacity="0.8" filter="url(#glow)"/>
+  <ellipse cx="150" cy="260" rx="180" ry="55" fill="url(#hillFar)" opacity="0.6"/>
+  <ellipse cx="400" cy="270" rx="220" ry="50" fill="url(#hillFar)" opacity="0.5"/>
+  <ellipse cx="650" cy="255" rx="200" ry="60" fill="url(#hillFar)" opacity="0.6"/>
+  <ellipse cx="100" cy="290" rx="130" ry="40" fill="url(#hillNear)" opacity="0.7"/>
+  <ellipse cx="350" cy="295" rx="160" ry="35" fill="url(#hillNear)" opacity="0.6"/>
+  <ellipse cx="650" cy="288" rx="150" ry="42" fill="url(#hillNear)" opacity="0.7"/>
+  <g opacity="0.6">
+    <polygon points="100,230 112,268 88,268" fill="#2E7D32"/>
+    <rect x="97" y="268" width="6" height="10" fill="#5D4037"/>
+    <polygon points="220,240 232,275 208,275" fill="#388E3C"/>
+    <rect x="217" y="275" width="6" height="8" fill="#5D4037"/>
+    <polygon points="580,225 595,265 565,265" fill="#2E7D32"/>
+    <rect x="577" y="265" width="6" height="10" fill="#5D4037"/>
+    <polygon points="700,235 712,270 688,270" fill="#388E3C"/>
+    <rect x="697" y="270" width="6" height="8" fill="#5D4037"/>
+  </g>
+  <rect x="30" y="285" width="740" height="110" fill="#558B2F"/>
+  <rect x="30" y="310" width="740" height="80" fill="url(#road)"/>
+  <rect x="30" y="310" width="740" height="3" fill="#9E9E9E" opacity="0.5"/>
+  <rect x="30" y="387" width="740" height="3" fill="#9E9E9E" opacity="0.5"/>
+  <rect x="60" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="140" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="220" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="300" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="380" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="460" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="540" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="620" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="700" y="348" width="50" height="4" rx="2" fill="#FFD600" opacity="0.7"/>
+  <rect x="30" y="285" width="740" height="28" fill="#558B2F"/>
+  <rect x="30" y="388" width="740" height="7" fill="#558B2F"/>
+  <g opacity="0.4" filter="url(#motionBlur)">
+    <line x1="50" y1="330" x2="200" y2="330" stroke="#9E9E9E" stroke-width="2"/>
+    <line x1="80" y1="345" x2="250" y2="345" stroke="#9E9E9E" stroke-width="2.5"/>
+    <line x1="40" y1="360" x2="220" y2="360" stroke="#9E9E9E" stroke-width="2"/>
+    <line x1="60" y1="375" x2="230" y2="375" stroke="#9E9E9E" stroke-width="2"/>
+  </g>
+  <g opacity="0.5">
+    <line x1="270" y1="325" x2="220" y2="325" stroke="#B0BEC5" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="260" y1="340" x2="195" y2="340" stroke="#B0BEC5" stroke-width="3" stroke-linecap="round"/>
+    <line x1="265" y1="355" x2="205" y2="355" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="270" y1="368" x2="215" y2="368" stroke="#B0BEC5" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(430, 335)" filter="url(#shadow)">
+    <ellipse cx="0" cy="42" rx="80" ry="8" fill="#000" opacity="0.3"/>
+    <rect x="-75" y="-5" width="150" height="42" rx="8" fill="url(#carBody)"/>
+    <path d="M-35,-5 L-20,-35 L50,-35 L65,-5 Z" fill="#D32F2F"/>
+    <path d="M-30,-3 L-17,-30 L18,-30 L25,-3 Z" fill="url(#windshield)" opacity="0.8"/>
+    <path d="M30,-3 L38,-30 L52,-30 L60,-3 Z" fill="url(#windshield)" opacity="0.6"/>
+    <ellipse cx="-72" cy="15" rx="6" ry="8" fill="#FFEB3B" opacity="0.9"/>
+    <ellipse cx="-72" cy="15" rx="4" ry="6" fill="#fff" opacity="0.5"/>
+    <ellipse cx="72" cy="15" rx="5" ry="7" fill="#FF5722" opacity="0.8"/>
+    <rect x="-78" y="30" width="156" height="6" rx="3" fill="#B71C1C"/>
+    <line x1="5" y1="-3" x2="5" y2="30" stroke="#B71C1C" stroke-width="1.5" opacity="0.5"/>
+    <rect x="10" y="12" width="12" height="4" rx="2" fill="#E57373"/>
+    <g transform="translate(-48, 36)">
+      <circle cx="0" cy="0" r="16" fill="#37474F"/>
+      <circle cx="0" cy="0" r="12" fill="#546E7A"/>
+      <circle cx="0" cy="0" r="5" fill="#78909C"/>
+      <line x1="0" y1="-10" x2="0" y2="10" stroke="#455A64" stroke-width="2"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#455A64" stroke-width="2"/>
+      <line x1="-7" y1="-7" x2="7" y2="7" stroke="#455A64" stroke-width="1.5"/>
+      <line x1="7" y1="-7" x2="-7" y2="7" stroke="#455A64" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(48, 36)">
+      <circle cx="0" cy="0" r="16" fill="#37474F"/>
+      <circle cx="0" cy="0" r="12" fill="#546E7A"/>
+      <circle cx="0" cy="0" r="5" fill="#78909C"/>
+      <line x1="0" y1="-10" x2="0" y2="10" stroke="#455A64" stroke-width="2"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#455A64" stroke-width="2"/>
+      <line x1="-7" y1="-7" x2="7" y2="7" stroke="#455A64" stroke-width="1.5"/>
+      <line x1="7" y1="-7" x2="-7" y2="7" stroke="#455A64" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(-5, -22)">
+      <circle cx="0" cy="0" r="14" fill="#795548"/>
+      <circle cx="-10" cy="-10" r="5" fill="#795548"/>
+      <circle cx="10" cy="-10" r="5" fill="#795548"/>
+      <circle cx="-10" cy="-10" r="3" fill="#A1887F"/>
+      <circle cx="10" cy="-10" r="3" fill="#A1887F"/>
+      <circle cx="-4" cy="-2" r="2.5" fill="#333"/>
+      <circle cx="6" cy="-2" r="2.5" fill="#333"/>
+      <circle cx="-3.5" cy="-2.5" r="0.8" fill="#fff"/>
+      <circle cx="6.5" cy="-2.5" r="0.8" fill="#fff"/>
+      <ellipse cx="1" cy="4" rx="3" ry="2" fill="#333"/>
+      <path d="M-4,6 Q1,10 6,6" stroke="#333" stroke-width="1.2" fill="none"/>
+      <circle cx="-10" cy="14" r="5" fill="#8D6E63"/>
+      <circle cx="10" cy="14" r="5" fill="#8D6E63"/>
+    </g>
+  </g>
+  <g opacity="0.3">
+    <circle cx="520" cy="360" r="12" fill="#BDBDBD"/>
+    <circle cx="540" cy="365" r="8" fill="#BDBDBD"/>
+    <circle cx="555" cy="358" r="6" fill="#BDBDBD"/>
+    <circle cx="535" cy="350" r="5" fill="#BDBDBD"/>
+  </g>
+  <text x="400" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="22" fill="#E8F5E9" letter-spacing="1">VEHICLE DRIVING</text>
+  <g transform="translate(100, 410)">
+    <circle cx="0" cy="0" r="38" fill="#263238" opacity="0.85"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#455A64" stroke-width="2"/>
+    <path d="M-28,-18 A33,33 0 0,1 28,-18" fill="none" stroke="url(#speedGauge)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="-28" y1="-18" x2="-24" y2="-15" stroke="#81C784" stroke-width="1.5"/>
+    <line x1="-30" y1="5" x2="-25" y2="4" stroke="#81C784" stroke-width="1.5"/>
+    <line x1="0" y1="-33" x2="0" y2="-28" stroke="#FFD600" stroke-width="1.5"/>
+    <line x1="30" y1="5" x2="25" y2="4" stroke="#EF5350" stroke-width="1.5"/>
+    <line x1="28" y1="-18" x2="24" y2="-15" stroke="#EF5350" stroke-width="1.5"/>
+    <line x1="0" y1="5" x2="12" y2="-22" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="5" r="4" fill="#FF5722"/>
+    <circle cx="0" cy="5" r="2" fill="#fff"/>
+    <text x="0" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="14" fill="#fff">72</text>
+    <text x="0" y="32" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="7" fill="#81C784">KM/H</text>
+  </g>
+  <g transform="translate(710, 410)">
+    <rect x="-35" y="-25" width="70" height="50" rx="8" fill="#263238" opacity="0.7"/>
+    <line x1="-25" y1="15" x2="25" y2="-15" stroke="#616161" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="5" cy="2" r="4" fill="#4CAF50"/>
+    <circle cx="5" cy="2" r="2" fill="#81C784"/>
+    <text x="0" y="-28" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="8" fill="#81C784" opacity="0.7">MAP</text>
+  </g>
+  <rect x="20" y="20" width="760" height="410" fill="none" stroke="#4CAF50" stroke-width="1" stroke-opacity="0.3" rx="8"/>
+</svg>

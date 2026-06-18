@@ -6,17 +6,47 @@ interface Props {
   title: string;
   description: string;
   breadcrumb?: string;
+  headerImage?: string;
+  headerIcon?: string;
+  headerGradient?: string;
 }
 
-const { title, description, breadcrumb } = Astro.props;
+const { title, description, breadcrumb, headerImage, headerIcon, headerGradient } = Astro.props;
+
+const gradientClass = headerGradient || 'from-game-green to-game-green-dark';
 ---
 
 <BaseLayout title={title} description={description} showDownloadBar={false}>
-  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <Breadcrumbs items={[{ name: breadcrumb || title }]} />
-    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">{title}</h1>
-    <div class="prose-game">
-      <slot />
+  <main id="main-content">
+    {/* Visual Header Banner */}
+    {(headerImage || headerIcon) && (
+      <div class={`bg-gradient-to-br ${gradientClass} text-white`}>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+          {headerImage ? (
+            <img
+              src={headerImage}
+              alt={title}
+              class="w-full max-w-md mx-auto h-auto rounded-2xl mb-6 shadow-lg"
+              loading="eager"
+              decoding="async"
+            />
+          ) : headerIcon ? (
+            <div class="w-20 h-20 mx-auto mb-4 bg-white/20 rounded-2xl flex items-center justify-center" set:html={headerIcon} />
+          ) : null}
+          <h1 class="text-3xl md:text-4xl font-extrabold mb-2">{title}</h1>
+          <p class="text-white/80 text-lg max-w-2xl mx-auto">{description}</p>
+        </div>
+      </div>
+    )}
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <Breadcrumbs items={[{ name: breadcrumb || title }]} />
+      {!(headerImage || headerIcon) && (
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">{title}</h1>
+      )}
+      <div class="prose-game">
+        <slot />
+      </div>
     </div>
   </main>
 </BaseLayout>

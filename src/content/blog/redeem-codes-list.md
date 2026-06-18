@@ -18,6 +18,8 @@ If you are new to the game, make sure to also read our [beginner guide](/blog/ho
 
 ## How to Redeem Codes in Super Bear Adventure
 
+![Redeem code input screen](/images/misc/redeem-code-input.svg)
+
 Redeeming codes in Super Bear Adventure is straightforward, but you need to know exactly where to go. Follow these steps carefully:
 
 ### Step 1: Launch the Game
@@ -41,6 +43,8 @@ Type or paste the code exactly as shown. Codes are usually case-sensitive, so ma
 Tap the "Redeem" or "Confirm" button. If the code is valid, your reward will be added to your inventory immediately. You will see a confirmation message showing what you received.
 
 ## All Active Redeem Codes (June 2026)
+
+![Treasure chest with prizes](/images/items/treasure-chest.svg)
 
 Here are all the currently working redeem codes for Super Bear Adventure. We test these regularly and update the list whenever new codes are released or old ones expire.
 
@@ -98,6 +102,8 @@ These codes have expired and can no longer be redeemed. We keep them listed here
 | VALENTINE25 | Heart Skin + 250 Coins | March 2025 |
 
 ## Tips for Getting the Most Out of Redeem Codes
+
+![Code rewards preview](/images/misc/redeem-code-rewards.svg)
 
 ### Redeem Codes Immediately
 

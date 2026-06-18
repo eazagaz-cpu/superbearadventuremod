@@ -66,6 +66,8 @@ If your primary interest is gameplay rather than unlocking cosmetics, the offici
 
 ## Method 1: Sideloading with AltStore
 
+![iOS AltStore sideloading method](/images/guides/ios-altstore.svg)
+
 AltStore is the most popular and well-maintained sideloading tool for iOS. It was created by developer Riley Testut and uses your personal Apple ID to sign apps with a free developer certificate. This is the method we recommend if you are determined to sideload on iOS.
 
 ### Requirements
@@ -78,6 +80,8 @@ AltStore is the most popular and well-maintained sideloading tool for iOS. It wa
 - iTunes installed on your PC (Windows users) or Finder access (Mac users)
 
 ### Step-by-Step Installation
+
+![File manager APK install](/images/guides/file-manager.svg)
 
 1. **Download AltServer**: Go to altstore.io and download AltServer for your operating system (Windows or macOS).
 
@@ -197,6 +201,8 @@ Regardless of which method you choose, there are important safety considerations
 5. Do not enter payment information in sideloaded apps.
 
 ## What Features iOS Users Can Still Access
+
+![Play Store vs Mod comparison](/images/guides/play-store-vs-mod.svg)
 
 Even without mods, iOS players have access to a rich experience. Here is what you can enjoy fully through the official App Store version.
 

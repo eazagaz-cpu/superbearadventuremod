@@ -18,6 +18,8 @@ If you are new to the game, start with our [beginner guide](/blog/how-to-play-be
 
 ## Understanding the Coin Economy
 
+![Gold coins stacked](/images/items/coins-gold.svg)
+
 Before diving into farming strategies, it helps to understand how coins work in Super Bear Adventure.
 
 ### Coin Sources
@@ -33,6 +35,8 @@ The game has a hidden combo multiplier for coins. Collecting coins in rapid succ
 Coins respawn when you re-enter a world. Every coin pickup, destructible object, and enemy respawns each time you exit and re-enter a world from the overworld hub. Boss rewards are the exception; they are one-time only. This respawn mechanic is the foundation of all farming strategies.
 
 ## Top Legitimate Farming Methods
+
+![Coin farming route map](/images/misc/coin-farming-route.svg)
 
 ### Method 1: The Turtletown Beach Run (200+ Coins per Run)
 
@@ -108,6 +112,8 @@ The most straightforward mod APK feature is the unlimited coins option. When ena
 
 ### Coin Multiplier Enhancement
 
+![Purple coins for premium items](/images/items/coins-purple.svg)
+
 If you prefer to still earn coins through gameplay but want faster accumulation, the mod APK includes an enhanced coin multiplier. Instead of the standard 1x-2x-3x multiplier, the mod version offers up to 10x multiplier, meaning every coin source in the game awards ten times its normal value. A single enemy defeat might grant 50 coins instead of five, and coin chests can contain 500 or more coins.
 
 ### Ad-Free Coin Doubling
@@ -115,6 +121,8 @@ If you prefer to still earn coins through gameplay but want faster accumulation,
 The standard version of Super Bear Adventure offers the option to watch an advertisement to double your coins at the end of a world run. The mod APK automatically applies this doubling without requiring you to watch any ads. Combined with the enhanced multiplier, this can result in massive coin gains per run.
 
 ## Comparing Methods: Efficiency Table
+
+![Farming methods comparison](/images/misc/coin-farming-comparison.svg)
 
 | Method | Coins per Run | Time per Run | Coins per Minute | Difficulty |
 |--------|---------------|--------------|-------------------|------------|

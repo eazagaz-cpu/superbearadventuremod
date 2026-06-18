@@ -16,6 +16,8 @@ Whether you have completed every mission, found every [secret sticker](/blog/all
 
 We have carefully selected games that share key qualities with Super Bear Adventure: open-world exploration, platforming mechanics, collectibles, charming art styles, and engaging single-player or [multiplayer](/blog/multiplayer-guide/) experiences. Each game on this list has been tested and reviewed for its similarity to SBA and overall quality.
 
+![Similar games grid](/images/misc/similar-games-grid.svg)
+
 ## 1. Lego Brawls
 
 ### What Makes It Similar
@@ -254,6 +256,8 @@ For SBA fans who want more structured platforming challenges alongside open-worl
 
 ## How These Games Compare to Super Bear Adventure
 
+![Baaren the hero bear](/images/characters/baaren-hero.svg)
+
 ### Comparison Table
 
 | Game | Open World | Multiplayer | Difficulty | Price |
@@ -273,6 +277,8 @@ For SBA fans who want more structured platforming challenges alongside open-worl
 | Yooka-Laylee | Semi-open | No | Medium-Hard | Premium |
 
 ## Tips for Finding More Games Like SBA
+
+![Gamepad controls](/images/gameplay/controls-gamepad.svg)
 
 ### What to Search For
 

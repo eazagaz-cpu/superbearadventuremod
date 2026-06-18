@@ -18,6 +18,8 @@ If you are just getting started with Super Bear Adventure, check out our [beginn
 
 ## Sticker Collection Overview
 
+![Sticker collection album](/images/items/sticker-collection.svg)
+
 The 15 stickers are distributed across the game's worlds as follows:
 
 - **Overworld Hub**: 2 stickers
@@ -54,6 +56,8 @@ Each world section below provides the exact location, how to reach it, and any p
 **Difficulty**: Medium.
 
 ## Turtletown Stickers
+
+![Turtletown sticker locations](/images/worlds/detail/turtletown-collectibles.svg)
 
 ### Sticker 3: Underwater Cave
 
@@ -218,6 +222,8 @@ In addition to the skin, completing the collection unlocks the "Sticker Master" 
 For a complete list of all cosmetics including the Golden Bear skin, visit our [skins and hats guide](/blog/unlock-all-skins-hats/).
 
 ## Sticker Hunting Tips
+
+![Map with sticker markers](/images/gameplay/map-overview.svg)
 
 ### Use the Sticker Radar
 

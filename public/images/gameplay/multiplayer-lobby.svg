@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="50%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1B5E20" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="readyBtn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="avatarBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="avatarGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="avatarWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECEFF1"/>
+      <stop offset="100%" stop-color="#90A4AE"/>
+    </linearGradient>
+    <linearGradient id="avatarBlack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#616161"/>
+      <stop offset="100%" stop-color="#212121"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g opacity="0.04">
+    <circle cx="50" cy="50" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="150" cy="50" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="250" cy="50" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="200" cy="100" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="600" cy="350" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="700" cy="350" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+    <circle cx="650" cy="400" r="30" fill="none" stroke="#FFF" stroke-width="1"/>
+  </g>
+  <rect y="0" width="800" height="60" fill="#000" opacity="0.4"/>
+  <text x="400" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="24" fill="#FFF" letter-spacing="3">MULTIPLAYER LOBBY</text>
+  <line x1="150" y1="52" x2="650" y2="52" stroke="#558B2F" stroke-width="2" opacity="0.6"/>
+  <g transform="translate(400,90)" filter="url(#shadow)">
+    <rect x="-120" y="-18" width="240" height="36" rx="8" fill="#000" opacity="0.5"/>
+    <rect x="-120" y="-18" width="240" height="36" rx="8" fill="none" stroke="#558B2F" stroke-width="1.5" opacity="0.7"/>
+    <text x="-80" y="6" font-family="Arial,sans-serif" font-size="13" fill="#81C784">ROOM CODE:</text>
+    <text x="30" y="7" font-family="Courier New,monospace" font-weight="bold" font-size="20" fill="#A5D6A7" letter-spacing="4">SBA-7429</text>
+  </g>
+  <g transform="translate(680,90)">
+    <rect x="-45" y="-16" width="90" height="32" rx="6" fill="#000" opacity="0.4"/>
+    <rect x="-45" y="-16" width="90" height="32" rx="6" fill="none" stroke="#558B2F" stroke-width="1" opacity="0.5"/>
+    <circle cx="-22" cy="-3" r="5" fill="none" stroke="#81C784" stroke-width="1.5"/>
+    <path d="M-30,8 Q-22,-2-14,8" fill="none" stroke="#81C784" stroke-width="1.5"/>
+    <text x="5" y="5" font-family="Arial,sans-serif" font-weight="bold" font-size="16" fill="#A5D6A7">4/8</text>
+  </g>
+  <rect x="60" y="120" width="680" height="240" rx="16" fill="url(#panelBg)" filter="url(#shadow)"/>
+  <rect x="60" y="120" width="680" height="240" rx="16" fill="none" stroke="#558B2F" stroke-width="1.5" opacity="0.4"/>
+  <g transform="translate(170,210)">
+    <circle r="42" fill="url(#avatarBrown)" stroke="#A5D6A7" stroke-width="3"/>
+    <circle cx="-18" cy="-20" r="12" fill="#6D4C41"/>
+    <circle cx="18" cy="-20" r="12" fill="#6D4C41"/>
+    <circle cx="-18" cy="-20" r="7" fill="#8D6E63"/>
+    <circle cx="18" cy="-20" r="7" fill="#8D6E63"/>
+    <circle cx="-12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="-11" cy="-4" r="2.5" fill="#212121"/>
+    <circle cx="13" cy="-4" r="2.5" fill="#212121"/>
+    <ellipse cy="6" rx="8" ry="5" fill="#4E342E"/>
+    <ellipse cy="4" rx="3" ry="2" fill="#6D4C41"/>
+    <path d="M-5,12 Q0,17 5,12" fill="none" stroke="#4E342E" stroke-width="1.5"/>
+    <g transform="translate(0,-42)">
+      <polygon points="0,-14-10,0-6,-4 0,2 6,-4 10,0" fill="#FFD54F" stroke="#FF8F00" stroke-width="1"/>
+    </g>
+    <text y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#FFF">BearKing99</text>
+    <rect x="-22" y="66" width="44" height="18" rx="4" fill="#FF8F00" opacity="0.8"/>
+    <text y="79" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="9" fill="#FFF">HOST</text>
+    <circle cx="30" cy="-30" r="8" fill="#4CAF50"/>
+    <path d="M26,-30 29,-27 34,-33" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(340,210)">
+    <circle r="42" fill="url(#avatarGold)" stroke="#A5D6A7" stroke-width="3"/>
+    <circle cx="-18" cy="-20" r="12" fill="#E65100"/>
+    <circle cx="18" cy="-20" r="12" fill="#E65100"/>
+    <circle cx="-18" cy="-20" r="7" fill="#FF8F00"/>
+    <circle cx="18" cy="-20" r="7" fill="#FF8F00"/>
+    <circle cx="-12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="-11" cy="-4" r="2.5" fill="#212121"/>
+    <circle cx="13" cy="-4" r="2.5" fill="#212121"/>
+    <ellipse cy="6" rx="8" ry="5" fill="#BF360C"/>
+    <ellipse cy="4" rx="3" ry="2" fill="#E65100"/>
+    <path d="M-5,12 Q0,17 5,12" fill="none" stroke="#BF360C" stroke-width="1.5"/>
+    <text y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#FFF">GoldenPaw</text>
+    <circle cx="30" cy="-30" r="8" fill="#4CAF50"/>
+    <path d="M26,-30 29,-27 34,-33" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(510,210)">
+    <circle r="42" fill="url(#avatarWhite)" stroke="#A5D6A7" stroke-width="3"/>
+    <circle cx="-18" cy="-20" r="12" fill="#78909C"/>
+    <circle cx="18" cy="-20" r="12" fill="#78909C"/>
+    <circle cx="-18" cy="-20" r="7" fill="#B0BEC5"/>
+    <circle cx="18" cy="-20" r="7" fill="#B0BEC5"/>
+    <circle cx="-12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="-11" cy="-4" r="2.5" fill="#212121"/>
+    <circle cx="13" cy="-4" r="2.5" fill="#212121"/>
+    <ellipse cy="6" rx="8" ry="5" fill="#546E7A"/>
+    <ellipse cy="4" rx="3" ry="2" fill="#78909C"/>
+    <path d="M-5,12 Q0,17 5,12" fill="none" stroke="#546E7A" stroke-width="1.5"/>
+    <text y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#FFF">IcyBear</text>
+    <circle cx="30" cy="-30" r="8" fill="#FFA000"/>
+    <text x="30" y="-26" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#FFF">...</text>
+  </g>
+  <g transform="translate(680,210)">
+    <circle r="42" fill="url(#avatarBlack)" stroke="#A5D6A7" stroke-width="3"/>
+    <circle cx="-18" cy="-20" r="12" fill="#212121"/>
+    <circle cx="18" cy="-20" r="12" fill="#212121"/>
+    <circle cx="-18" cy="-20" r="7" fill="#424242"/>
+    <circle cx="18" cy="-20" r="7" fill="#424242"/>
+    <circle cx="-12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="12" cy="-5" r="4" fill="#FFF"/>
+    <circle cx="-11" cy="-4" r="2.5" fill="#E0E0E0"/>
+    <circle cx="13" cy="-4" r="2.5" fill="#E0E0E0"/>
+    <ellipse cy="6" rx="8" ry="5" fill="#111"/>
+    <ellipse cy="4" rx="3" ry="2" fill="#333"/>
+    <path d="M-5,12 Q0,17 5,12" fill="none" stroke="#111" stroke-width="1.5"/>
+    <text y="60" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#FFF">ShadowCub</text>
+    <circle cx="30" cy="-30" r="8" fill="#4CAF50"/>
+    <path d="M26,-30 29,-27 34,-33" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(400,330)">
+    <text text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#81C784" opacity="0.6">4 slots available - waiting for players...</text>
+    <circle cx="-8" cy="15" r="3" fill="#81C784" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cy="15" r="3" fill="#81C784" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="8" cy="15" r="3" fill="#81C784" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <g transform="translate(400,400)" filter="url(#shadow)">
+    <rect x="-90" y="-22" width="180" height="44" rx="22" fill="url(#readyBtn)"/>
+    <rect x="-90" y="-22" width="180" height="44" rx="22" fill="none" stroke="#81C784" stroke-width="2" opacity="0.6"/>
+    <text y="7" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="20" fill="#FFF" letter-spacing="3">READY!</text>
+  </g>
+  <g transform="translate(90,400)">
+    <circle r="5" fill="#4CAF50"/>
+    <text x="10" y="4" font-family="Arial,sans-serif" font-size="10" fill="#A5D6A7">Ready</text>
+    <circle cx="60" r="5" fill="#FFA000"/>
+    <text x="70" y="4" font-family="Arial,sans-serif" font-size="10" fill="#FFE082">Waiting</text>
+  </g>
+</svg>

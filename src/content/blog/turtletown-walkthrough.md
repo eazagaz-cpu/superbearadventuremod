@@ -15,6 +15,8 @@ If you are new to the game, read our [beginner guide](/blog/how-to-play-beginner
 
 ## How to Access Turtletown
 
+![Turtletown village overview](/images/worlds/detail/turtletown-village.svg)
+
 Turtletown becomes accessible after completing the introductory missions in Bearhaven:
 
 1. Open your world map from the Bearhaven hub area.
@@ -91,6 +93,8 @@ The climb has five vertical sections with increasing difficulty: basic ledges, s
 
 ## All Secret Areas
 
+![Secret cave location in Turtletown](/images/worlds/detail/turtletown-secret-cave.svg)
+
 Turtletown hides seven secret areas:
 
 1. **The Smuggler's Cove** -- Swim under the repaired harbor dock and find the underwater tunnel on the west side. Contains 200 coins.
@@ -105,6 +109,8 @@ For secrets across all worlds, check our [secret areas and easter eggs guide](/b
 
 
 ## Hidden Sticker Locations
+
+![Turtletown collectible locations](/images/worlds/detail/turtletown-collectibles.svg)
 
 Turtletown contains eight hidden stickers:
 
@@ -148,6 +154,8 @@ Visit our [unlock all skins and hats guide](/blog/unlock-all-skins-hats/) for de
 
 
 ## Boss Fight: The Coral Guardian
+
+![Turtle King boss fight](/images/worlds/detail/turtletown-boss-arena.svg)
 
 After Mission 5, board the harbor boat to sail to the boss island.
 

@@ -18,6 +18,8 @@ If your issue is specifically about poor performance or lag rather than errors o
 
 ## Error: "App Not Installed"
 
+![App not installed error fix](/images/misc/error-app-not-installed.svg)
+
 This is one of the most common errors when installing the mod APK version of Super Bear Adventure. The "App Not Installed" error appears when Android cannot complete the installation process.
 
 ### Cause 1: Unknown Sources Not Enabled
@@ -86,6 +88,8 @@ If your device has very limited RAM and many apps running, the game may not have
 
 ## Error: Black Screen on Launch
 
+![Black screen fix](/images/misc/error-black-screen.svg)
+
 The game appears to launch (no crash message) but displays only a black screen that never progresses to the main menu.
 
 ### Solution 1: Wait Longer
@@ -153,6 +157,8 @@ Save data from the standard version may or may not be compatible with the mod AP
 Get into the habit of backing up your save data before any app update, device reset, or Android OS update. A quick file copy takes seconds and can save hours of gameplay progress.
 
 ## Error: "Parse Error" During Installation
+
+![File manager for APK](/images/guides/file-manager.svg)
 
 Android shows a "Parse Error" or "There was a problem parsing the package" message when trying to install the APK.
 
@@ -297,6 +303,8 @@ Keep at least 2GB of free storage on your device at all times. This gives the ga
 Regular restarts prevent memory and process accumulation that degrades performance over time.
 
 ### Avoid Untrusted Mod Sources
+
+![Antivirus scan results](/images/guides/antivirus-scan.svg)
 
 Only download mod APK files from trusted sources like our [homepage](/). APK files from unknown sources may contain malware or be improperly built, causing crashes and errors.
 

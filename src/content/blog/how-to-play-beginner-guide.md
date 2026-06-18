@@ -19,6 +19,8 @@ This guide covers everything a new player needs to know, from basic controls to 
 
 ## Understanding the Controls
 
+![Touchscreen controls layout](/images/gameplay/controls-touchscreen.svg)
+
 Super Bear Adventure offers two control methods: touchscreen controls and external gamepad support. Mastering your preferred input method is the foundation of everything else in the game.
 
 ### Touchscreen Controls
@@ -67,6 +69,8 @@ Some worlds introduce unique movement mechanics:
 
 
 ## Combat Basics
+
+![Combat basics in Super Bear Adventure](/images/gameplay/combat-basics.svg)
 
 Combat in Super Bear Adventure is straightforward but has more depth than it first appears. Knowing when and how to fight makes the difference between breezing through missions and burning through your health.
 
@@ -141,6 +145,8 @@ A quick tip for beginners: Turtletown has a loop near the village center where c
 
 ## Navigating the World Map
 
+![World map overview](/images/gameplay/map-overview.svg)
+
 Super Bear Adventure uses an overworld map that connects all the game's regions. Understanding how navigation works saves time and prevents confusion.
 
 ### The Hub Area
@@ -166,6 +172,8 @@ After discovering certain points in each world, fast travel becomes available. T
 
 
 ## NPC Interactions and Dialogue
+
+![NPC interaction and quests](/images/gameplay/npc-interaction.svg)
 
 Non-player characters populate every world and serve several functions.
 

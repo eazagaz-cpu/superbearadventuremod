@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="50%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1B5E20" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="progressGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="progressYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="progressBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E040FB"/>
+      <stop offset="60%" stop-color="#9C27B0"/>
+      <stop offset="100%" stop-color="#6A1B9A"/>
+    </linearGradient>
+    <linearGradient id="timerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="streakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g opacity="0.04">
+    <circle cx="40" cy="40" r="3" fill="#FFF"/>
+    <circle cx="80" cy="40" r="3" fill="#FFF"/>
+    <circle cx="120" cy="40" r="3" fill="#FFF"/>
+    <circle cx="40" cy="80" r="3" fill="#FFF"/>
+    <circle cx="80" cy="80" r="3" fill="#FFF"/>
+    <circle cx="120" cy="80" r="3" fill="#FFF"/>
+    <circle cx="680" cy="370" r="3" fill="#FFF"/>
+    <circle cx="720" cy="370" r="3" fill="#FFF"/>
+    <circle cx="760" cy="370" r="3" fill="#FFF"/>
+    <circle cx="680" cy="410" r="3" fill="#FFF"/>
+    <circle cx="720" cy="410" r="3" fill="#FFF"/>
+    <circle cx="760" cy="410" r="3" fill="#FFF"/>
+  </g>
+  <rect x="80" y="25" width="640" height="400" rx="20" fill="url(#panelBg)" filter="url(#shadow)"/>
+  <rect x="80" y="25" width="640" height="400" rx="20" fill="none" stroke="#558B2F" stroke-width="2" opacity="0.4"/>
+  <g transform="translate(400,62)">
+    <g transform="translate(-190,-5)">
+      <rect x="-14" y="-12" width="28" height="26" rx="4" fill="none" stroke="#81C784" stroke-width="2"/>
+      <line x1="-14" y1="-4" x2="14" y2="-4" stroke="#81C784" stroke-width="2"/>
+      <line x1="-7" y1="-16" x2="-7" y2="-8" stroke="#81C784" stroke-width="2" stroke-linecap="round"/>
+      <line x1="7" y1="-16" x2="7" y2="-8" stroke="#81C784" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="-6" cy="3" r="2" fill="#81C784"/>
+      <circle cy="3" r="2" fill="#81C784"/>
+      <circle cx="6" cy="3" r="2" fill="#A5D6A7"/>
+      <circle cx="-6" cy="10" r="2" fill="#A5D6A7" opacity="0.5"/>
+    </g>
+    <text x="-50" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="24" fill="#FFF" letter-spacing="2">DAILY CHALLENGES</text>
+  </g>
+  <g transform="translate(620,60)">
+    <rect x="-65" y="-18" width="130" height="36" rx="8" fill="#000" opacity="0.4"/>
+    <rect x="-65" y="-18" width="130" height="36" rx="8" fill="none" stroke="url(#timerGrad)" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="-40" r="10" fill="none" stroke="#EF5350" stroke-width="1.5"/>
+    <line x1="-40" y1="0" x2="-40" y2="-6" stroke="#EF5350" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-40" y1="0" x2="-35" y2="2" stroke="#EF5350" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="5" y="5" text-anchor="middle" font-family="Courier New,monospace" font-weight="bold" font-size="16" fill="#EF5350">14:32:07</text>
+  </g>
+  <g transform="translate(175,60)">
+    <rect x="-60" y="-18" width="120" height="36" rx="8" fill="#000" opacity="0.4"/>
+    <rect x="-60" y="-18" width="120" height="36" rx="8" fill="none" stroke="url(#streakGrad)" stroke-width="1.5" opacity="0.7"/>
+    <g transform="translate(-35,0)">
+      <path d="M0,-10 C-3,-5-7,0-7,5-7,9-4,12 0,12 4,12 7,9 7,5 7,0 3,-5 0,-10Z" fill="#FF8F00"/>
+      <path d="M0,-4 C-1.5,-1-3.5,1-3.5,4-3.5,6-2,8 0,8 2,8 3.5,6 3.5,4 3.5,1 1.5,-1 0,-4Z" fill="#FFD54F"/>
+    </g>
+    <text y="-3" font-family="Arial,sans-serif" font-size="10" fill="#FFE082">STREAK</text>
+    <text y="13" font-family="Arial,sans-serif" font-weight="bold" font-size="18" fill="#FF8F00">7 DAYS</text>
+  </g>
+  <line x1="120" y1="92" x2="680" y2="92" stroke="#558B2F" stroke-width="1" opacity="0.3"/>
+  <g transform="translate(400,145)">
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="#000" opacity="0.25"/>
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="none" stroke="#4CAF50" stroke-width="1.5" opacity="0.5"/>
+    <g transform="translate(-245,0)">
+      <circle r="18" fill="url(#coinGrad)" stroke="#E65100" stroke-width="1.5"/>
+      <circle r="13" fill="none" stroke="#FFE082" stroke-width="1" opacity="0.5"/>
+      <text y="5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="12" fill="#E65100">$</text>
+    </g>
+    <text x="-200" y="-12" font-family="Arial,sans-serif" font-weight="bold" font-size="15" fill="#FFF">Collect 500 Coins</text>
+    <text x="-200" y="6" font-family="Arial,sans-serif" font-size="11" fill="#A5D6A7">Gather coins from any level</text>
+    <rect x="-200" y="16" width="320" height="10" rx="5" fill="#1B5E20" opacity="0.6"/>
+    <rect x="-200" y="16" width="320" height="10" rx="5" fill="url(#progressGreen)"/>
+    <rect x="-200" y="16" width="320" height="5" rx="3" fill="#FFF" opacity="0.15"/>
+    <text x="128" y="24" font-family="Arial,sans-serif" font-weight="bold" font-size="9" fill="#FFF">500/500</text>
+    <g transform="translate(215,-10)">
+      <circle r="14" fill="url(#coinGrad)" stroke="#E65100" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="8" fill="#E65100">$</text>
+      <text y="20" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#FFD54F">x200</text>
+    </g>
+    <g transform="translate(260,0)">
+      <circle r="14" fill="#4CAF50"/>
+      <path d="M-6,0-2,4 6,-5" fill="none" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g transform="translate(400,245)">
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="#000" opacity="0.25"/>
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="none" stroke="#FFD54F" stroke-width="1.5" opacity="0.4"/>
+    <g transform="translate(-245,0)">
+      <circle r="18" fill="#FF8F00" opacity="0.2" stroke="#FFD54F" stroke-width="1.5"/>
+      <line x1="0" y1="10" x2="0" y2="-8" stroke="#FFD54F" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-6" y1="4" x2="6" y2="4" stroke="#FFD54F" stroke-width="2" stroke-linecap="round"/>
+      <circle cy="-10" r="2" fill="#FFD54F"/>
+    </g>
+    <text x="-200" y="-12" font-family="Arial,sans-serif" font-weight="bold" font-size="15" fill="#FFF">Defeat 10 Enemies</text>
+    <text x="-200" y="6" font-family="Arial,sans-serif" font-size="11" fill="#A5D6A7">Battle enemies in adventure mode</text>
+    <rect x="-200" y="16" width="320" height="10" rx="5" fill="#1B5E20" opacity="0.6"/>
+    <rect x="-200" y="16" width="192" height="10" rx="5" fill="url(#progressYellow)"/>
+    <rect x="-200" y="16" width="192" height="5" rx="3" fill="#FFF" opacity="0.15"/>
+    <text y="24" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="9" fill="#FFF">6/10</text>
+    <g transform="translate(215,-10)">
+      <polygon points="0,-14 10,-4 6,10-6,10-10,-4" fill="url(#gemGrad)" stroke="#CE93D8" stroke-width="1"/>
+      <polygon points="0,-10 6,-4 3,6-3,6-6,-4" fill="#E040FB" opacity="0.3"/>
+      <text y="24" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#CE93D8">x5</text>
+    </g>
+    <g transform="translate(260,0)">
+      <circle r="14" fill="none" stroke="#FFD54F" stroke-width="2"/>
+      <text y="5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="11" fill="#FFD54F">60%</text>
+    </g>
+  </g>
+  <g transform="translate(400,345)">
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="#000" opacity="0.25"/>
+    <rect x="-280" y="-40" width="560" height="80" rx="12" fill="none" stroke="#4FC3F7" stroke-width="1.5" opacity="0.4"/>
+    <g transform="translate(-245,0)">
+      <circle r="18" fill="#0288D1" opacity="0.2" stroke="#4FC3F7" stroke-width="1.5"/>
+      <circle r="10" fill="none" stroke="#4FC3F7" stroke-width="1"/>
+      <polygon points="0,-8 3,0 0,8-3,0" fill="#4FC3F7"/>
+      <polygon points="0,-8-3,0 0,8 3,0" fill="#0288D1" opacity="0.6"/>
+      <circle r="2" fill="#FFF"/>
+    </g>
+    <text x="-200" y="-12" font-family="Arial,sans-serif" font-weight="bold" font-size="15" fill="#FFF">Explore the Hidden Cave</text>
+    <text x="-200" y="6" font-family="Arial,sans-serif" font-size="11" fill="#A5D6A7">Find and explore the secret cavern</text>
+    <rect x="-200" y="16" width="320" height="10" rx="5" fill="#1B5E20" opacity="0.6"/>
+    <rect x="-200" y="16" width="80" height="10" rx="5" fill="url(#progressBlue)"/>
+    <rect x="-200" y="16" width="80" height="5" rx="3" fill="#FFF" opacity="0.15"/>
+    <text x="-155" y="24" font-family="Arial,sans-serif" font-weight="bold" font-size="9" fill="#FFF">1/4</text>
+    <g transform="translate(205,-10)">
+      <circle r="11" fill="url(#coinGrad)" stroke="#E65100" stroke-width="1"/>
+      <text y="4" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="7" fill="#E65100">$</text>
+    </g>
+    <g transform="translate(225,-10)">
+      <polygon points="0,-10 7,-3 4,7-4,7-7,-3" fill="url(#gemGrad)" stroke="#CE93D8" stroke-width="0.8"/>
+    </g>
+    <text x="215" y="14" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="9" fill="#81C784">BONUS</text>
+    <g transform="translate(260,0)">
+      <circle r="14" fill="none" stroke="#4FC3F7" stroke-width="2"/>
+      <text y="5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="11" fill="#4FC3F7">25%</text>
+    </g>
+  </g>
+  <path d="M85,30 85,55 Q85,30 110,30" fill="none" stroke="#558B2F" stroke-width="2" opacity="0.5"/>
+  <path d="M715,30 715,55 Q715,30 690,30" fill="none" stroke="#558B2F" stroke-width="2" opacity="0.5"/>
+  <path d="M85,420 85,395 Q85,420 110,420" fill="none" stroke="#558B2F" stroke-width="2" opacity="0.5"/>
+  <path d="M715,420 715,395 Q715,420 690,420" fill="none" stroke="#558B2F" stroke-width="2" opacity="0.5"/>
+</svg>

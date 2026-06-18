@@ -16,6 +16,8 @@ Whether you are looking for a specific NPC to complete a quest, trying to unders
 
 ## The Protagonist: Baaren
 
+![Baaren hero character](/images/characters/baaren-hero.svg)
+
 ### Overview
 
 Baaren is the heroic bear you control throughout Super Bear Adventure. As the player character, Baaren is defined largely by the player's choices, but several traits remain consistent across all playthroughs.
@@ -41,6 +43,8 @@ Baaren possesses a versatile set of abilities that expand throughout the game:
 For more about Baaren's story and background, visit our [complete lore guide](/blog/lore-baaren-story/).
 
 ## Friendly NPCs by World
+
+![Friendly NPCs](/images/characters/friendly-npcs.svg)
 
 ### Turtletown NPCs
 
@@ -220,6 +224,8 @@ A spectral figure encountered in the deepest tunnels:
 
 ## Enemies by World
 
+![Enemy types across worlds](/images/characters/enemy-types.svg)
+
 ### Common Enemies Across All Worlds
 
 Some enemy types appear throughout Earthkwak with visual variations matching each world's theme:
@@ -356,6 +362,8 @@ Some enemy types appear throughout Earthkwak with visual variations matching eac
 - Defeating them clears web barriers in the area
 
 ## Boss Characters
+
+![The Glitch secret boss](/images/characters/the-glitch.svg)
 
 Every world features memorable boss encounters that test your skills. Our [boss fight strategy guide](/blog/boss-fight-strategy/) covers detailed tactics for each one.
 

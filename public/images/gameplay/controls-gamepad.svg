@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="ctrlBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#455A64"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </linearGradient>
+    <linearGradient id="ctrlInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="100%" stop-color="#1a2327"/>
+    </linearGradient>
+    <linearGradient id="greenBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="redBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="blueBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#42A5F5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="yellowBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="btnShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12"/>
+  <rect x="20" y="20" width="760" height="410" fill="none" stroke="#4CAF50" stroke-width="1" stroke-opacity="0.3" rx="8"/>
+  <text x="400" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="22" fill="#E8F5E9" letter-spacing="1">GAMEPAD CONTROLS</text>
+  <g filter="url(#shadow)">
+    <path d="M240,160 Q240,130 280,120 L520,120 Q560,130 560,160 L570,260 Q580,340 530,360 Q490,375 470,340 L460,300 Q450,280 400,280 Q350,280 340,300 L330,340 Q310,375 270,360 Q220,340 230,260 Z" fill="url(#ctrlBody)"/>
+    <path d="M250,165 Q250,140 285,130 L515,130 Q550,140 550,165 L558,255 Q566,325 525,348 Q497,358 480,335 L468,298 Q455,270 400,270 Q345,270 332,298 L320,335 Q303,358 275,348 Q234,325 242,255 Z" fill="url(#ctrlInner)" opacity="0.5"/>
+  </g>
+  <g transform="translate(300, 210)">
+    <rect x="-12" y="-38" width="24" height="76" rx="4" fill="#546E7A" filter="url(#btnShadow)"/>
+    <rect x="-38" y="-12" width="76" height="24" rx="4" fill="#546E7A" filter="url(#btnShadow)"/>
+    <circle cx="0" cy="0" r="8" fill="#455A64"/>
+    <polygon points="0,-30 -6,-22 6,-22" fill="#90A4AE"/>
+    <polygon points="0,30 -6,22 6,22" fill="#90A4AE"/>
+    <polygon points="-30,0 -22,-6 -22,6" fill="#90A4AE"/>
+    <polygon points="30,0 22,-6 22,6" fill="#90A4AE"/>
+  </g>
+  <g transform="translate(310, 290)">
+    <circle cx="0" cy="0" r="22" fill="#37474F" stroke="#546E7A" stroke-width="2"/>
+    <circle cx="2" cy="-2" r="14" fill="#455A64"/>
+    <circle cx="2" cy="-2" r="10" fill="#4e6169"/>
+  </g>
+  <g transform="translate(460, 290)">
+    <circle cx="0" cy="0" r="22" fill="#37474F" stroke="#546E7A" stroke-width="2"/>
+    <circle cx="-1" cy="1" r="14" fill="#455A64"/>
+    <circle cx="-1" cy="1" r="10" fill="#4e6169"/>
+  </g>
+  <g transform="translate(500, 200)">
+    <circle cx="0" cy="28" r="15" fill="url(#greenBtn)" filter="url(#btnShadow)"/>
+    <text x="0" y="33" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="15" fill="#fff">A</text>
+    <circle cx="28" cy="0" r="15" fill="url(#redBtn)" filter="url(#btnShadow)"/>
+    <text x="28" y="5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="15" fill="#fff">B</text>
+    <circle cx="-28" cy="0" r="15" fill="url(#blueBtn)" filter="url(#btnShadow)"/>
+    <text x="-28" y="5" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="15" fill="#fff">X</text>
+    <circle cx="0" cy="-28" r="15" fill="url(#yellowBtn)" filter="url(#btnShadow)"/>
+    <text x="0" y="-23" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="15" fill="#333">Y</text>
+  </g>
+  <g transform="translate(400, 200)">
+    <rect x="-30" y="-6" width="18" height="12" rx="3" fill="#546E7A"/>
+    <rect x="12" y="-6" width="18" height="12" rx="3" fill="#546E7A"/>
+  </g>
+  <path d="M260,125 Q260,110 290,108 L340,108 L340,122 Q320,125 260,125 Z" fill="#546E7A" filter="url(#btnShadow)"/>
+  <text x="300" y="119" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="10" fill="#B0BEC5">LB</text>
+  <path d="M540,125 Q540,110 510,108 L460,108 L460,122 Q480,125 540,125 Z" fill="#546E7A" filter="url(#btnShadow)"/>
+  <text x="500" y="119" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="10" fill="#B0BEC5">RB</text>
+  <path d="M268,108 Q265,90 295,85 L335,85 L340,108 Z" fill="#455A64" filter="url(#btnShadow)"/>
+  <text x="304" y="101" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="10" fill="#B0BEC5">LT</text>
+  <path d="M532,108 Q535,90 505,85 L465,85 L460,108 Z" fill="#455A64" filter="url(#btnShadow)"/>
+  <text x="496" y="101" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="10" fill="#B0BEC5">RT</text>
+  <line x1="270" y1="210" x2="150" y2="180" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="150" cy="180" r="3" fill="#81C784"/>
+  <text x="145" y="175" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">D-Pad</text>
+  <text x="145" y="190" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">Movement</text>
+  <line x1="290" y1="300" x2="140" y2="340" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="140" cy="340" r="3" fill="#81C784"/>
+  <text x="135" y="335" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">Left Stick</text>
+  <text x="135" y="350" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">Camera</text>
+  <line x1="482" y1="300" x2="630" y2="340" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="630" cy="340" r="3" fill="#81C784"/>
+  <text x="635" y="335" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">Right Stick</text>
+  <text x="635" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">Look Around</text>
+  <line x1="540" y1="195" x2="650" y2="170" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="650" cy="170" r="3" fill="#81C784"/>
+  <text x="655" y="165" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">Face Buttons</text>
+  <text x="655" y="180" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">A=Jump  B=Attack</text>
+  <text x="655" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">X=Action  Y=Special</text>
+  <line x1="280" y1="90" x2="160" y2="75" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="160" cy="75" r="3" fill="#81C784"/>
+  <text x="155" y="70" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">Triggers</text>
+  <text x="155" y="85" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">LT/RT = Aim/Shoot</text>
+  <line x1="520" y1="90" x2="640" y2="75" stroke="#81C784" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="640" cy="75" r="3" fill="#81C784"/>
+  <text x="645" y="70" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="13" fill="#C8E6C9">Bumpers</text>
+  <text x="645" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#A5D6A7" opacity="0.7">LB/RB = Items</text>
+  <text x="400" y="435" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#81C784" opacity="0.6">Super Bear Adventure - Controller Layout</text>
+</svg>

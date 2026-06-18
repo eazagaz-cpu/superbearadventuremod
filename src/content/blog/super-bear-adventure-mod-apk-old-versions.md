@@ -25,6 +25,8 @@ Whatever your reason, this page serves as a complete archive of every major rele
 
 ## Version Compatibility Quick-Reference Table
 
+![Version timeline history](/images/misc/version-timeline.svg)
+
 Before you download, check this table to find the version that matches your device.
 
 | Version | Min Android | RAM Recommended | File Size | Key Feature |
@@ -46,6 +48,8 @@ This table covers the major milestone releases. Minor patches (such as v10.1.1 o
 
 ### Version 11.x - The Mole Mines Era
 
+![Version 11 Arcade update](/images/misc/old-version-v11.svg)
+
 **v11.0.1 (Latest Stable)**
 
 This is the most recent release and the version we recommend for most players. It includes the complete Mole Mines world with its underground tunnel network, mine cart sequences, and the Mole King boss encounter. For a full walkthrough of this area, see our [Mole Mines walkthrough](/blog/mole-mines-walkthrough/).
@@ -66,6 +70,8 @@ Key changes in v11.x:
 
 
 ### Version 10.x - The Hive and Giant House
+
+![Version 10 The Hive update](/images/misc/old-version-v10.svg)
 
 **v10.5.0**
 

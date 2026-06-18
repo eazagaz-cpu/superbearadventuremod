@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="pysky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a00"/>
+      <stop offset="40%" stop-color="#d4882e"/>
+      <stop offset="100%" stop-color="#f5c96a"/>
+    </linearGradient>
+    <linearGradient id="pysand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8b84a"/>
+      <stop offset="100%" stop-color="#c98a2e"/>
+    </linearGradient>
+    <linearGradient id="pylit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0c040"/>
+      <stop offset="50%" stop-color="#d4952e"/>
+      <stop offset="100%" stop-color="#a06820"/>
+    </linearGradient>
+    <linearGradient id="pyshd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b07818"/>
+      <stop offset="100%" stop-color="#8a5a10"/>
+    </linearGradient>
+    <radialGradient id="pysun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fff5b0"/>
+      <stop offset="70%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ff990050"/>
+    </radialGradient>
+    <radialGradient id="pysglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffdd4420"/>
+      <stop offset="100%" stop-color="#ffdd4400"/>
+    </radialGradient>
+    <linearGradient id="pydune1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a040"/>
+      <stop offset="100%" stop-color="#c08830"/>
+    </linearGradient>
+    <linearGradient id="pydune2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c89838"/>
+      <stop offset="100%" stop-color="#b07828"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#pysky)"/>
+  <circle cx="650" cy="80" r="120" fill="url(#pysglow)"/>
+  <circle cx="650" cy="80" r="45" fill="url(#pysun)"/>
+  <g stroke="#ffcc00" stroke-width="2.5" opacity="0.7">
+    <line x1="650" y1="20" x2="650" y2="5"/>
+    <line x1="650" y1="140" x2="650" y2="155"/>
+    <line x1="590" y1="80" x2="575" y2="80"/>
+    <line x1="710" y1="80" x2="725" y2="80"/>
+    <line x1="607" y1="37" x2="596" y2="26"/>
+    <line x1="693" y1="37" x2="704" y2="26"/>
+    <line x1="607" y1="123" x2="596" y2="134"/>
+    <line x1="693" y1="123" x2="704" y2="134"/>
+    <line x1="628" y1="28" x2="622" y2="14"/>
+    <line x1="672" y1="28" x2="678" y2="14"/>
+    <line x1="628" y1="132" x2="622" y2="146"/>
+    <line x1="672" y1="132" x2="678" y2="146"/>
+  </g>
+  <path d="M0 320 Q100 270 200 300 Q350 260 500 290 Q600 260 700 280 Q750 270 800 290 L800 370 L0 370 Z" fill="url(#pydune2)" opacity="0.5"/>
+  <path d="M0 340 Q150 290 300 320 Q450 290 550 310 Q700 280 800 310 L800 380 L0 380 Z" fill="url(#pydune1)" opacity="0.6"/>
+  <g stroke="#ffffff" stroke-width="1" opacity="0.15" fill="none">
+    <path d="M50 280 Q150 275 250 280 Q350 285 450 280 Q550 275 650 280 Q700 283 750 280"/>
+    <path d="M80 295 Q180 290 280 295 Q380 300 480 295 Q580 290 680 295 Q730 298 780 295"/>
+    <path d="M30 310 Q130 305 230 310 Q330 315 430 310 Q530 305 630 310 Q730 315 790 310"/>
+  </g>
+  <rect x="0" y="350" width="800" height="100" fill="url(#pysand)"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#b07818" stroke-width="1" opacity="0.5"/>
+  <polygon points="100,340 130,300 160,340" fill="#c09030" opacity="0.4"/>
+  <polygon points="680,335 710,305 740,335" fill="#c09030" opacity="0.3"/>
+  <polygon points="400,80 560,350 400,350" fill="url(#pylit)"/>
+  <polygon points="400,80 240,350 400,350" fill="url(#pyshd)"/>
+  <g stroke="#c08020" stroke-width="0.8" opacity="0.4">
+    <line x1="405" y1="120" x2="440" y2="120"/>
+    <line x1="403" y1="150" x2="470" y2="150"/>
+    <line x1="402" y1="180" x2="490" y2="180"/>
+    <line x1="401" y1="210" x2="510" y2="210"/>
+    <line x1="400" y1="240" x2="525" y2="240"/>
+    <line x1="400" y1="270" x2="540" y2="270"/>
+    <line x1="400" y1="300" x2="552" y2="300"/>
+    <line x1="400" y1="330" x2="558" y2="330"/>
+    <line x1="420" y1="120" x2="418" y2="150"/>
+    <line x1="450" y1="150" x2="447" y2="180"/>
+    <line x1="430" y1="180" x2="428" y2="210"/>
+    <line x1="470" y1="180" x2="468" y2="210"/>
+    <line x1="420" y1="210" x2="418" y2="240"/>
+    <line x1="460" y1="210" x2="458" y2="240"/>
+    <line x1="500" y1="210" x2="498" y2="240"/>
+    <line x1="440" y1="240" x2="438" y2="270"/>
+    <line x1="480" y1="240" x2="478" y2="270"/>
+    <line x1="520" y1="240" x2="518" y2="270"/>
+    <line x1="420" y1="270" x2="418" y2="300"/>
+    <line x1="460" y1="270" x2="458" y2="300"/>
+    <line x1="500" y1="270" x2="498" y2="300"/>
+    <line x1="540" y1="270" x2="538" y2="300"/>
+    <line x1="440" y1="300" x2="438" y2="330"/>
+    <line x1="480" y1="300" x2="478" y2="330"/>
+    <line x1="520" y1="300" x2="518" y2="330"/>
+  </g>
+  <g stroke="#704810" stroke-width="0.8" opacity="0.35">
+    <line x1="395" y1="120" x2="365" y2="120"/>
+    <line x1="397" y1="150" x2="335" y2="150"/>
+    <line x1="398" y1="180" x2="310" y2="180"/>
+    <line x1="399" y1="210" x2="290" y2="210"/>
+    <line x1="400" y1="240" x2="275" y2="240"/>
+    <line x1="400" y1="270" x2="260" y2="270"/>
+    <line x1="400" y1="300" x2="248" y2="300"/>
+    <line x1="400" y1="330" x2="242" y2="330"/>
+    <line x1="380" y1="120" x2="378" y2="150"/>
+    <line x1="360" y1="150" x2="358" y2="180"/>
+    <line x1="340" y1="180" x2="338" y2="210"/>
+    <line x1="370" y1="180" x2="368" y2="210"/>
+    <line x1="320" y1="210" x2="318" y2="240"/>
+    <line x1="360" y1="210" x2="358" y2="240"/>
+    <line x1="300" y1="240" x2="298" y2="270"/>
+    <line x1="340" y1="240" x2="338" y2="270"/>
+    <line x1="380" y1="240" x2="378" y2="270"/>
+    <line x1="280" y1="270" x2="278" y2="300"/>
+    <line x1="320" y1="270" x2="318" y2="300"/>
+    <line x1="360" y1="270" x2="358" y2="300"/>
+    <line x1="260" y1="300" x2="258" y2="330"/>
+    <line x1="300" y1="300" x2="298" y2="330"/>
+    <line x1="340" y1="300" x2="338" y2="330"/>
+    <line x1="380" y1="300" x2="378" y2="330"/>
+  </g>
+  <g fill="none" stroke="#a07020" stroke-width="1.2" opacity="0.5">
+    <ellipse cx="420" cy="260" rx="8" ry="5"/>
+    <circle cx="420" cy="260" r="2.5"/>
+    <line x1="428" y1="260" x2="434" y2="265"/>
+    <circle cx="450" cy="285" r="4" fill="none"/>
+    <line x1="450" y1="289" x2="450" y2="302"/>
+    <line x1="444" y1="295" x2="456" y2="295"/>
+    <path d="M480 260 Q485 255 490 258 L495 262 Q490 264 485 263 Z"/>
+    <path d="M420 310 Q427 305 434 310 Q441 315 448 310"/>
+    <polygon points="470,305 480,320 460,320"/>
+    <circle cx="500" cy="290" r="5"/>
+    <line x1="500" y1="282" x2="500" y2="278"/>
+    <line x1="500" y1="298" x2="500" y2="302"/>
+    <line x1="492" y1="290" x2="488" y2="290"/>
+    <line x1="508" y1="290" x2="512" y2="290"/>
+  </g>
+  <rect x="375" y="310" width="50" height="40" rx="2" fill="#1a0800"/>
+  <rect x="378" y="312" width="44" height="38" rx="1" fill="#0d0400"/>
+  <path d="M375 310 Q400 295 425 310" fill="#2a1200" stroke="#8a5a10" stroke-width="1"/>
+  <rect x="382" y="318" width="36" height="32" fill="#050200" opacity="0.8"/>
+  <rect x="371" y="308" width="6" height="42" rx="1" fill="#b07818" opacity="0.6"/>
+  <rect x="423" y="308" width="6" height="42" rx="1" fill="#b07818" opacity="0.6"/>
+  <line x1="400" y1="80" x2="560" y2="350" stroke="#f5d870" stroke-width="1" opacity="0.3"/>
+  <g fill="#c08830" opacity="0.3">
+    <circle cx="100" cy="380" r="1.5"/>
+    <circle cx="250" cy="370" r="1"/>
+    <circle cx="350" cy="385" r="1.2"/>
+    <circle cx="500" cy="375" r="1"/>
+    <circle cx="600" cy="390" r="1.5"/>
+    <circle cx="700" cy="372" r="1"/>
+    <circle cx="150" cy="395" r="1"/>
+    <circle cx="450" cy="400" r="1.5"/>
+    <circle cx="550" cy="365" r="1"/>
+    <circle cx="50" cy="375" r="1.2"/>
+    <circle cx="750" cy="385" r="1"/>
+  </g>
+  <rect x="250" y="405" width="300" height="36" rx="6" fill="#1a0a00" opacity="0.7"/>
+  <rect x="252" y="407" width="296" height="32" rx="5" fill="none" stroke="#d4952e" stroke-width="1" opacity="0.5"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#f5d870" letter-spacing="2">The Grand Pyramid</text>
+</svg>

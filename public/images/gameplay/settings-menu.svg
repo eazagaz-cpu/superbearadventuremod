@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="gearGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5D6A7"/>
+      <stop offset="100%" stop-color="#66BB6A"/>
+    </linearGradient>
+    <linearGradient id="sliderTrack" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#558B2F"/>
+      <stop offset="100%" stop-color="#8BC34A"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Subtle diagonal lines -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="800" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="800" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="800" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="150" x2="800" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="500" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="0" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="0" y2="300" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Central gear icon -->
+  <g transform="translate(400, 160)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="48" fill="url(#gearGrad)" opacity="0.15"/>
+    <!-- Gear teeth -->
+    <path d="M0,-42 L6,-42 L8,-34 L12,-33 L18,-40 L23,-36 L19,-28 L22,-25 L30,-28 L33,-22 L25,-17 L26,-13 L34,-11 L34,-5 L26,-4 L25,0 L33,4 L30,10 L22,6 L19,10 L23,17 L18,21 L12,15 L8,16 L6,24 L0,24 L-2,16 L-6,15 L-12,21 L-17,17 L-13,10 L-16,6 L-24,10 L-27,4 L-19,0 L-19,-4 L-28,-5 L-28,-11 L-19,-13 L-18,-17 L-27,-22 L-24,-28 L-16,-25 L-13,-28 L-17,-36 L-12,-40 L-6,-33 L-2,-34 Z"
+          fill="url(#gearGrad)" stroke="#fff" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="0" cy="0" r="14" fill="#2E7D32" stroke="#A5D6A7" stroke-width="2"/>
+    <circle cx="0" cy="0" r="6" fill="#A5D6A7"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#fff" letter-spacing="2">SETTINGS</text>
+  <line x1="320" y1="60" x2="480" y2="60" stroke="#8BC34A" stroke-width="2" opacity="0.6"/>
+
+  <!-- Settings panel background -->
+  <rect x="80" y="230" width="640" height="195" rx="12" fill="url(#panelGrad)" stroke="#fff" stroke-opacity="0.1" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Graphics Quality -->
+  <text x="120" y="265" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Graphics Quality</text>
+  <rect x="290" y="253" width="180" height="8" rx="4" fill="#1B5E20"/>
+  <rect x="290" y="253" width="126" height="8" rx="4" fill="url(#sliderTrack)"/>
+  <circle cx="416" cy="257" r="8" fill="#8BC34A" stroke="#fff" stroke-width="2"/>
+  <text x="490" y="262" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#A5D6A7">High</text>
+
+  <!-- Sound Volume -->
+  <text x="120" y="300" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Sound Volume</text>
+  <!-- Speaker icon -->
+  <g transform="translate(270, 293)">
+    <path d="M0,-5 L6,-5 L12,-10 L12,10 L6,5 L0,5 Z" fill="#8BC34A" opacity="0.7"/>
+    <path d="M15,-4 Q20,0 15,4" fill="none" stroke="#8BC34A" stroke-width="1.5" opacity="0.5"/>
+    <path d="M17,-7 Q24,0 17,7" fill="none" stroke="#8BC34A" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <rect x="290" y="290" width="180" height="8" rx="4" fill="#1B5E20"/>
+  <rect x="290" y="290" width="144" height="8" rx="4" fill="url(#sliderTrack)"/>
+  <circle cx="434" cy="294" r="8" fill="#8BC34A" stroke="#fff" stroke-width="2"/>
+  <text x="490" y="299" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#A5D6A7">80%</text>
+
+  <!-- Control Sensitivity -->
+  <text x="120" y="337" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Control Sensitivity</text>
+  <rect x="290" y="327" width="180" height="8" rx="4" fill="#1B5E20"/>
+  <rect x="290" y="327" width="90" height="8" rx="4" fill="url(#sliderTrack)"/>
+  <circle cx="380" cy="331" r="8" fill="#8BC34A" stroke="#fff" stroke-width="2"/>
+  <text x="490" y="336" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#A5D6A7">Medium</text>
+
+  <!-- Language Dropdown -->
+  <text x="120" y="373" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Language</text>
+  <rect x="290" y="358" width="150" height="26" rx="6" fill="#1B5E20" stroke="#558B2F" stroke-width="1.5"/>
+  <text x="305" y="376" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#fff">English</text>
+  <polygon points="420,368 428,368 424,376" fill="#8BC34A"/>
+
+  <!-- Notifications Toggle -->
+  <text x="120" y="410" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Notifications</text>
+  <!-- Toggle ON -->
+  <rect x="290" y="397" width="44" height="22" rx="11" fill="#558B2F" stroke="#8BC34A" stroke-width="1"/>
+  <circle cx="323" cy="408" r="8" fill="#8BC34A"/>
+  <text x="345" y="412" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#A5D6A7">ON</text>
+
+  <!-- Auto-Save Toggle -->
+  <text x="490" y="373" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Auto-Save</text>
+  <!-- Toggle OFF -->
+  <rect x="610" y="360" width="44" height="22" rx="11" fill="#1B5E20" stroke="#558B2F" stroke-width="1"/>
+  <circle cx="621" cy="371" r="8" fill="#4E7A27" opacity="0.7"/>
+  <text x="665" y="375" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6d9b3a" opacity="0.6">OFF</text>
+
+  <!-- Vibration Toggle -->
+  <text x="490" y="410" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold">Vibration</text>
+  <rect x="610" y="397" width="44" height="22" rx="11" fill="#558B2F" stroke="#8BC34A" stroke-width="1"/>
+  <circle cx="643" cy="408" r="8" fill="#8BC34A"/>
+  <text x="665" y="412" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#A5D6A7">ON</text>
+
+  <!-- Decorative corner accents -->
+  <path d="M20,20 L20,50 M20,20 L50,20" stroke="#8BC34A" stroke-width="2" opacity="0.3"/>
+  <path d="M780,20 L780,50 M780,20 L750,20" stroke="#8BC34A" stroke-width="2" opacity="0.3"/>
+  <path d="M20,430 L20,400 M20,430 L50,430" stroke="#8BC34A" stroke-width="2" opacity="0.3"/>
+  <path d="M780,430 L780,400 M780,430 L750,430" stroke="#8BC34A" stroke-width="2" opacity="0.3"/>
+</svg>

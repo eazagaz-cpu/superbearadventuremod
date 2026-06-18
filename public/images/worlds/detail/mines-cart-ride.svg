@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1008"/>
+      <stop offset="50%" stop-color="#2c1e14"/>
+      <stop offset="100%" stop-color="#3a2818"/>
+    </linearGradient>
+    <linearGradient id="cr-headlamp" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ffee88" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffcc33" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="cr-lampglow" cx="0.5" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#ffdd66" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffdd66" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cr-cart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#666"/>
+      <stop offset="100%" stop-color="#444"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#cr-bg)"/>
+  <rect x="0" y="0" width="800" height="60" fill="#0d0906"/>
+  <rect x="0" y="390" width="800" height="60" fill="#0d0906"/>
+  <path d="M0,0 L0,60 Q400,100 800,60 L800,0 Z" fill="#151008"/>
+  <path d="M0,450 L0,380 Q400,350 800,380 L800,450 Z" fill="#1a1008"/>
+  <polygon points="0,30 50,10 80,35 40,50 0,45" fill="#2a1e14" opacity="0.7"/>
+  <polygon points="100,15 160,5 180,30 140,45 100,40" fill="#241812" opacity="0.6"/>
+  <polygon points="200,20 270,8 290,28 250,42 210,38" fill="#2a1e14" opacity="0.5"/>
+  <polygon points="350,12 420,5 440,25 400,35 360,30" fill="#221610" opacity="0.6"/>
+  <polygon points="500,18 560,8 580,32 540,40 510,35" fill="#2a1e14" opacity="0.5"/>
+  <polygon points="620,10 690,3 710,28 670,38 630,32" fill="#241812" opacity="0.6"/>
+  <polygon points="730,15 780,8 800,30 770,40 740,35" fill="#2a1e14" opacity="0.5"/>
+  <polygon points="0,420 60,430 80,415 30,405 0,410" fill="#2a1e14" opacity="0.6"/>
+  <polygon points="120,425 180,435 200,420 160,410 130,415" fill="#241812" opacity="0.5"/>
+  <polygon points="650,418 710,430 730,415 690,405 660,410" fill="#2a1e14" opacity="0.6"/>
+  <rect x="0" y="70" width="800" height="8" fill="#1a1008" opacity="0.3"/>
+  <rect x="0" y="90" width="800" height="5" fill="#221610" opacity="0.2"/>
+  <rect x="0" y="110" width="800" height="3" fill="#1a1008" opacity="0.15"/>
+  <rect x="0" y="330" width="800" height="3" fill="#1a1008" opacity="0.15"/>
+  <rect x="0" y="350" width="800" height="5" fill="#221610" opacity="0.2"/>
+  <rect x="0" y="365" width="800" height="8" fill="#1a1008" opacity="0.3"/>
+  <rect x="50" y="55" width="6" height="320" fill="#5b3a1e" opacity="0.25"/>
+  <rect x="200" y="50" width="8" height="330" fill="#6b4226" opacity="0.3"/>
+  <rect x="650" y="52" width="7" height="325" fill="#5b3a1e" opacity="0.2"/>
+  <rect x="750" y="55" width="5" height="318" fill="#6b4226" opacity="0.15"/>
+  <line x1="0" y1="130" x2="250" y2="130" stroke="#5a4a3a" stroke-width="2" opacity="0.4"/>
+  <line x1="0" y1="155" x2="300" y2="155" stroke="#6a5a4a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="0" y1="180" x2="280" y2="180" stroke="#5a4a3a" stroke-width="1" opacity="0.35"/>
+  <line x1="0" y1="200" x2="220" y2="200" stroke="#4a3a2a" stroke-width="2" opacity="0.3"/>
+  <line x1="500" y1="140" x2="800" y2="140" stroke="#5a4a3a" stroke-width="2" opacity="0.4"/>
+  <line x1="550" y1="165" x2="800" y2="165" stroke="#6a5a4a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="520" y1="190" x2="800" y2="190" stroke="#5a4a3a" stroke-width="1" opacity="0.35"/>
+  <line x1="580" y1="210" x2="800" y2="210" stroke="#4a3a2a" stroke-width="1.5" opacity="0.25"/>
+  <line x1="0" y1="310" x2="260" y2="310" stroke="#5a4a3a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="560" y1="320" x2="800" y2="320" stroke="#5a4a3a" stroke-width="1.5" opacity="0.3"/>
+  <path d="M370,280 Q400,240 430,250 Q460,260 470,240 Q490,200 520,210" fill="none" stroke="#888" stroke-width="1.5" opacity="0.25"/>
+  <path d="M375,283 Q405,243 435,253 Q465,263 475,243 Q495,203 525,213" fill="none" stroke="#666" stroke-width="1" opacity="0.2"/>
+  <polygon points="420,270 300,140 540,140" fill="url(#cr-headlamp)" opacity="0.5"/>
+  <ellipse cx="420" cy="200" rx="120" ry="80" fill="url(#cr-lampglow)"/>
+  <circle cx="420" cy="275" r="6" fill="#ffdd44" opacity="0.9"/>
+  <circle cx="420" cy="275" r="3" fill="#ffffff" opacity="0.8"/>
+  <line x1="200" y1="345" x2="600" y2="345" stroke="#888" stroke-width="4"/>
+  <line x1="200" y1="345" x2="600" y2="345" stroke="#aaa" stroke-width="2"/>
+  <line x1="200" y1="355" x2="600" y2="355" stroke="#888" stroke-width="4"/>
+  <line x1="200" y1="355" x2="600" y2="355" stroke="#aaa" stroke-width="2"/>
+  <rect x="240" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="270" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="300" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="330" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="360" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="390" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="420" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="450" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="480" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="510" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="540" y="342" width="4" height="16" fill="#6b4226"/>
+  <rect x="570" y="342" width="4" height="16" fill="#6b4226"/>
+  <polygon points="340,340 360,280 480,280 500,340" fill="url(#cr-cart)" stroke="#333" stroke-width="2"/>
+  <polygon points="345,337 363,284 477,284 495,337" fill="#5a5a5a"/>
+  <circle cx="365" cy="300" r="2" fill="#888"/>
+  <circle cx="365" cy="320" r="2" fill="#888"/>
+  <circle cx="475" cy="300" r="2" fill="#888"/>
+  <circle cx="475" cy="320" r="2" fill="#888"/>
+  <line x1="358" y1="283" x2="482" y2="283" stroke="#777" stroke-width="3"/>
+  <ellipse cx="420" cy="282" rx="22" ry="16" fill="#8B6914"/>
+  <circle cx="420" cy="262" r="14" fill="#9B7924"/>
+  <circle cx="408" cy="252" r="6" fill="#8B6914"/>
+  <circle cx="408" cy="252" r="3" fill="#7a5810"/>
+  <circle cx="432" cy="252" r="6" fill="#8B6914"/>
+  <circle cx="432" cy="252" r="3" fill="#7a5810"/>
+  <circle cx="415" cy="260" r="2.5" fill="#222"/>
+  <circle cx="425" cy="260" r="2.5" fill="#222"/>
+  <circle cx="415.5" cy="259.5" r="1" fill="#fff"/>
+  <circle cx="425.5" cy="259.5" r="1" fill="#fff"/>
+  <ellipse cx="420" cy="266" rx="3" ry="2" fill="#333"/>
+  <path d="M417,268 Q420,272 423,268" fill="none" stroke="#333" stroke-width="1"/>
+  <ellipse cx="395" cy="283" rx="6" ry="4" fill="#8B6914"/>
+  <ellipse cx="445" cy="283" rx="6" ry="4" fill="#8B6914"/>
+  <circle cx="360" cy="345" r="10" fill="#444" stroke="#333" stroke-width="2"/>
+  <circle cx="360" cy="345" r="4" fill="#555"/>
+  <line x1="352" y1="345" x2="368" y2="345" stroke="#666" stroke-width="1"/>
+  <line x1="360" y1="337" x2="360" y2="353" stroke="#666" stroke-width="1"/>
+  <circle cx="480" cy="345" r="10" fill="#444" stroke="#333" stroke-width="2"/>
+  <circle cx="480" cy="345" r="4" fill="#555"/>
+  <line x1="472" y1="345" x2="488" y2="345" stroke="#666" stroke-width="1"/>
+  <line x1="480" y1="337" x2="480" y2="353" stroke="#666" stroke-width="1"/>
+  <circle cx="350" cy="352" r="2" fill="#ffee44" opacity="0.9"/>
+  <circle cx="345" cy="348" r="1.5" fill="#ffaa22" opacity="0.8"/>
+  <circle cx="342" cy="355" r="1" fill="#ff8800" opacity="0.7"/>
+  <circle cx="338" cy="350" r="1.5" fill="#ffcc33" opacity="0.6"/>
+  <circle cx="335" cy="345" r="1" fill="#ffee44" opacity="0.5"/>
+  <circle cx="490" cy="350" r="2" fill="#ffee44" opacity="0.9"/>
+  <circle cx="495" cy="346" r="1.5" fill="#ffaa22" opacity="0.8"/>
+  <circle cx="498" cy="353" r="1" fill="#ff8800" opacity="0.7"/>
+  <circle cx="502" cy="348" r="1.5" fill="#ffcc33" opacity="0.6"/>
+  <line x1="250" y1="290" x2="340" y2="290" stroke="#8a7a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="270" y1="300" x2="338" y2="300" stroke="#7a6a5a" stroke-width="1.5" opacity="0.3"/>
+  <line x1="500" y1="295" x2="600" y2="295" stroke="#8a7a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="502" y1="305" x2="580" y2="305" stroke="#7a6a5a" stroke-width="1.5" opacity="0.3"/>
+  <rect x="310" y="408" width="180" height="32" rx="6" fill="#1a1008" opacity="0.85"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#e8d5b8" font-weight="bold" letter-spacing="2">Cart Ride</text>
+</svg>

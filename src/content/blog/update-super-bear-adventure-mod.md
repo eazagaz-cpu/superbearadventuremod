@@ -61,6 +61,8 @@ Once you know your current version, compare it against the latest available vers
 
 ## Step 1: Back Up Your Save Data
 
+![Backup before update](/images/guides/update-backup.svg)
+
 This is the most critical step. Skipping the backup is the primary reason players lose progress during updates. We recommend using at least one of the methods below, and ideally both for extra safety.
 
 ### Understanding Where Save Data Is Stored
@@ -124,6 +126,8 @@ Several backup apps can automate this process.
 
 ### Method C: Cloud Sync (If Available)
 
+![Save system and cloud sync](/images/gameplay/save-system.svg)
+
 Some newer versions of Super Bear Adventure may include built-in cloud save functionality. If this feature is available in your version:
 
 1. Open the game and go to Settings.
@@ -134,6 +138,8 @@ Some newer versions of Super Bear Adventure may include built-in cloud save func
 This method is the easiest but is not available in all versions, particularly older mod versions.
 
 ## Step 2: Download the Latest Mod APK
+
+![Install step 1 download](/images/guides/install-step1.svg)
 
 Once your data is backed up, download the new version.
 

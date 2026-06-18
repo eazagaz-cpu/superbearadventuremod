@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="monitorBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="bsHeader" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#558B2F"/>
+    </linearGradient>
+    <linearGradient id="gameBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="40%" stop-color="#A5D6A7"/>
+      <stop offset="100%" stop-color="#558B2F"/>
+    </linearGradient>
+    <filter id="monitorShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg5)" rx="12"/>
+
+  <!-- Background grid -->
+  <g opacity="0.03" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="2">BLUESTACKS PC SETUP</text>
+
+  <!-- PC Monitor -->
+  <g filter="url(#monitorShadow)">
+    <!-- Monitor body -->
+    <rect x="140" y="50" width="520" height="320" rx="12" fill="url(#monitorBody)"/>
+    <!-- Inner bezel -->
+    <rect x="148" y="56" width="504" height="300" rx="8" fill="#111"/>
+    <!-- Screen -->
+    <rect x="155" y="63" width="490" height="280" rx="4" fill="url(#screenGrad)"/>
+
+    <!-- BlueStacks top bar -->
+    <rect x="155" y="63" width="490" height="30" rx="4 4 0 0" fill="url(#bsHeader)"/>
+    <!-- Logo box -->
+    <rect x="163" y="69" width="18" height="18" rx="4" fill="#A5D6A7"/>
+    <text x="172" y="83" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#1B5E20" text-anchor="middle" font-weight="900">B</text>
+    <!-- BlueStacks text -->
+    <text x="192" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#fff" font-weight="700">BlueStacks</text>
+    <text x="270" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#A5D6A7" font-weight="400">5</text>
+    <!-- Window controls -->
+    <circle cx="605" cy="78" r="5" fill="#558B2F" opacity="0.5"/>
+    <rect x="618" y="74" width="10" height="8" rx="1" fill="#558B2F" opacity="0.5"/>
+    <g transform="translate(638, 78)">
+      <line x1="-4" y1="-4" x2="4" y2="4" stroke="#E57373" stroke-width="1.5"/>
+      <line x1="4" y1="-4" x2="-4" y2="4" stroke="#E57373" stroke-width="1.5"/>
+    </g>
+
+    <!-- Tab bar -->
+    <rect x="155" y="93" width="490" height="24" fill="#1a2a1a"/>
+    <rect x="160" y="95" width="140" height="20" rx="4 4 0 0" fill="#263238"/>
+    <circle cx="178" cy="105" r="6" fill="#66BB6A"/>
+    <text x="220" y="109" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#C8E6C9" text-anchor="middle">Super Bear Adv...</text>
+    <rect x="305" y="97" width="18" height="16" rx="3" fill="#333"/>
+    <text x="314" y="109" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">+</text>
+
+    <!-- Left sidebar -->
+    <rect x="155" y="117" width="36" height="226" fill="#0d1a0d"/>
+    <!-- Home icon -->
+    <rect x="164" y="126" width="18" height="18" rx="4" fill="#2E7D32" opacity="0.6"/>
+    <polygon points="173,130 179,135 179,140 176,140 176,137 170,137 170,140 167,140 167,135" fill="#81C784"/>
+    <!-- APK icon -->
+    <rect x="164" y="150" width="18" height="18" rx="4" fill="#2E7D32" opacity="0.4"/>
+    <text x="173" y="163" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#81C784" text-anchor="middle">APK</text>
+    <!-- Settings icon -->
+    <rect x="164" y="174" width="18" height="18" rx="4" fill="#2E7D32" opacity="0.4"/>
+    <circle cx="173" cy="183" r="5" fill="none" stroke="#81C784" stroke-width="1"/>
+    <circle cx="173" cy="183" r="2" fill="#81C784"/>
+    <!-- Folder icon -->
+    <rect x="164" y="198" width="18" height="18" rx="4" fill="#2E7D32" opacity="0.4"/>
+    <rect x="168" y="204" width="12" height="9" rx="1" fill="#81C784" opacity="0.6"/>
+    <rect x="168" y="202" width="6" height="3" rx="1" fill="#81C784" opacity="0.6"/>
+
+    <!-- Game window -->
+    <rect x="191" y="117" width="454" height="226" fill="url(#gameBg)"/>
+
+    <!-- Sky -->
+    <rect x="191" y="117" width="454" height="100" fill="#81D4FA" opacity="0.3"/>
+    <!-- Clouds -->
+    <ellipse cx="270" cy="145" rx="35" ry="12" fill="#fff" opacity="0.3"/>
+    <ellipse cx="255" cy="142" rx="20" ry="10" fill="#fff" opacity="0.25"/>
+    <ellipse cx="450" cy="155" rx="28" ry="10" fill="#fff" opacity="0.25"/>
+    <ellipse cx="560" cy="140" rx="32" ry="11" fill="#fff" opacity="0.2"/>
+    <!-- Sun -->
+    <circle cx="580" cy="140" r="18" fill="#FFF176" opacity="0.4"/>
+    <circle cx="580" cy="140" r="14" fill="#FFEE58" opacity="0.5"/>
+
+    <!-- Mountains -->
+    <polygon points="191,250 250,180 310,250" fill="#2E7D32" opacity="0.5"/>
+    <polygon points="280,250 350,170 420,250" fill="#388E3C" opacity="0.5"/>
+    <polygon points="400,250 490,190 560,250" fill="#2E7D32" opacity="0.4"/>
+    <polygon points="530,250 600,200 645,250" fill="#388E3C" opacity="0.4"/>
+
+    <!-- Ground -->
+    <rect x="191" y="250" width="454" height="93" fill="#33691E" opacity="0.6"/>
+
+    <!-- Trees -->
+    <g transform="translate(240, 235)">
+      <rect x="-3" y="0" width="6" height="15" fill="#4E342E"/>
+      <polygon points="0,-20 -12,0 12,0" fill="#2E7D32"/>
+      <polygon points="0,-12 -10,5 10,5" fill="#388E3C"/>
+    </g>
+    <g transform="translate(380, 240)">
+      <rect x="-3" y="0" width="6" height="12" fill="#4E342E"/>
+      <polygon points="0,-18 -10,0 10,0" fill="#2E7D32"/>
+      <polygon points="0,-10 -8,5 8,5" fill="#388E3C"/>
+    </g>
+    <g transform="translate(540, 238)">
+      <rect x="-3" y="0" width="6" height="14" fill="#4E342E"/>
+      <polygon points="0,-18 -11,0 11,0" fill="#2E7D32"/>
+      <polygon points="0,-11 -9,5 9,5" fill="#388E3C"/>
+    </g>
+
+    <!-- Bear character -->
+    <g transform="translate(420, 270)">
+      <circle cx="-8" cy="-18" r="5" fill="#8D6E63"/>
+      <circle cx="8" cy="-18" r="5" fill="#8D6E63"/>
+      <circle cx="-8" cy="-18" r="3" fill="#A1887F"/>
+      <circle cx="8" cy="-18" r="3" fill="#A1887F"/>
+      <circle cx="0" cy="-10" r="12" fill="#8D6E63"/>
+      <ellipse cx="0" cy="-6" rx="7" ry="5" fill="#A1887F"/>
+      <circle cx="-4" cy="-13" r="2" fill="#fff"/>
+      <circle cx="-4" cy="-13" r="1" fill="#3E2723"/>
+      <circle cx="4" cy="-13" r="2" fill="#fff"/>
+      <circle cx="4" cy="-13" r="1" fill="#3E2723"/>
+      <ellipse cx="0" cy="-8" rx="2.5" ry="1.5" fill="#3E2723"/>
+      <ellipse cx="0" cy="8" rx="10" ry="12" fill="#8D6E63"/>
+      <ellipse cx="0" cy="10" rx="6" ry="7" fill="#A1887F"/>
+    </g>
+
+    <!-- Game HUD -->
+    <rect x="200" y="122" width="80" height="20" rx="4" fill="#000" opacity="0.4"/>
+    <text x="212" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFD54F" font-weight="700">Score: 1250</text>
+    <rect x="555" y="122" width="80" height="20" rx="4" fill="#000" opacity="0.4"/>
+    <circle cx="567" cy="132" r="6" fill="#FFD54F"/>
+    <text x="569" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#F57F17" text-anchor="middle" font-weight="900">$</text>
+    <text x="600" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#fff" font-weight="600" text-anchor="middle">x 999</text>
+
+    <!-- Windows Taskbar -->
+    <rect x="155" y="332" width="490" height="24" fill="#1a1a1a" opacity="0.9"/>
+    <!-- Start button with Windows logo -->
+    <rect x="160" y="335" width="18" height="18" rx="2" fill="#558B2F" opacity="0.7"/>
+    <rect x="163" y="338" width="5" height="5" fill="#A5D6A7"/>
+    <rect x="170" y="338" width="5" height="5" fill="#A5D6A7"/>
+    <rect x="163" y="345" width="5" height="5" fill="#A5D6A7"/>
+    <rect x="170" y="345" width="5" height="5" fill="#A5D6A7"/>
+    <!-- Search bar -->
+    <rect x="185" y="337" width="90" height="14" rx="3" fill="#333"/>
+    <text x="205" y="348" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#888">Search</text>
+    <!-- Taskbar icons -->
+    <rect x="285" y="337" width="14" height="14" rx="2" fill="#558B2F" opacity="0.5"/>
+    <rect x="305" y="337" width="14" height="14" rx="2" fill="#37474F"/>
+    <rect x="325" y="337" width="14" height="14" rx="2" fill="#37474F"/>
+    <!-- BlueStacks active in taskbar -->
+    <rect x="345" y="337" width="14" height="14" rx="2" fill="#66BB6A"/>
+    <rect x="345" y="351" width="14" height="2" fill="#A5D6A7"/>
+    <!-- System tray -->
+    <text x="590" y="348" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#888">EN</text>
+    <text x="615" y="348" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="#888">9:41</text>
+
+    <!-- Monitor bottom bezel -->
+    <rect x="140" y="356" width="520" height="14" rx="0 0 12 12" fill="#455A64"/>
+    <circle cx="400" cy="363" r="3" fill="#37474F"/>
+    <circle cx="400" cy="363" r="1.5" fill="#263238"/>
+  </g>
+
+  <!-- Monitor stand -->
+  <path d="M360,370 L440,370 L450,395 L350,395 Z" fill="#455A64"/>
+  <rect x="310" y="395" width="180" height="10" rx="3" fill="#37474F"/>
+
+  <!-- Left label -->
+  <g transform="translate(30, 140)">
+    <rect x="0" y="0" width="100" height="70" rx="10" fill="#fff" opacity="0.07"/>
+    <text x="50" y="24" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#81C784" text-anchor="middle" font-weight="600">EMULATOR</text>
+    <text x="50" y="42" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">BlueStacks</text>
+    <text x="50" y="58" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#A5D6A7" text-anchor="middle">v5.x</text>
+  </g>
+
+  <!-- Right label -->
+  <g transform="translate(670, 140)">
+    <rect x="0" y="0" width="100" height="70" rx="10" fill="#fff" opacity="0.07"/>
+    <text x="50" y="24" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#81C784" text-anchor="middle" font-weight="600">PLATFORM</text>
+    <text x="50" y="42" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">Windows</text>
+    <text x="50" y="58" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#A5D6A7" text-anchor="middle">PC / Laptop</text>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="400" y="435" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#81C784" text-anchor="middle" opacity="0.6">Play Super Bear Adventure on PC with BlueStacks Emulator</text>
+
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="15" fill="#66BB6A" opacity="0.1"/>
+  <circle cx="750" cy="50" r="20" fill="#558B2F" opacity="0.12"/>
+  <circle cx="50" cy="420" r="12" fill="#66BB6A" opacity="0.1"/>
+  <circle cx="750" cy="420" r="15" fill="#558B2F" opacity="0.1"/>
+</svg>

@@ -15,6 +15,8 @@ New to Super Bear Adventure? Start with our [beginner guide](/blog/how-to-play-b
 
 ## Snow Valley Overview
 
+![Snow Valley mountain peaks](/images/worlds/detail/snow-valley-peaks.svg)
+
 Snow Valley is a large, vertically oriented world set in a mountainous winter landscape. Unlike the relatively flat [Turtletown](/blog/turtletown-walkthrough/), Snow Valley stacks content across multiple elevation levels.
 
 The world is organized into six zones:
@@ -80,6 +82,8 @@ The Summit boss fight, detailed in the boss section below.
 
 ## Secret Cave Locations
 
+![Crystal ice cave interior](/images/worlds/detail/snow-valley-ice-cave.svg)
+
 Snow Valley contains nine secret caves, more than any other world.
 
 1. **Hot Springs Cave** -- Behind the waterfall near the Pine Forest entrance. Walk through the waterfall. Contains health restoration, 100 coins, and a lore inscription.
@@ -123,6 +127,8 @@ Track your progress with our [all secret stickers locations guide](/blog/all-sec
 
 ## Ice Puzzle Solutions
 
+![Snowboard track section](/images/worlds/detail/snow-valley-snowboard.svg)
+
 Snow Valley features three major puzzles.
 
 ### Puzzle 1: Cavern Slide Puzzle (Chamber 1)
@@ -164,6 +170,8 @@ The Summit holds several secrets beyond the boss encounter:
 
 
 ## Snow Valley Boss Fight
+
+![Frost Giant boss battle](/images/worlds/detail/snow-valley-boss.svg)
 
 The Summit boss is the Frost Wyrm, a massive ice serpent.
 

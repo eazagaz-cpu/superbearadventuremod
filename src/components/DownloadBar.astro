@@ -2,13 +2,13 @@
 import { SITE } from '../utils/seo';
 ---
 
-<div class="fixed bottom-0 left-0 right-0 z-40 bg-gradient-to-r from-game-green-dark to-game-green border-t border-game-green-light/20 shadow-[0_-4px_20px_rgba(0,0,0,0.15)]" id="download-bar">
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-gray-900 border-t border-gray-700 shadow-[0_-4px_30px_rgba(0,0,0,0.3)]" id="download-bar">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16 md:h-[72px] gap-4">
       <!-- Info -->
       <div class="hidden sm:flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
-          <svg class="w-6 h-6 text-white" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <div class="w-10 h-10 rounded-xl bg-game-green/20 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
             <circle cx="32" cy="32" r="28" fill="#795548"/>
             <ellipse cx="32" cy="32" rx="12" ry="14" fill="#a1887f"/>
             <ellipse cx="32" cy="30" rx="4" ry="3" fill="#4e342e"/>
@@ -18,14 +18,14 @@ import { SITE } from '../utils/seo';
         </div>
         <div>
           <p class="text-white font-bold text-sm md:text-base leading-tight">Super Bear Adventure Mod APK</p>
-          <p class="text-white/70 text-xs md:text-sm">v{SITE.download.version} &middot; {SITE.download.size} &middot; Free</p>
+          <p class="text-gray-400 text-xs md:text-sm">v{SITE.download.version} &middot; {SITE.download.size} &middot; Free</p>
         </div>
       </div>
 
       <!-- Download Button -->
       <a
         href={SITE.download.url}
-        class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 md:px-8 py-2.5 md:py-3 bg-white text-game-green-dark font-extrabold text-sm md:text-base rounded-xl hover:bg-game-green-50 hover:scale-105 active:scale-100 transition-all shadow-lg"
+        class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2.5 px-8 md:px-10 py-3 md:py-3.5 bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-sm md:text-base rounded-xl hover:scale-[1.03] active:scale-100 transition-all shadow-lg shadow-green-500/30 border border-green-400/50"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

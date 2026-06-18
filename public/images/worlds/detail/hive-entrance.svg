@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4920A"/>
+      <stop offset="50%" stop-color="#C47F0A"/>
+      <stop offset="100%" stop-color="#8B5E0A"/>
+    </linearGradient>
+    <radialGradient id="glowInner" cx="400" cy="280" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFEE88" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#FFD633" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFD633" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="honeyDrip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A817"/>
+      <stop offset="100%" stop-color="#CC8800" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="hexGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0B820"/>
+      <stop offset="100%" stop-color="#CC9200"/>
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A817"/>
+      <stop offset="100%" stop-color="#A06800"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Background honeycomb pattern -->
+  <g opacity="0.15">
+    <polygon points="100,50 130,35 160,50 160,80 130,95 100,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="160,50 190,35 220,50 220,80 190,95 160,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="220,50 250,35 280,50 280,80 250,95 220,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="520,50 550,35 580,50 580,80 550,95 520,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="580,50 610,35 640,50 640,80 610,95 580,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="640,50 670,35 700,50 700,80 670,95 640,80" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="130,80 160,65 190,80 190,110 160,125 130,110" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+    <polygon points="610,80 640,65 670,80 670,110 640,125 610,110" fill="none" stroke="#FFD633" stroke-width="1.5"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="370" width="800" height="80" fill="#6B4400" opacity="0.6"/>
+  <ellipse cx="400" cy="370" rx="350" ry="15" fill="#7A5200" opacity="0.4"/>
+
+  <!-- Glow from inside the entrance -->
+  <ellipse cx="400" cy="280" rx="130" ry="100" fill="url(#glowInner)" filter="url(#softGlow)"/>
+
+  <!-- Main Gate Structure - Hexagonal Arch -->
+  <path d="M240,370 L240,180 L310,100 L400,70 L490,100 L560,180 L560,370" fill="url(#gateGrad)" stroke="#8B5E0A" stroke-width="3"/>
+  <!-- Inner gate opening -->
+  <path d="M280,370 L280,200 L330,130 L400,105 L470,130 L520,200 L520,370" fill="#2A1800" opacity="0.85"/>
+  <!-- Warm glow inside -->
+  <path d="M280,370 L280,200 L330,130 L400,105 L470,130 L520,200 L520,370" fill="url(#glowInner)" opacity="0.5"/>
+
+  <!-- Gate honeycomb details - left pillar -->
+  <polygon points="250,200 268,190 286,200 286,220 268,230 250,220" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="250,230 268,220 286,230 286,250 268,260 250,250" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="250,260 268,250 286,260 286,280 268,290 250,280" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="250,290 268,280 286,290 286,310 268,320 250,310" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="250,320 268,310 286,320 286,340 268,350 250,340" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Gate honeycomb details - right pillar -->
+  <polygon points="514,200 532,190 550,200 550,220 532,230 514,220" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="514,230 532,220 550,230 550,250 532,260 514,250" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="514,260 532,250 550,260 550,280 532,290 514,280" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="514,290 532,280 550,290 550,310 532,320 514,310" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="514,320 532,310 550,320 550,340 532,350 514,340" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Arch honeycomb details -->
+  <polygon points="290,140 308,130 326,140 326,160 308,170 290,160" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="340,110 358,100 376,110 376,130 358,140 340,130" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="400,95 418,85 436,95 436,115 418,125 400,115" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="455,110 473,100 491,110 491,130 473,140 455,130" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="490,140 508,130 526,140 526,160 508,170 490,160" fill="url(#hexGrad)" stroke="#A06800" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Honey drips from top of gate -->
+  <ellipse cx="310" cy="100" rx="4" ry="12" fill="url(#honeyDrip)"/>
+  <ellipse cx="310" cy="118" rx="3" ry="5" fill="#E8A817" opacity="0.7"/>
+  <ellipse cx="360" cy="85" rx="3" ry="16" fill="url(#honeyDrip)"/>
+  <ellipse cx="360" cy="108" rx="3.5" ry="6" fill="#E8A817" opacity="0.7"/>
+  <ellipse cx="440" cy="88" rx="3.5" ry="14" fill="url(#honeyDrip)"/>
+  <ellipse cx="440" cy="108" rx="3" ry="5" fill="#E8A817" opacity="0.7"/>
+  <ellipse cx="490" cy="100" rx="4" ry="11" fill="url(#honeyDrip)"/>
+  <ellipse cx="490" cy="116" rx="3" ry="4.5" fill="#E8A817" opacity="0.7"/>
+  <ellipse cx="265" cy="185" rx="3" ry="9" fill="url(#honeyDrip)"/>
+  <ellipse cx="535" cy="185" rx="3" ry="9" fill="url(#honeyDrip)"/>
+
+  <!-- Bees -->
+  <!-- Bee 1 - top left -->
+  <g transform="translate(170, 120) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFD633"/>
+    <rect x="-8" y="-2" width="4" height="4" rx="1" fill="#2A1800"/>
+    <rect x="-2" y="-2" width="4" height="4" rx="1" fill="#2A1800"/>
+    <rect x="4" y="-2" width="4" height="4" rx="1" fill="#2A1800"/>
+    <ellipse cx="-5" cy="-10" rx="7" ry="5" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="5" cy="-10" rx="7" ry="5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="13" cy="-2" r="2" fill="#2A1800"/>
+  </g>
+
+  <!-- Bee 2 - top right -->
+  <g transform="translate(620, 90) rotate(10)">
+    <ellipse cx="0" cy="0" rx="10" ry="7" fill="#FFD633"/>
+    <rect x="-7" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <rect x="-1.5" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <rect x="4" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <ellipse cx="-4" cy="-8" rx="6" ry="4" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="4" cy="-8" rx="6" ry="4" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="11" cy="-1" r="1.5" fill="#2A1800"/>
+  </g>
+
+  <!-- Bee 3 - mid left -->
+  <g transform="translate(150, 250) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="9" ry="6" fill="#FFD633"/>
+    <rect x="-6" y="-1.5" width="3" height="3" rx="1" fill="#2A1800"/>
+    <rect x="-1.5" y="-1.5" width="3" height="3" rx="1" fill="#2A1800"/>
+    <rect x="3" y="-1.5" width="3" height="3" rx="1" fill="#2A1800"/>
+    <ellipse cx="-3" cy="-7" rx="5" ry="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="3" cy="-7" rx="5" ry="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="10" cy="-1" r="1.5" fill="#2A1800"/>
+  </g>
+
+  <!-- Bee 4 - mid right -->
+  <g transform="translate(660, 200) rotate(20)">
+    <ellipse cx="0" cy="0" rx="11" ry="7" fill="#FFD633"/>
+    <rect x="-7" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <rect x="-1.5" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <rect x="4" y="-1.5" width="3.5" height="3" rx="1" fill="#2A1800"/>
+    <ellipse cx="-4" cy="-9" rx="6" ry="4.5" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="4" cy="-9" rx="6" ry="4.5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="12" cy="-1" r="1.5" fill="#2A1800"/>
+  </g>
+
+  <!-- Bee 5 - near entrance -->
+  <g transform="translate(340, 180) rotate(-5)">
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#FFD633"/>
+    <rect x="-5" y="-1" width="2.5" height="2.5" rx="0.5" fill="#2A1800"/>
+    <rect x="-1" y="-1" width="2.5" height="2.5" rx="0.5" fill="#2A1800"/>
+    <rect x="3" y="-1" width="2.5" height="2.5" rx="0.5" fill="#2A1800"/>
+    <ellipse cx="-3" cy="-6" rx="4.5" ry="3" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="3" cy="-6" rx="4.5" ry="3" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="9" cy="0" r="1.2" fill="#2A1800"/>
+  </g>
+
+  <!-- Bee 6 - flying into entrance -->
+  <g transform="translate(450, 220) rotate(8)">
+    <ellipse cx="0" cy="0" rx="7" ry="4.5" fill="#FFD633"/>
+    <rect x="-4.5" y="-1" width="2.2" height="2.2" rx="0.5" fill="#2A1800"/>
+    <rect x="-1" y="-1" width="2.2" height="2.2" rx="0.5" fill="#2A1800"/>
+    <rect x="2.5" y="-1" width="2.2" height="2.2" rx="0.5" fill="#2A1800"/>
+    <ellipse cx="-2.5" cy="-5.5" rx="4" ry="2.8" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="2.5" cy="-5.5" rx="4" ry="2.8" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="7.5" cy="0" r="1" fill="#2A1800"/>
+  </g>
+
+  <!-- Pollen particles -->
+  <circle cx="180" cy="160" r="2" fill="#FFEE66" opacity="0.7"/>
+  <circle cx="200" cy="200" r="1.5" fill="#FFEE66" opacity="0.6"/>
+  <circle cx="130" cy="300" r="2" fill="#FFEE66" opacity="0.5"/>
+  <circle cx="600" cy="140" r="1.5" fill="#FFEE66" opacity="0.7"/>
+  <circle cx="650" cy="170" r="2" fill="#FFEE66" opacity="0.6"/>
+  <circle cx="680" cy="250" r="1.5" fill="#FFEE66" opacity="0.5"/>
+  <circle cx="350" cy="160" r="1.5" fill="#FFEE66" opacity="0.6"/>
+  <circle cx="470" cy="170" r="2" fill="#FFEE66" opacity="0.5"/>
+  <circle cx="220" cy="280" r="1.5" fill="#FFEE66" opacity="0.6"/>
+  <circle cx="580" cy="300" r="1.5" fill="#FFEE66" opacity="0.5"/>
+  <circle cx="700" cy="130" r="2.5" fill="#FFEE66" opacity="0.4"/>
+  <circle cx="110" cy="180" r="2.5" fill="#FFEE66" opacity="0.4"/>
+
+  <!-- Flowers at base - left -->
+  <g transform="translate(160, 365)">
+    <line x1="0" y1="0" x2="0" y2="20" stroke="#4A8C2A" stroke-width="2"/>
+    <circle cx="0" cy="-2" r="6" fill="#FF6B9D"/>
+    <circle cx="0" cy="-2" r="3" fill="#FFD633"/>
+    <ellipse cx="-6" cy="0" rx="4" ry="3" fill="#FF8FBB" transform="rotate(-30 -6 0)"/>
+    <ellipse cx="6" cy="0" rx="4" ry="3" fill="#FF8FBB" transform="rotate(30 6 0)"/>
+    <ellipse cx="-3" cy="-6" rx="4" ry="3" fill="#FF8FBB" transform="rotate(-70 -3 -6)"/>
+    <ellipse cx="3" cy="-6" rx="4" ry="3" fill="#FF8FBB" transform="rotate(70 3 -6)"/>
+  </g>
+  <g transform="translate(190, 368)">
+    <line x1="0" y1="0" x2="0" y2="15" stroke="#4A8C2A" stroke-width="1.5"/>
+    <circle cx="0" cy="-1" r="5" fill="#FFB84D"/>
+    <circle cx="0" cy="-1" r="2.5" fill="#FFD633"/>
+    <ellipse cx="-5" cy="0" rx="3.5" ry="2.5" fill="#FFC966"/>
+    <ellipse cx="5" cy="0" rx="3.5" ry="2.5" fill="#FFC966"/>
+  </g>
+
+  <!-- Flowers at base - right -->
+  <g transform="translate(630, 363)">
+    <line x1="0" y1="0" x2="0" y2="22" stroke="#4A8C2A" stroke-width="2"/>
+    <circle cx="0" cy="-2" r="7" fill="#E066FF"/>
+    <circle cx="0" cy="-2" r="3.5" fill="#FFD633"/>
+    <ellipse cx="-7" cy="0" rx="4.5" ry="3" fill="#CC44EE" transform="rotate(-30 -7 0)"/>
+    <ellipse cx="7" cy="0" rx="4.5" ry="3" fill="#CC44EE" transform="rotate(30 7 0)"/>
+    <ellipse cx="-3.5" cy="-7" rx="4.5" ry="3" fill="#CC44EE" transform="rotate(-70 -3.5 -7)"/>
+    <ellipse cx="3.5" cy="-7" rx="4.5" ry="3" fill="#CC44EE" transform="rotate(70 3.5 -7)"/>
+  </g>
+  <g transform="translate(660, 367)">
+    <line x1="0" y1="0" x2="0" y2="16" stroke="#4A8C2A" stroke-width="1.5"/>
+    <circle cx="0" cy="-1" r="5" fill="#FF6B9D"/>
+    <circle cx="0" cy="-1" r="2.5" fill="#FFD633"/>
+  </g>
+
+  <!-- Flowers center bottom -->
+  <g transform="translate(380, 372)">
+    <line x1="0" y1="0" x2="-3" y2="14" stroke="#4A8C2A" stroke-width="1.5"/>
+    <circle cx="0" cy="-1" r="4.5" fill="#66CCFF"/>
+    <circle cx="0" cy="-1" r="2" fill="#FFD633"/>
+  </g>
+  <g transform="translate(420, 370)">
+    <line x1="0" y1="0" x2="2" y2="16" stroke="#4A8C2A" stroke-width="1.5"/>
+    <circle cx="0" cy="-1" r="5" fill="#FF9966"/>
+    <circle cx="0" cy="-1" r="2.5" fill="#FFD633"/>
+  </g>
+
+  <!-- Label background -->
+  <rect x="240" y="400" width="320" height="36" rx="8" fill="#2A1800" opacity="0.7"/>
+
+  <!-- Label text -->
+  <text x="400" y="425" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#FFD633" text-anchor="middle" letter-spacing="2">The Hive Entrance</text>
+</svg>

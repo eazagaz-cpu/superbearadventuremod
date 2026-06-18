@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="appIconBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="openBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7CB342"/>
+      <stop offset="100%" stop-color="#558B2F"/>
+    </linearGradient>
+    <filter id="launchGlow">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="iconShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg4)" rx="12"/>
+
+  <!-- Radial glow -->
+  <circle cx="400" cy="195" r="160" fill="#66BB6A" opacity="0.08" filter="url(#softGlow)"/>
+  <circle cx="400" cy="195" r="120" fill="#81C784" opacity="0.06"/>
+
+  <!-- Title -->
+  <rect x="265" y="16" width="270" height="40" rx="20" fill="#fff" opacity="0.15"/>
+  <text x="400" y="43" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="2">STEP 4: LAUNCH GAME</text>
+
+  <!-- Radiating glow lines -->
+  <g opacity="0.2" stroke="#A5D6A7" stroke-width="2" stroke-linecap="round">
+    <line x1="400" y1="80" x2="400" y2="95"/>
+    <line x1="400" y1="295" x2="400" y2="310"/>
+    <line x1="290" y1="195" x2="305" y2="195"/>
+    <line x1="495" y1="195" x2="510" y2="195"/>
+    <line x1="318" y1="113" x2="327" y2="122"/>
+    <line x1="482" y1="113" x2="473" y2="122"/>
+    <line x1="318" y1="277" x2="327" y2="268"/>
+    <line x1="482" y1="277" x2="473" y2="268"/>
+  </g>
+
+  <!-- Outer rings -->
+  <circle cx="400" cy="195" r="105" fill="none" stroke="#A5D6A7" stroke-width="1" opacity="0.15"/>
+  <circle cx="400" cy="195" r="120" fill="none" stroke="#A5D6A7" stroke-width="0.7" opacity="0.1"/>
+  <circle cx="400" cy="195" r="135" fill="none" stroke="#A5D6A7" stroke-width="0.5" opacity="0.07"/>
+
+  <!-- App icon with bear -->
+  <g filter="url(#iconShadow)">
+    <rect x="340" y="135" width="120" height="120" rx="28" fill="url(#appIconBg)"/>
+    <rect x="340" y="135" width="120" height="60" rx="28" fill="#fff" opacity="0.1"/>
+
+    <!-- Bear silhouette -->
+    <g transform="translate(400, 195)">
+      <circle cx="-18" cy="-28" r="10" fill="#1B5E20"/>
+      <circle cx="18" cy="-28" r="10" fill="#1B5E20"/>
+      <circle cx="-18" cy="-28" r="6" fill="#2E7D32"/>
+      <circle cx="18" cy="-28" r="6" fill="#2E7D32"/>
+      <ellipse cx="0" cy="-18" rx="22" ry="20" fill="#1B5E20"/>
+      <ellipse cx="0" cy="-12" rx="12" ry="8" fill="#2E7D32"/>
+      <circle cx="-8" cy="-22" r="3" fill="#A5D6A7"/>
+      <circle cx="-8" cy="-22" r="1.5" fill="#1B5E20"/>
+      <circle cx="8" cy="-22" r="3" fill="#A5D6A7"/>
+      <circle cx="8" cy="-22" r="1.5" fill="#1B5E20"/>
+      <ellipse cx="0" cy="-14" rx="4" ry="3" fill="#1B5E20"/>
+      <path d="M-4,-11 Q0,-8 4,-11" fill="none" stroke="#1B5E20" stroke-width="1"/>
+      <ellipse cx="0" cy="10" rx="20" ry="16" fill="#1B5E20"/>
+      <ellipse cx="-22" cy="5" rx="6" ry="12" fill="#1B5E20" transform="rotate(15,-22,5)"/>
+      <ellipse cx="22" cy="5" rx="6" ry="12" fill="#1B5E20" transform="rotate(-15,22,5)"/>
+    </g>
+  </g>
+
+  <!-- Dashed orbit ring -->
+  <circle cx="400" cy="195" r="92" fill="none" stroke="#A5D6A7" stroke-width="2.5" opacity="0.4" stroke-dasharray="8,6"/>
+
+  <!-- Sparkle particles -->
+  <g fill="#A5D6A7">
+    <circle cx="290" cy="100" r="3" opacity="0.6"/>
+    <circle cx="510" cy="110" r="2" opacity="0.5"/>
+    <circle cx="280" cy="250" r="2.5" opacity="0.4"/>
+    <circle cx="520" cy="260" r="2" opacity="0.5"/>
+    <circle cx="330" cy="80" r="1.5" opacity="0.3"/>
+    <circle cx="470" cy="85" r="2" opacity="0.4"/>
+    <circle cx="300" cy="290" r="1.5" opacity="0.3"/>
+    <circle cx="500" cy="300" r="2.5" opacity="0.4"/>
+  </g>
+
+  <!-- Star bursts -->
+  <g fill="#fff" opacity="0.3">
+    <polygon points="265,140 268,148 276,148 270,153 272,161 265,156 258,161 260,153 254,148 262,148"/>
+    <polygon points="535,150 537,156 543,156 538,160 540,166 535,162 530,166 532,160 527,156 533,156"/>
+    <polygon points="310,300 312,305 317,305 313,308 314,313 310,310 306,313 307,308 303,305 308,305"/>
+    <polygon points="490,290 492,295 497,295 493,298 494,303 490,300 486,303 487,298 483,295 488,295"/>
+  </g>
+
+  <!-- OPEN button -->
+  <g>
+    <rect x="310" y="345" width="180" height="50" rx="25" fill="url(#openBtn)" filter="url(#iconShadow)"/>
+    <rect x="310" y="345" width="180" height="25" rx="13" fill="#fff" opacity="0.1"/>
+    <polygon points="360,362 360,382 377,372" fill="#fff" opacity="0.9"/>
+    <text x="420" y="377" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="700" letter-spacing="2">OPEN</text>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="400" y="425" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#81C784" text-anchor="middle" opacity="0.7">Super Bear Adventure - Mod Edition</text>
+
+  <!-- Decorative corners -->
+  <circle cx="60" cy="60" r="25" fill="#558B2F" opacity="0.15"/>
+  <circle cx="740" cy="60" r="18" fill="#66BB6A" opacity="0.12"/>
+  <circle cx="60" cy="390" r="18" fill="#66BB6A" opacity="0.12"/>
+  <circle cx="740" cy="390" r="25" fill="#558B2F" opacity="0.15"/>
+</svg>

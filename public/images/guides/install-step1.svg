@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="progressFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#A5D6A7"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg1)" rx="12"/>
+
+  <!-- Subtle diagonal lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="800" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="800" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="800" y2="150" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="150" x2="600" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="400" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="0" y2="450" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="0" y2="300" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Step badge -->
+  <rect x="290" y="22" width="220" height="40" rx="20" fill="#fff" opacity="0.15"/>
+  <text x="400" y="49" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="2">STEP 1: DOWNLOAD</text>
+
+  <!-- Central download icon area -->
+  <circle cx="400" cy="195" r="80" fill="#558B2F" opacity="0.3" filter="url(#glow1)"/>
+  <circle cx="400" cy="195" r="65" fill="#fff" opacity="0.12" stroke="#A5D6A7" stroke-width="2"/>
+
+  <!-- Download arrow -->
+  <g filter="url(#shadow1)">
+    <rect x="388" y="150" width="24" height="55" rx="4" fill="#A5D6A7"/>
+    <polygon points="400,230 370,195 385,195 415,195 430,195" fill="#A5D6A7"/>
+    <path d="M355,232 L355,248 Q355,258 365,258 L435,258 Q445,258 445,248 L445,232" fill="none" stroke="#C8E6C9" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- File size indicator -->
+  <rect x="490" y="170" width="120" height="50" rx="10" fill="#fff" opacity="0.1"/>
+  <text x="550" y="192" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#A5D6A7" text-anchor="middle" font-weight="600">FILE SIZE</text>
+  <text x="550" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="700">45 MB</text>
+
+  <!-- Download speed indicator -->
+  <rect x="190" y="170" width="120" height="50" rx="10" fill="#fff" opacity="0.1"/>
+  <text x="250" y="192" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#A5D6A7" text-anchor="middle" font-weight="600">SPEED</text>
+  <text x="250" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="700">2.4 MB/s</text>
+
+  <!-- Progress bar section -->
+  <rect x="150" y="290" width="500" height="60" rx="12" fill="#fff" opacity="0.08"/>
+  <text x="180" y="314" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#C8E6C9" font-weight="600">DOWNLOADING...</text>
+  <text x="620" y="314" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#C8E6C9" font-weight="600" text-anchor="end">60%</text>
+
+  <!-- Progress bar track -->
+  <rect x="180" y="324" width="440" height="14" rx="7" fill="#1B5E20"/>
+  <!-- Progress bar fill -->
+  <rect x="180" y="324" width="264" height="14" rx="7" fill="url(#progressFill)"/>
+  <!-- Progress bar shine -->
+  <rect x="180" y="324" width="264" height="7" rx="4" fill="#fff" opacity="0.15"/>
+
+  <!-- Bottom info bar -->
+  <rect x="150" y="370" width="500" height="40" rx="10" fill="#fff" opacity="0.06"/>
+  <text x="400" y="395" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#81C784" text-anchor="middle">SuperBearAdventure-Mod-v3.2.apk  |  27 MB of 45 MB downloaded</text>
+
+  <!-- Decorative corner elements -->
+  <circle cx="60" cy="60" r="30" fill="#558B2F" opacity="0.2"/>
+  <circle cx="740" cy="390" r="25" fill="#558B2F" opacity="0.2"/>
+  <circle cx="720" cy="60" r="15" fill="#66BB6A" opacity="0.15"/>
+  <circle cx="80" cy="400" r="18" fill="#66BB6A" opacity="0.15"/>
+</svg>

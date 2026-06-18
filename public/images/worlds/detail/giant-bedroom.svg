@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="brBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D2454"/>
+      <stop offset="60%" stop-color="#4A3C7A"/>
+      <stop offset="100%" stop-color="#6B5B8D"/>
+    </linearGradient>
+    <linearGradient id="brBed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9302C"/>
+      <stop offset="100%" stop-color="#8B1A1A"/>
+    </linearGradient>
+    <linearGradient id="brBlanket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D44040"/>
+      <stop offset="50%" stop-color="#B02828"/>
+      <stop offset="100%" stop-color="#8B1A1A"/>
+    </linearGradient>
+    <linearGradient id="brWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6C42"/>
+      <stop offset="100%" stop-color="#5C3D1E"/>
+    </linearGradient>
+    <linearGradient id="brLamp" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFE4A0"/>
+      <stop offset="100%" stop-color="#F5C842"/>
+    </linearGradient>
+    <radialGradient id="brGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFF5D4" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFF5D4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5C4A3A"/>
+      <stop offset="100%" stop-color="#3D2E20"/>
+    </linearGradient>
+    <linearGradient id="brCarpet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7B4B8A"/>
+      <stop offset="50%" stop-color="#6B3B7A"/>
+      <stop offset="100%" stop-color="#5B2B6A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#brBg)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="340" width="800" height="110" fill="url(#brFloor)"/>
+
+  <!-- Wall baseboard -->
+  <rect x="0" y="335" width="800" height="10" fill="#4A3628"/>
+
+  <!-- Carpet / Rug -->
+  <rect x="150" y="350" width="500" height="60" rx="5" fill="url(#brCarpet)" opacity="0.7"/>
+  <rect x="160" y="355" width="480" height="50" rx="3" fill="none" stroke="#9B6BAA" stroke-width="1.5" opacity="0.5"/>
+  <rect x="175" y="362" width="450" height="36" rx="2" fill="none" stroke="#9B6BAA" stroke-width="1" opacity="0.3"/>
+
+  <!-- Enormous bed frame -->
+  <!-- Bedposts -->
+  <rect x="120" y="120" width="30" height="230" rx="4" fill="url(#brWood)" stroke="#3D2410" stroke-width="2"/>
+  <rect x="540" y="120" width="30" height="230" rx="4" fill="url(#brWood)" stroke="#3D2410" stroke-width="2"/>
+  <!-- Headboard panel -->
+  <rect x="120" y="100" width="450" height="80" rx="6" fill="url(#brWood)" stroke="#3D2410" stroke-width="2.5"/>
+  <rect x="140" y="110" width="120" height="55" rx="4" fill="#7A5A30" stroke="#5C3D1E" stroke-width="1"/>
+  <rect x="280" y="110" width="120" height="55" rx="4" fill="#7A5A30" stroke="#5C3D1E" stroke-width="1"/>
+  <rect x="420" y="110" width="120" height="55" rx="4" fill="#7A5A30" stroke="#5C3D1E" stroke-width="1"/>
+  <!-- Bed top post balls -->
+  <circle cx="135" cy="100" r="12" fill="#7A5A30" stroke="#3D2410" stroke-width="2"/>
+  <circle cx="555" cy="100" r="12" fill="#7A5A30" stroke="#3D2410" stroke-width="2"/>
+
+  <!-- Mattress -->
+  <rect x="145" y="200" width="400" height="150" rx="8" fill="#F5F0E8" stroke="#D0C8B8" stroke-width="2"/>
+
+  <!-- Blanket -->
+  <rect x="145" y="220" width="400" height="130" rx="6" fill="url(#brBlanket)"/>
+  <!-- Blanket fold -->
+  <path d="M145,240 Q345,225 545,240" fill="none" stroke="#A02020" stroke-width="2" opacity="0.6"/>
+  <rect x="145" y="220" width="400" height="25" rx="4" fill="#D44040" opacity="0.7"/>
+
+  <!-- Pillows -->
+  <rect x="170" y="185" width="110" height="45" rx="20" fill="#FFFAF0" stroke="#E8E0D0" stroke-width="1.5"/>
+  <line x1="225" y1="190" x2="225" y2="225" stroke="#E8E0D0" stroke-width="1" opacity="0.5"/>
+  <rect x="310" y="185" width="110" height="45" rx="20" fill="#FFFAF0" stroke="#E8E0D0" stroke-width="1.5"/>
+  <line x1="365" y1="190" x2="365" y2="225" stroke="#E8E0D0" stroke-width="1" opacity="0.5"/>
+  <rect x="440" y="190" width="90" height="38" rx="18" fill="#F0EBE0" stroke="#E0D8C8" stroke-width="1.5"/>
+
+  <!-- Nightstand -->
+  <rect x="610" y="230" width="100" height="110" rx="4" fill="url(#brWood)" stroke="#3D2410" stroke-width="2"/>
+  <rect x="620" y="270" width="80" height="25" rx="2" fill="#6B4E2E" stroke="#3D2410" stroke-width="1"/>
+  <rect x="650" y="279" width="20" height="7" rx="3" fill="#A0784C"/>
+  <rect x="620" y="305" width="80" height="25" rx="2" fill="#6B4E2E" stroke="#3D2410" stroke-width="1"/>
+  <rect x="650" y="314" width="20" height="7" rx="3" fill="#A0784C"/>
+
+  <!-- Lamp on nightstand -->
+  <rect x="648" y="195" width="14" height="35" rx="2" fill="#A0784C"/>
+  <!-- Lampshade (trapezoid) -->
+  <polygon points="630,195 680,195 690,165 620,165" fill="url(#brLamp)" stroke="#D4A76A" stroke-width="1.5"/>
+  <!-- Lamp glow -->
+  <circle cx="660" cy="180" r="80" fill="url(#brGlow)"/>
+
+  <!-- Giant alarm clock -->
+  <circle cx="660" cy="252" r="22" fill="#2C3E50" stroke="#1A252F" stroke-width="2"/>
+  <circle cx="660" cy="252" r="18" fill="#34495E"/>
+  <circle cx="660" cy="252" r="16" fill="#ECF0F1"/>
+  <!-- Clock hands -->
+  <line x1="660" y1="252" x2="660" y2="240" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+  <line x1="660" y1="252" x2="670" y2="252" stroke="#C0392B" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="660" cy="252" r="2" fill="#2C3E50"/>
+  <!-- Clock bells -->
+  <circle cx="648" cy="228" r="6" fill="#7F8C8D" stroke="#5D6D7E" stroke-width="1"/>
+  <circle cx="672" cy="228" r="6" fill="#7F8C8D" stroke="#5D6D7E" stroke-width="1"/>
+  <rect x="656" y="224" width="8" height="6" rx="2" fill="#7F8C8D"/>
+  <!-- Clock legs -->
+  <line x1="643" y1="272" x2="640" y2="280" stroke="#1A252F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="677" y1="272" x2="680" y2="280" stroke="#1A252F" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Tiny bear climbing bedpost -->
+  <g transform="translate(548,160)">
+    <!-- Bear body -->
+    <ellipse cx="0" cy="8" rx="6" ry="8" fill="#8B5E3C"/>
+    <!-- Bear head -->
+    <circle cx="0" cy="-2" r="5.5" fill="#A0724E"/>
+    <!-- Ears -->
+    <circle cx="-4.5" cy="-6" r="2.5" fill="#8B5E3C"/>
+    <circle cx="4.5" cy="-6" r="2.5" fill="#8B5E3C"/>
+    <circle cx="-4.5" cy="-6" r="1.2" fill="#D4A76A"/>
+    <circle cx="4.5" cy="-6" r="1.2" fill="#D4A76A"/>
+    <!-- Eyes -->
+    <circle cx="-2" cy="-2.5" r="1" fill="#2C1810"/>
+    <circle cx="2" cy="-2.5" r="1" fill="#2C1810"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="0.5" rx="1.2" ry="0.8" fill="#2C1810"/>
+    <!-- Arms reaching for bedpost -->
+    <line x1="-5" y1="5" x2="-10" y2="0" stroke="#8B5E3C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="5" x2="10" y2="1" stroke="#8B5E3C" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="-3" y1="15" x2="-4" y2="20" stroke="#8B5E3C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="3" y1="15" x2="4" y2="20" stroke="#8B5E3C" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Window on wall (moonlight) -->
+  <rect x="30" y="130" width="60" height="80" rx="3" fill="#4A6FA5" stroke="#3D2E20" stroke-width="4"/>
+  <line x1="60" y1="130" x2="60" y2="210" stroke="#3D2E20" stroke-width="2"/>
+  <line x1="30" y1="170" x2="90" y2="170" stroke="#3D2E20" stroke-width="2"/>
+  <!-- Moon -->
+  <circle cx="55" cy="155" r="10" fill="#F0E8D0" opacity="0.8"/>
+  <!-- Stars -->
+  <circle cx="75" cy="148" r="1" fill="#FFF" opacity="0.5"/>
+  <circle cx="70" cy="165" r="1.2" fill="#FFF" opacity="0.4"/>
+
+  <!-- Label -->
+  <rect x="240" y="410" width="320" height="35" rx="6" fill="#2D2454" opacity="0.9"/>
+  <text x="400" y="434" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#E8D5F5" letter-spacing="2">Giant Bedroom</text>
+</svg>

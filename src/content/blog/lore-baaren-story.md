@@ -18,6 +18,8 @@ For players who are still working through the game's content, be aware that this
 
 ## The Kingdom of Earthkwak
 
+![Kingdom of Earthkwak map](/images/misc/lore-kingdom-map.svg)
+
 ### Origins and Geography
 
 The Kingdom of Earthkwak is the primary setting of Super Bear Adventure. It is a vast kingdom encompassing diverse biomes, from lush green forests and tropical beaches to frozen mountain peaks and scorching deserts. The kingdom gets its name from the ancient geological events that shaped the land, with earthquakes playing a significant role in the formation of its varied terrain.
@@ -44,6 +46,8 @@ This decentralized structure is both a strength and a vulnerability. While it al
 
 ## Baaren: The Bear Hero
 
+![Baaren the brave bear](/images/characters/baaren-hero.svg)
+
 ### Who Is Baaren?
 
 Baaren is the protagonist of Super Bear Adventure, a brave and good-natured bear who finds himself thrust into the role of hero when the Kingdom of Earthkwak faces crisis. Unlike many video game protagonists who are motivated by revenge or a quest for power, Baaren is driven by a simple desire to help others and protect his home.
@@ -61,6 +65,8 @@ Baaren's primary motivation is the protection of Earthkwak and its inhabitants. 
 The NPCs in each region react to Baaren with increasing respect and gratitude as he helps them, creating a narrative arc where Baaren evolves from an unknown bear to a recognized hero. This progression is subtle but meaningful, told through changing dialogue and NPC behavior rather than explicit cutscenes.
 
 ## The Villains of Earthkwak
+
+![The purple honey threat](/images/misc/lore-purple-honey.svg)
 
 ### The Primary Antagonist
 
@@ -89,6 +95,8 @@ The Beemothep Desert bosses are perhaps the most lore-rich encounters in the gam
 The Hive's boss encounters explore themes of duty, loyalty, and the conflict between individual will and collective responsibility. The bee society's rigid hierarchy provides a backdrop for some of the game's most thought-provoking narrative moments.
 
 ## The Supporting Cast
+
+![Friendly NPCs of the kingdom](/images/characters/friendly-npcs.svg)
 
 ### Friendly NPCs
 

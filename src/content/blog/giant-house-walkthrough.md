@@ -81,6 +81,8 @@ You enter Giant House through a crack in the baseboard of the main hallway. This
 
 ### The Kitchen
 
+![Giant kitchen navigation](/images/worlds/detail/giant-kitchen.svg)
+
 The kitchen is the largest and most complex room in Giant House. It is also one of the most dangerous due to hot surfaces and water hazards.
 
 **Missions in this area:**
@@ -138,6 +140,8 @@ The living room is the most platforming-intensive room, featuring tall bookshelv
 
 ### The Bedroom
 
+![Giant bedroom exploration](/images/worlds/detail/giant-bedroom.svg)
+
 The bedroom features a massive bed as its centerpiece, along with a desk, wardrobe, and toy chest that all serve as platforming structures.
 
 **Missions in this area:**
@@ -192,6 +196,8 @@ The bathroom is the most hazard-dense room due to water everywhere. It features 
 
 ### The Attic
 
+![Giant attic secrets](/images/worlds/detail/giant-attic.svg)
+
 The attic is an optional area accessed by climbing through a hatch in the bedroom ceiling. It is one of the most rewarding areas in Giant House.
 
 **Missions in this area:**
@@ -238,6 +244,8 @@ The basement is the final area of Giant House and the location of the world boss
 - A loose brick in the basement wall near the stairs can be pushed to reveal a small nook with a rare collectible.
 
 ## The Giant House Boss Fight
+
+![House Cat boss battle](/images/worlds/detail/giant-boss.svg)
 
 The Giant House boss is the House Cat, a massive feline that has been patrolling certain rooms throughout your exploration. In the basement, you confront it in a proper boss arena.
 

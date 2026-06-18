@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="mktSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="40%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFE082"/>
+    </linearGradient>
+    <linearGradient id="mktGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="100%" stop-color="#6D4C41"/>
+    </linearGradient>
+    <pattern id="awningRed" width="16" height="20" patternUnits="userSpaceOnUse">
+      <rect width="8" height="20" fill="#E53935"/>
+      <rect x="8" width="8" height="20" fill="#FFCDD2"/>
+    </pattern>
+    <pattern id="awningBlue" width="16" height="20" patternUnits="userSpaceOnUse">
+      <rect width="8" height="20" fill="#1E88E5"/>
+      <rect x="8" width="8" height="20" fill="#BBDEFB"/>
+    </pattern>
+    <pattern id="awningGreen" width="16" height="20" patternUnits="userSpaceOnUse">
+      <rect width="8" height="20" fill="#43A047"/>
+      <rect x="8" width="8" height="20" fill="#C8E6C9"/>
+    </pattern>
+    <radialGradient id="goldenLight" cx="0.5" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#FFECB3" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFE082" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coinGrad" cx="0.35" cy="0.35">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="60%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </radialGradient>
+    <radialGradient id="starGrad" cx="0.4" cy="0.4">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFC107"/>
+    </radialGradient>
+    <linearGradient id="crateGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A1887F"/>
+      <stop offset="100%" stop-color="#795548"/>
+    </linearGradient>
+    <linearGradient id="bannerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C62828"/>
+      <stop offset="50%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#mktSky)"/>
+  <rect width="800" height="450" fill="url(#goldenLight)"/>
+  <rect x="0" y="320" width="800" height="130" fill="url(#mktGround)"/>
+  <g opacity="0.2">
+    <circle cx="50" cy="360" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="80" cy="370" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="120" cy="355" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="160" cy="365" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="200" cy="358" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="240" cy="368" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="280" cy="355" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="320" cy="362" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="360" cy="370" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="400" cy="358" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="440" cy="365" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="480" cy="355" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="520" cy="368" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="560" cy="360" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="600" cy="370" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="640" cy="358" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="680" cy="365" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="720" cy="355" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="760" cy="368" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="100" cy="390" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="200" cy="395" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="300" cy="388" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="400" cy="392" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="500" cy="385" r="12" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="600" cy="395" r="10" fill="none" stroke="#5D4037" stroke-width="1"/>
+    <circle cx="700" cy="390" r="11" fill="none" stroke="#5D4037" stroke-width="1"/>
+  </g>
+  <rect x="0" y="120" width="80" height="200" fill="#FFCC80" opacity="0.6"/>
+  <rect x="720" y="100" width="80" height="220" fill="#FFE0B2" opacity="0.6"/>
+  <rect x="60" y="140" width="70" height="180" fill="#FFE0B2" opacity="0.5"/>
+  <rect x="680" y="130" width="60" height="190" fill="#FFCC80" opacity="0.5"/>
+  <path d="M80,70 Q400,40 720,70" stroke="#8D6E63" stroke-width="3" fill="none"/>
+  <polygon points="200,52 215,52 215,85 207,78 200,85" fill="#E53935"/>
+  <polygon points="280,48 295,48 295,80 287,73 280,80" fill="#1E88E5"/>
+  <polygon points="360,45 375,45 375,78 367,71 360,78" fill="#43A047"/>
+  <polygon points="440,45 455,45 455,78 447,71 440,78" fill="#FFC107"/>
+  <polygon points="520,48 535,48 535,80 527,73 520,80" fill="#E53935"/>
+  <polygon points="600,52 615,52 615,85 607,78 600,85" fill="#7B1FA2"/>
+  <path d="M80,70 Q400,40 720,70" stroke="#6D4C41" stroke-width="1.5" fill="none"/>
+  <rect x="250" y="80" width="300" height="35" rx="4" fill="url(#bannerGrad)"/>
+  <rect x="248" y="78" width="304" height="39" rx="5" fill="none" stroke="#8B0000" stroke-width="1.5"/>
+  <text x="400" y="104" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFF9C4" letter-spacing="2">TURTLETOWN MARKET</text>
+  <g>
+    <rect x="60" y="200" width="180" height="120" fill="#FFCC80"/>
+    <rect x="62" y="202" width="176" height="116" fill="#FFE0B2"/>
+    <rect x="55" y="275" width="190" height="12" fill="#8D6E63" rx="2"/>
+    <polygon points="50,200 240,200 230,160 60,160" fill="url(#awningRed)"/>
+    <path d="M50,200 Q75,210 100,200 Q125,210 150,200 Q175,210 200,200 Q225,210 240,200" stroke="#C62828" stroke-width="2" fill="none"/>
+    <rect x="60" y="160" width="5" height="160" fill="#6D4C41"/>
+    <rect x="235" y="160" width="5" height="160" fill="#6D4C41"/>
+    <circle cx="90" cy="265" r="8" fill="#E53935"/>
+    <circle cx="108" cy="265" r="8" fill="#E53935"/>
+    <circle cx="99" cy="255" r="8" fill="#C62828"/>
+    <line x1="99" y1="248" x2="101" y2="244" stroke="#4E342E" stroke-width="1.5"/>
+    <line x1="90" y1="258" x2="92" y2="254" stroke="#4E342E" stroke-width="1.5"/>
+    <line x1="108" y1="258" x2="110" y2="254" stroke="#4E342E" stroke-width="1.5"/>
+    <rect x="140" y="252" width="10" height="18" fill="#7B1FA2" rx="2"/>
+    <rect x="138" y="250" width="14" height="5" fill="#9C27B0" rx="2"/>
+    <circle cx="145" cy="248" r="3" fill="#CE93D8"/>
+    <rect x="160" y="255" width="10" height="15" fill="#1E88E5" rx="2"/>
+    <rect x="158" y="253" width="14" height="5" fill="#42A5F5" rx="2"/>
+    <circle cx="165" cy="251" r="3" fill="#90CAF9"/>
+    <rect x="180" y="252" width="10" height="18" fill="#43A047" rx="2"/>
+    <rect x="178" y="250" width="14" height="5" fill="#66BB6A" rx="2"/>
+    <circle cx="183" cy="248" r="3" fill="#A5D6A7"/>
+    <polygon points="120,230 122,236 128,237 124,241 125,247 120,244 115,247 116,241 112,237 118,236" fill="url(#starGrad)" transform="scale(0.7) translate(50,70)"/>
+  </g>
+  <g>
+    <rect x="280" y="185" width="200" height="135" fill="#FFCC80"/>
+    <rect x="282" y="187" width="196" height="131" fill="#FFE0B2"/>
+    <rect x="275" y="270" width="210" height="12" fill="#8D6E63" rx="2"/>
+    <polygon points="270,185 490,185 480,145 280,145" fill="url(#awningBlue)"/>
+    <path d="M270,185 Q300,195 330,185 Q360,195 390,185 Q420,195 450,185 Q475,195 490,185" stroke="#1565C0" stroke-width="2" fill="none"/>
+    <rect x="280" y="145" width="5" height="175" fill="#6D4C41"/>
+    <rect x="475" y="145" width="5" height="175" fill="#6D4C41"/>
+    <polygon points="310,250 313,258 322,259 316,264 317,273 310,268 303,273 304,264 298,259 307,258" fill="url(#starGrad)"/>
+    <polygon points="350,248 353,256 362,257 356,262 357,271 350,266 343,271 344,262 338,257 347,256" fill="url(#starGrad)"/>
+    <polygon points="390,250 393,258 402,259 396,264 397,273 390,268 383,273 384,264 378,259 387,258" fill="url(#starGrad)"/>
+    <circle cx="430" cy="258" r="10" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1.5"/>
+    <text x="430" y="263" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8B6508">$</text>
+    <circle cx="455" cy="255" r="10" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1.5"/>
+    <text x="455" y="260" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8B6508">$</text>
+    <polygon points="320,225 325,215 330,225" fill="#E53935"/>
+    <polygon points="345,225 350,215 355,225" fill="#1E88E5"/>
+    <polygon points="370,225 375,215 380,225" fill="#43A047"/>
+    <polygon points="395,225 400,215 405,225" fill="#7B1FA2"/>
+    <rect x="310" y="225" width="100" height="3" fill="#8D6E63"/>
+    <rect x="340" y="155" width="80" height="22" rx="3" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1"/>
+    <text x="380" y="171" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5D4037">TREASURES</text>
+  </g>
+  <g>
+    <rect x="530" y="195" width="190" height="125" fill="#FFCC80"/>
+    <rect x="532" y="197" width="186" height="121" fill="#FFE0B2"/>
+    <rect x="525" y="275" width="200" height="12" fill="#8D6E63" rx="2"/>
+    <polygon points="520,195 730,195 720,155 530,155" fill="url(#awningGreen)"/>
+    <path d="M520,195 Q548,205 576,195 Q604,205 632,195 Q660,205 688,195 Q710,205 730,195" stroke="#2E7D32" stroke-width="2" fill="none"/>
+    <rect x="530" y="155" width="5" height="165" fill="#6D4C41"/>
+    <rect x="715" y="155" width="5" height="165" fill="#6D4C41"/>
+    <ellipse cx="560" cy="262" rx="15" ry="8" fill="#D4A76A"/>
+    <ellipse cx="560" cy="260" rx="14" ry="6" fill="#E0BE89"/>
+    <ellipse cx="595" cy="264" rx="12" ry="7" fill="#D4A76A"/>
+    <ellipse cx="595" cy="262" rx="11" ry="5" fill="#E0BE89"/>
+    <ellipse cx="640" cy="262" rx="14" ry="10" fill="#FFC107"/>
+    <path d="M630,258 L640,262 L650,258" stroke="#FFB300" stroke-width="1" fill="none"/>
+    <circle cx="636" cy="260" r="2" fill="#FFB300"/>
+    <circle cx="644" cy="264" r="1.5" fill="#FFB300"/>
+    <path d="M680,270 Q680,250 690,248 Q700,250 700,270" stroke="#8D6E63" stroke-width="2" fill="#A1887F"/>
+    <line x1="680" y1="255" x2="700" y2="255" stroke="#8D6E63" stroke-width="1"/>
+    <line x1="680" y1="262" x2="700" y2="262" stroke="#8D6E63" stroke-width="1"/>
+    <circle cx="686" cy="250" r="4" fill="#66BB6A"/>
+    <circle cx="694" cy="249" r="4" fill="#4CAF50"/>
+    <circle cx="690" cy="246" r="3.5" fill="#81C784"/>
+    <rect x="590" y="165" width="70" height="22" rx="3" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1"/>
+    <text x="625" y="181" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5D4037">SUPPLIES</text>
+  </g>
+  <rect x="40" y="335" width="35" height="30" fill="url(#crateGrad)" rx="2"/>
+  <line x1="40" y1="350" x2="75" y2="350" stroke="#6D4C41" stroke-width="1.5"/>
+  <line x1="57" y1="335" x2="57" y2="365" stroke="#6D4C41" stroke-width="1.5"/>
+  <rect x="42" y="337" width="31" height="26" fill="none" stroke="#5D4037" stroke-width="0.5" rx="1"/>
+  <rect x="730" y="330" width="40" height="35" fill="url(#crateGrad)" rx="2"/>
+  <line x1="730" y1="347" x2="770" y2="347" stroke="#6D4C41" stroke-width="1.5"/>
+  <line x1="750" y1="330" x2="750" y2="365" stroke="#6D4C41" stroke-width="1.5"/>
+  <rect x="732" y="332" width="36" height="31" fill="none" stroke="#5D4037" stroke-width="0.5" rx="1"/>
+  <rect x="730" y="300" width="35" height="30" fill="url(#crateGrad)" rx="2"/>
+  <line x1="730" y1="315" x2="765" y2="315" stroke="#6D4C41" stroke-width="1.5"/>
+  <line x1="747" y1="300" x2="747" y2="330" stroke="#6D4C41" stroke-width="1.5"/>
+  <rect x="15" y="340" width="30" height="28" fill="url(#crateGrad)" rx="2"/>
+  <line x1="15" y1="354" x2="45" y2="354" stroke="#6D4C41" stroke-width="1.5"/>
+  <line x1="30" y1="340" x2="30" y2="368" stroke="#6D4C41" stroke-width="1.5"/>
+  <g transform="translate(400,350)">
+    <circle r="22" fill="url(#coinGrad)" stroke="#E65100" stroke-width="2"/>
+    <circle r="17" fill="none" stroke="#FFB300" stroke-width="1.5"/>
+    <text y="7" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#8B6508">$</text>
+  </g>
+  <circle cx="180" cy="340" r="6" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1"/>
+  <circle cx="600" cy="345" r="6" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1"/>
+  <circle cx="350" cy="350" r="5" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1"/>
+  <circle cx="500" cy="338" r="5" fill="url(#coinGrad)" stroke="#FF8F00" stroke-width="1"/>
+  <g>
+    <line x1="150" y1="160" x2="150" y2="140" stroke="#5D4037" stroke-width="1"/>
+    <rect x="142" y="140" width="16" height="20" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1" rx="2"/>
+    <circle cx="150" cy="150" r="4" fill="#FFB300" opacity="0.8"/>
+    <line x1="625" y1="155" x2="625" y2="135" stroke="#5D4037" stroke-width="1"/>
+    <rect x="617" y="135" width="16" height="20" fill="#FFF9C4" stroke="#8D6E63" stroke-width="1" rx="2"/>
+    <circle cx="625" cy="145" r="4" fill="#FFB300" opacity="0.8"/>
+  </g>
+  <rect x="240" y="405" width="320" height="36" rx="18" fill="rgba(0,0,0,0.45)"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="white" letter-spacing="1">Turtletown Market</text>
+</svg>

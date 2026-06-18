@@ -50,6 +50,8 @@ For details on each boss encounter, see our [boss fight strategy guide](/blog/bo
 
 ### Secret Skins
 
+![Skeleton Bear rare skin](/images/items/skin-skeleton.svg)
+
 These skins require special actions or discoveries to unlock.
 
 **Golden Bear** -- Unlocked by collecting all 15 secret stickers. The most prestigious skin in the game, covering your bear in shimmering gold with sparkle particles. See our [sticker locations guide](/blog/all-secret-stickers-locations/) for help finding them all.
@@ -75,6 +77,8 @@ The mod APK version available on our [homepage](/) includes additional skins not
 **Fire Bear** -- Your bear appears to be made of flames with animated fire effects. One of the most visually striking skins available.
 
 ## All Hats in Super Bear Adventure
+
+![Hat collection overview](/images/items/hat-collection.svg)
 
 ### Basic Hats
 
@@ -161,6 +165,8 @@ These effects are minor and do not significantly impact gameplay balance. They a
 
 ## Best Cosmetic Combinations
 
+![Royal Cape skin preview](/images/items/skin-royal.svg)
+
 While cosmetic choices are personal, here are some popular combinations favored by the community.
 
 **The Explorer** -- Panda Bear skin with Cowboy Hat. A classic adventure look that works well in every world.
@@ -180,6 +186,8 @@ While cosmetic choices are personal, here are some popular combinations favored 
 The most efficient way to build your cosmetic collection is to fully complete each world. This earns you a completion skin plus a boss drop hat per world, two items for each world cleared.
 
 ### Farm Coins for Shop Hats
+
+![Gold coins for purchases](/images/items/coins-gold.svg)
 
 The hat shop hats are easy to obtain if you have the coins. Dedicate a farming session to earn about 1,000 coins and you can buy most of the basic hats. Our [coin farming guide](/blog/unlimited-coins-farming/) has routes that earn 200 or more coins per minute.
 

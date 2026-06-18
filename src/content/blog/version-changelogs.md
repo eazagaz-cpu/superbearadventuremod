@@ -14,6 +14,8 @@ Super Bear Adventure has evolved significantly since its initial release, growin
 
 Understanding the game's version history helps you appreciate how far Super Bear Adventure has come and ensures you are running the latest version with all the newest content. If you are experiencing issues with a specific version, check our [troubleshooting guide](/blog/troubleshooting-common-errors/) for solutions.
 
+![Version timeline from v1.0 to v12.1.5](/images/misc/version-timeline.svg)
+
 ## How to Check Your Current Version
 
 Before diving into the changelogs, here is how to find out which version you are running:
@@ -120,6 +122,8 @@ The start of the version 12 era brought one of the game's most anticipated conte
 
 ## Version 11.x Series
 
+![Version 11 Arcade World](/images/misc/old-version-v11.svg)
+
 ### v11.5.0 - Holiday Update (December 2025)
 
 **Release Date**: December 2025
@@ -194,6 +198,8 @@ The start of the version 12 era brought one of the game's most anticipated conte
 - Improved water reflections and effects
 
 ## Version 10.x Series
+
+![Version 10 The Hive update](/images/misc/old-version-v10.svg)
 
 ### v10.5.0 - Desert Expansion (March 2025)
 
@@ -401,6 +407,8 @@ Each time the official game receives an update, the [mod APK version](/blog/supe
 - **Old versions**: Previous mod versions are archived on our [old versions page](/blog/super-bear-adventure-mod-apk-old-versions/) in case you need them for compatibility reasons.
 
 ## Staying Updated
+
+![Download stats 100M+](/images/misc/download-stats.svg)
 
 ### How to Get Notified About Updates
 

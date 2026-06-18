@@ -18,6 +18,8 @@ This guide covers absolutely everything you need to know about Beemothep Desert.
 
 ## How to Access Beemothep Desert
 
+![Great pyramid entrance](/images/worlds/detail/desert-pyramid.svg)
+
 Before you can explore the desert, you need to unlock it. Beemothep Desert is not available from the very start of the game. Here is what you need to do:
 
 1. **Complete the Turtletown main missions.** You need to finish at least the primary story missions in Turtletown before the desert becomes accessible. Our [Turtletown walkthrough](/blog/turtletown-walkthrough/) covers everything you need to complete there.
@@ -53,6 +55,8 @@ Several areas in Beemothep Desert contain quicksand patches. These are visually 
 - **Roll through.** If you have unlocked the roll ability, you can sometimes roll across quicksand faster than it can pull you down.
 
 ## The Sphinx and Its Riddles
+
+![Sphinx puzzle monument](/images/worlds/detail/desert-sphinx.svg)
 
 The Sphinx is the centerpiece of Beemothep Desert and the key to unlocking the most valuable rewards in the world. This massive stone structure sits at the center of the desert, and you will need to interact with it multiple times throughout your exploration.
 
@@ -189,6 +193,8 @@ There are twelve treasure chests spread across Beemothep Desert. Most contain co
 
 ## The Desert Boss Fight
 
+![Sand Pharaoh boss fight](/images/worlds/detail/desert-boss.svg)
+
 The Beemothep Desert boss is the Sand Wyrm, a massive serpentine creature that burrows through the sand and attacks from below. This is one of the harder boss fights in Super Bear Adventure and requires patience and pattern recognition.
 
 ### Phase 1: Sand Eruptions
@@ -211,6 +217,8 @@ The Sand Wyrm becomes more aggressive, combining sand eruptions with surface cha
 - Clear the scorpion minions in Phase 3 immediately. They can overwhelm you if ignored.
 
 ## Oasis Secrets
+
+![Desert oasis location](/images/worlds/detail/desert-oasis.svg)
 
 The starting oasis is more than just a safe zone. It contains several hidden areas and secrets that many players walk right past.
 

@@ -159,6 +159,12 @@ const schemas = [
           Unlike most mobile platformers that rely on 2D side-scrolling, Super Bear Adventure gives you full 3D freedom. You can run, jump, climb, swim, and even drive vehicles across massive open-world environments. The game's physics engine allows for creative movement techniques like wall jumps, speed boosts, and hidden shortcuts that speedrunners love. Learn all the advanced techniques in our <a href="/blog/how-to-play-beginner-guide/">beginner guide</a>.
         </p>
 
+        <!-- Gameplay Preview Image -->
+        <figure class="my-8">
+          <img src="/images/blog/beginner-guide.svg" alt="Super Bear Adventure gameplay — 3D platforming, open world exploration, and multiplayer" loading="lazy" decoding="async" class="rounded-2xl shadow-md w-full h-auto border border-gray-200" />
+          <figcaption class="mt-2 text-center text-xs text-gray-500 italic">Super Bear Adventure — 3D platforming in the Kingdom of Earthkwak</figcaption>
+        </figure>
+
         <h2 id="official-apk-vs-mod">Official Super Bear Adventure APK vs Mod APK</h2>
         <p>
           Understanding the difference helps you choose the right version. The official game on Google Play has over 100M+ downloads and a 4.4-star rating with 883K+ reviews. It's free but includes ads and requires grinding for coins to unlock cosmetics.
@@ -188,11 +194,42 @@ const schemas = [
         </p>
 
         <h2 id="whats-new">What's New in v{SITE.download.version} (Official 2026)</h2>
+
+        <!-- Version Screenshot -->
+        <figure class="my-6">
+          <img src="/images/blog/changelogs.svg" alt="Super Bear Adventure v12.1.5 update — latest 2026 patches and improvements" loading="lazy" decoding="async" class="rounded-2xl shadow-md w-full h-auto border border-gray-200" />
+        </figure>
+
+        <!-- Patch Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6 not-prose">
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 text-sm">v12.1.5 Patch</h4>
+            <p class="text-xs text-gray-500 mt-1">Multiplayer invite codes fixed (official Apr 2026)</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 text-sm">v12.1.4 Save Fix</h4>
+            <p class="text-xs text-gray-500 mt-1">Save corruption & invite copy/paste (official)</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <h4 class="font-bold text-gray-900 text-sm">v12.1.0 Content</h4>
+            <p class="text-xs text-gray-500 mt-1">Emotes, Super Bear Fighters, arcade updates</p>
+          </div>
+        </div>
+
         <ul>
-          <li><strong>Multiplayer invite code fix</strong> — Invite codes now work reliably across all regions</li>
-          <li><strong>Performance improvements</strong> — Smoother framerate on mid-range devices</li>
-          <li><strong>Bug fixes</strong> — Several crash fixes in The Hive and Mole Mines</li>
-          <li><strong>UI polish</strong> — Updated menus and loading screens</li>
+          <li><strong>v12.1.5</strong>: Fixed multiplayer <strong>invite codes</strong> (current Play Store version)</li>
+          <li><strong>v12.1.4</strong>: New invite format, copy/paste invites, and fixes for <strong>save file corruption</strong> that could wipe progress</li>
+          <li><strong>v12.1.3</strong>: Lobby <strong>version number</strong> display, timer fixes, and cosmetic fixes</li>
+          <li>Already in the game: <a href="/blog/the-hive-walkthrough/">The Hive</a> (since 2022), <a href="/blog/multiplayer-guide/">multiplayer</a> (since 12.0), and <a href="/blog/arcade-world-mini-games/">Super Bear Fighters</a> (since 12.1.0)</li>
         </ul>
         <p>For the complete history, see our <a href="/blog/version-changelogs/">version changelog archive</a>.</p>
 
@@ -265,12 +302,16 @@ const schemas = [
             </div>
           ))}
         </div>
-        <div class="text-center my-8">
-          <a href={SITE.download.url} class="btn-download">
+        <!-- Download CTA with visual -->
+        <div class="my-8 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-center text-white not-prose shadow-xl">
+          <img src="/images/blog/mod-download.svg" alt="Download Super Bear Adventure Mod APK" class="w-full max-w-md mx-auto h-auto rounded-xl mb-6 border border-white/20" loading="lazy" />
+          <h3 class="text-2xl font-extrabold mb-2">Ready to Download?</h3>
+          <p class="text-white/80 mb-6">Super Bear Adventure Mod APK v{SITE.download.version} — Free, safe, no root required</p>
+          <a href={SITE.download.url} class="inline-flex items-center justify-center gap-3 px-10 py-4 bg-white text-green-700 font-extrabold text-lg rounded-xl hover:bg-green-50 transition-all shadow-lg border border-white/50">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
-            Download Super Bear Adventure Mod APK v{SITE.download.version}
+            Download APK v{SITE.download.version} ({SITE.download.size})
           </a>
         </div>
 
@@ -289,6 +330,33 @@ const schemas = [
           <li>Enable battery saver mode for consistent performance</li>
           <li>Clear app cache periodically</li>
         </ul>
+
+        <!-- Safety & Trust Visual Section -->
+        <div class="my-10 not-prose">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl border border-emerald-200 p-5 text-center">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              </div>
+              <h4 class="font-bold text-emerald-800 text-sm mb-1">Virus Scanned</h4>
+              <p class="text-xs text-emerald-700">Verified clean by multiple antivirus engines</p>
+            </div>
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-5 text-center">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+              </div>
+              <h4 class="font-bold text-blue-800 text-sm mb-1">No Root Required</h4>
+              <p class="text-xs text-blue-700">Works on all standard Android devices</p>
+            </div>
+            <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl border border-amber-200 p-5 text-center">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+              </div>
+              <h4 class="font-bold text-amber-800 text-sm mb-1">Regular Updates</h4>
+              <p class="text-xs text-amber-700">Always synced with official game patches</p>
+            </div>
+          </div>
+        </div>
 
         <h2 id="final-verdict">Final Verdict & Conclusion</h2>
         <p>

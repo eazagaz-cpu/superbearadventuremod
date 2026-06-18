@@ -34,11 +34,15 @@ Behind the hat shop building, there is a small music box on the ground. Interact
 
 ### The Developer Room
 
+![Developer room easter egg](/images/misc/easter-egg-dev-room.svg)
+
 This is one of the most significant secrets in the entire game. To access the Developer Room, you need to complete every world and every mission, then return to the overworld hub. Go to the hilltop where the telescope is located. Instead of looking through the telescope, walk behind it and look at the base. A small button has appeared that was not there before. Press it to open a hidden door in the hillside.
 
 Inside the Developer Room, you find photos of the development team on the walls, a playable early prototype version of the game on an in-game computer, and the Astronaut Bear skin unlock. The room also contains a giant golden statue of a bear, which serves as the game's ultimate secret.
 
 ## Turtletown Secrets
+
+![Turtletown secret cave](/images/worlds/detail/turtletown-secret-cave.svg)
 
 ### The Upside-Down Island
 
@@ -185,6 +189,8 @@ Several NPCs throughout the game provide hints about nearby secrets. Talk to eve
 ## Tips for Finding Secrets
 
 ### Break Every Wall
+
+![Secret wall passages](/images/misc/easter-egg-secret-wall.svg)
 
 Breakable walls are the most common hiding spot for secrets. Any wall that has a slightly different texture, color, or shade compared to surrounding walls is likely breakable. Punch or ground pound suspicious walls to test them.
 

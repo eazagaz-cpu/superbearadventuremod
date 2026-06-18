@@ -18,6 +18,8 @@ If you are new to the game, we strongly recommend completing our [beginner guide
 
 ## How to Access the Mole Mines
 
+![Mole Mines entrance](/images/worlds/detail/mines-entrance.svg)
+
 The Mole Mines entrance is located on the northern edge of the overworld hub, behind a large boulder. To move the boulder, you need to have completed at least four main missions. Once the boulder is cleared, a mine shaft elevator becomes accessible. Ride it down to enter the Mole Mines.
 
 Before descending, stock up on supplies. The Mole Mines has fewer health pickups than most other worlds, so purchasing extra health items from the shop is wise. If you need coins for supplies, our [coin farming guide](/blog/unlimited-coins-farming/) has efficient strategies for building your funds quickly.

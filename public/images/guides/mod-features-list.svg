@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7CB342"/>
+      <stop offset="100%" stop-color="#558B2F"/>
+    </linearGradient>
+    <linearGradient id="headerLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#558B2F" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#7CB342"/>
+      <stop offset="80%" stop-color="#7CB342"/>
+      <stop offset="100%" stop-color="#558B2F" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="112%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="checkGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Background decorative elements -->
+  <circle cx="50" cy="50" r="100" fill="#33691E" opacity="0.2"/>
+  <circle cx="750" cy="400" r="120" fill="#1B5E20" opacity="0.25"/>
+  <circle cx="400" cy="225" r="250" fill="#2E7D32" opacity="0.06"/>
+
+  <!-- Subtle dot pattern -->
+  <g opacity="0.05">
+    <circle cx="80" cy="80" r="2" fill="#fff"/>
+    <circle cx="160" cy="80" r="2" fill="#fff"/>
+    <circle cx="240" cy="80" r="2" fill="#fff"/>
+    <circle cx="320" cy="80" r="2" fill="#fff"/>
+    <circle cx="400" cy="80" r="2" fill="#fff"/>
+    <circle cx="480" cy="80" r="2" fill="#fff"/>
+    <circle cx="560" cy="80" r="2" fill="#fff"/>
+    <circle cx="640" cy="80" r="2" fill="#fff"/>
+    <circle cx="720" cy="80" r="2" fill="#fff"/>
+    <circle cx="80" cy="370" r="2" fill="#fff"/>
+    <circle cx="160" cy="370" r="2" fill="#fff"/>
+    <circle cx="240" cy="370" r="2" fill="#fff"/>
+    <circle cx="320" cy="370" r="2" fill="#fff"/>
+    <circle cx="480" cy="370" r="2" fill="#fff"/>
+    <circle cx="560" cy="370" r="2" fill="#fff"/>
+    <circle cx="640" cy="370" r="2" fill="#fff"/>
+    <circle cx="720" cy="370" r="2" fill="#fff"/>
+  </g>
+
+  <!-- Title section -->
+  <text x="400" y="36" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#fff" font-weight="bold" letter-spacing="0.5">Mod Features Overview</text>
+  <line x1="200" y1="48" x2="600" y2="48" stroke="url(#headerLine)" stroke-width="2"/>
+  <text x="400" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#A5D6A7">All Premium Features Included</text>
+
+  <!-- Left column -->
+  <!-- Feature 1: Unlimited Coins -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="85" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="86" cy="114" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="78,114 84,121 96,107" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="116" y="108" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Unlimited Coins</text>
+    <text x="116" y="126" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Infinite in-game currency for purchases</text>
+    <!-- Coin icons -->
+    <circle cx="358" cy="108" r="8" fill="#FFD600" opacity="0.3"/>
+    <text x="358" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FFD600">$</text>
+  </g>
+
+  <!-- Feature 2: All Skins Unlocked -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="153" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="86" cy="182" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="78,182 84,189 96,175" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="116" y="176" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">All Skins Unlocked</text>
+    <text x="116" y="194" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Access every bear costume and outfit</text>
+    <!-- Skin icon -->
+    <circle cx="358" cy="176" r="8" fill="#8D6E63" opacity="0.4"/>
+    <circle cx="358" cy="176" r="5" fill="#A1887F" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 3: No Ads -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="221" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="86" cy="250" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="78,250 84,257 96,243" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="116" y="244" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">No Ads</text>
+    <text x="116" y="262" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Completely ad-free gaming experience</text>
+    <!-- No-ads icon -->
+    <rect x="351" y="242" width="14" height="10" rx="2" fill="none" stroke="#ef5350" stroke-width="1.5" opacity="0.4"/>
+    <line x1="349" y1="254" x2="367" y2="240" stroke="#ef5350" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 4: Speed Boost -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="289" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="86" cy="318" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="78,318 84,325 96,311" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="116" y="312" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Speed Boost</text>
+    <text x="116" y="330" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Adjustable movement speed multiplier</text>
+    <!-- Speed icon -->
+    <path d="M352,318 L358,312 L358,316 L366,316 L366,320 L358,320 L358,324 Z" fill="#7CB342" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 5: God Mode -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="357" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="86" cy="386" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="78,386 84,393 96,379" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="116" y="380" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">God Mode</text>
+    <text x="116" y="398" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Invincible bear - take zero damage</text>
+    <!-- Shield icon -->
+    <path d="M358,376 L351,380 L351,386 Q351,392 358,394 Q365,392 365,386 L365,380 Z" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Right column -->
+  <!-- Feature 6: All Levels Unlocked -->
+  <g filter="url(#cardShadow)">
+    <rect x="410" y="85" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="446" cy="114" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="438,114 444,121 456,107" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="108" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">All Levels Unlocked</text>
+    <text x="476" y="126" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Play any level from the start</text>
+    <!-- Lock open icon -->
+    <rect x="711" y="108" width="10" height="10" rx="2" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+    <path d="M713,108 L713,104 Q713,100 718,100 Q723,100 723,104" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 7: Unlimited Lives -->
+  <g filter="url(#cardShadow)">
+    <rect x="410" y="153" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="446" cy="182" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="438,182 444,189 456,175" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="176" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Unlimited Lives</text>
+    <text x="476" y="194" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Never run out of lives or retries</text>
+    <!-- Heart icon -->
+    <path d="M714,174 Q714,170 718,170 Q722,170 722,174 Q722,178 718,182 Q714,178 714,174 Z" fill="#ef5350" opacity="0.4"/>
+  </g>
+
+  <!-- Feature 8: Free Shopping -->
+  <g filter="url(#cardShadow)">
+    <rect x="410" y="221" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="446" cy="250" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="438,250 444,257 456,243" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="244" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Free Shopping</text>
+    <text x="476" y="262" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Buy any item for free in the shop</text>
+    <!-- Cart icon -->
+    <path d="M711,246 L715,246 L720,256 L726,256" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="720" cy="260" r="2" fill="#7CB342" opacity="0.5"/>
+    <circle cx="726" cy="260" r="2" fill="#7CB342" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 9: Anti-Ban Protection -->
+  <g filter="url(#cardShadow)">
+    <rect x="410" y="289" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="446" cy="318" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="438,318 444,325 456,311" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="312" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Anti-Ban Protection</text>
+    <text x="476" y="330" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Safe to use with built-in protection</text>
+    <!-- Shield check icon -->
+    <path d="M718,308 L711,312 L711,320 Q711,326 718,328 Q725,326 725,320 L725,312 Z" fill="#558B2F" opacity="0.3"/>
+    <polyline points="714,318 717,322 723,314" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Feature 10: Custom Controls -->
+  <g filter="url(#cardShadow)">
+    <rect x="410" y="357" width="340" height="58" rx="10" fill="url(#cardGrad)" stroke="#558B2F" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="446" cy="386" r="18" fill="url(#checkGrad)" filter="url(#checkGlow)"/>
+    <polyline points="438,386 444,393 456,379" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="476" y="380" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="bold">Custom Controls</text>
+    <text x="476" y="398" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#A5D6A7">Fully customizable control layout</text>
+    <!-- Gamepad icon -->
+    <rect x="710" y="380" width="18" height="10" rx="5" fill="none" stroke="#7CB342" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="715" cy="385" r="1.5" fill="#7CB342" opacity="0.5"/>
+    <circle cx="724" cy="385" r="1.5" fill="#7CB342" opacity="0.5"/>
+  </g>
+
+  <!-- Bottom footer -->
+  <text x="400" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#C5E1A5" font-weight="bold" letter-spacing="1">Complete Mod Features List</text>
+</svg>

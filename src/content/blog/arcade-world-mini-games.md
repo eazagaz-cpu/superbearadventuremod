@@ -18,6 +18,8 @@ This guide covers every mini-game in the Arcade World, explains the rules and sc
 
 ## Arcade World Layout
 
+![Arcade World machines](/images/misc/arcade-machines.svg)
+
 The Arcade World is organized into three main sections.
 
 **The Main Floor** contains the standard mini-game cabinets. These are available from the moment you enter the Arcade World. There are five standard mini-games on the Main Floor.
@@ -36,6 +38,8 @@ Ratings determine the coin rewards you receive. Bronze earns 20 coins, silver ea
 
 ### 1. Target Blast
 
+![Target Blast mini-game](/images/misc/arcade-target-blast.svg)
+
 **Genre**: Shooting Gallery
 
 **Rules**: Targets appear on a multi-lane range for 60 seconds. Tap or click on targets to shoot them. Regular targets are worth one point, golden targets are worth five points, and bomb targets subtract three points if hit. Targets appear for about two seconds before disappearing.
@@ -50,6 +54,8 @@ For platinum, you need to hit virtually every non-bomb target including all gold
 
 ### 2. Whack-a-Mole
 
+![Whack-a-Mole mini-game](/images/misc/arcade-whack-mole.svg)
+
 **Genre**: Reflex Game
 
 **Rules**: Moles pop out of nine holes arranged in a 3x3 grid. Moles stay up for about one and a half seconds. Hit moles for points. Regular moles are worth one point, golden moles are worth three points, and red moles subtract two points. Duration is 45 seconds.
@@ -63,6 +69,8 @@ For high scores, prioritize golden moles in corners. They are worth triple and a
 The timing trick for platinum is to start moving toward a hole as soon as you see movement, not after the mole fully appears. The emerging animation is about half a second, giving you a head start.
 
 ### 3. Honey Slide Racing
+
+![Honey Slide Racing](/images/misc/arcade-racing.svg)
 
 **Genre**: Racing
 

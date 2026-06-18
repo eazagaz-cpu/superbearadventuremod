@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="40%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <linearGradient id="forestFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#0D3B0E"/>
+    </linearGradient>
+    <linearGradient id="forestNear" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="bearBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A1887F"/>
+      <stop offset="100%" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="bearGolden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB74D"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+    <linearGradient id="healthBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="70%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="coopGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#81C784" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A5D6A7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#81C784" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#FFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0D3B0E" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skyBg)"/>
+  <rect width="800" height="450" fill="url(#sunGlow)"/>
+  <g fill="url(#forestFar)" opacity="0.6">
+    <polygon points="0,280 30,180 60,280"/>
+    <polygon points="40,280 75,160 110,280"/>
+    <polygon points="90,280 130,140 170,280"/>
+    <polygon points="150,280 185,170 220,280"/>
+    <polygon points="200,280 240,150 280,280"/>
+    <polygon points="270,280 305,175 340,280"/>
+    <polygon points="330,280 370,145 410,280"/>
+    <polygon points="390,280 425,165 460,280"/>
+    <polygon points="440,280 480,135 520,280"/>
+    <polygon points="510,280 545,160 580,280"/>
+    <polygon points="560,280 600,150 640,280"/>
+    <polygon points="620,280 660,170 700,280"/>
+    <polygon points="690,280 720,155 750,280"/>
+    <polygon points="740,280 775,175 800,280"/>
+  </g>
+  <g fill="url(#forestNear)" opacity="0.4">
+    <polygon points="-20,320 25,220 70,320"/>
+    <polygon points="50,320 100,200 150,320"/>
+    <polygon points="680,320 730,210 780,320"/>
+    <polygon points="740,320 785,230 830,320"/>
+  </g>
+  <rect x="0" y="310" width="800" height="140" fill="#1B5E20" opacity="0.8"/>
+  <path d="M0 310 Q100 305 200 312 Q300 300 400 308 Q500 302 600 310 Q700 304 800 308L800 320 0 320Z" fill="#2E7D32" opacity="0.6"/>
+  <g fill="#4CAF50" opacity="0.4">
+    <path d="M100,310 Q105,295 110,310"/>
+    <path d="M115,310 Q118,300 121,310"/>
+    <path d="M300,308 Q305,293 310,308"/>
+    <path d="M500,310 Q503,298 506,310"/>
+    <path d="M510,310 Q515,295 520,310"/>
+    <path d="M690,310 Q695,297 700,310"/>
+  </g>
+  <g filter="url(#softGlow)">
+    <path d="M290,260 Q400,180 510,260" fill="none" stroke="url(#coopGlow)" stroke-width="4" opacity="0.8">
+      <animate attributeName="stroke-width" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="340" cy="220" r="3" fill="#A5D6A7" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="220;215;220" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="200" r="4" fill="#FFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.15;0.6" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="200;193;200" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="460" cy="220" r="3" fill="#C8E6C9" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="220;215;220" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400,195)" filter="url(#glow)">
+      <path d="M0,-8 C-4,-14-14,-14-14,-6-14,2 0,12 0,12 0,12 14,2 14,-6 14,-14 4,-14 0,-8Z" fill="#E8F5E9" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.5;0.8" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  <g transform="translate(270,280)" filter="url(#shadow)">
+    <ellipse cy="10" rx="35" ry="30" fill="url(#bearBrown)"/>
+    <circle cy="-30" r="30" fill="url(#bearBrown)"/>
+    <circle cx="-22" cy="-52" r="12" fill="#5D4037"/>
+    <circle cx="22" cy="-52" r="12" fill="#5D4037"/>
+    <circle cx="-22" cy="-52" r="7" fill="#8D6E63"/>
+    <circle cx="22" cy="-52" r="7" fill="#8D6E63"/>
+    <ellipse cy="-22" rx="18" ry="14" fill="#A1887F" opacity="0.5"/>
+    <circle cx="-10" cy="-35" r="5" fill="#FFF"/>
+    <circle cx="10" cy="-35" r="5" fill="#FFF"/>
+    <circle cx="-9" cy="-34" r="3" fill="#212121"/>
+    <circle cx="11" cy="-34" r="3" fill="#212121"/>
+    <circle cx="-8" cy="-36" r="1.2" fill="#FFF"/>
+    <circle cx="12" cy="-36" r="1.2" fill="#FFF"/>
+    <ellipse cy="-24" rx="7" ry="4.5" fill="#4E342E"/>
+    <ellipse cy="-25.5" rx="2.5" ry="1.5" fill="#6D4C41"/>
+    <path d="M-6,-18 Q0,-12 6,-18" fill="none" stroke="#4E342E" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-30,0 Q-50,-15-40,-30" fill="none" stroke="#5D4037" stroke-width="12" stroke-linecap="round"/>
+    <path d="M30,0 Q50,-5 60,5" fill="none" stroke="#5D4037" stroke-width="12" stroke-linecap="round"/>
+    <ellipse cx="-14" cy="35" rx="10" ry="7" fill="#5D4037"/>
+    <ellipse cx="14" cy="35" rx="10" ry="7" fill="#5D4037"/>
+    <rect x="-35" y="-78" width="70" height="18" rx="4" fill="#000" opacity="0.5"/>
+    <text y="-64" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#A5D6A7">Player 1</text>
+  </g>
+  <g transform="translate(530,280)" filter="url(#shadow)">
+    <ellipse cy="10" rx="35" ry="30" fill="url(#bearGolden)"/>
+    <circle cy="-30" r="30" fill="url(#bearGolden)"/>
+    <circle cx="-22" cy="-52" r="12" fill="#E65100"/>
+    <circle cx="22" cy="-52" r="12" fill="#E65100"/>
+    <circle cx="-22" cy="-52" r="7" fill="#FF8F00"/>
+    <circle cx="22" cy="-52" r="7" fill="#FF8F00"/>
+    <ellipse cy="-22" rx="18" ry="14" fill="#FFB74D" opacity="0.5"/>
+    <circle cx="-10" cy="-35" r="5" fill="#FFF"/>
+    <circle cx="10" cy="-35" r="5" fill="#FFF"/>
+    <circle cx="-9" cy="-34" r="3" fill="#212121"/>
+    <circle cx="11" cy="-34" r="3" fill="#212121"/>
+    <circle cx="-8" cy="-36" r="1.2" fill="#FFF"/>
+    <circle cx="12" cy="-36" r="1.2" fill="#FFF"/>
+    <ellipse cy="-24" rx="7" ry="4.5" fill="#BF360C"/>
+    <ellipse cy="-25.5" rx="2.5" ry="1.5" fill="#E65100"/>
+    <path d="M-6,-18 Q0,-12 6,-18" fill="none" stroke="#BF360C" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-30,0 Q-50,-5-60,5" fill="none" stroke="#E65100" stroke-width="12" stroke-linecap="round"/>
+    <path d="M30,0 Q50,-15 40,-30" fill="none" stroke="#E65100" stroke-width="12" stroke-linecap="round"/>
+    <ellipse cx="-14" cy="35" rx="10" ry="7" fill="#E65100"/>
+    <ellipse cx="14" cy="35" rx="10" ry="7" fill="#E65100"/>
+    <rect x="-35" y="-78" width="70" height="18" rx="4" fill="#000" opacity="0.5"/>
+    <text y="-64" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#FFE082">Player 2</text>
+  </g>
+  <g transform="translate(400,40)">
+    <text y="-8" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="12" fill="#C8E6C9" letter-spacing="1">TEAM HEALTH</text>
+    <rect x="-150" width="300" height="24" rx="12" fill="#000" opacity="0.5"/>
+    <rect x="-150" width="300" height="24" rx="12" fill="none" stroke="#558B2F" stroke-width="1.5" opacity="0.5"/>
+    <rect x="-147" y="3" width="240" height="18" rx="9" fill="url(#healthBar)"/>
+    <rect x="-147" y="3" width="240" height="8" rx="6" fill="#FFF" opacity="0.15"/>
+    <g transform="translate(-170,12)">
+      <path d="M0,-5 C-2.5,-9-9,-9-9,-4-9,1 0,8 0,8 0,8 9,1 9,-4 9,-9 2.5,-9 0,-5Z" fill="#EF5350"/>
+    </g>
+    <g transform="translate(170,12)">
+      <path d="M0,-5 C-2.5,-9-9,-9-9,-4-9,1 0,8 0,8 0,8 9,1 9,-4 9,-9 2.5,-9 0,-5Z" fill="#EF5350"/>
+    </g>
+    <text y="17" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#FFF">82%</text>
+  </g>
+  <g transform="translate(400,85)">
+    <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#000" opacity="0.4"/>
+    <rect x="-55" y="-14" width="110" height="28" rx="14" fill="none" stroke="#81C784" stroke-width="1" opacity="0.5"/>
+    <circle cx="-28" r="5" fill="none" stroke="#A5D6A7" stroke-width="1.5"/>
+    <path d="M-35,8 Q-28,0-21,8" fill="none" stroke="#A5D6A7" stroke-width="1.5"/>
+    <circle cx="-20" r="5" fill="none" stroke="#A5D6A7" stroke-width="1.5"/>
+    <path d="M-27,8 Q-20,0-13,8" fill="none" stroke="#A5D6A7" stroke-width="1.5"/>
+    <text x="12" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="12" fill="#A5D6A7">CO-OP</text>
+  </g>
+  <g>
+    <circle cx="150" cy="200" r="2" fill="#C8E6C9" opacity="0.5">
+      <animate attributeName="cy" values="200;190;200" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="180" r="2.5" fill="#A5D6A7" opacity="0.4">
+      <animate attributeName="cy" values="180;170;180" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.15;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="250" r="1.5" fill="#E8F5E9" opacity="0.6">
+      <animate attributeName="cy" values="250;242;250" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="240" r="2" fill="#C8E6C9" opacity="0.45">
+      <animate attributeName="cy" values="240;232;240" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.1;0.45" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#FFF" opacity="0.9" letter-spacing="2">MULTIPLAYER CO-OP</text>
+  <line x1="260" y1="430" x2="540" y2="430" stroke="#81C784" stroke-width="2" opacity="0.5"/>
+</svg>

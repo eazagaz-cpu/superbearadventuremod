@@ -44,6 +44,8 @@ Make sure you are running the latest version of Super Bear Adventure. Each updat
 
 ## In-Game Settings Optimization
 
+![Settings menu options](/images/gameplay/settings-menu.svg)
+
 Super Bear Adventure has several in-game graphics settings that can be adjusted to improve performance. Access these through the Settings menu from the main screen or pause menu.
 
 ### Graphics Quality
@@ -109,6 +111,8 @@ Some versions of Super Bear Adventure allow you to set a target frame rate: 30 F
 If your device cannot maintain a steady 60 FPS, switch to 30 FPS. A consistent frame rate is more important than a high frame rate for gameplay feel.
 
 ## Recommended Settings by Device Tier
+
+![Performance settings optimization](/images/guides/performance-settings.svg)
 
 ### Low-End Devices (2GB RAM, Budget Processors)
 
@@ -226,6 +230,8 @@ If your device gets hot during extended play sessions, it will throttle performa
 If thermal throttling is a persistent issue, limit play sessions to 30 to 45 minutes, or play in a cool environment.
 
 ## Common Lag Scenarios and Solutions
+
+![Lag fix before and after](/images/misc/lag-fix-before-after.svg)
 
 ### Lag Only in Specific Areas
 

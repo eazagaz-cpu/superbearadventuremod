@@ -29,11 +29,11 @@
     @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-game-green font-semibold rounded-xl border-2 border-game-green/20 hover:border-game-green hover:bg-game-green-50 transition-all duration-300;
   }
   .btn-download {
-    @apply inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-game-green to-game-green-dark text-white font-extrabold text-xl rounded-2xl shadow-2xl shadow-game-green/40 hover:shadow-game-green/60 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 relative overflow-hidden;
+    @apply inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-green-600 to-green-700 text-white font-extrabold text-xl rounded-2xl shadow-2xl shadow-green-700/40 hover:from-green-700 hover:to-green-800 hover:shadow-green-800/50 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 relative overflow-hidden border-2 border-green-500/30;
   }
   .btn-download::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full;
+    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 -translate-x-full;
     animation: shimmer 3s infinite;
   }
   .card {

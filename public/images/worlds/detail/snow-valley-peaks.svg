@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1e3d"/>
+      <stop offset="40%" stop-color="#1a4a7a"/>
+      <stop offset="70%" stop-color="#5b9bd5"/>
+      <stop offset="100%" stop-color="#a8d8f0"/>
+    </linearGradient>
+    <linearGradient id="sunsetGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1e3d" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#0a1e3d" stop-opacity="0"/>
+      <stop offset="80%" stop-color="#b464a0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#dc8cb4" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="mtnLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e8eef5"/>
+      <stop offset="100%" stop-color="#c5d3e0"/>
+    </linearGradient>
+    <linearGradient id="mtnDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d0dbe8"/>
+      <stop offset="100%" stop-color="#8fa4b8"/>
+    </linearGradient>
+    <linearGradient id="mtnMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eaf0f7"/>
+      <stop offset="100%" stop-color="#a8bdd0"/>
+    </linearGradient>
+    <linearGradient id="snowGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0eaf4"/>
+      <stop offset="100%" stop-color="#f5f9ff"/>
+    </linearGradient>
+    <filter id="cloudBlur"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skyGrad)"/>
+  <rect width="800" height="450" fill="url(#sunsetGlow)"/>
+  <ellipse cx="400" cy="350" rx="500" ry="80" fill="#c882aa" opacity="0.15"/>
+  <g opacity="0.7">
+    <rect x="80" y="60" width="120" height="30" rx="15" fill="#c8dff5" filter="url(#cloudBlur)"/>
+    <rect x="60" y="50" width="80" height="25" rx="12" fill="#d5e8fa" filter="url(#cloudBlur)"/>
+    <rect x="530" y="90" width="140" height="28" rx="14" fill="#c0d8f0" filter="url(#cloudBlur)"/>
+    <rect x="560" y="78" width="90" height="22" rx="11" fill="#d0e4f8" filter="url(#cloudBlur)"/>
+    <rect x="300" y="40" width="100" height="24" rx="12" fill="#d8ecff" filter="url(#cloudBlur)"/>
+    <rect x="680" y="55" width="90" height="22" rx="11" fill="#cde2f5" filter="url(#cloudBlur)"/>
+  </g>
+  <g fill="#ffffff" opacity="0.8">
+    <g transform="translate(150,120)">
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#fff" stroke-width="1.5"/>
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#fff" stroke-width="1.5"/>
+      <line x1="-6" y1="-6" x2="6" y2="6" stroke="#fff" stroke-width="1.5"/>
+      <line x1="-6" y1="6" x2="6" y2="-6" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(350,80)">
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#fff" stroke-width="1.2"/>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="#fff" stroke-width="1.2"/>
+      <line x1="-4" y1="-4" x2="4" y2="4" stroke="#fff" stroke-width="1.2"/>
+      <line x1="-4" y1="4" x2="4" y2="-4" stroke="#fff" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(620,60)">
+      <line x1="-7" y1="0" x2="7" y2="0" stroke="#fff" stroke-width="1.3"/>
+      <line x1="0" y1="-7" x2="0" y2="7" stroke="#fff" stroke-width="1.3"/>
+      <line x1="-5" y1="-5" x2="5" y2="5" stroke="#fff" stroke-width="1.3"/>
+      <line x1="-5" y1="5" x2="5" y2="-5" stroke="#fff" stroke-width="1.3"/>
+    </g>
+    <g transform="translate(480,140)">
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#fff" stroke-width="1"/>
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#fff" stroke-width="1"/>
+      <line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" stroke="#fff" stroke-width="1"/>
+      <line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5" stroke="#fff" stroke-width="1"/>
+    </g>
+    <g transform="translate(720,130)">
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#fff" stroke-width="1.2"/>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="#fff" stroke-width="1.2"/>
+      <line x1="-4" y1="-4" x2="4" y2="4" stroke="#fff" stroke-width="1.2"/>
+      <line x1="-4" y1="4" x2="4" y2="-4" stroke="#fff" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(50,160)">
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#fff" stroke-width="1"/>
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#fff" stroke-width="1"/>
+      <line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" stroke="#fff" stroke-width="1"/>
+      <line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5" stroke="#fff" stroke-width="1"/>
+    </g>
+    <circle cx="200" cy="100" r="2"/>
+    <circle cx="450" cy="50" r="1.5"/>
+    <circle cx="680" cy="100" r="2"/>
+    <circle cx="100" cy="80" r="1.5"/>
+    <circle cx="560" cy="130" r="1.5"/>
+    <circle cx="300" cy="150" r="2"/>
+    <circle cx="750" cy="170" r="1.5"/>
+    <circle cx="400" cy="170" r="1"/>
+    <circle cx="250" cy="40" r="1"/>
+  </g>
+  <polygon points="0,350 80,200 160,280 250,180 340,300 400,220 500,310 580,240 680,290 750,210 800,280 800,450 0,450" fill="url(#mtnDark)" opacity="0.5"/>
+  <polygon points="0,380 100,230 180,310 280,200 370,290 420,250 500,320 560,260 660,310 720,240 800,300 800,450 0,450" fill="url(#mtnMid)" opacity="0.7"/>
+  <polygon points="200,350 320,140 440,350" fill="url(#mtnLight)"/>
+  <polygon points="280,200 320,140 360,200" fill="#ffffff" opacity="0.7"/>
+  <polygon points="290,180 320,140 350,180 335,175 320,165 305,175" fill="#ffffff"/>
+  <polygon points="420,350 540,180 660,350" fill="url(#mtnLight)"/>
+  <polygon points="500,230 540,180 580,230" fill="#ffffff" opacity="0.7"/>
+  <polygon points="510,215 540,180 570,215 555,210 540,198 525,210" fill="#ffffff"/>
+  <polygon points="-20,350 80,210 180,350" fill="url(#mtnMid)"/>
+  <polygon points="55,240 80,210 105,240" fill="#ffffff" opacity="0.8"/>
+  <polygon points="620,350 730,200 840,350" fill="url(#mtnMid)"/>
+  <polygon points="705,235 730,200 755,235" fill="#ffffff" opacity="0.8"/>
+  <polygon points="350,350 410,260 470,350" fill="#d8e5f0"/>
+  <polygon points="390,285 410,260 430,285" fill="#ffffff" opacity="0.8"/>
+  <line x1="320" y1="140" x2="380" y2="280" stroke="#6482a0" stroke-opacity="0.3" stroke-width="1.5"/>
+  <line x1="540" y1="180" x2="600" y2="300" stroke="#6482a0" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="0" y="340" width="800" height="110" fill="url(#snowGround)"/>
+  <g fill="#2d5a3a">
+    <polygon points="60,340 72,310 84,340"/>
+    <polygon points="63,320 72,295 81,320"/>
+    <rect x="69" y="340" width="6" height="10" fill="#4a3520"/>
+    <polygon points="130,345 145,305 160,345"/>
+    <polygon points="134,318 145,288 156,318"/>
+    <rect x="142" y="345" width="6" height="10" fill="#4a3520"/>
+    <polygon points="690,340 700,315 710,340"/>
+    <polygon points="693,325 700,305 707,325"/>
+    <rect x="697" y="340" width="6" height="8" fill="#4a3520"/>
+    <polygon points="740,342 755,300 770,342"/>
+    <polygon points="744,315 755,282 766,315"/>
+    <rect x="752" y="342" width="6" height="10" fill="#4a3520"/>
+    <polygon points="100,348 108,328 116,348"/>
+    <rect x="105" y="348" width="5" height="7" fill="#4a3520"/>
+    <polygon points="650,345 662,318 674,345"/>
+    <polygon points="653,330 662,308 671,330"/>
+    <rect x="659" y="345" width="6" height="8" fill="#4a3520"/>
+  </g>
+  <g fill="#ffffff" opacity="0.4">
+    <polygon points="63,320 72,295 81,320"/>
+    <polygon points="134,318 145,288 156,318"/>
+    <polygon points="693,325 700,305 707,325"/>
+    <polygon points="744,315 755,282 766,315"/>
+  </g>
+  <rect x="250" y="395" width="300" height="40" rx="8" fill="#0a1e3c" opacity="0.6"/>
+  <text x="400" y="422" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" letter-spacing="1">Snow Valley Peaks</text>
+</svg>

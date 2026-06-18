@@ -18,6 +18,8 @@ In this comprehensive walkthrough, we will cover every area of The Hive, explain
 
 ## How to Unlock The Hive
 
+![The Hive entrance gate](/images/worlds/detail/hive-entrance.svg)
+
 The Hive becomes accessible after you have completed at least three main missions in the overworld. You can find the entrance on the eastern side of the main hub area, marked by a large honeycomb archway with buzzing bee NPCs nearby. Walk up to the entrance and interact with the gate to enter.
 
 Before heading in, make sure you have collected enough coins to purchase any helpful items from the shop. If you need coins fast, check out our [coin farming guide](/blog/unlimited-coins-farming/) for the most efficient methods. Having a good stock of coins ensures you can buy health refills if the going gets tough inside The Hive.
@@ -27,6 +29,8 @@ Before heading in, make sure you have collected enough coins to purchase any hel
 The Hive introduces three distinct honey-based mechanics that you need to master to progress through the world. These mechanics are not found in any other world, making The Hive a truly unique experience.
 
 ### Sticky Honey Walls
+
+![Wax wall climbing](/images/worlds/detail/hive-wax-walls.svg)
 
 Throughout The Hive, you will encounter walls coated in a golden, glistening honey substance. When your bear touches these walls, it will stick to them, allowing you to climb vertically and even horizontally across ceilings. The controls while stuck to honey walls are straightforward: use the directional pad or joystick to move in any direction along the surface. Press the jump button to detach from the wall and launch yourself in the direction you are facing.
 
@@ -39,6 +43,8 @@ Honey slides are long, curved channels filled with flowing honey that act as hig
 Some honey slides have branching paths. At a fork, you need to lean hard in one direction to take the alternate route. The default path usually leads to the next area of the level, while the branching path often leads to a secret area with bonus collectibles or a hidden sticker. Pay close attention to visual cues at forks -- a faint golden glow on one side often indicates the path to a secret.
 
 ### Honey Pools
+
+![Honey pools navigation](/images/worlds/detail/hive-honey-pools.svg)
 
 Honey pools are large bodies of honey that act differently from water in other worlds. Instead of swimming, your bear wades slowly through honey pools. Movement speed is reduced by about 60 percent while in honey, and jumping height is cut in half. This makes honey pools dangerous in areas with enemies, as you cannot dodge or escape quickly.
 
@@ -81,6 +87,8 @@ Explore the antechamber thoroughly before proceeding. There are three hidden alc
 At the far end of the antechamber, you will find a health refill station and a save point. Use both before entering the boss arena through the large ornate door.
 
 ### Area 5: The Queen Bee Boss Arena
+
+![Queen Bee boss battle](/images/worlds/detail/hive-boss.svg)
 
 The Queen Bee is the boss of The Hive world. For detailed strategies on this and every other boss in the game, check out our comprehensive [boss fight strategy guide](/blog/boss-fight-strategy/). Here, we will cover the essentials specific to this encounter.
 
