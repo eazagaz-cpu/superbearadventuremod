@@ -1,15 +1,19 @@
 {
   "name": "Super Bear Adventure Mod APK",
-  "short_name": "SBA Mod",
+  "short_name": "Super Bear APK",
+  "description": "Download Super Bear Adventure Mod APK with unlimited money, all skins, and no ads.",
   "start_url": "/",
+  "id": "/",
   "display": "standalone",
   "background_color": "#f1f8e9",
   "theme_color": "#558B2F",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 }

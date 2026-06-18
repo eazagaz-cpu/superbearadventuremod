@@ -11,9 +11,10 @@ export interface SEOProps {
 
 export const SITE = {
   name: 'Super Bear Adventure Mod APK',
+  brandShort: 'Super Bear Adventure',
   url: 'https://superbearadventuremod.io',
-  description: 'Download Super Bear Adventure Mod APK v12.1.5 (2026) with unlimited money, all skins unlocked, no ads, and the latest multiplayer fixes.',
-  author: 'Super Bear Adventure Mod APK',
+  description: 'Download Super Bear Adventure Mod APK v12.1.5 with unlimited money, all skins unlocked, and no ads. Safe, free, and updated for 2026.',
+  author: 'superbearadventuremod.io',
   email: 'info@superbearadventuremod.io',
   social: {
     twitter: 'https://x.com/Superbeardwp',
@@ -41,6 +42,6 @@ export const SITE = {
 };
 
 export function getPageTitle(title?: string): string {
-  if (!title) return `${SITE.name} v${SITE.download.version} (Unlocked) 2026`;
-  return `${title} | ${SITE.name}`;
+  if (!title) return `Super Bear Adventure Mod APK v${SITE.download.version} Download (2026)`;
+  return `${title} | ${SITE.brandShort}`;
 }
