@@ -62,8 +62,8 @@ const socialLinks = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-6">
       <!-- Brand Column -->
-      <div class="col-span-2 md:col-span-3 lg:col-span-2">
-        <a href="/" class="flex items-center gap-2 mb-4">
+      <div class="col-span-2 md:col-span-3 lg:col-span-2 text-center lg:text-left">
+        <a href="/" class="inline-flex items-center gap-2 mb-4">
           <svg class="w-9 h-9" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
             <circle cx="32" cy="32" r="30" fill="#558B2F"/>
             <circle cx="22" cy="22" r="8" fill="#795548"/>
@@ -82,7 +82,7 @@ const socialLinks = [
       </div>
 
       <!-- Download Links -->
-      <div>
+      <div class="text-center sm:text-left">
         <h3 class="text-xs font-bold uppercase tracking-widest text-game-green-light mb-4">Download</h3>
         <ul class="space-y-2.5">
           {footerLinks.download.map((link) => (
@@ -92,7 +92,7 @@ const socialLinks = [
       </div>
 
       <!-- Guides Links -->
-      <div>
+      <div class="text-center sm:text-left">
         <h3 class="text-xs font-bold uppercase tracking-widest text-game-green-light mb-4">Guides</h3>
         <ul class="space-y-2.5">
           {footerLinks.guides.map((link) => (
@@ -102,7 +102,7 @@ const socialLinks = [
       </div>
 
       <!-- Worlds Links -->
-      <div>
+      <div class="text-center sm:text-left">
         <h3 class="text-xs font-bold uppercase tracking-widest text-game-green-light mb-4">Worlds</h3>
         <ul class="space-y-2.5">
           {footerLinks.worlds.map((link) => (
@@ -112,7 +112,7 @@ const socialLinks = [
       </div>
 
       <!-- Site Links -->
-      <div>
+      <div class="text-center sm:text-left">
         <h3 class="text-xs font-bold uppercase tracking-widest text-game-green-light mb-4">Site</h3>
         <ul class="space-y-2.5">
           {footerLinks.site.map((link) => (
@@ -122,9 +122,9 @@ const socialLinks = [
       </div>
 
       <!-- Social Links -->
-      <div>
+      <div class="col-span-2 sm:col-span-1 text-center sm:text-left">
         <h3 class="text-xs font-bold uppercase tracking-widest text-game-green-light mb-4">Follow Us</h3>
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-wrap gap-3 justify-center sm:justify-start">
           {socialLinks.map((social) => (
             <a
               href={social.href}
