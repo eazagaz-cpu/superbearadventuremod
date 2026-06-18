@@ -20,7 +20,7 @@ const gradientClass = headerGradient || 'from-game-green to-game-green-dark';
   <main id="main-content">
     {/* Visual Header Banner */}
     {(headerImage || headerIcon) && (
-      <div class={`bg-gradient-to-br ${gradientClass} text-white`}>
+      <div class={`bg-gradient-to-br ${gradientClass}`}>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           {headerImage ? (
             <img
@@ -35,8 +35,8 @@ const gradientClass = headerGradient || 'from-game-green to-game-green-dark';
           ) : headerIcon ? (
             <div class="w-20 h-20 mx-auto mb-4 bg-white/20 rounded-2xl flex items-center justify-center" set:html={headerIcon} />
           ) : null}
-          <h1 class="text-3xl md:text-4xl font-extrabold mb-2">{title}</h1>
-          <p class="text-white/80 text-lg max-w-2xl mx-auto">{description}</p>
+          <h1 style="color: #ffffff; font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">{title}</h1>
+          <p style="color: rgba(255,255,255,0.85); font-size: 1.125rem; max-width: 42rem; margin: 0 auto;">{description}</p>
         </div>
       </div>
     )}
