@@ -85,7 +85,7 @@ Every piece of content in the game is unlocked from the start:
 
 - **Mod Version**: v12.1.5
 - **Base Game Version**: Super Bear Adventure v12.1.5
-- **File Size**: Approximately 180 MB
+- **File Size**: Approximately 221 MB
 - **Required Android Version**: Android 6.0 (Marshmallow) or higher
 - **Last Updated**: June 2026
 - **Price**: Free
@@ -131,7 +131,7 @@ Download the Super Bear Adventure Mod APK file from our secure download link. Th
 
 **Important download tips**:
 - Only download from trusted sources
-- Verify the file size matches what is listed above (approximately 180 MB)
+- Verify the file size matches what is listed above (approximately 221 MB)
 - If your browser warns about the download, this is normal for APK files and can be safely proceeded
 
 #### Step 3: Locate the Downloaded File
@@ -289,7 +289,7 @@ This mod APK is designed for Android devices. iOS does not support APK installat
 
 ### How much storage space do I need?
 
-The mod APK requires approximately 180 MB for the initial installation, with up to 500 MB total when including game data and cache files. We recommend having at least 700 MB free to ensure smooth operation.
+The mod APK requires approximately 221 MB for the initial installation, with up to 500 MB total when including game data and cache files. We recommend having at least 700 MB free to ensure smooth operation.
 
 ### Is the mod APK the same version as the Play Store version?
 

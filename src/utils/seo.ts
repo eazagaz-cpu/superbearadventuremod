@@ -30,7 +30,7 @@ export const SITE = {
   download: {
     url: 'https://pub-b6736eea3ae64221aa34004741cd7113.r2.dev/Super%20Bear%20Adventure%20Mod%20Apk/super-bear-adventure-mod-apk.apk',
     version: '12.1.5',
-    size: '182 MB',
+    size: '221 MB',
     requires: 'Android 5.1+',
     updated: 'April 29, 2026',
     developer: 'Earthkwak Games',
