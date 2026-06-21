@@ -19,7 +19,7 @@ export const SITE = {
   social: {
     twitter: 'https://x.com/Superbeardwp',
     pinterest: 'https://www.pinterest.com/superbeardadventuredmodio/_profile/',
-    facebook: 'https://www.facebook.com/profile.php?id=615909357622194',
+    facebook: 'https://www.facebook.com/profile.php?id=61590935762219',
     instagram: 'https://www.instagram.com/superbeardadventuredmod.io/',
     threads: 'https://www.threads.com/@superbeardadventuredmod.io',
     youtube: 'https://www.youtube.com/channel/UCa6JSIKTYROwBnEfmXrBjsA',
