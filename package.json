@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "audit": "node scripts/audit-canonical-urls.js && node scripts/audit-internal-links.js",
-    "audit:all": "node scripts/audit-internal-links.js && node scripts/audit-word-count.js && node scripts/audit-schema-coverage.js && node scripts/audit-meta-descriptions.js && node scripts/audit-image-alts.js"
+    "audit:all": "node scripts/audit-internal-links.js && node scripts/audit-word-count.js && node scripts/audit-schema-coverage.js && node scripts/audit-meta-descriptions.js && node scripts/audit-image-alts.js",
+    "deploy": "npm run build && npx wrangler deploy"
   },
   "dependencies": {
     "astro": "^5.7.0",
