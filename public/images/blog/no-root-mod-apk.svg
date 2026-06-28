@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b5e20"/>
+      <stop offset="100%" style="stop-color:#2e7d32"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="200" cy="225" r="120" fill="#0a1a0a" stroke="#4caf50" stroke-width="3"/>
+  <line x1="130" y1="155" x2="270" y2="295" stroke="#f44336" stroke-width="12" stroke-linecap="round"/>
+  <line x1="270" y1="155" x2="130" y2="295" stroke="#f44336" stroke-width="12" stroke-linecap="round"/>
+  <text x="200" y="340" font-family="Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#f44336">NO ROOT</text>
+  <text x="200" y="185" font-family="Arial,sans-serif" font-size="36" text-anchor="middle" fill="#4caf50">🔒</text>
+  <rect x="360" y="80" width="420" height="290" rx="12" fill="#0a1a0a" opacity="0.8"/>
+  <text x="550" y="130" font-family="Arial,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#fff">Root-Free Mod APK</text>
+  <text x="550" y="158" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#4caf50">Standard Install — No Magisk Needed</text>
+  <rect x="370" y="172" width="370" height="1.5" fill="#4caf50" opacity="0.4"/>
+  <text x="380" y="200" font-family="Arial,sans-serif" font-size="13" fill="#ddd">✓ No Magisk or SuperSU</text>
+  <text x="380" y="224" font-family="Arial,sans-serif" font-size="13" fill="#ddd">✓ No TWRP custom recovery</text>
+  <text x="380" y="248" font-family="Arial,sans-serif" font-size="13" fill="#ddd">✓ No Developer Options changes</text>
+  <text x="380" y="272" font-family="Arial,sans-serif" font-size="13" fill="#ddd">✓ Android security stays fully active</text>
+  <text x="380" y="296" font-family="Arial,sans-serif" font-size="13" fill="#ddd">✓ Warranty not voided</text>
+  <rect x="370" y="316" width="370" height="38" rx="8" fill="#2e7d32" opacity="0.4"/>
+  <text x="550" y="340" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#a5d6a7">Installs like any standard APK file</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#666">superbearadventuremod.io</text>
+</svg>

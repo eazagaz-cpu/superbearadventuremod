@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { howToSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
+
+const genericSteps = [
+  { name: 'Download the APK', text: `Go to the Download page and tap the green button to save super-bear-adventure-mod-apk.apk (${SITE.download.size}) to your device's Download folder.` },
+  { name: 'Allow Installation from Unknown Sources', text: 'Android blocks APKs from outside the Play Store by default. Go to Settings → Security → Install Unknown Apps (Android 8+) or Settings → Security → Unknown Sources (Android 7 and below) and enable it for your browser or file manager.' },
+  { name: 'Open the Downloaded File', text: 'Pull down your notification bar and tap the completed download, or open your file manager → Downloads → super-bear-adventure-mod-apk.apk.' },
+  { name: 'Tap Install on the Confirmation Screen', text: 'Android shows the app permissions and an Install button. Tap Install. The process takes 10–20 seconds.' },
+  { name: 'Open and Play', text: 'Tap Open when complete, or find the Super Bear Adventure icon on your home screen. Unlimited coins and all skins are active immediately.' },
+];
+
+const faqItems = [
+  { question: 'How do I install an APK on Android?', answer: 'Download the APK file, enable "Install from Unknown Sources" in your Android Settings → Security, then tap the downloaded file to install. The full process takes about 5 minutes.' },
+  { question: 'Why is Android blocking the APK installation?', answer: 'Android blocks APK installs from outside the Play Store by default as a security measure. You must enable "Install Unknown Apps" for your browser or file manager in Settings → Apps → Special App Access → Install Unknown Apps (Android 8+).' },
+  { question: 'Do I need to uninstall the official game first?', answer: 'If you have the official Super Bear Adventure from Google Play, you may need to uninstall it first because the signatures differ. If you install over the official version without uninstalling, Android may show an "App not installed" error.' },
+  { question: 'How long does installation take?', answer: 'The download takes 1–3 minutes depending on your internet speed (file is 221 MB). The actual APK installation takes 10–20 seconds after you tap Install.' },
+  { question: 'What is "unknown sources" and why do I need to enable it?', answer: 'Unknown sources means any APK not downloaded from Google Play. Android requires you to grant permission to install these manually. This is a one-time step per browser/app. After enabling, you can install any APK without repeating the step.' },
+  { question: 'The APK installed but the game crashes — what do I do?', answer: 'First, uninstall and reinstall the APK. If it still crashes, check our troubleshooting guide for device-specific fixes including clearing cache, freeing storage space, and checking Android version compatibility.' },
+];
+
+const schemas = [
+  howToSchema({
+    name: 'How to Install Super Bear Adventure Mod APK on Android',
+    description: 'Step-by-step installation guide for Super Bear Adventure Mod APK on all Android devices.',
+    steps: genericSteps,
+    totalTime: 'PT5M',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'Install Guide', url: `${SITE.url}/install/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="How to Install Super Bear Adventure Mod APK — All Devices Guide"
+  description="Complete installation guide for Super Bear Adventure Mod APK. Covers all Android devices — Samsung, Xiaomi, Android 14, BlueStacks, and more. Step-by-step with troubleshooting."
+  schema={schemas}
+  canonical={`${SITE.url}/install/`}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'Install Guide' }]} />
+
+    <!-- Hero -->
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        How to Install Super Bear Adventure Mod APK
+      </h1>
+      <p class="text-lg text-gray-600">
+        Complete installation guide covering all Android devices, PC emulators, and common error fixes. The process takes about 5 minutes on any device.
+      </p>
+    </div>
+
+    <!-- Quick Nav -->
+    <div class="bg-game-green-50 border border-game-green/20 rounded-xl p-5 mb-10">
+      <h2 class="text-sm font-bold text-gray-900 mb-3">Jump to your device:</h2>
+      <div class="flex flex-wrap gap-2">
+        {[
+          { label: 'Standard Android', href: '#android' },
+          { label: 'Samsung Galaxy', href: '#samsung' },
+          { label: 'Xiaomi / MIUI', href: '#xiaomi' },
+          { label: 'Android 14 & 15', href: '#android-14' },
+          { label: 'BlueStacks (PC)', href: '#bluestacks' },
+          { label: 'LDPlayer (PC)', href: '#ldplayer' },
+          { label: 'iOS / iPhone', href: '#ios' },
+          { label: 'Troubleshooting', href: '#troubleshooting' },
+        ].map((item) => (
+          <a href={item.href} class="text-xs font-semibold text-game-green bg-white border border-game-green/30 rounded-lg px-3 py-1.5 hover:bg-game-green hover:text-white transition-colors">
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Generic Android Steps -->
+    <div id="android" class="mb-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Standard Android Installation</h2>
+      <p class="text-gray-600 mb-6">Works on most Android 5.1+ devices. Takes about 5 minutes total.</p>
+      <div class="space-y-4">
+        {genericSteps.map((step, i) => (
+          <div class="flex items-start gap-4 bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-game-green text-white font-bold flex items-center justify-center flex-shrink-0 text-lg">
+              {i + 1}
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-1">{step.name}</h3>
+              <p class="text-sm text-gray-600">{step.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Device-Specific Guides -->
+    <div class="space-y-8">
+
+      <div id="samsung" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">SAM</span>
+          Samsung Galaxy (One UI)
+        </h2>
+        <p class="text-gray-700 text-sm mb-3">Samsung uses a slightly different path to enable unknown sources depending on the Android version and One UI skin:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><span class="font-bold text-game-green">1.</span> Open <strong>Settings → Apps</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">2.</span> Tap the <strong>three-dot menu</strong> (top right) → <strong>Special Access</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">3.</span> Tap <strong>Install Unknown Apps</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">4.</span> Select your browser (Chrome/Samsung Internet) → toggle <strong>Allow from this source</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">5.</span> Return to Downloads and tap the APK file to install</li>
+        </ol>
+        <a href="/blog/super-bear-adventure-apk-samsung/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full Samsung Galaxy install guide →
+        </a>
+      </div>
+
+      <div id="xiaomi" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center text-xs font-bold">MI</span>
+          Xiaomi, Redmi & MIUI
+        </h2>
+        <p class="text-gray-700 text-sm mb-3">MIUI has more aggressive security settings than stock Android. You may also need to enable "Install via USB" or similar developer options:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><span class="font-bold text-game-green">1.</span> Go to <strong>Settings → Privacy Protection → Special Permissions</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">2.</span> Tap <strong>Install Unknown Apps</strong> → select your browser</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">3.</span> If blocked by MIUI Security, open the <strong>Security app</strong> → tap <strong>Permissions</strong> → allow</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">4.</span> Download and install the APK normally</li>
+        </ol>
+        <a href="/blog/super-bear-adventure-apk-xiaomi/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full Xiaomi MIUI install guide →
+        </a>
+      </div>
+
+      <div id="android-14" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-green-100 text-green-700 flex items-center justify-center text-xs font-bold">A14</span>
+          Android 14 & 15
+        </h2>
+        <p class="text-gray-700 text-sm mb-3">Android 14+ uses per-app install permissions. The toggle is granted individually per app rather than globally:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><span class="font-bold text-game-green">1.</span> Download the APK in Chrome or your browser</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">2.</span> When prompted "This type of file can harm your device", tap <strong>Download anyway</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">3.</span> Tap the downloaded file → system will ask "Allow Chrome to install apps?" → tap <strong>Settings</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">4.</span> Toggle <strong>Allow from this source</strong> → go back and tap Install</li>
+        </ol>
+        <a href="/blog/super-bear-adventure-mod-apk-android-14/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full Android 14 & 15 install guide →
+        </a>
+      </div>
+
+      <div id="bluestacks" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center text-xs font-bold">BS</span>
+          BlueStacks (PC / Mac)
+        </h2>
+        <p class="text-gray-700 text-sm mb-3">BlueStacks 5 supports APK sideloading. You need BlueStacks 5 installed on your PC or Mac first:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><span class="font-bold text-game-green">1.</span> Install BlueStacks 5 and open it</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">2.</span> Download the Super Bear Adventure Mod APK on your PC</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">3.</span> Double-click the APK file — BlueStacks will detect and install it automatically</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">4.</span> Find Super Bear Adventure in the BlueStacks app drawer and launch</li>
+        </ol>
+        <a href="/blog/super-bear-adventure-mod-apk-bluestacks/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full BlueStacks install guide →
+        </a>
+      </div>
+
+      <div id="ldplayer" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-yellow-100 text-yellow-700 flex items-center justify-center text-xs font-bold">LD</span>
+          LDPlayer (PC)
+        </h2>
+        <p class="text-gray-700 text-sm mb-3">LDPlayer is a lightweight Android emulator optimized for gaming on PC. It's a popular BlueStacks alternative:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><span class="font-bold text-game-green">1.</span> Download and install LDPlayer 9 from the official site</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">2.</span> In LDPlayer, click the folder icon on the toolbar → <strong>APK Install</strong></li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">3.</span> Browse to the downloaded mod APK file and click Open</li>
+          <li class="flex gap-2"><span class="font-bold text-game-green">4.</span> Wait for installation to finish and launch from the home screen</li>
+        </ol>
+        <a href="/blog/super-bear-adventure-mod-apk-ldplayer/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full LDPlayer install guide →
+        </a>
+      </div>
+
+      <div id="ios" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 border-l-4 border-amber-400">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3">iOS / iPhone</h2>
+        <p class="text-gray-700 text-sm mb-3">
+          APK files are Android-only and cannot be installed on iOS. There is no direct mod APK method for iPhone or iPad. However, there are alternative approaches for iOS users:
+        </p>
+        <ul class="space-y-2 text-sm text-gray-700 list-none pl-0">
+          <li class="flex gap-2"><svg class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg><span>AltStore sideloading (requires a PC and Apple ID)</span></li>
+          <li class="flex gap-2"><svg class="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg><span>Play the official game on iOS — free from the App Store</span></li>
+        </ul>
+        <a href="/blog/super-bear-adventure-ios-mod-iphone/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+          Full iOS guide and alternatives →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Troubleshooting -->
+    <div id="troubleshooting" class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Common Install Errors & Fixes</h2>
+      <div class="space-y-4">
+        {[
+          { error: '"App not installed" error', fix: 'Uninstall the official Google Play version first. Signature conflicts between the mod and official APK cause this error.' },
+          { error: '"Parse error" during install', fix: 'The APK file is corrupted or incomplete. Delete it and re-download from the download page.' },
+          { error: '"Installation blocked" by device', fix: 'Enable "Install Unknown Apps" in Settings for your browser or file manager. See the device-specific sections above.' },
+          { error: 'Game crashes immediately after launch', fix: 'Clear the app cache (Settings → Apps → Super Bear Adventure → Clear Cache), then restart the game. If it persists, try uninstalling and reinstalling.' },
+          { error: 'Download stops midway', fix: 'Check your internet connection. The file is 221 MB — if you are on cellular, switch to Wi-Fi for a stable download.' },
+        ].map((item) => (
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <h3 class="font-bold text-gray-900 text-sm mb-1 flex items-center gap-2">
+              <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              {item.error}
+            </h3>
+            <p class="text-xs text-gray-600">{item.fix}</p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-4">
+        <a href="/blog/troubleshooting-common-errors/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          See full troubleshooting guide for all errors
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Installation FAQ</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-10">
+      <a href="/download/" class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Super Bear Adventure Mod APK
+      </a>
+    </div>
+  </main>
+</BaseLayout>

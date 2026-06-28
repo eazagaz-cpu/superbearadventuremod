@@ -201,7 +201,7 @@ The mod APK version unlocks several exclusive skins and may provide features tha
 
 ## Cosmetics in Multiplayer
 
-Your equipped cosmetics appear in [multiplayer mode](/blog/multiplayer-guide/), and certain cosmetics serve as status symbols. Players wearing the Golden Bear skin or Shadow Bear skin are instantly recognized as experienced players. The Multiplayer Crown hat is exclusive to successful multiplayer competitors.
+Your equipped cosmetics appear in [multiplayer mode](/blog/multiplayer-guide/), and certain cosmetics serve as status symbols. Players wearing the Golden Bear skin or Shadow Bear skin are instantly recognized as experienced players. The Multiplayer Crown hat is exclusive to successful multiplayer competitors. Pair your cosmetics with emotes — see the [all emotes guide](/blog/super-bear-adventure-all-emotes/) for the complete list of animations you can unlock.
 
 Cosmetics do not provide any gameplay advantages in multiplayer. The minor passive effects from skins and hats are disabled in competitive multiplayer to ensure fair play. They remain active in cooperative multiplayer modes.
 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b3e"/>
+      <stop offset="100%" style="stop-color:#1a2f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Monitor -->
+  <rect x="50" y="90" width="280" height="200" rx="10" fill="#0a0f1e" stroke="#00a8ff" stroke-width="2.5"/>
+  <rect x="65" y="105" width="250" height="170" rx="4" fill="#111827"/>
+  <text x="190" y="195" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">🐻</text>
+  <text x="190" y="235" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#00a8ff">BlueStacks 5</text>
+  <rect x="150" y="295" width="80" height="20" rx="4" fill="#00a8ff" opacity="0.4"/>
+  <rect x="120" y="315" width="140" height="10" rx="4" fill="#0a0f1e" stroke="#00a8ff" stroke-width="1"/>
+  <!-- Right panel -->
+  <rect x="360" y="70" width="410" height="310" rx="12" fill="#080d1a" opacity="0.85"/>
+  <text x="565" y="115" font-family="Arial,sans-serif" font-size="26" font-weight="900" text-anchor="middle" fill="#fff">BlueStacks Setup</text>
+  <text x="565" y="142" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#00a8ff">Play on PC — Windows &amp; Mac</text>
+  <rect x="375" y="155" width="380" height="1.5" fill="#00a8ff" opacity="0.3"/>
+  <text x="380" y="183" font-family="Arial,sans-serif" font-size="13" fill="#ddd">1. Download BlueStacks 5 from bluestacks.com</text>
+  <text x="380" y="206" font-family="Arial,sans-serif" font-size="13" fill="#ddd">2. Install BlueStacks on Windows/Mac</text>
+  <text x="380" y="229" font-family="Arial,sans-serif" font-size="13" fill="#ddd">3. Download Mod APK from our site</text>
+  <text x="380" y="252" font-family="Arial,sans-serif" font-size="13" fill="#ddd">4. Drag &amp; drop APK into BlueStacks</text>
+  <text x="380" y="275" font-family="Arial,sans-serif" font-size="13" fill="#ddd">5. Launch Super Bear Adventure</text>
+  <rect x="375" y="295" width="380" height="60" rx="8" fill="#00a8ff" opacity="0.12"/>
+  <text x="565" y="321" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#90caf9">Keyboard + mouse support included</text>
+  <text x="565" y="342" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#90caf9">Recommended: BlueStacks 5.10+</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#555">superbearadventuremod.io</text>
+</svg>

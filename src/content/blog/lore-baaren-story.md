@@ -24,7 +24,7 @@ For players who are still working through the game's content, be aware that this
 
 The Kingdom of Earthkwak is the primary setting of Super Bear Adventure. It is a vast kingdom encompassing diverse biomes, from lush green forests and tropical beaches to frozen mountain peaks and scorching deserts. The kingdom gets its name from the ancient geological events that shaped the land, with earthquakes playing a significant role in the formation of its varied terrain.
 
-Earthkwak is divided into several distinct regions, each with its own ecosystem, inhabitants, and challenges:
+Earthkwak is divided into several distinct regions, each with its own ecosystem, inhabitants, and challenges. For a comprehensive breakdown of each region's story, rulers, and narrative connections, see our [Kingdom of Earthkwak world guide](/blog/super-bear-adventure-kingdom-earthkwak-guide/).
 
 - **Turtletown**: The peaceful coastal region that serves as the gateway to the kingdom. Inhabited primarily by friendly turtles and other peaceful creatures, Turtletown represents the calm before the adventure. Our [Turtletown walkthrough](/blog/turtletown-walkthrough/) covers this region extensively.
 

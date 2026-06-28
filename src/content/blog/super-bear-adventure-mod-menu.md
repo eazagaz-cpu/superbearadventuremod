@@ -6,6 +6,7 @@ updated: "2026-06-17"
 image: "/images/blog/mod-menu.svg"
 category: "Download"
 tags: ["mod menu", "mod features", "god mode", "speed hack", "Super Bear Adventure", "mod apk"]
+addSoftwareSchema: true
 ---
 
 ## What Is the Super Bear Adventure Mod Menu?

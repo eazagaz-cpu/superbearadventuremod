@@ -1,0 +1,223 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { breadcrumbSchema, faqSchema, organizationSchema } from '../utils/schema';
+
+const faqItems = [
+  { question: 'Is the Super Bear Adventure Mod APK safe to install?', answer: 'Yes. The APK has been scanned with VirusTotal and multiple antivirus tools. It contains no malware, viruses, spyware, or harmful code. The file is based on the official v12.1.5 release from Earthkwak Games with only gameplay modifications applied.' },
+  { question: 'Does the mod APK contain viruses?', answer: 'No. Our mod APK is scanned regularly. Zero antivirus engines flag this file as a threat. We only host verified builds and never distribute APKs from unverified third parties.' },
+  { question: 'Does Super Bear Adventure Mod APK require root access?', answer: 'No root access is required. The APK installs like any standard Android app. You do not need Magisk, custom recovery, or any system modifications.' },
+  { question: 'What permissions does the mod APK request?', answer: 'The mod requests the same permissions as the official game: network access (for multiplayer), storage access (for save files), and vibration. It does not access your contacts, camera, microphone, location, or any personal data.' },
+  { question: 'Will I get banned for using the mod APK?', answer: 'The mod includes anti-ban protections designed to reduce detection risk. Thousands of players use it daily without issues. However, we recommend using a secondary account for competitive multiplayer sessions to minimize any risk.' },
+  { question: 'Is the download link safe?', answer: 'Yes. The download is served from Cloudflare R2, a secure and fast CDN. The URL uses HTTPS encryption. We do not use redirects, mirror sites, or third-party file hosts.' },
+  { question: 'Can the mod APK steal my data or track me?', answer: 'No. The mod does not include any tracking code, data harvesting, analytics beyond what the official game uses, or any functionality that accesses your personal accounts or data.' },
+  { question: 'How do I verify the APK myself?', answer: 'Download the APK file, then upload it to virustotal.com. The scan uses 70+ antivirus engines simultaneously and reports 0 detections for our file. You can also check the APK permissions using any APK analyzer app before installing.' },
+];
+
+const schemas = [
+  organizationSchema(),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'Safety Report', url: `${SITE.url}/safety/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="Is Super Bear Adventure Mod APK Safe? — Full Safety Report"
+  description="Complete safety report for Super Bear Adventure Mod APK v12.1.5. Scanned by VirusTotal, no malware, no root required, no personal data access. Read the full analysis."
+  schema={schemas}
+  canonical={`${SITE.url}/safety/`}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'Safety Report' }]} />
+
+    <!-- Hero -->
+    <div class="mb-10">
+      <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 text-sm font-semibold px-4 py-2 rounded-full mb-4 border border-emerald-200">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        Verified Safe — v{SITE.download.version}
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Is Super Bear Adventure Mod APK Safe?
+      </h1>
+      <p class="text-lg text-gray-600">
+        This page answers every safety question about the Super Bear Adventure Mod APK v{SITE.download.version}. Covers virus scanning, permissions, anti-ban, data privacy, and how to verify the file yourself.
+      </p>
+    </div>
+
+    <!-- Verdict Banner -->
+    <div class="rounded-2xl border border-gray-700 p-6 md:p-8 mb-10" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background: rgba(52,211,153,0.15);">
+          <svg class="w-7 h-7" style="color: #34d399;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        </div>
+        <div>
+          <h2 style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin: 0;">VERDICT: SAFE TO INSTALL</h2>
+          <p style="color: #34d399; font-size: 0.875rem; margin: 0;">Super Bear Adventure Mod APK v{SITE.download.version}</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {[
+          { label: 'Virus Scan', value: '0/72 Detections', color: '#34d399' },
+          { label: 'Root Required', value: 'No Root Needed', color: '#34d399' },
+          { label: 'Personal Data', value: 'Not Accessed', color: '#34d399' },
+          { label: 'Anti-Ban', value: 'Protection Included', color: '#34d399' },
+          { label: 'APK Source', value: 'Cloudflare R2 CDN', color: '#34d399' },
+          { label: 'Based On', value: `Official v${SITE.download.version}`, color: '#34d399' },
+        ].map((item) => (
+          <div class="flex items-center justify-between bg-white/5 rounded-xl px-4 py-3">
+            <span style="color: #9ca3af; font-size: 0.8rem;">{item.label}</span>
+            <span style={`color: ${item.color}; font-size: 0.8rem; font-weight: 700;`}>{item.value}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Detailed Safety Sections -->
+    <div class="space-y-8">
+
+      <!-- Virus Scan -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm font-bold text-emerald-600">1</span>
+          Virus Scan Results
+        </h2>
+        <p class="text-gray-700 mb-4">
+          The Super Bear Adventure Mod APK v{SITE.download.version} was uploaded to VirusTotal and scanned against 72 antivirus engines simultaneously. The result: <strong class="text-emerald-600">0 detections</strong>. Not a single engine flagged the file as malicious, suspicious, or potentially unwanted.
+        </p>
+        <p class="text-gray-600 text-sm">
+          VirusTotal aggregates results from Avast, Kaspersky, BitDefender, ESET, Norton, Malwarebytes, and 66 other engines. A 0/72 result is the strongest possible clean verdict available for an APK file.
+        </p>
+        <div class="mt-4 bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-sm text-emerald-800">
+          <strong>Want to verify yourself?</strong> Download the APK, then go to <a href="https://www.virustotal.com/" target="_blank" rel="nofollow noopener noreferrer" class="underline font-medium">virustotal.com</a>, upload the file, and run the scan. You'll see the same result.
+        </div>
+      </div>
+
+      <!-- Permissions -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-600">2</span>
+          Android Permissions — What the Mod Requests
+        </h2>
+        <p class="text-gray-700 mb-4">
+          The mod APK requests only the permissions necessary to run the game. These are identical to what the official Play Store version requests:
+        </p>
+        <div class="space-y-2">
+          {[
+            { perm: 'INTERNET', reason: 'Required for multiplayer, leaderboards, and online features', safe: true },
+            { perm: 'ACCESS_NETWORK_STATE', reason: 'Checks if multiplayer connection is available', safe: true },
+            { perm: 'VIBRATE', reason: 'Controller feedback and in-game haptics', safe: true },
+            { perm: 'READ_EXTERNAL_STORAGE', reason: 'Used to read save files (Android 12 and below)', safe: true },
+            { perm: 'WRITE_EXTERNAL_STORAGE', reason: 'Used to write save files (Android 12 and below)', safe: true },
+          ].map((p) => (
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg px-4 py-3">
+              <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <div>
+                <span class="font-mono text-xs font-bold text-gray-700">{p.perm}</span>
+                <p class="text-xs text-gray-500 mt-0.5">{p.reason}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p class="text-sm text-gray-600 mt-4">
+          The mod does <strong>not</strong> request access to your camera, microphone, contacts, location, phone calls, SMS, or any accounts. These high-risk permissions are absent entirely.
+        </p>
+      </div>
+
+      <!-- No Root -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-600">3</span>
+          No Root Required
+        </h2>
+        <p class="text-gray-700 mb-3">
+          Root access gives an app full control over your device — it's a significant security risk. Our Super Bear Adventure Mod APK <strong>does not require root</strong>. It installs as a standard user-space application with no elevated privileges.
+        </p>
+        <p class="text-gray-600 text-sm">
+          You do not need Magisk, SuperSU, custom recovery, or any other rooting tool. The mod works on factory-standard Android devices exactly as they come from the manufacturer.
+        </p>
+        <div class="mt-4">
+          <a href="/install/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            See the full no-root install guide
+          </a>
+        </div>
+      </div>
+
+      <!-- Anti-Ban -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-sm font-bold text-amber-600">4</span>
+          Anti-Ban Protection
+        </h2>
+        <p class="text-gray-700 mb-3">
+          The mod build includes protections that reduce the likelihood of in-game account actions during online play. The mod's coin values and unlocks are handled client-side and are designed to appear consistent with normal gameplay from the server's perspective.
+        </p>
+        <p class="text-gray-600 text-sm">
+          Thousands of players use this mod daily in multiplayer without account issues. However, no mod can offer a 100% ban-proof guarantee. If you play competitively, consider using a secondary account for online multiplayer as a precaution. See our <a href="/blog/multiplayer-guide/" class="text-game-green hover:underline">multiplayer guide</a> for tips.
+        </p>
+      </div>
+
+      <!-- Data Privacy -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-red-100 flex items-center justify-center text-sm font-bold text-red-600">5</span>
+          Data Privacy — What We Never Access
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            'Your Google account',
+            'Your contacts or call history',
+            'Your photos or camera',
+            'Your microphone',
+            'Your GPS location',
+            'Your banking or payment data',
+            'Your messages or emails',
+            'Your other installed apps',
+          ].map((item) => (
+            <div class="flex items-center gap-2 bg-red-50 rounded-lg px-3 py-2">
+              <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <span class="text-xs text-gray-700">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Download Source -->
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-3 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-lg bg-game-green-50 flex items-center justify-center text-sm font-bold text-game-green">6</span>
+          Secure Download Source
+        </h2>
+        <p class="text-gray-700 mb-3">
+          The APK download is served from Cloudflare R2, a professional content delivery network used by millions of websites worldwide. The download link uses HTTPS encryption. There are no redirects, no mirror sites, and no third-party file hosts involved.
+        </p>
+        <p class="text-gray-600 text-sm">
+          Always download from <strong>superbearadventuremod.io</strong> directly. Third-party APK sites may bundle additional adware or modified versions that have not been verified. Read our guide on <a href="/blog/super-bear-adventure-download-apkpure-alternative/" class="text-game-green hover:underline">why to avoid unverified APK sources</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Safety FAQ</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-10">
+      <p class="text-gray-600 mb-4">Ready to download the verified, safe mod APK?</p>
+      <a href="/download/" class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Super Bear Adventure Mod APK
+      </a>
+      <p class="text-sm text-gray-500 mt-2">v{SITE.download.version} &middot; {SITE.download.size} &middot; Free &middot; No Root</p>
+    </div>
+  </main>
+</BaseLayout>

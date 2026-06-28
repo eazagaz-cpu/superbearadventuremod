@@ -6,6 +6,21 @@ updated: "2026-06-17"
 image: "/images/blog/the-hive.svg"
 category: "Walkthrough"
 tags: ["the hive", "walkthrough", "honey mechanics", "secrets", "super bear adventure"]
+howto:
+  name: "How to Complete The Hive in Super Bear Adventure"
+  description: "Complete all missions and master honey mechanics in The Hive"
+  totalTime: "PT55M"
+  steps:
+    - name: "Enter The Hive and learn honey mechanics"
+      text: "Walk into honey to slow down — this is used in puzzles. Honey propulsion pads launch you upward when you stand on them."
+    - name: "Complete the ground floor missions"
+      text: "Talk to worker bees with quest markers. Collect honey samples and deliver them to the processing area."
+    - name: "Navigate to floor 2 and 3"
+      text: "Use the elevator and, optionally, the elevator skip (jump onto the upward-moving bee enemy). Complete the honey maze on floor 2."
+    - name: "Find all stickers in The Hive"
+      text: "Check inside honey combs (break them), above the elevator shaft, in the guard bee barracks, in the royal jelly room, and on the throne room ceiling."
+    - name: "Defeat Queen Bee"
+      text: "Attack the Queen's stinger only during Phase 2 when she enters the hovering state. Ground attacks do minimal damage."
 ---
 
 ## Introduction to The Hive

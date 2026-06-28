@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Mod menu overlay -->
+  <rect x="220" y="80" width="360" height="290" rx="16" fill="#0f3460" opacity="0.9"/>
+  <rect x="220" y="80" width="360" height="50" rx="16" fill="#4CAF50" opacity="0.8"/>
+  <text x="400" y="113" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="white">MOD MENU</text>
+  <!-- Toggle items -->
+  <g transform="translate(240,155)">
+    {["Unlimited Coins","All Skins","No Ads","Mod Menu","Anti-Ban","God Mode"].map((t,i) => `
+    <text y="${i*35}" font-family="sans-serif" font-size="13" fill="#B0BEC5">${t}</text>
+    <rect x="260" y="${i*35-14}" width="36" height="18" rx="9" fill="#4CAF50"/>
+    <circle cx="290" cy="${i*35-5}" r="7" fill="white"/>
+    `).join("")}
+  </g>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#86c943">Super Bear Adventure Mod Features Guide</text>
+</svg>

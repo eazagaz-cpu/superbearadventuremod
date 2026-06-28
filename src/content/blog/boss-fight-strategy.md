@@ -238,7 +238,7 @@ Each boss drops specific rewards upon defeat.
 | Mole King | Mole Mines | Crystal Crown | 900 | Miner Hat |
 | The Glitch | Arcade World | Debug Key | 1000 | Pixel Skin |
 
-All key items are required for the endgame mission chain. See our [all missions guide](/blog/all-missions-guide/) for details on how these items are used in the overworld.
+All key items are required for the endgame mission chain. See our [all missions guide](/blog/all-missions-guide/) for details on how these items are used in the overworld. For the complete checklist of everything needed to achieve 100% completion (including all boss defeats), see the [100% completion guide](/blog/super-bear-adventure-100-percent-completion/).
 
 ## Conclusion
 

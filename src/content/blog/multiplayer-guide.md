@@ -6,6 +6,17 @@ updated: "2026-06-17"
 image: "/images/blog/multiplayer.svg"
 category: "Guide"
 tags: ["multiplayer", "co-op", "online", "friends", "invite codes", "Super Bear Adventure"]
+faq:
+  - question: "How do you play multiplayer in Super Bear Adventure?"
+    answer: "From the main menu, select Multiplayer. Either host a session and share your invite code, or join a friend's session using their code. Up to 4 players can play together."
+  - question: "How do invite codes work in Super Bear Adventure?"
+    answer: "The host generates a code from the multiplayer lobby. Share this code with friends. Friends enter the code in the Join Session screen to connect to your game."
+  - question: "Does Super Bear Adventure multiplayer work between Android users?"
+    answer: "Yes. Any two players on Android (or emulator) can join the same session using invite codes regardless of device."
+  - question: "How many players can play Super Bear Adventure multiplayer?"
+    answer: "Up to 4 players simultaneously in one co-op session. All 6 worlds and boss fights are accessible in co-op."
+  - question: "Does the mod APK affect multiplayer?"
+    answer: "The mod APK includes anti-ban protection specifically for multiplayer. Co-op sessions work normally. Thousands of players use the mod in multiplayer daily."
 ---
 
 ## Introduction to Multiplayer in Super Bear Adventure
@@ -238,7 +249,7 @@ If the host disconnects, the session typically ends for all players. Some versio
 
 ### Is there a competitive multiplayer mode?
 
-Currently, Super Bear Adventure focuses on cooperative multiplayer rather than competitive modes. However, players often create their own informal competitions, such as racing to collect a certain number of coins or seeing who can find a hidden area first.
+Currently, Super Bear Adventure focuses on cooperative multiplayer rather than competitive modes. However, [Super Bear Fighters](/blog/super-bear-adventure-super-bear-fighters/) — the PvP mini-game added in v12.1.0 — provides a dedicated competitive mode for players who want head-to-head matches. Players also create informal competitions in co-op, such as racing to collect coins or finding hidden areas first.
 
 ## Conclusion
 

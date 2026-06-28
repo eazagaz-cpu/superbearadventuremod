@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { breadcrumbSchema, faqSchema } from '../utils/schema';
+
+const worlds = [
+  {
+    name: 'Turtletown',
+    slug: 'turtletown',
+    theme: 'Tropical Village',
+    difficulty: 'Beginner',
+    boss: 'Turtle King',
+    description: 'The starting world of the Kingdom of Earthkwak. A peaceful tropical village with sandy beaches, friendly turtle NPCs, and Baaren\'s home. Features the game\'s tutorial area and introduces basic mechanics.',
+    highlights: ['Tutorial area and basic mechanics', 'Beach and village exploration', 'Turtle King boss fight', 'Multiple hidden sticker locations', 'Coin farming routes'],
+    walkthrough: '/blog/turtletown-walkthrough/',
+    color: 'from-green-50 to-emerald-50',
+    border: 'border-green-200',
+  },
+  {
+    name: 'Snow Valley',
+    slug: 'snow-valley',
+    theme: 'Winter Mountains',
+    difficulty: 'Intermediate',
+    boss: 'Frost Giant',
+    description: 'A frozen mountain range with snowy peaks, frozen lakes, pine forests, and icy caverns. Snow Valley introduces the snowboard vehicle mechanic and ice-based puzzle platforming.',
+    highlights: ['Snowboard vehicle sections', 'Frozen lake platforming', 'Frost Giant boss encounter', 'Hidden ice caves with secrets', 'Snowstorm weather events'],
+    walkthrough: '/blog/snow-valley-secrets/',
+    color: 'from-blue-50 to-sky-50',
+    border: 'border-blue-200',
+  },
+  {
+    name: 'Beemothep Desert',
+    slug: 'beemothep-desert',
+    theme: 'Ancient Desert Ruins',
+    difficulty: 'Intermediate',
+    boss: 'Sand Pharaoh',
+    description: 'An ancient desert landscape inspired by Egyptian architecture. Features pyramid interiors, sand trap mechanics, sphinx puzzles, and the longest boss fight in the base game.',
+    highlights: ['Pyramid interior exploration', 'Sphinx puzzle challenges', 'Sand Pharaoh boss fight', 'Desert treasure collectibles', 'Underground temple sections'],
+    walkthrough: '/blog/beemothep-desert-puzzle/',
+    color: 'from-amber-50 to-yellow-50',
+    border: 'border-amber-200',
+  },
+  {
+    name: 'Giant House',
+    slug: 'giant-house',
+    theme: 'Oversized Household',
+    difficulty: 'Intermediate',
+    boss: 'House Cat',
+    description: 'A unique perspective-based world where Baaren is miniaturized and must navigate a normal household — but everything is enormous. Kitchen counters become platforms, pencils become logs, and the house cat is a terrifying boss.',
+    highlights: ['Giant furniture platforming', 'Kitchen and bookshelf zones', 'House Cat boss battle', 'Scale contrast secrets', 'Vehicle driving in toy car'],
+    walkthrough: '/blog/giant-house-walkthrough/',
+    color: 'from-purple-50 to-violet-50',
+    border: 'border-purple-200',
+  },
+  {
+    name: 'The Hive',
+    slug: 'the-hive',
+    theme: 'Underground Bee Kingdom',
+    difficulty: 'Advanced',
+    boss: 'Queen Bee',
+    description: 'The most visually striking world in the game. An underground bee kingdom with amber honeycomb architecture, purple honey pools, swarming bee enemies, and the Queen Bee as the most challenging boss in the base game.',
+    highlights: ['Honeycomb platforming mechanics', 'Purple honey pool hazards', 'Queen Bee boss encounter', 'Bee enemy swarm combat', 'Golden amber visual aesthetic'],
+    walkthrough: '/blog/the-hive-walkthrough/',
+    color: 'from-yellow-50 to-amber-50',
+    border: 'border-yellow-300',
+  },
+  {
+    name: 'Mole Mines',
+    slug: 'mole-mines',
+    theme: 'Crystal Underground',
+    difficulty: 'Advanced',
+    boss: 'Mole King',
+    description: 'Dark underground caverns illuminated by glowing crystal clusters. Features mine cart racing sections, gem collection puzzles, and the final boss of the main story — the Mole King.',
+    highlights: ['Mine cart racing sections', 'Crystal cavern exploration', 'Mole King final boss', 'Gem puzzle platforming', 'Dark atmosphere with crystal lighting'],
+    walkthrough: '/blog/mole-mines-walkthrough/',
+    color: 'from-gray-50 to-slate-50',
+    border: 'border-gray-200',
+  },
+];
+
+const faqItems = [
+  { question: 'How many worlds are in Super Bear Adventure?', answer: 'Super Bear Adventure has 6 main worlds: Turtletown, Snow Valley, Beemothep Desert, Giant House, The Hive, and Mole Mines. Each world has its own theme, boss, missions, and collectibles.' },
+  { question: 'What order should I play the worlds?', answer: 'The recommended order is Turtletown → Snow Valley → Beemothep Desert → Giant House → The Hive → Mole Mines. This follows increasing difficulty. Turtletown is the tutorial world; Mole Mines has the final story boss.' },
+  { question: 'Are all worlds unlocked from the start in the mod APK?', answer: 'Yes. In the mod APK, all 6 worlds are accessible from the beginning. In the official game, worlds unlock as you progress through the story.' },
+  { question: 'Which world has the most secrets?', answer: 'The Hive and Mole Mines have the most secrets and hidden collectibles. Giant House has the most unique secrets due to its perspective-based design.' },
+  { question: 'Which world is the hardest?', answer: 'The Hive and Mole Mines are considered the hardest worlds due to advanced platforming, environmental hazards, and the most difficult boss fights (Queen Bee and Mole King).' },
+  { question: 'Is there a hub world in Super Bear Adventure?', answer: 'Yes. The Kingdom of Earthkwak serves as the overworld hub connecting all 6 regions. Baaren starts here and can travel to any world from this central area. Read our Kingdom of Earthkwak guide for details.' },
+];
+
+const schemas = [
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'All Worlds', url: `${SITE.url}/worlds/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="All Super Bear Adventure Worlds — Complete Guide to Every Region"
+  description="Complete guide to all 6 Super Bear Adventure worlds: Turtletown, Snow Valley, Beemothep Desert, Giant House, The Hive, and Mole Mines. Difficulty, bosses, secrets, and walkthroughs."
+  schema={schemas}
+  canonical={`${SITE.url}/worlds/`}
+>
+  <main id="main-content" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'All Worlds' }]} />
+
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        All Super Bear Adventure Worlds
+      </h1>
+      <p class="text-lg text-gray-600">
+        Super Bear Adventure has 6 unique open worlds in the Kingdom of Earthkwak. Each world has a distinct theme, its own boss, missions, collectibles, and secrets. Here is everything you need to know about every region.
+      </p>
+    </div>
+
+    <!-- World Cards -->
+    <div class="space-y-6 mb-12">
+      {worlds.map((world, i) => (
+        <div class={`bg-gradient-to-r ${world.color} border ${world.border} rounded-2xl p-6`}>
+          <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-xl font-extrabold text-gray-700">
+              {i + 1}
+            </div>
+            <div class="flex-1">
+              <div class="flex flex-wrap items-center gap-2 mb-2">
+                <h2 class="text-xl font-extrabold text-gray-900">{world.name}</h2>
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white border border-gray-200 text-gray-600">{world.theme}</span>
+                <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${world.difficulty === 'Beginner' ? 'bg-green-100 text-green-700' : world.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700' : 'bg-red-100 text-red-700'}`}>
+                  {world.difficulty}
+                </span>
+              </div>
+              <p class="text-gray-700 text-sm mb-3">{world.description}</p>
+              <div class="mb-3">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Highlights</span>
+                <ul class="mt-1 flex flex-wrap gap-2">
+                  {world.highlights.map((h) => (
+                    <li class="text-xs bg-white rounded-lg px-2.5 py-1 border border-gray-200 text-gray-600">{h}</li>
+                  ))}
+                </ul>
+              </div>
+              <div class="flex items-center gap-4 text-xs text-gray-500">
+                <span><strong class="text-gray-700">Boss:</strong> {world.boss}</span>
+                <a href={world.walkthrough} class="inline-flex items-center gap-1 text-game-green font-semibold hover:underline">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                  Full walkthrough guide
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- World Unlock Order -->
+    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-10">
+      <h2 class="text-xl font-extrabold text-gray-900 mb-4">Recommended World Order</h2>
+      <p class="text-gray-600 text-sm mb-4">
+        While the mod APK unlocks all worlds from the start, this is the intended progression order — from beginner-friendly to story finale:
+      </p>
+      <div class="flex flex-wrap items-center gap-2 text-sm">
+        {worlds.map((w, i) => (
+          <>
+            <a href={w.walkthrough} class="font-semibold text-game-green hover:underline">{w.name}</a>
+            {i < worlds.length - 1 && <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>}
+          </>
+        ))}
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-game-green-50 border border-game-green/20 rounded-2xl p-6 mb-10">
+      <h2 class="text-lg font-extrabold text-gray-900 mb-4">Related Guides</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {[
+          { label: 'Kingdom of Earthkwak — Complete Map & Lore', href: '/blog/super-bear-adventure-kingdom-earthkwak-guide/' },
+          { label: 'Boss Fight Strategy Guide', href: '/blog/boss-fight-strategy/' },
+          { label: 'All Secret Stickers Locations', href: '/blog/all-secret-stickers-locations/' },
+          { label: 'All Missions Complete Guide', href: '/blog/all-missions-guide/' },
+          { label: 'Secret Areas & Easter Eggs', href: '/blog/secret-areas-easter-eggs/' },
+          { label: '100% Completion Checklist', href: '/blog/super-bear-adventure-100-percent-completion/' },
+        ].map((item) => (
+          <a href={item.href} class="flex items-center gap-2 text-sm text-gray-700 hover:text-game-green transition-colors">
+            <svg class="w-4 h-4 text-game-green flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Worlds FAQ</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <p class="text-gray-600 mb-4">Explore all 6 worlds with unlimited coins and all features unlocked:</p>
+      <a href="/download/" class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Super Bear Adventure Mod APK
+      </a>
+    </div>
+  </main>
+</BaseLayout>

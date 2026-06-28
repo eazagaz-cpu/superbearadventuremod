@@ -6,6 +6,7 @@ updated: "2026-06-17"
 image: "/images/blog/unlimited-money.svg"
 category: "Tips"
 tags: ["unlimited money", "unlimited coins", "free coins", "best purchases", "tips", "Super Bear Adventure"]
+addSoftwareSchema: true
 ---
 
 ## How Unlimited Money Works in Super Bear Adventure Mod APK

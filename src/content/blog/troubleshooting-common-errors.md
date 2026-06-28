@@ -6,6 +6,17 @@ updated: "2026-06-17"
 image: "/images/blog/troubleshooting.svg"
 category: "Technical"
 tags: ["troubleshooting", "errors", "fixes", "crash", "black screen", "super bear adventure"]
+faq:
+  - question: "Why does Super Bear Adventure show 'App not installed'?"
+    answer: "This usually means a signature conflict (official vs mod APK signing keys), insufficient storage, or a corrupted download. Uninstall the existing app, free up storage, and re-download."
+  - question: "Why does Super Bear Adventure crash on launch?"
+    answer: "Common causes: insufficient RAM (close background apps), corrupt APK (re-download), or incompatible Android version. Clear the app cache via Settings → Apps → Super Bear Adventure → Clear Cache."
+  - question: "How do I fix the black screen error in Super Bear Adventure?"
+    answer: "Black screen on launch typically means the game's assets failed to load. Force stop the app, clear cache, and relaunch. If persistent, uninstall and reinstall."
+  - question: "Why is my Super Bear Adventure save data gone after updating?"
+    answer: "Save data is only preserved if you install over the existing app without uninstalling first. If you uninstalled first, the save directory was deleted. Always back up saves before updates."
+  - question: "How do I fix 'Parse error' when installing Super Bear Adventure APK?"
+    answer: "Parse error means the APK file is corrupted. Re-download the APK from our download page and install the fresh file."
 ---
 
 ## Common Issues in Super Bear Adventure
@@ -26,7 +37,7 @@ This is one of the most common errors when installing the mod APK version of Sup
 
 Android blocks installation of APK files from sources outside the Play Store by default. You need to enable installation from unknown sources for the file manager or browser you are using to install the APK.
 
-**Solution**: Go to Settings, then Security (or Privacy, depending on your device), then enable "Install Unknown Apps" or "Unknown Sources." On newer Android versions (8.0 and above), you enable this per-app rather than globally. Enable it for the specific app you are using to open the APK file (usually your file manager or Chrome).
+**Solution**: Go to Settings, then Security (or Privacy, depending on your device), then enable "Install Unknown Apps" or "Unknown Sources." On newer Android versions (8.0 and above), you enable this per-app rather than globally. Enable it for the specific app you are using to open the APK file (usually your file manager or Chrome). For device-specific instructions, see our [complete install guide](/install/).
 
 ### Cause 2: Conflicting Existing Installation
 

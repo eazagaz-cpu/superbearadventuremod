@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3E5F5"/>
+      <stop offset="100%" stop-color="#E1BEE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g opacity="0.06"><circle cx="100" cy="100" r="120" fill="#9C27B0"/><circle cx="700" cy="360" r="100" fill="#7B1FA2"/></g>
+  <!-- Cheat code card -->
+  <rect x="150" y="100" width="500" height="250" rx="20" fill="white" opacity="0.9"/>
+  <rect x="150" y="100" width="500" height="55" rx="20" fill="#7B1FA2"/>
+  <text x="400" y="135" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="white">CHEATS &amp; CODES</text>
+  <g font-family="monospace" font-size="14" fill="#4A148C">
+    <text x="200" y="192">★ Redeem Codes → Free Rewards</text>
+    <text x="200" y="222">★ Mod APK → Unlimited Everything</text>
+    <text x="200" y="252">★ Coin Farming → Max Efficiency</text>
+    <text x="200" y="282">★ Speedrun Skips → Secret Routes</text>
+    <text x="200" y="312">★ Boss Shortcuts → Easy Wins</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#7B1FA2">All Super Bear Adventure Cheats 2026</text>
+</svg>

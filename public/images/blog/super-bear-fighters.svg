@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b71c1c"/>
+      <stop offset="100%" style="stop-color:#880e4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- VS display -->
+  <rect x="50" y="120" width="160" height="200" rx="10" fill="#1a0010" stroke="#f48fb1" stroke-width="2"/>
+  <text x="130" y="225" font-family="Arial,sans-serif" font-size="60" text-anchor="middle">🐻</text>
+  <text x="130" y="280" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#f48fb1">PLAYER 1</text>
+  <text x="240" y="230" font-family="Arial,sans-serif" font-size="36" font-weight="900" text-anchor="middle" fill="#fff">VS</text>
+  <rect x="270" y="120" width="160" height="200" rx="10" fill="#1a0010" stroke="#f48fb1" stroke-width="2"/>
+  <text x="350" y="225" font-family="Arial,sans-serif" font-size="60" text-anchor="middle">🐻</text>
+  <text x="350" y="280" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#f48fb1">PLAYER 2</text>
+  <!-- Right panel -->
+  <rect x="460" y="80" width="310" height="290" rx="12" fill="#0d0010" opacity="0.85"/>
+  <text x="615" y="120" font-family="Arial,sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="#fff">Super Bear Fighters</text>
+  <text x="615" y="148" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#f48fb1">PvP Mini-Game Guide</text>
+  <rect x="475" y="160" width="280" height="1.5" fill="#f48fb1" opacity="0.3"/>
+  <text x="480" y="188" font-family="Arial,sans-serif" font-size="13" fill="#fce4ec">Found in the Arcade World</text>
+  <text x="480" y="212" font-family="Arial,sans-serif" font-size="13" fill="#fce4ec">1v1 and 2v2 match modes</text>
+  <text x="480" y="236" font-family="Arial,sans-serif" font-size="13" fill="#fce4ec">Unique character moves per bear</text>
+  <text x="480" y="260" font-family="Arial,sans-serif" font-size="13" fill="#fce4ec">Ranking system with seasonal rewards</text>
+  <text x="480" y="284" font-family="Arial,sans-serif" font-size="13" fill="#fce4ec">Added in v12.1.0 (November 2025)</text>
+  <rect x="475" y="305" width="280" height="40" rx="8" fill="#880e4f" opacity="0.4"/>
+  <text x="615" y="329" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#f8bbd0">Complete moveset guide inside</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#666">superbearadventuremod.io</text>
+</svg>

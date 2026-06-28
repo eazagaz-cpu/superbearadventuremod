@@ -6,6 +6,17 @@ updated: "2026-06-17"
 image: "/images/blog/beginner-guide.svg"
 category: "Guide"
 tags: ["beginner guide", "how to play", "controls", "tips", "tutorial"]
+faq:
+  - question: "What is Super Bear Adventure?"
+    answer: "Super Bear Adventure is a 3D platformer by Earthkwak Games where you play as Baaren, a bear exploring the Kingdom of Earthkwak across 6 worlds. It includes missions, collectibles, boss fights, and co-op multiplayer."
+  - question: "Is Super Bear Adventure hard to play as a beginner?"
+    answer: "No. The game starts with a clear tutorial in Turtletown. Controls are simple: move, jump, and attack. The difficulty increases gradually as you progress to later worlds."
+  - question: "What should a beginner do first in Super Bear Adventure?"
+    answer: "Complete the Turtletown tutorial, collect coins to buy your first cosmetics, and defeat the Turtle King boss. Then explore Snow Valley. The mod APK gives you unlimited coins from the start, removing any grind."
+  - question: "How do you get coins fast as a beginner?"
+    answer: "With the mod APK, coins are unlimited from the start. Without the mod, complete all daily challenges for the fastest coin income and run Turtletown's main coin trail repeatedly."
+  - question: "What is the best starting world in Super Bear Adventure?"
+    answer: "Always start with Turtletown — it is the tutorial world and introduces all game mechanics. The world unlock order is Turtletown → Snow Valley → Desert → Giant House → The Hive → Mole Mines."
 ---
 
 ## What Is Super Bear Adventure?
@@ -164,7 +175,7 @@ While you have some freedom in which worlds to tackle, the intended progression 
 5. **The Hive** - Vertical design and aerial combat
 6. **Mole Mines** - Underground exploration and the current endgame content
 
-You can read about every mission across all these worlds in our [all missions guide](/blog/all-missions-guide/).
+You can read about every mission across all these worlds in our [all missions guide](/blog/all-missions-guide/), or get a full overview of every region in the [worlds guide](/worlds/).
 
 ### Fast Travel
 

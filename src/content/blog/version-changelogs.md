@@ -53,6 +53,8 @@ This maintenance update focuses on stability and bug fixes reported by the commu
 - Improved the visibility of collectible indicators on the minimap
 - Minor text corrections in NPC dialogue across multiple regions
 
+For a detailed breakdown of the entire v12.x series including mod APK features per version, see our [v12 version guide](/blog/super-bear-adventure-mod-apk-v12/).
+
 ### v12.1.0 - The Summer Update (May 2026)
 
 **Release Date**: May 2026

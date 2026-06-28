@@ -6,6 +6,21 @@ updated: "2026-06-17"
 image: "/images/blog/giant-house.svg"
 category: "Walkthrough"
 tags: ["giant house", "walkthrough", "puzzles", "secrets", "guide"]
+howto:
+  name: "How to Complete Giant House in Super Bear Adventure"
+  description: "Navigate all rooms and find all secrets in the Giant House"
+  totalTime: "PT50M"
+  steps:
+    - name: "Navigate the kitchen"
+      text: "Use the Bee Car (beside the refrigerator) to reach the countertops. Complete the kitchen delivery mission."
+    - name: "Solve living room puzzles"
+      text: "The living room has a bookshelf puzzle — push books in the correct order to reveal a hidden switch."
+    - name: "Explore the bedroom"
+      text: "Check under the pillow for a sticker. Complete the bedroom NPC quest involving the Giant's belongings."
+    - name: "Find bathroom secrets"
+      text: "Use the drain trick in the toilet to access a hidden area. The toilet tank sticker requires getting inside the tank."
+    - name: "Reach the attic and defeat House Cat"
+      text: "Use the OOB bathroom shortcut or take the stairs. In the attic boss fight, attack House Cat during the yarn ball phase exclusively."
 ---
 
 ## Introduction to Giant House

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Comparison -->
+  <rect x="80" y="100" width="260" height="250" rx="16" fill="#FFEBEE" stroke="#EF9A9A" stroke-width="2"/>
+  <text x="210" y="140" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#B71C1C">Unknown APK Sites</text>
+  <g font-family="sans-serif" font-size="12" fill="#C62828">
+    <text x="110" y="175">✗ Unverified sources</text>
+    <text x="110" y="200">✗ Possible malware</text>
+    <text x="110" y="225">✗ Outdated builds</text>
+    <text x="110" y="250">✗ No security scan</text>
+    <text x="110" y="275">✗ Hidden adware</text>
+  </g>
+  <text x="400" y="225" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="24" fill="#558B2F">VS</text>
+  <rect x="460" y="100" width="260" height="250" rx="16" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="2"/>
+  <text x="590" y="140" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#1B5E20">superbearadventuremod.io</text>
+  <g font-family="sans-serif" font-size="12" fill="#2E7D32">
+    <text x="480" y="175">✓ VirusTotal verified</text>
+    <text x="480" y="200">✓ Official v12.1.5</text>
+    <text x="480" y="225">✓ Cloudflare CDN</text>
+    <text x="480" y="250">✓ 0/72 detections</text>
+    <text x="480" y="275">✓ Always updated</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="16" fill="#2E7D32">Always Download from Trusted Sources</text>
+</svg>

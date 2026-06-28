@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import AppInfoGrid from '../components/AppInfoGrid.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { softwareAppSchema, howToSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
+
+const installSteps = [
+  { name: 'Download the APK File', text: `Tap the green Download button on this page to save the Super Bear Adventure Mod APK v${SITE.download.version} to your device. The file is ${SITE.download.size} in size.` },
+  { name: 'Enable Unknown Sources', text: 'Go to Settings → Security (or Privacy on Android 8+) → enable "Install from Unknown Sources" or when prompted, tap "Allow from this source" for your browser.' },
+  { name: 'Open the APK File', text: 'Open your Downloads folder using your file manager app. Tap the super-bear-adventure-mod-apk.apk file to start the installation.' },
+  { name: 'Tap Install', text: 'The Android install screen will appear. Review the permissions and tap "Install". The installation takes about 10–20 seconds.' },
+  { name: 'Launch the Game', text: 'Tap "Open" or find the Super Bear Adventure icon on your home screen. Enjoy unlimited coins, all skins unlocked, and no ads from the first launch.' },
+];
+
+const faqItems = [
+  { question: 'Is the Super Bear Adventure Mod APK free to download?', answer: 'Yes, it is completely free. There are no hidden charges, subscriptions, or in-app purchases. You get unlimited coins, all skins, and no ads at zero cost.' },
+  { question: 'What version of Android do I need?', answer: `The mod APK requires Android ${SITE.download.requires.replace('Android ', '')}. It works on all major Android devices including Samsung Galaxy, Xiaomi, OnePlus, Google Pixel, and more.` },
+  { question: 'Will I lose my progress when installing the mod?', answer: 'If you already have the official game installed, uninstall it first (or install over it if signatures allow). Your cloud-saved progress may carry over. For safety, read our guide on how to install without losing progress.' },
+  { question: 'Does this mod APK require root access?', answer: 'No root required. The Super Bear Adventure Mod APK installs like any standard Android app. No Magisk, no custom recovery, no jailbreak needed.' },
+  { question: 'Is the APK safe — no viruses or malware?', answer: 'The APK has been scanned with VirusTotal and multiple antivirus engines. It contains no malware, spyware, or harmful code. The mod is based on the official v12.1.5 build from Earthkwak Games with mod modifications only. Read our full safety report at /safety/ for details.' },
+  { question: 'Can I play multiplayer with the mod APK?', answer: 'Yes. The mod retains full multiplayer functionality. You can join co-op sessions, use invite codes, and play online with friends just like the official game.' },
+  { question: 'How do I update the mod when a new version releases?', answer: 'Download the new APK from this page and install it over the existing one. Your progress will be preserved. Never uninstall before installing the update.' },
+  { question: 'Why is my phone blocking the installation?', answer: 'Android blocks APK installs from unknown sources by default for security. Go to Settings → Security → Unknown Sources (Android 7 and below) or Settings → Apps → Special App Access → Install Unknown Apps (Android 8+) and allow your browser or file manager.' },
+];
+
+const schemas = [
+  softwareAppSchema(),
+  howToSchema({
+    name: 'How to Download and Install Super Bear Adventure Mod APK',
+    description: `Step-by-step guide to download and install the Super Bear Adventure Mod APK v${SITE.download.version} on Android.`,
+    steps: installSteps,
+    totalTime: 'PT5M',
+  }),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'Download', url: `${SITE.url}/download/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="Download Super Bear Adventure Mod APK v12.1.5 — Free Android"
+  description={`Download Super Bear Adventure Mod APK v${SITE.download.version} free for Android. Unlimited coins, all skins unlocked, no ads. ${SITE.download.size}, safe, no root required.`}
+  schema={schemas}
+  canonical={`${SITE.url}/download/`}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'Download' }]} />
+
+    <!-- Hero -->
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 bg-game-green-50 text-game-green text-sm font-semibold px-4 py-2 rounded-full mb-4 border border-game-green/20">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+        v{SITE.download.version} — Latest Official Build
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Download Super Bear Adventure Mod APK
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        Free Android download with unlimited coins, all skins and hats unlocked, no advertisements, and full multiplayer support. Based on the official v{SITE.download.version} release.
+      </p>
+
+      <!-- Primary Download Button -->
+      <div class="rounded-2xl p-8 mb-6 border border-gray-700" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: rgba(134,201,67,0.15);">
+          <svg class="w-8 h-8" style="color: #86c943;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </div>
+        <p style="color: #d1d5db; font-size: 0.95rem; margin-bottom: 0.25rem;">Super Bear Adventure Mod APK</p>
+        <p style="color: #9ca3af; font-size: 0.8rem; margin-bottom: 1.5rem;">v{SITE.download.version} &middot; {SITE.download.size} &middot; Android {SITE.download.requires.replace('Android ', '')}</p>
+        <a href={SITE.download.url} class="btn-download">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Download APK v{SITE.download.version} ({SITE.download.size})
+        </a>
+        <div class="flex items-center justify-center gap-6 mt-4" style="font-size: 0.8rem; color: #9ca3af;">
+          <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Virus Free</span>
+          <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> No Root</span>
+          <span class="flex items-center gap-1"><svg class="w-3.5 h-3.5" style="color: #4ade80;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg> Free</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Info Grid -->
+    <AppInfoGrid />
+
+    <!-- What's Included -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">What's Included in the Mod</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { icon: '💰', title: 'Unlimited Coins & Gems', desc: 'Buy every skin, hat, and item in the shop from day one. No grinding required.' },
+          { icon: '👒', title: 'All Skins & Hats Unlocked', desc: 'Every cosmetic from Skeleton Bear to Royal Cape is available immediately.' },
+          { icon: '🚫', title: 'Zero Advertisements', desc: 'No pop-ups, video ads, or banner ads. Pure uninterrupted gameplay.' },
+          { icon: '🛡️', title: 'Anti-Ban Protection', desc: 'The mod includes protections to reduce risk during online sessions.' },
+          { icon: '🌍', title: 'All 6 Worlds Accessible', desc: 'Turtletown, Snow Valley, Desert, Giant House, The Hive, and Mole Mines all unlocked.' },
+          { icon: '👥', title: 'Full Multiplayer Support', desc: 'Co-op play, invite codes, and online sessions work exactly as in the official game.' },
+        ].map((feat) => (
+          <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm flex items-start gap-4">
+            <span class="text-2xl flex-shrink-0">{feat.icon}</span>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm mb-1">{feat.title}</h3>
+              <p class="text-xs text-gray-600">{feat.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Installation Steps -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-2">How to Install — Step by Step</h2>
+      <p class="text-gray-600 mb-6">The full install takes about 5 minutes on any Android device. No root or special tools needed.</p>
+      <div class="space-y-4">
+        {installSteps.map((step, i) => (
+          <div class="flex items-start gap-4 bg-white rounded-xl border border-gray-100 p-5 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-game-green text-white font-bold flex items-center justify-center flex-shrink-0 text-lg">
+              {i + 1}
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-1">{step.name}</h3>
+              <p class="text-sm text-gray-600">{step.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
+        <strong>Having trouble?</strong> If Android blocks the installation, go to Settings → Apps → Special App Access → Install Unknown Apps. See our <a href="/install/" class="underline font-medium">full install guide</a> for device-specific help, or the <a href="/blog/troubleshooting-common-errors/" class="underline font-medium">troubleshooting guide</a> for error fixes.
+      </div>
+    </div>
+
+    <!-- Device Guide Links -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Install on Your Specific Device</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { label: 'Samsung Galaxy (S & A Series)', href: '/blog/super-bear-adventure-apk-samsung/', desc: 'One UI — specific steps for Samsung devices' },
+          { label: 'Xiaomi & Redmi (MIUI)', href: '/blog/super-bear-adventure-apk-xiaomi/', desc: 'MIUI has extra unknown sources steps' },
+          { label: 'Android 14 & 15', href: '/blog/super-bear-adventure-mod-apk-android-14/', desc: 'Per-app install permission on newer Android' },
+          { label: 'BlueStacks (PC / Mac)', href: '/blog/super-bear-adventure-mod-apk-bluestacks/', desc: 'Sideload the APK into BlueStacks emulator' },
+          { label: 'LDPlayer (PC)', href: '/blog/super-bear-adventure-mod-apk-ldplayer/', desc: 'LDPlayer setup and performance tips' },
+          { label: 'iOS / iPhone', href: '/blog/super-bear-adventure-ios-mod-iphone/', desc: 'iOS alternative methods (no APK for iOS)' },
+        ].map((item) => (
+          <a href={item.href} class="block bg-white rounded-xl border border-gray-100 p-4 shadow-sm hover:border-game-green hover:shadow-md transition-all group">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h3 class="font-bold text-gray-900 text-sm group-hover:text-game-green transition-colors">{item.label}</h3>
+                <p class="text-xs text-gray-500 mt-0.5">{item.desc}</p>
+              </div>
+              <svg class="w-4 h-4 text-gray-400 group-hover:text-game-green flex-shrink-0 mt-0.5 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Safety Trust Block -->
+    <div class="my-10 bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
+          <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        </div>
+        <h2 class="text-lg font-extrabold text-gray-900">Is This APK Safe?</h2>
+      </div>
+      <p class="text-gray-600 text-sm mb-4">
+        The mod APK v{SITE.download.version} has been scanned by multiple antivirus engines and contains no malware, spyware, or harmful code. It does not require root access and uses the same game permissions as the official Play Store version.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/safety/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          Read full safety report
+        </a>
+        <a href="/blog/super-bear-adventure-apk-safe-download/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          Security analysis guide
+        </a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="my-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Frequently Asked Questions</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-10">
+      <a href={SITE.download.url} class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Super Bear Adventure Mod APK v{SITE.download.version}
+      </a>
+      <p class="text-sm text-gray-500 mt-3">Free &middot; {SITE.download.size} &middot; Android {SITE.download.requires.replace('Android ', '')} &middot; No root &middot; Updated {SITE.download.updated}</p>
+    </div>
+  </main>
+</BaseLayout>

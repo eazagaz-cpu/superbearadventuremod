@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a3a"/>
+      <stop offset="100%" style="stop-color:#2d1b5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Monitor -->
+  <rect x="50" y="90" width="280" height="200" rx="10" fill="#0d0520" stroke="#9c27b0" stroke-width="2.5"/>
+  <rect x="65" y="105" width="250" height="170" rx="4" fill="#130a20"/>
+  <text x="190" y="195" font-family="Arial,sans-serif" font-size="40" text-anchor="middle">🐻</text>
+  <text x="190" y="235" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#ce93d8">LDPlayer 9</text>
+  <rect x="150" y="295" width="80" height="20" rx="4" fill="#9c27b0" opacity="0.4"/>
+  <rect x="120" y="315" width="140" height="10" rx="4" fill="#0d0520" stroke="#9c27b0" stroke-width="1"/>
+  <!-- Right panel -->
+  <rect x="360" y="70" width="410" height="310" rx="12" fill="#080512" opacity="0.85"/>
+  <text x="565" y="115" font-family="Arial,sans-serif" font-size="26" font-weight="900" text-anchor="middle" fill="#fff">LDPlayer 9 Setup</text>
+  <text x="565" y="142" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#ce93d8">Fast Android Emulator for PC</text>
+  <rect x="375" y="155" width="380" height="1.5" fill="#9c27b0" opacity="0.3"/>
+  <text x="380" y="183" font-family="Arial,sans-serif" font-size="13" fill="#ddd">1. Download LDPlayer 9 from ldplayer.net</text>
+  <text x="380" y="206" font-family="Arial,sans-serif" font-size="13" fill="#ddd">2. Run installer, complete setup</text>
+  <text x="380" y="229" font-family="Arial,sans-serif" font-size="13" fill="#ddd">3. Download Mod APK to your PC</text>
+  <text x="380" y="252" font-family="Arial,sans-serif" font-size="13" fill="#ddd">4. In LDPlayer: APK Installer → select file</text>
+  <text x="380" y="275" font-family="Arial,sans-serif" font-size="13" fill="#ddd">5. Open game from app drawer</text>
+  <rect x="375" y="295" width="380" height="60" rx="8" fill="#9c27b0" opacity="0.12"/>
+  <text x="565" y="321" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#e1bee7">Better performance than BlueStacks on older PCs</text>
+  <text x="565" y="342" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#e1bee7">Supports Android 9 core — fully compatible</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#555">superbearadventuremod.io</text>
+</svg>

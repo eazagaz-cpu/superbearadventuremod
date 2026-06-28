@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Character central -->
+  <circle cx="200" cy="210" r="120" fill="#0d1a4a" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="200" y="245" font-family="Arial,sans-serif" font-size="100" text-anchor="middle">🐻</text>
+  <text x="200" y="310" font-family="Arial,sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#fff">BAAREN</text>
+  <!-- Ability labels around -->
+  <text x="200" y="100" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Double Jump</text>
+  <text x="85" y="180" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Pounce</text>
+  <text x="315" y="180" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Roll Dodge</text>
+  <text x="100" y="285" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Slide</text>
+  <text x="300" y="285" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Glide</text>
+  <!-- Right panel -->
+  <rect x="380" y="80" width="390" height="290" rx="12" fill="#0a0f2a" opacity="0.85"/>
+  <text x="575" y="125" font-family="Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" fill="#fff">Baaren Abilities</text>
+  <text x="575" y="152" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#7986cb">Complete Character Guide</text>
+  <rect x="395" y="165" width="360" height="1.5" fill="#5c6bc0" opacity="0.4"/>
+  <text x="410" y="193" font-family="Arial,sans-serif" font-size="13" fill="#c5cae9">🐾 Double Jump — press jump mid-air</text>
+  <text x="410" y="217" font-family="Arial,sans-serif" font-size="13" fill="#c5cae9">🐾 Pounce — attack from above</text>
+  <text x="410" y="241" font-family="Arial,sans-serif" font-size="13" fill="#c5cae9">🐾 Roll Dodge — momentum skill</text>
+  <text x="410" y="265" font-family="Arial,sans-serif" font-size="13" fill="#c5cae9">🐾 Slide — speed under objects</text>
+  <text x="410" y="289" font-family="Arial,sans-serif" font-size="13" fill="#c5cae9">🐾 Glide — extended airtime</text>
+  <rect x="395" y="310" width="360" height="40" rx="8" fill="#283593" opacity="0.3"/>
+  <text x="575" y="334" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#9fa8da">Moveset unlocks guide + boss applications</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#555">superbearadventuremod.io</text>
+</svg>

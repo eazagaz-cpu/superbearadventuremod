@@ -16,9 +16,10 @@ interface Props {
   category?: string;
   headings: { depth: number; slug: string; text: string }[];
   slug: string;
+  extraSchemas?: object[];
 }
 
-const { title, description, date, updated, image, category, headings, slug } = Astro.props;
+const { title, description, date, updated, image, category, headings, slug, extraSchemas = [] } = Astro.props;
 
 const pageUrl = `${SITE.url}/blog/${slug}/`;
 const readingTime = Math.max(1, Math.ceil(Astro.slots.has('default') ? 8 : 5));
@@ -37,6 +38,7 @@ const schemas = [
     { name: 'Blog', url: `${SITE.url}/blog/` },
     { name: title, url: pageUrl },
   ]),
+  ...extraSchemas,
 ];
 ---
 

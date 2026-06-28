@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e"/>
+  <rect x="0" y="0" width="800" height="450" fill="url(#bg)"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d7377"/>
+      <stop offset="100%" style="stop-color:#14a085"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="80" width="220" height="290" rx="20" fill="#1a1a2e" opacity="0.85"/>
+  <rect x="75" y="110" width="190" height="230" rx="4" fill="#0f3460"/>
+  <circle cx="170" cy="97" r="5" fill="#444"/>
+  <text x="170" y="180" font-family="Arial,sans-serif" font-size="48" font-weight="900" text-anchor="middle" fill="#14a085">14</text>
+  <text x="170" y="210" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#aaa">ANDROID</text>
+  <circle cx="170" cy="295" r="30" fill="#14a085" opacity="0.2" stroke="#14a085" stroke-width="2"/>
+  <text x="170" y="302" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" fill="#14a085">✓</text>
+  <rect x="340" y="100" width="420" height="250" rx="12" fill="#0d0d1a" opacity="0.7"/>
+  <text x="550" y="155" font-family="Arial,sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#fff">Android 14 + 15</text>
+  <text x="550" y="185" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#14a085">Fully Compatible</text>
+  <rect x="360" y="205" width="380" height="2" fill="#14a085" opacity="0.3"/>
+  <text x="375" y="235" font-family="Arial,sans-serif" font-size="14" fill="#ccc">✓ Unknown Sources enabled via Settings</text>
+  <text x="375" y="260" font-family="Arial,sans-serif" font-size="14" fill="#ccc">✓ No root or modification needed</text>
+  <text x="375" y="285" font-family="Arial,sans-serif" font-size="14" fill="#ccc">✓ Photo permissions new flow handled</text>
+  <text x="375" y="310" font-family="Arial,sans-serif" font-size="14" fill="#ccc">✓ Restricted Settings bypass guide included</text>
+  <text x="400" y="400" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#888">superbearadventuremod.io</text>
+</svg>

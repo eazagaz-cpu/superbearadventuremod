@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#BBDEFB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- 2024 vs 2026 split -->
+  <rect x="60" y="80" width="300" height="290" rx="16" fill="#90A4AE" opacity="0.4"/>
+  <text x="210" y="125" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="42" fill="#455A64">2024</text>
+  <g font-family="sans-serif" font-size="13" fill="#37474F">
+    <text x="90" y="165">• v11.x builds</text>
+    <text x="90" y="190">• No multiplayer</text>
+    <text x="90" y="215">• 5 worlds only</text>
+    <text x="90" y="240">• No emotes</text>
+    <text x="90" y="265">• Basic mod menu</text>
+    <text x="90" y="295">• Android 5.1+</text>
+  </g>
+  <text x="400" y="230" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="22" fill="#1565C0">→</text>
+  <rect x="440" y="80" width="300" height="290" rx="16" fill="#4CAF50" opacity="0.3"/>
+  <text x="590" y="125" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="42" fill="#2E7D32">2026</text>
+  <g font-family="sans-serif" font-size="13" fill="#1B5E20">
+    <text x="460" y="165">• v12.1.5 (latest)</text>
+    <text x="460" y="190">• 4-player co-op</text>
+    <text x="460" y="215">• All 6 worlds</text>
+    <text x="460" y="240">• Emotes system</text>
+    <text x="460" y="265">• Full mod menu</text>
+    <text x="460" y="295">• Android 5.1+</text>
+  </g>
+  <text x="400" y="415" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#1565C0">Super Bear Adventure Mod APK: 2024 vs 2026</text>
+</svg>

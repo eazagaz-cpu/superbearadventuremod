@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e65100"/>
+      <stop offset="100%" style="stop-color:#bf360c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Vehicle icons row -->
+  <rect x="40" y="140" width="300" height="170" rx="10" fill="#1a0800" opacity="0.75"/>
+  <text x="190" y="192" font-family="Arial,sans-serif" font-size="50" text-anchor="middle">🛵</text>
+  <text x="190" y="230" font-family="Arial,sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#ff8f00">All Vehicles</text>
+  <text x="75" y="270" font-family="Arial,sans-serif" font-size="22">⛵</text>
+  <text x="135" y="270" font-family="Arial,sans-serif" font-size="22">🛒</text>
+  <text x="195" y="270" font-family="Arial,sans-serif" font-size="22">🚕</text>
+  <text x="255" y="270" font-family="Arial,sans-serif" font-size="22">✈️</text>
+  <text x="305" y="270" font-family="Arial,sans-serif" font-size="22">🚂</text>
+  <!-- Right panel -->
+  <rect x="380" y="70" width="390" height="310" rx="12" fill="#1a0500" opacity="0.85"/>
+  <text x="575" y="115" font-family="Arial,sans-serif" font-size="22" font-weight="900" text-anchor="middle" fill="#fff">Vehicles Guide</text>
+  <text x="575" y="142" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#ff8f00">Every Rideable Explained</text>
+  <rect x="395" y="155" width="360" height="1.5" fill="#ff8f00" opacity="0.3"/>
+  <text x="405" y="183" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">🛵 Scooter — Turtletown streets</text>
+  <text x="405" y="207" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">⛵ Sailboat — water traversal</text>
+  <text x="405" y="231" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">🛒 Mine Cart — Mole Mines</text>
+  <text x="405" y="255" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">🚕 Bee Car — Giant House</text>
+  <text x="405" y="279" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">✈️ Glider — Snow Valley peaks</text>
+  <text x="405" y="303" font-family="Arial,sans-serif" font-size="13" fill="#ffe0b2">🚂 Desert Train — Beemothep</text>
+  <rect x="395" y="322" width="360" height="40" rx="8" fill="#e65100" opacity="0.25"/>
+  <text x="575" y="347" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#ffccbc">Controls, locations, and tricks for each</text>
+  <text x="400" y="415" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" fill="#555">superbearadventuremod.io</text>
+</svg>

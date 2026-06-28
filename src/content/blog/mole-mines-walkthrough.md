@@ -6,6 +6,21 @@ updated: "2026-06-17"
 image: "/images/blog/mole-mines.svg"
 category: "Walkthrough"
 tags: ["mole mines", "walkthrough", "mining carts", "gem puzzles", "super bear adventure"]
+howto:
+  name: "How to Complete Mole Mines in Super Bear Adventure"
+  description: "Complete all missions and find all secrets in Mole Mines"
+  totalTime: "PT60M"
+  steps:
+    - name: "Enter the mines and board the mine cart"
+      text: "Start at the mine entrance. Board the mine cart at the station. Jump at split track points to choose your path."
+    - name: "Solve the gem puzzles"
+      text: "In the crystal cavern section, match colored gems to the floor patterns. Push crystals into the correct positions."
+    - name: "Cross the underground lake"
+      text: "Use the stepping stones and avoid the underground fish enemies. The lake section has stickers on the far shore."
+    - name: "Navigate the deep mines"
+      text: "Complete all Mole Council missions in the lower mine area. These involve collecting specific crystals and defeating mole guards."
+    - name: "Defeat the Mole King"
+      text: "Attack during the crystal-throw animation. The Mole King is vulnerable when his back is turned during his throwing sequence."
 ---
 
 ## Welcome to the Mole Mines

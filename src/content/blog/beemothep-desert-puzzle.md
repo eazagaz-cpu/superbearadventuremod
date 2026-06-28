@@ -6,6 +6,21 @@ updated: "2026-06-17"
 image: "/images/blog/beemothep-desert.svg"
 category: "Walkthrough"
 tags: ["beemothep desert", "puzzles", "sphinx", "secrets", "walkthrough"]
+howto:
+  name: "How to Solve All Puzzles in Beemothep Desert"
+  description: "Solutions for every puzzle and secret in the Desert world"
+  totalTime: "PT50M"
+  steps:
+    - name: "Solve the oasis puzzle"
+      text: "The oasis puzzle requires placing 4 colored stones on the correct floor tiles. Match the stone color to the hieroglyph symbol that shows the same color pattern."
+    - name: "Enter the pyramid using the clip"
+      text: "Optional speedrun technique: approach the west pyramid wall corner at 45 degrees and jump to clip through. Otherwise, solve the exterior stone block puzzle."
+    - name: "Complete the interior pyramid sections"
+      text: "The interior has 3 floors of puzzles: tile sliding, torch lighting sequence, and statue rotation. Each floor's solution is hinted in wall hieroglyphs."
+    - name: "Find all desert stickers"
+      text: "Stickers are in: east pyramid wall, behind the largest sand dune, oasis palm trees, underground ruin, and minaret top."
+    - name: "Defeat the Sand Pharaoh"
+      text: "Hit the glowing gem on the sarcophagus only during the summon animation (when the Pharaoh is summoning minions). Attacks at other times do no damage."
 ---
 
 ## Introduction to Beemothep Desert

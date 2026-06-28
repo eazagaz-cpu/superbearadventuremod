@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import { SITE } from '../utils/seo';
+import { softwareAppSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
+
+const features = [
+  {
+    icon: '💰',
+    title: 'Unlimited Coins & Gems',
+    description: 'Start with a massive coin and gem balance that never depletes. Buy every skin, hat, item, and accessory in the shop immediately — no grinding, no waiting.',
+    detail: 'The shop normally requires hours of gameplay to accumulate enough coins. With the mod, your balance is set to a maximum value so you can purchase everything at once. Coins and gems regenerate even after spending.',
+    link: '/blog/super-bear-adventure-unlimited-money/',
+    linkLabel: 'Unlimited money guide',
+  },
+  {
+    icon: '👒',
+    title: 'All Skins & Hats Unlocked',
+    description: 'Every cosmetic item in the game is available from the first launch. Skeleton Bear, Royal Cape, Christmas Baaren, and all rare seasonal skins included.',
+    detail: 'The official game locks most cosmetics behind coin costs ranging from 500 to 10,000 purple coins. With the mod, the wardrobe is fully unlocked. All 20+ skins and 30+ hats are available simultaneously.',
+    link: '/blog/unlock-all-skins-hats/',
+    linkLabel: 'Skins & hats guide',
+  },
+  {
+    icon: '🚫',
+    title: 'No Advertisements',
+    description: 'The mod removes all advertisement code. No video ads, no banner ads, no pop-up offers, no rewarded ad prompts. Pure gameplay from start to finish.',
+    detail: 'The official game shows optional video ads for coin rewards and mandatory interstitials between some sessions. The mod strips all advertising SDKs, resulting in a completely clean experience.',
+    link: null,
+    linkLabel: null,
+  },
+  {
+    icon: '🎮',
+    title: 'Mod Menu',
+    description: 'Access the in-game mod menu overlay during gameplay. Toggle features on and off in real-time including unlimited health, speed multipliers, and more.',
+    detail: 'The mod menu is an overlay that appears during gameplay. Features include unlimited health, adjustable movement speed, one-hit enemies, and various visibility toggles for collectibles.',
+    link: '/blog/super-bear-adventure-mod-menu/',
+    linkLabel: 'Mod menu guide',
+  },
+  {
+    icon: '🛡️',
+    title: 'Anti-Ban Protection',
+    description: 'The mod build is engineered to minimize detection during online multiplayer sessions. Thousands of players use the mod daily in co-op without account issues.',
+    detail: 'Anti-ban works by disguising modified game values to appear consistent with normal gameplay from the server perspective. It is effective for casual multiplayer but cannot guarantee zero risk in competitive play.',
+    link: '/safety/',
+    linkLabel: 'Read safety report',
+  },
+  {
+    icon: '📴',
+    title: 'Offline Play Supported',
+    description: 'All single-player content works completely offline. No internet connection needed for solo exploration, world walkthroughs, or collectible hunting.',
+    detail: 'Multiplayer still requires an internet connection as it connects to Earthkwak game servers. Everything else — all 6 worlds, boss fights, daily challenges, and collectibles — works offline.',
+    link: '/blog/super-bear-adventure-mod-apk-offline/',
+    linkLabel: 'Offline mode guide',
+  },
+];
+
+const faqItems = [
+  { question: 'What features does the Super Bear Adventure Mod APK include?', answer: 'The mod includes unlimited coins and gems, all skins and hats unlocked, zero advertisements, a mod menu overlay, anti-ban protection, and offline play support. All 6 worlds and full multiplayer remain functional.' },
+  { question: 'Does the mod keep all official game features?', answer: 'Yes. The mod is built on top of the official v12.1.5 release. All gameplay, worlds, missions, multiplayer, daily challenges, and story content are preserved. The mod only adds features and removes restrictions.' },
+  { question: 'Can I turn mod features on and off?', answer: 'Yes. The mod menu overlay lets you toggle individual features during gameplay. You can play with standard gameplay and activate mod features only when you want them.' },
+  { question: 'Are unlimited coins permanent?', answer: 'Yes. The coin balance remains at maximum value. Even after purchasing items, the balance stays at the maximum. You never need to farm coins again.' },
+  { question: 'Does the mod work in multiplayer?', answer: 'Yes. Multiplayer co-op, invite codes, and online sessions all work with the mod installed. Anti-ban protection is active during online play.' },
+];
+
+const schemas = [
+  softwareAppSchema(),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'Features', url: `${SITE.url}/features/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="Super Bear Adventure Mod APK Features — Everything Unlocked"
+  description="Complete list of Super Bear Adventure Mod APK features: unlimited coins, all skins unlocked, no ads, mod menu, anti-ban, offline play. See exactly what the mod gives you."
+  schema={schemas}
+  canonical={`${SITE.url}/features/`}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'Features' }]} />
+
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Super Bear Adventure Mod APK Features
+      </h1>
+      <p class="text-lg text-gray-600">
+        Every feature included in Super Bear Adventure Mod APK v{SITE.download.version}. Based on the official {SITE.download.updated} release with gameplay enhancements and restrictions removed.
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="space-y-6 mb-12">
+      {features.map((feat) => (
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+          <div class="flex items-start gap-4">
+            <span class="text-3xl flex-shrink-0">{feat.icon}</span>
+            <div class="flex-1">
+              <h2 class="text-xl font-extrabold text-gray-900 mb-2">{feat.title}</h2>
+              <p class="text-gray-700 mb-3">{feat.description}</p>
+              <p class="text-sm text-gray-500 mb-3">{feat.detail}</p>
+              {feat.link && (
+                <a href={feat.link} class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                  {feat.linkLabel}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Mod APK vs Official Game</h2>
+      <ComparisonTable />
+    </div>
+
+    <!-- All 6 Worlds -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-4">All 6 Worlds Included</h2>
+      <p class="text-gray-600 mb-6">The mod includes every world from the official game. All are accessible from the start with no progression gates.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          { name: 'Turtletown', href: '/blog/turtletown-walkthrough/', desc: 'Starter village, beach areas, turtle NPCs' },
+          { name: 'Snow Valley', href: '/blog/snow-valley-secrets/', desc: 'Icy peaks, snowboard sections, frozen puzzles' },
+          { name: 'Beemothep Desert', href: '/blog/beemothep-desert-puzzle/', desc: 'Pyramids, sand traps, sphinx puzzles' },
+          { name: 'Giant House', href: '/blog/giant-house-walkthrough/', desc: 'Oversized furniture, tiny-bear platforming' },
+          { name: 'The Hive', href: '/blog/the-hive-walkthrough/', desc: 'Honeycomb kingdom, bee enemies, honey mechanics' },
+          { name: 'Mole Mines', href: '/blog/mole-mines-walkthrough/', desc: 'Underground caverns, mine carts, crystal gems' },
+        ].map((world) => (
+          <a href={world.href} class="flex items-start gap-3 bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:border-game-green hover:shadow-md transition-all group">
+            <svg class="w-5 h-5 text-game-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm group-hover:text-game-green transition-colors">{world.name}</h3>
+              <p class="text-xs text-gray-500 mt-0.5">{world.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+      <p class="text-sm text-gray-500 mt-4">See all worlds on the <a href="/worlds/" class="text-game-green hover:underline">worlds overview page</a>.</p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Features FAQ</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="/download/" class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Super Bear Adventure Mod APK v{SITE.download.version}
+      </a>
+      <p class="text-sm text-gray-500 mt-2">Free &middot; {SITE.download.size} &middot; No Root &middot; All Features Included</p>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import { SITE } from '../utils/seo';
+import { softwareAppSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
+
+const versions = [
+  { version: '12.1.5', date: 'April 29, 2026', label: 'Latest', changes: 'Fixed multiplayer invite codes not working in some regions. Performance improvements for low-end devices.', isLatest: true },
+  { version: '12.1.4', date: 'March 2026', label: '', changes: 'New invite format with copy/paste support. Fixed critical save file corruption bug that wiped progress for some players.', isLatest: false },
+  { version: '12.1.3', date: 'February 2026', label: '', changes: 'Lobby version number display, matchmaking timer fixes, cosmetic display fixes in multiplayer sessions.', isLatest: false },
+  { version: '12.1.2', date: 'January 2026', label: '', changes: 'Bug fixes for invite code system introduced in 12.1.1. Stability improvements for co-op sessions.', isLatest: false },
+  { version: '12.1.1', date: 'December 2025', label: '', changes: 'Invite code system overhaul. New lobby UI for multiplayer sessions. Minor emote fixes.', isLatest: false },
+  { version: '12.1.0', date: 'November 2025', label: '', changes: 'Added emotes system — 15 new Baaren animations. Super Bear Fighters PvP mini-game added. Arcade World updated with 3 new challenges.', isLatest: false },
+  { version: '12.0.0', date: 'August 2025', label: 'Major', changes: 'Multiplayer co-op launched. Up to 4 players can now explore all 6 worlds together. Online invite system, cross-play lobby, and multiplayer leaderboards.', isLatest: false },
+  { version: '11.5.x', date: '2024', label: '', changes: 'Final pre-multiplayer builds. Performance optimization, Mole Mines polish, UI refinements.', isLatest: false },
+  { version: '10.0.0', date: '2022', label: 'Major', changes: 'The Hive world released — the 6th and final main world. New boss: Queen Bee. Honeycomb mechanics and amber aesthetic.', isLatest: false },
+];
+
+const faqItems = [
+  { question: 'What is the latest version of Super Bear Adventure Mod APK?', answer: `The latest version is v${SITE.download.version}, released ${SITE.download.updated}. It is based on the official Earthkwak Games release and includes all multiplayer, emote, and world content.` },
+  { question: 'Can I download old versions of the mod APK?', answer: 'Yes. Old versions are available for players who want to run the game on older Android devices or who prefer a specific version. See our old versions archive guide for links.' },
+  { question: 'Should I update to the latest version?', answer: 'Yes, for the best experience and security. v12.1.5 fixes the multiplayer invite code system and includes stability improvements. Always update by installing the new APK over the existing one.' },
+  { question: 'Will updating the mod APK delete my save data?', answer: 'No. Installing a new version over the existing mod APK preserves your save data. Do not uninstall the app before updating — just install the new APK file directly.' },
+  { question: 'When was multiplayer added to Super Bear Adventure?', answer: 'Multiplayer was introduced in v12.0.0, released August 2025. It added co-op for up to 4 players across all 6 worlds with an online invite system.' },
+];
+
+const schemas = [
+  softwareAppSchema(),
+  breadcrumbSchema([
+    { name: 'Home', url: SITE.url },
+    { name: 'All Versions', url: `${SITE.url}/versions/` },
+  ]),
+  faqSchema(faqItems),
+];
+---
+
+<BaseLayout
+  title="Super Bear Adventure Mod APK All Versions — Version History & Downloads"
+  description={`Complete Super Bear Adventure Mod APK version history. Latest: v${SITE.download.version} (${SITE.download.updated}). Old version archive, changelogs, and update guide.`}
+  schema={schemas}
+  canonical={`${SITE.url}/versions/`}
+>
+  <main id="main-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <Breadcrumbs items={[{ name: 'All Versions' }]} />
+
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Super Bear Adventure Mod APK — All Versions
+      </h1>
+      <p class="text-lg text-gray-600">
+        Complete version history and changelogs for Super Bear Adventure Mod APK. The current release is v{SITE.download.version}, updated {SITE.download.updated}.
+      </p>
+    </div>
+
+    <!-- Latest Version Hero -->
+    <div class="rounded-2xl border border-gray-700 p-6 mb-10" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <div>
+          <span class="inline-block text-xs font-bold px-2.5 py-1 rounded-full bg-game-green text-white mb-2">LATEST VERSION</span>
+          <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 800; margin: 0;">v{SITE.download.version}</h2>
+          <p style="color: #9ca3af; font-size: 0.875rem; margin-top: 0.25rem;">{SITE.download.updated} &middot; {SITE.download.size} &middot; Android {SITE.download.requires.replace('Android ', '')}</p>
+        </div>
+        <a href={SITE.download.url} class="btn-download flex-shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+          Download
+        </a>
+      </div>
+      <div class="text-sm" style="color: #d1d5db;">
+        <strong style="color: #ffffff;">What's new:</strong> Fixed multiplayer invite codes not working in some regions. Performance improvements for low-end devices.
+      </div>
+    </div>
+
+    <!-- Version Timeline -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Complete Version History</h2>
+      <div class="space-y-3">
+        {versions.map((v) => (
+          <div class={`bg-white rounded-xl border ${v.isLatest ? 'border-game-green' : 'border-gray-100'} shadow-sm p-5`}>
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-center gap-3 flex-wrap">
+                <span class="font-mono font-bold text-gray-900 text-base">v{v.version}</span>
+                {v.isLatest && <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-game-green text-white">Latest</span>}
+                {v.label === 'Major' && <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-700">Major Update</span>}
+                <span class="text-xs text-gray-500">{v.date}</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">{v.changes}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Update Guide -->
+    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-10">
+      <h2 class="text-xl font-extrabold text-gray-900 mb-3">How to Update to the Latest Version</h2>
+      <p class="text-gray-700 text-sm mb-4">
+        Updating the Super Bear Adventure Mod APK is simple and preserves your save data:
+      </p>
+      <ol class="space-y-3 text-sm text-gray-700">
+        <li class="flex gap-3"><span class="font-bold text-game-green w-4 flex-shrink-0">1.</span><span>Download the latest APK (v{SITE.download.version}) from the <a href="/download/" class="text-game-green hover:underline">download page</a></span></li>
+        <li class="flex gap-3"><span class="font-bold text-game-green w-4 flex-shrink-0">2.</span><span><strong>Do not uninstall</strong> the current version — just install the new APK over it</span></li>
+        <li class="flex gap-3"><span class="font-bold text-game-green w-4 flex-shrink-0">3.</span><span>Android will show "Update app?" — tap Install to proceed</span></li>
+        <li class="flex gap-3"><span class="font-bold text-game-green w-4 flex-shrink-0">4.</span><span>Your coins, progress, and skins carry over automatically</span></li>
+      </ol>
+      <a href="/blog/update-super-bear-adventure-mod/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline mt-4">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+        Full update guide with troubleshooting
+      </a>
+    </div>
+
+    <!-- Old Versions -->
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-10">
+      <h2 class="text-xl font-extrabold text-gray-900 mb-3">Looking for Old Versions?</h2>
+      <p class="text-gray-700 text-sm mb-4">
+        If you need an older version of Super Bear Adventure Mod APK — for compatibility with older Android devices, lower storage requirements, or personal preference — our old versions archive has you covered.
+      </p>
+      <a href="/blog/super-bear-adventure-mod-apk-old-versions/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-game-green hover:underline">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+        View old versions archive (all versions listed)
+      </a>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Versions FAQ</h2>
+      <FAQAccordion items={faqItems} />
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href={SITE.download.url} class="btn-download">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        Download Latest v{SITE.download.version} — {SITE.download.size}
+      </a>
+    </div>
+  </main>
+</BaseLayout>
